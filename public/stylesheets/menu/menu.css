@@ -1,0 +1,177 @@
+
+html{overflow-x:hidden; overflow-y:scroll; max-width:  100%}
+
+#header-outer{width:100%; top:0px; left:0px; position:fixed; padding:28px 0px 0px 0px; background-color:#fff; z-index:9999}
+
+#header-outer[data-box-shadow="small"]{box-shadow:0 0 3px 0 rgba(0,0,0,0.22); -moz-box-shadow:0 0 3px 0 rgba(0,0,0,0.22); -webkit-box-shadow:0 0 3px 0 rgba(0,0,0,0.22)}
+
+header#top #logo{width:auto; max-width:none; display:block; line-height:22px; font-size:22px; letter-spacing:-1.5px; color:#444; font-family:'Open Sans'; font-weight:600}
+
+header#top nav >ul >li >a{padding:0px 10px 0px 10px; display:block; color:#676767; font-size:12px; line-height:20px; -webkit-transition:color 0.1s linear;  -moz-transition:color 0.1s linear;  -o-transition:color 0.1s linear;  transition:color 0.1s linear}
+
+#header-outer:not([data-lhe="animated_underline"]) header#top nav ul li a:hover, #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu li.sfHover >a, #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu li.current_page_ancestor >a, #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu li.current-menu-item >a, #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu li.current-menu-ancestor >a, #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu li.current_page_item >a{color:#27CFC3}
+
+header#top .span_9 >.slide-out-widget-area-toggle{display:none; position:absolute; right:0px; top:50%;  margin-bottom:10px;  margin-top:-5px;  z-index:10000;  transform:translateY(-50%);  -webkit-transform:translateY(-50%)}
+
+#header-outer .row .col.span_3, #header-outer .row .col.span_9{width:auto}
+
+#header-outer .row .col.span_9{float:right}
+
+#mobile-menu{position:relative; top:0px; display:none; background-color:#1F1F1F;  padding:0px;     z-index:100000}
+
+#mobile-menu ul li a{border-bottom:1px dotted rgba(255,255,255,0.2);     color:rgba(255,255,255,0.6);     font-size:12px;     display:block;     position:relative;     padding:16px 0 !important}
+
+#mobile-menu ul li ul{display:none; margin-left:20px}
+
+#mobile-menu input[type=text]{margin-top:15px; margin-bottom:15px; background-color:#171717; color:rgba(255,255,255,0.7); padding:15px 15px 15px 40px!important; border:0px!important; border-bottom:1px solid #2e2e2e!important; border-radius:2px 2px 2px 2px; -moz-border-radius:2px 2px 2px 2px; -o-border-radius:2px 2px 2px 2px; -webkit-border-radius:2px 2px 2px 2px; box-shadow:0px 1px 3px rgba(0,0,0,0.7) inset; -moz-box-shadow:0px 1px 3px rgba(0,0,0,0.7) inset; -webkit-box-shadow:0px 1px 3px rgba(0,0,0,0.7) inset; -o-box-shadow:0px 1px 3px rgba(0,0,0,0.7) inset; background-image:url(img/icons/mag-glass-mobile.png); background-repeat:no-repeat; background-position:15px center}
+
+.sf-sub-indicator [class^="icon-"], .sf-sub-indicator [class*=" icon-"]{color:#888; font-size:12px; line-height:16px; height:auto; background-color:transparent!important}
+
+.sf-menu, .sf-menu *{ list-style:none outside none;  margin:0;  padding:0;  z-index:10}
+
+.sf-menu li{ float:left;  line-height:0px!important;  font-size:12px!important;  position:relative}
+
+.lines-button{ transition:.3s;  cursor:pointer;  line-height:0px!important;  top:9px;  position:relative;  font-size:0px!important;  user-select:none;  display:block}
+
+.lines{ display:block;  width:1.4rem;  height:3px;  background-color:#ecf0f1;  transition:0.3s;  position:relative}
+.lines:before, .lines:after{ display:block;  width:1.4rem;  height:3px;  background:#ecf0f1;  transition:0.3s;  position:absolute;  left:0;  content:'';  -webkit-transform-origin:0.142rem center;  transform-origin:0.142rem center}
+.lines:before{ top:6px}
+.lines:after{ top:-6px}
+
+.slide-out-widget-area-toggle[data-icon-animation="simple-transform"] .lines-button:after{height:2px; background-color:rgba(0,0,0,0.4); display:inline-block;  width:1.4rem;  height:2px;  transition:transform 0.45s ease,opacity 0.2s ease,background-color 0.2s linear;  -webkit-transition:-webkit-transform 0.45s ease,opacity 0.2s ease,background-color 0.2s linear;  position:absolute;  left:0;  top:0px;  content:'';  transform:scale(1,1); -webkit-transform:scale(1,1)}
+
+.slide-out-widget-area-toggle.mobile-icon .lines-button.x2 .lines:before, .slide-out-widget-area-toggle.mobile-icon .lines-button.x2 .lines:after,
+
+.slide-out-widget-area-toggle[data-icon-animation="simple-transform"].mobile-icon .lines-button:after, header#top .slide-out-widget-area-toggle[data-icon-animation="spin-and-transform"].mobile-icon .lines-button.x2 .lines{background-color:#999}
+
+.slide-out-widget-area-toggle[data-icon-animation="simple-transform"].mobile-icon .lines-button.close .lines:before{-webkit-transform:translateY(-6px) rotateZ(-45deg)!important;  -moz-transform:translateY(-6px) rotateZ(-45deg)!important;  -ms-transform:translateY(-6px) rotateZ(-45deg)!important;  -o-transform:translateY(-6px) rotateZ(-45deg)!important;  transform:translateY(-6px) rotateZ(-45deg)!important}
+.slide-out-widget-area-toggle[data-icon-animation="simple-transform"].mobile-icon .lines-button.close .lines:after{-webkit-transform:translateY(6px) rotateZ(45deg)!important;  -moz-transform:translateY(6px) rotateZ(45deg)!important;  -ms-transform:translateY(6px) rotateZ(45deg)!important;  -o-transform:translateY(6px) rotateZ(45deg)!important;  transform:translateY(6px) rotateZ(45deg)!important}
+
+.slide-out-widget-area-toggle.mobile-icon .lines-button:after,  .slide-out-widget-area-toggle.mobile-icon .lines:before, .slide-out-widget-area-toggle.mobile-icon .lines:after,
+header#top .slide-out-widget-area-toggle[data-icon-animation="spin-and-transform"].mobile-icon .lines-button.x2 .lines{height:2px!important; width:22px!important}
+
+.slide-out-widget-area-toggle[data-icon-animation="simple-transform"] .lines-button.close:after{transform:scale(0,1); -webkit-transform:scale(0,1)}
+
+.lines-button.x2 .lines:before, .lines-button.x2 .lines:after{ -webkit-transform-origin:50% 50%;  transform-origin:50% 50%;  transition:top 0.4s 0.45s ease,-webkit-transform 0.3s ease,background-color 0.2s linear,opacity 0.2s linear;  transition:top 0.4s 0.45s ease,transform 0.3s ease,background-color 0.2s linear,opacity 0.2s linear}
+
+.slide-out-widget-area-toggle a >span{transition:-webkit-transform 0.33s 0.3s ease-in; transition:transform 0.33s 0.3s ease-in; -webkit-transform-origin:center;  transform-origin:center;  display:block;  height:21px}
+
+input[type=text], textarea, input[type=email], input[type=password], input[type=tel], input[type=url], input[type=search], input[type=date]{padding:10px!important; width:100%; border:0px; border-bottom:1px solid #fff; font-family:'Open Sans'; font-weight:400;  font-size:12px;  line-height:22px;  color:#555;  background-color:#efefef;  box-shadow:0 1px 2px rgba(0,0,0,0.09) inset;  -moz-box-shadow:0 1px 2px rgba(0,0,0,0.09) inset;  -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.09) inset;  -o-box-shadow:0 1px 2px rgba(0,0,0,0.09) inset;  transition:all 0.2s linear;  -moz-transition:all 0.2s linear;  -webkit-transition:all 0.2s linear;  -o-transition:all 0.2s linear}
+
+/* ============================================================================================================================================== */
+/* ============================================================================================================================================== */
+/* ============================================================================================================================================== */
+
+@media only screen and (min-width : 690px) and (max-width : 1000px) {
+	.container, #post-area.standard-minimal.full-width-content article.post .inner-wrap {
+    	max-width: 600px;
+  	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 690px) {
+ 	body .container, body div.slider-nav, #post-area.standard-minimal.full-width-content article.post .inner-wrap {
+    	max-width: 420px!important;
+  	}
+}
+
+@media only screen and (min-width : 1px) and (max-width : 1000px) {
+	header#top #logo  {
+		margin-top: 7px!important;
+	}
+
+	body header#top #logo img, #header-outer[data-permanent-transparent="false"] #logo .dark-version {
+		height: 24px!important;
+		margin-top: -3px!important;
+		top: 3px;
+		position: relative;
+	}
+
+	#header-outer {
+  		position: relative!important;
+  		/*height: 52px!important;*/
+  		padding-top: 10px!important;
+  		margin-bottom: 0px;
+  	}
+
+  #header-space, #search-outer { display: none!important; }
+	header#top #toggle-nav, header#top #mobile-cart-link, header#top .span_9 > .slide-out-widget-area-toggle { display: block!important; }
+
+	header#top .col.span_3 {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: 1000;
+  		width: 85%!important;
+  	}
+
+  	header#top .col.span_9 {
+  		margin-left: 0px;
+  		min-height: 48px;
+  		margin-bottom: 0px;
+  		width: 100%!important;
+  		float: none;
+  		z-index: 100;
+		position: relative;
+  	}
+}
+
+/* ============================================================================================================================================== */
+/* ============================================================================================================================================== */
+/* ============================================================================================================================================== */
+
+
+
+.row {
+	position: relative;
+}
+
+.col {
+  position: relative;
+  z-index: 10;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+/* ============================================================================================================================================== */
+/* ============================================================================================================================================== */
+/* ============================================================================================================================================== */
+
+#custom-search-form {
+    margin:0;
+    margin-top: 0px;
+    padding: 0;
+}
+
+#custom-search-form .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height : 30px
+}
+
+#custom-search-form button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.search-query:focus + button {
+    z-index: 3;
+}
