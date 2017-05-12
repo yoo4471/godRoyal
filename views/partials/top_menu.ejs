@@ -9,21 +9,21 @@
     <!-- Meta Tags -->
 
 
+    <link rel="stylesheet" href="/stylesheets/menu/search.css" type="text/css">
 
-
     <!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 -->
     <!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 -->
     <!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 -->
     <!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 -->
 
-    <link rel="stylesheet" id="parent-style-css" href="/stylesheets/a.css" type="text/css" media="all">
-    <link rel="stylesheet" id="rgs-css" href="/stylesheets/rgs.css" type="text/css" media="all">
-    <link rel="stylesheet" id="responsive-css" href="/stylesheets/responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" id="parent-style-css" href="/stylesheets/menu/a.css" type="text/css" media="all">
+    <link rel="stylesheet" id="rgs-css" href="/stylesheets/menu/rgs.css" type="text/css" media="all">
+    <link rel="stylesheet" id="responsive-css" href="/stylesheets/menu/responsive.css" type="text/css" media="all">
     <!-- 아래, 검색과 관련 css -->
-    <link rel="stylesheet" id="skin-ascend-css" href="/stylesheets/ascend.css" type="text/css" media="all">
+    <link rel="stylesheet" id="skin-ascend-css" href="/stylesheets/menu/ascend.css" type="text/css" media="all">
 
     <script type="text/javascript" src="/javascripts/jquery.js"></script>
-    <link rel="stylesheet" id="main-styles-css" href="/stylesheets/b.css" type="text/css" media="all">
+    <link rel="stylesheet" id="main-styles-css" href="/stylesheets/menu/b.css" type="text/css" media="all">
 
     <script type="text/javascript">
         var auth = {
@@ -675,7 +675,23 @@
                                         <a href="https://www.hyperledger.org/blog" style="padding-bottom: 26px; padding-top: 11px;">Blog</a>
                                     </li>
 
-                                </ul>
+
+
+
+
+																	<li id="search-btn" style="padding-bottom: 13px; padding-top: 13px;"><div class="span12">
+            <form id="custom-search-form" class="form-search form-horizontal pull-right">
+                <div class="input-append span12">
+                    <input type="text" class="search-query" placeholder="Search">
+                    <button type="submit" class="btn"><i class="icon-search"></i></button>
+                </div>
+            </form>
+        </div> </li>
+
+															</ul>
+
+
+
                             </nav>
                         </div>
                         <!--/span_9-->
@@ -775,7 +791,7 @@
                     </li>
                     <li id="mobile-search">
                         <form action="https://www.hyperledger.org/" method="GET">
-                            <input type="text" name="s" value="" placeholder="Search..">
+                            <input type="text" name="s" value="" placeholder="Search.">
                         </form>
                     </li>
                 </ul>

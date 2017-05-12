@@ -48,7 +48,7 @@ color:inherit
 }
 
 .ascend {
-background-color:#252525
+background-color:#FFFFFF
 }
 
 .nectar-progress-bar span strong:after {
@@ -975,4 +975,3 @@ body.rtl .carousel-wrap[data-full-width="false"] .control-wrap {
     opacity: 1;
     transform: translateX(18px);
 }
-
