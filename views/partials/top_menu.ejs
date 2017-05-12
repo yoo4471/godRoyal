@@ -1,64 +1,39 @@
 <!DOCTYPE html>
-<html>
+
 
 <head>
-    <meta charset="UTF-8">
-    <title>TEST</title>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <!-- Meta Tags -->
 
-
+    <!-- 메뉴바 오른쪽 검색 css -->
     <link rel="stylesheet" href="/stylesheets/menu/search.css" type="text/css">
-
+    <link rel="stylesheet" href="/stylesheets/menu/ascend.css" type="text/css">
     <!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 -->
     <!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 -->
     <!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 -->
     <!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 -->
 
+    <!-- 핵심 -->
     <link rel="stylesheet" id="parent-style-css" href="/stylesheets/menu/a.css" type="text/css" media="all">
+
+    <!-- 화면 좌우 길이 매칭 등에 영향을 미친다. -->
     <link rel="stylesheet" id="rgs-css" href="/stylesheets/menu/rgs.css" type="text/css" media="all">
+
+    <!-- 모바일 화면에서 삼선 메뉴가 사라진다. -->
     <link rel="stylesheet" id="responsive-css" href="/stylesheets/menu/responsive.css" type="text/css" media="all">
-    <!-- 아래, 검색과 관련 css -->
-    <link rel="stylesheet" id="skin-ascend-css" href="/stylesheets/menu/ascend.css" type="text/css" media="all">
+
+
 
     <script type="text/javascript" src="/javascripts/jquery1.11.2.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery1.2.1.js"></script>
-
-    <link rel="stylesheet" id="main-styles-css" href="/stylesheets/menu/b.css" type="text/css" media="all">
-
-    <script type="text/javascript">
-        var auth = {
-            "wp_login_url": "https:\/\/www.hyperledger.org\/wp-login.php?redirect_to=%2F",
-            "public_warning": "",
-            "anonymous_notice": "Notice: You are browsing this site anonymously, and only have access to a portion of its content.",
-            "log_in": "Log In"
-        };
-
-    </script>
-
-    <!--필수(모바일메뉴)-->
-    <script type="text/javascript" src="/javascripts/prettyPhoto.js"></script>
 
 
-    <script type="text/javascript" src="/javascripts/superfish.js"></script>
 
-    <!--필수(모바일메뉴)-->
-    <script type="text/javascript">
-                                                                                                                          <![CDATA[ */
-        var nectarLove = {
-            "ajaxurl": "https:\/\/www.hyperledger.org\/wp-admin\/admin-ajax.php",
-            "postID": "8",
-            "rooturl": "https:\/\/www.hyperledger.org",
-            "pluginPages": [],
-            "disqusComments": "false",
-            "loveNonce": "a5789d0861",
-            "mapApiKey": ""
-        };
 
-    </script>
+
 
     <!--필수-->
+    <script type="text/javascript" src="/javascripts/prettyPhoto.js"></script>
+    <script type="text/javascript" src="/javascripts/superfish.js"></script>
     <script type="text/javascript" src="/javascripts/init.js"></script>
 
     <!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 -->
@@ -67,515 +42,17 @@
     <!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 --><!-- 필수 -->
 
     <!-- body 글씨체 등과 같은 css -->
-    <style type="text/css">
-        body,
-        .toggle h3 a,
-        body .ui-widget,
-        table,
-        .bar_graph li span strong,
-        #slide-out-widget-area .tagcloud a,
-        body .container .woocommerce-message a.button,
-        #search-results .result .title span,
-        .woocommerce ul.products li.product h3,
-        .woocommerce-page ul.products li.product h3,
-        .row .col.section-title .nectar-love span,
-        body .nectar-love span,
-        body .nectar-social .nectar-love .nectar-love-count,
-        body .carousel-heading h2,
-        .sharing-default-minimal .nectar-social .social-text,
-        body .sharing-default-minimal .nectar-love {
-            font-family: Roboto;
-            font-size: 18px;
-            line-height: 24px;
-            font-weight: 300;
-        }
-        .bold,
-        strong,
-        b {
-            font-family: Roboto;
-            font-weight: 600;
-        }
-        .single #single-below-header span {
-            font-family: Roboto;
-        }
-        .nectar-fancy-ul ul li .icon-default-style[class^="icon-"] {
-            line-height: 24px!important;
-        }
-        header#top nav > ul > li > a {
-            font-family: Roboto;
-            font-size: 16px;
-            line-height: 22.4px;
-            font-weight: 400;
-        }
-        header#top nav > ul > li.button_solid_color > a:before,
-        #header-outer.transparent header#top nav > ul > li.button_solid_color > a:before {
-            height: 27.4px;
-        }
-        header#top nav > ul > li.button_bordered > a:before,
-        #header-outer.transparent header#top nav > ul > li.button_bordered > a:before {
-            height: 37.4px;
-        }
-        header#top .sf-menu li ul li a,
-        #header-secondary-outer nav > ul > li > a,
-        #header-secondary-outer ul ul li a,
-        #header-outer .widget_shopping_cart .cart_list a {}@media only screen and (min-width: 1px) and (max-width: 1000px) {
-            header#top .sf-menu a {
-                font-family: -!important;
-                font-size: 14px!important;
-            }
-        }
-        #page-header-bg h1,
-        body h1,
-        body .row .col.section-title h1,
-        .full-width-content .recent-post-container .inner-wrap h2 {
-            font-family: Roboto;
-            font-size: 50px;
-            line-height: 60px;
-            font-weight: 300;
-        }
-        @media only screen and (max-width: 1300px) and (min-width: 1000px) {
-            body .row .col.section-title h1,
-            body h1,
-            .full-width-content .recent-post-container .inner-wrap h2 {
-                font-size: 35px;
-                line-height: 42px;
-            }
-        }
-        @media only screen and (max-width: 1000px) and (min-width: 690px) {
-            body .row .col.section-title h1,
-            body h1 {
-                font-size: 32.5px;
-                line-height: 39px;
-            }
-            .full-width-content .recent-post-container .inner-wrap h2 {
-                font-size: 30px;
-                line-height: 36px;
-            }
-        }
-        @media only screen and (max-width: 690px) {
-            body .row .col.section-title h1,
-            body h1 {
-                font-size: 30px;
-                line-height: 36px;
-            }
-            .full-width-content .recent-post-container .inner-wrap h2 {
-                font-size: 22.5px;
-                line-height: 27px;
-            }
-        }
-        #page-header-bg h2,
-        body h2,
-        article.post .post-header h2,
-        article.post.quote .post-content h2,
-        article.post.link .post-content h2,
-        article.post.format-status .post-content h2,
-        #call-to-action span,
-        .woocommerce .full-width-tabs #reviews h3,
-        .row .col.section-title h2 {
-            font-family: Roboto;
-            font-size: 40px;
-            line-height: 48px;
-            font-weight: 300;
-        }
-        @media only screen and (max-width: 1300px) and (min-width: 1000px) {
-            body h2 {
-                font-size: 34px;
-                line-height: 40.8px;
-            }
-            .row .span_2 h2,
-            .row .span_3 h2,
-            .row .span_4 h2,
-            .row .vc_col-sm-2 h2,
-            .row .vc_col-sm-3 h2,
-            .row .vc_col-sm-4 h2 {
-                font-size: 28px;
-                line-height: 33.6px;
-            }
-        }
-        @media only screen and (max-width: 690px) {
-            .col h2 {
-                font-size: 34px;
-                line-height: 40.8px;
-            }
-        }
-        body h3,
-        .row .col h3,
-        .toggle h3 a,
-        .ascend #respond h3,
-        .ascend h3#comments,
-        .woocommerce ul.products li.product.text_on_hover h3,
-        .masonry.classic_enhanced .masonry-blog-item h3.title,
-        .woocommerce ul.products li.product.material h3,
-        .woocommerce-page ul.products li.product.material h3,
-        .portfolio-items[data-ps="8"] .col h3,
-        .nectar-hor-list-item[data-font-family="h3"] {
-            font-family: Roboto;
-            font-size: 30px;
-            line-height: 40px;
-            font-weight: 300;
-        }
-        @media only screen and (min-width: 1000px) {
-            .ascend .comments-section .comment-wrap.full-width-section > h3,
-            .blog_next_prev_buttons[data-post-header-style="default_minimal"] .col h3 {
-                font-size: 51px!important;
-                line-height: 59px!important;
-            }
-            .masonry.classic_enhanced .masonry-blog-item.large_featured h3.title {
-                font-size: 45px!important;
-                line-height: 60px!important;
-            }
-        }
-        @media only screen and (min-width: 1300px) and (max-width: 1500px) {
-            body .portfolio-items.constrain-max-cols.masonry-items .col.elastic-portfolio-item h3 {
-                font-size: 25.5px!important;
-                line-height: 34px;
-            }
-        }
-        @media only screen and (max-width: 1300px) and (min-width: 1000px),
-        (max-width: 690px) {
-            .row .span_2 h3,
-            .row .span_3 h3,
-            .row .span_4 h3,
-            .row .vc_col-sm-2 h3,
-            .row .vc_col-sm-3 h3,
-            .row .vc_col-sm-4 h3 {
-                font-size: 21px;
-                line-height: 28px;
-            }
-        }
-        body h4,
-        .row .col h4,
-        .portfolio-items .work-meta h4,
-        .list-icon-holder[data-icon_type="numerical"] span,
-        .portfolio-items .col.span_3 .work-meta h4,
-        #respond h3,
-        h3#comments,
-        .portfolio-items[data-ps="6"] .work-meta h4,
-        .nectar-hor-list-item[data-font-family="h4"] {
-            font-family: Roboto;
-            font-size: 20px;
-            line-height: 28px;
-            font-weight: 300;
-        }
-        @media only screen and (min-width: 690px) {
-            .portfolio-items[data-ps="6"] .wide_tall .work-meta h4 {
-                font-size: 34px!important;
-                line-height: 42px!important;
-            }
-            .nectar-slide-in-cart .widget_shopping_cart .cart_list .mini_cart_item > a:not(.remove) {
-                font-family: Roboto!important;
-                font-weight: 300!important;
-            }
-        }
-        body h5,
-        .row .col h5,
-        .portfolio-items .work-item.style-3-alt p,
-        .nectar-hor-list-item[data-font-family="h5"] {
-            font-family: Roboto;
-            font-size: 30px;
-            line-height: 36px;
-            font-weight: 400;
-        }
-        body .wpb_column > .wpb_wrapper > .morphing-outline .inner > h5 {
-            font-size: 41px!important;
-        }
-        @media only screen and (min-width: 1000px) and (max-width: 1300px) {
-            .col.vc_span3 h5,
-            .col.vc_span4 h5,
-            .col.vc_col-sm-3 h5,
-            .col.vc_col-sm-4 h5 {
-                font-size: 16px!important;
-            }
-        }
-        body h6,
-        .row .col h6,
-        .nectar-hor-list-item[data-font-family="h6"] {
-            font-family: Roboto;
-            font-size: 24px;
-            line-height: 30px;
-            font-weight: 300;
-        }
-        body i,
-        body em,
-        .masonry.meta_overlaid article.post .post-header .meta-author > span,
-        #post-area.masonry.meta_overlaid article.post .post-meta .date,
-        #post-area.masonry.meta_overlaid article.post.quote .quote-inner .author,
-        #post-area.masonry.meta_overlaid article.post.link .post-content .destination,
-        body .testimonial_slider[data-style="minimal"] blockquote span.title {}form label,
-        .woocommerce-checkout-review-order-table .product-info .amount,
-        .woocommerce-checkout-review-order-table .product-info .product-quantity,
-        .nectar-progress-bar p,
-        .nectar-progress-bar span strong i,
-        .nectar-progress-bar span strong,
-        .testimonial_slider:not([data-style="minimal"]) blockquote span,
-        .woocommerce-ordering .select2-container .select2-choice>.select2-chosen,
-        .tabbed[data-style="minimal_alt"] > ul li a {}.portfolio-filters-inline .container > ul a,
-        .portfolio-filters > ul a,
-        .portfolio-filters > a span {}.portfolio-items .col p,
-        .container-wrap[data-nav-pos="after_project_2"] .bottom_controls li span:not(.text) {}.nectar-dropcap {}body #page-header-bg h1,
-        html body .row .col.section-title h1,
-        .nectar-box-roll .overlaid-content h1 {}@media only screen and (min-width: 690px) and (max-width: 1000px) {
-            #page-header-bg .span_6 h1,
-            .overlaid-content h1 {
-                font-size: ;
-                line-height: ;
-            }
-        }
-        @media only screen and (min-width: 1000px) and (max-width: 1300px) {
-            #page-header-bg .span_6 h1,
-            .nectar-box-roll .overlaid-content h1 {
-                font-size: ;
-                line-height: ;
-            }
-        }
-        @media only screen and (min-width: 1300px) and (max-width: 1500px) {
-            #page-header-bg .span_6 h1,
-            .nectar-box-roll .overlaid-content h1 {
-                font-size: ;
-                line-height: ;
-            }
-        }
-        @media only screen and (max-width: 690px) {
-            #page-header-bg.fullscreen-header .span_6 h1,
-            .overlaid-content h1 {
-                font-size: ;
-                line-height: ;
-            }
-        }
-        body #page-header-bg .span_6 span.subheader,
-        body .row .col.section-title > span,
-        .nectar-box-roll .overlaid-content .subheader {}@media only screen and (min-width: 1000px) and (max-width: 1300px) {
-            body #page-header-bg:not(.fullscreen-header) .span_6 span.subheader,
-            body .row .col.section-title > span {
-                font-size: ;
-                line-height: ;
-            }
-        }
-        @media only screen and (min-width: 690px) and (max-width: 1000px) {
-            body #page-header-bg.fullscreen-header .span_6 span.subheader,
-            .overlaid-content .subheader {
-                font-size: ;
-                line-height: ;
-            }
-            #page-header-bg .span_6 span.subheader {
-                font-size: 22px!important;
-            }
-        }
-        @media only screen and (max-width: 690px) {
-            body #page-header-bg.fullscreen-header .span_6 span.subheader,
-            .overlaid-content .subheader {
-                font-size: ;
-                line-height: ;
-            }
-            #page-header-bg .span_6 span.subheader {
-                font-size: 15px!important;
-            }
-        }
-        body #slide-out-widget-area .inner .off-canvas-menu-container li a,
-        body #slide-out-widget-area.fullscreen .inner .off-canvas-menu-container li a,
-        body #slide-out-widget-area.fullscreen-alt .inner .off-canvas-menu-container li a,
-        body #slide-out-widget-area.slide-out-from-right-hover .inner .off-canvas-menu-container li a,
-        body #nectar-ocm-ht-line-check {
-            font-family: Roboto;
-            font-size: 36px;
-            line-height: 36px;
-        }
-        @media only screen and (min-width: 690px) and (max-width: 1000px) {
-            body #slide-out-widget-area.fullscreen .inner .off-canvas-menu-container li a,
-            body #slide-out-widget-area.fullscreen-alt .inner .off-canvas-menu-container li a {
-                font-size: 32.4px!important;
-                line-height: 32.4px!important;
-            }
-        }
-        @media only screen and (max-width: 690px) {
-            body #slide-out-widget-area.fullscreen .inner .off-canvas-menu-container li a,
-            body #slide-out-widget-area.fullscreen-alt .inner .off-canvas-menu-container li a {
-                font-size: 25.2px!important;
-                line-height: 25.2px!important;
-            }
-        }
-        #slide-out-widget-area .menuwrapper li small {
-            font-family: Roboto;
-            font-size: 30px;
-            line-height: 30px;
-        }
-        @media only screen and (min-width: 690px) and (max-width: 1000px) {
-            #slide-out-widget-area .menuwrapper li small {
-                font-size: 27px!important;
-                line-height: 27px!important;
-            }
-        }
-        @media only screen and (max-width: 690px) {
-            #slide-out-widget-area .menuwrapper li small {
-                font-size: 21px!important;
-                line-height: 21px!important;
-            }
-        }
-        .swiper-slide .content h2 {
-            font-family: Roboto;
-            letter-spacing: 0;
-            font-size: 60px;
-            line-height: 60px;
-            font-weight: 400;
-        }
-        @media only screen and (min-width: 1000px) and (max-width: 1300px) {
-            body .nectar-slider-wrap[data-full-width="true"] .swiper-slide .content h2,
-            body .nectar-slider-wrap[data-full-width="boxed-full-width"] .swiper-slide .content h2,
-            body .full-width-content .vc_span12 .swiper-slide .content h2 {
-                font-size: 48px!important;
-                line-height: 48px!important;
-            }
-        }
-        @media only screen and (min-width: 690px) and (max-width: 1000px) {
-            body .nectar-slider-wrap[data-full-width="true"] .swiper-slide .content h2,
-            body .nectar-slider-wrap[data-full-width="boxed-full-width"] .swiper-slide .content h2,
-            body .full-width-content .vc_span12 .swiper-slide .content h2 {
-                font-size: 36px!important;
-                line-height: 36px!important;
-            }
-        }
-        @media only screen and (max-width: 690px) {
-            body .nectar-slider-wrap[data-full-width="true"] .swiper-slide .content h2,
-            body .nectar-slider-wrap[data-full-width="boxed-full-width"] .swiper-slide .content h2,
-            body .full-width-content .vc_span12 .swiper-slide .content h2 {
-                font-size: 30px!important;
-                line-height: 30px!important;
-            }
-        }
-        #featured article .post-title h2 span,
-        .swiper-slide .content p,
-        #portfolio-filters-inline #current-category,
-        body .vc_text_separator div {
-            font-family: Roboto;
-            font-size: 50px;
-            line-height: 60px;
-            font-weight: 400;
-        }
-        #portfolio-filters-inline ul {
-            line-height: 69px!important;
-        }
-        .swiper-slide .content p.transparent-bg span {
-            line-height: 75px;
-        }
-        @media only screen and (min-width: 1000px) and (max-width: 1300px) {
-            .nectar-slider-wrap[data-full-width="true"] .swiper-slide .content p,
-            .nectar-slider-wrap[data-full-width="boxed-full-width"] .swiper-slide .content p,
-            .full-width-content .vc_span12 .swiper-slide .content p {
-                font-size: 40px!important;
-                line-height: 48px!important;
-            }
-        }
-        @media only screen and (min-width: 690px) and (max-width: 1000px) {
-            .nectar-slider-wrap[data-full-width="true"] .swiper-slide .content p,
-            .nectar-slider-wrap[data-full-width="boxed-full-width"] .swiper-slide .content p,
-            .full-width-content .vc_span12 .swiper-slide .content p {
-                font-size: 35px!important;
-                line-height: 42px!important;
-            }
-        }
-        @media only screen and (max-width: 690px) {
-            body .nectar-slider-wrap[data-full-width="true"] .swiper-slide .content p,
-            body .nectar-slider-wrap[data-full-width="boxed-full-width"] .swiper-slide .content p,
-            body .full-width-content .vc_span12 .swiper-slide .content p {
-                font-size: 35px!important;
-                line-height: 42px!important;
-            }
-        }
-        .testimonial_slider blockquote,
-        .testimonial_slider blockquote span,
-        .testimonial_slider[data-style="minimal"] blockquote span:not(.title),
-        .testimonial_slider[data-style="minimal"] blockquote,
-        blockquote,
-        .testimonial_slider[data-style="minimal"] .controls {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            line-height: 24px;
-            font-weight: 400;
-        }
-        #footer-outer .widget h4,
-        #sidebar h4,
-        #call-to-action .container a,
-        .uppercase,
-        .nectar-button,
-        .nectar-button.medium,
-        .nectar-button.small,
-        .nectar-3d-transparent-button,
-        body .widget_calendar table th,
-        body #footer-outer #footer-widgets .col .widget_calendar table th,
-        .swiper-slide .button a,
-        body:not([data-header-format="left-header"]) header#top nav > ul > li.megamenu > ul > li > a,
-        .carousel-heading h2,
-        body .gform_wrapper .top_label .gfield_label,
-        body .vc_pie_chart .wpb_pie_chart_heading,
-        #infscr-loading div,
-        #page-header-bg .author-section a,
-        .woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
-        .ascend input[type="submit"],
-        .ascend button[type="submit"],
-        .widget h4,
-        .text-on-hover-wrap .categories a,
-        .text_on_hover.product .add_to_cart_button,
-        .woocommerce-page .single_add_to_cart_button,
-        .woocommerce div[data-project-style="text_on_hover"] .cart .quantity input.qty,
-        .woocommerce-page #respond input#submit,
-        .meta_overlaid article.post .post-header h2,
-        .meta_overlaid article.post.quote .post-content h2,
-        .meta_overlaid article.post.link .post-content h2,
-        .meta_overlaid article.post.format-status .post-content h2,
-        .meta_overlaid article .meta-author a,
-        .pricing-column.highlight h3 .highlight-reason,
-        .blog-recent[data-style="minimal"] .col > span,
-        body .masonry.classic_enhanced .posts-container article .meta-category a,
-        body .masonry.classic_enhanced .posts-container article.wide_tall .meta-category a,
-        .blog-recent[data-style*="classic_enhanced"] .meta-category a,
-        .nectar-recent-posts-slider .container .strong,
-        #page-header-bg[data-post-hs="default_minimal"] .inner-wrap > a,
-        .single .heading-title[data-header-style="default_minimal"] .meta-category a,
-        .nectar-fancy-box .link-text,
-        #post-area.standard-minimal article.post .post-meta .date a,
-        #post-area.standard-minimal article.post .more-link span,
-        .nectar-slide-in-cart .widget_shopping_cart .buttons a,
-        .material.product .product-wrap .product-add-to-cart a .price .amount,
-        .material.product .product-wrap .product-add-to-cart a span,
-        ul.products li.material.product span.onsale,
-        body[data-button-style="rounded"] #pagination > a,
-        html body #pagination > span,
-        .woocommerce nav.woocommerce-pagination ul li a,
-        html body nav.woocommerce-pagination ul li a,
-        html body nav.woocommerce-pagination ul li span,
-        .woocommerce .material.product .product-wrap .product-add-to-cart a.added_to_cart,
-        .woocommerce-page ul.products li.product.material .price,
-        .woocommerce-page ul.products li.product.material .price ins span,
-        body[data-form-submit="see-through-2"] input[type=submit],
-        body[data-form-submit="see-through-2"] button[type=submit],
-        body[data-form-submit="see-through"] input[type=submit],
-        body[data-form-submit="see-through"] button[type=submit],
-        body[data-form-submit="regular"] input[type=submit] body[data-form-submit="regular"] button[type=submit],
-        .nectar_team_member_overlay .team_member_details .title,
-        body:not([data-header-format="left-header"]) header#top nav > ul > li.megamenu > ul > li > ul > li.has-ul > a,
-        .nectar_fullscreen_zoom_recent_projects .project-slide .project-info .normal-container > a,
-        .nectar-hor-list-item .nectar-list-item-btn {
-            font-weight: normal;
-        }
-        .team-member h4,
-        .row .col.section-title p,
-        .row .col.section-title span,
-        #page-header-bg .subheader,
-        .nectar-milestone .subject,
-        .testimonial_slider blockquote span {}article.post .post-meta .month {
-            line-height: -6px!important;
-        }
-    </style>
+
 
 </head>
 
-<body>
-    <!DOCTYPE html>
 
 
 
 
-    <body class="home page-template-default page page-id-8 do-etfw tribe-js tribe-bar-is-disabled ascend wpb-js-composer js-comp-ver-5.0.1 vc_responsive using-mobile-browser" data-footer-reveal="false" data-header-format="default" data-footer-reveal-shadow="none" data-dropdown-style="classic" data-cae="easeOutCubic" data-megamenu-width="contained" data-cad="650" data-aie="none" data-ls="pretty_photo" data-apte="standard" data-hhun="0" data-fancy-form-rcs="default" data-form-style="default" data-form-submit="default" data-is="minimal" data-button-style="default" data-header-inherit-rc="false" data-header-search="true" data-animated-anchors="true" data-ajax-transitions="false" data-full-width-header="false" data-slide-out-widget-area="false" data-slide-out-widget-area-style="slide-out-from-right" data-user-set-ocm="off" data-loading-animation="none" data-bg-header="true" data-ext-responsive="true" data-header-resize="1" data-header-color="light" data-transparent-header="false" data-smooth-scrolling="0" data-permanent-transparent="false" data-responsive="1">
+
+
+
         <div id="lf-header" style="display: block;">
             <div class="container">
                 <a href="https://www.linuxfoundation.org/projects" target="blank">
@@ -799,9 +276,3 @@
                 </ul>
             </div>
         </div>
-
-
-
-    </body>
-
-</html>
