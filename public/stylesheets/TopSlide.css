@@ -1,0 +1,82 @@
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+/* just for demo purpose */
+    html,
+    body,
+    .carousel,
+    .carousel-inner,
+    .carousel-inner .item {
+      height: 700px;
+    }
+
+    .item:nth-child(1) {
+      background-image: url(https://images4.alphacoders.com/680/680316.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .item:nth-child(2) {
+      background-image: url(http://wallpapers-best.com/uploads/posts/2016-02/24_interstellar.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .item:nth-child(3) {
+      background-image: url(https://i2.wp.com/www.wallpapersbyte.com/wp-content/uploads/2015/07/Batman-V-Superman-Movie-2016-Logo-Dark-Black-Poster-WallpapersByte-com-1366x768.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .item:nth-child(4) {
+      background-image: url(https://images5.alphacoders.com/491/491291.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
