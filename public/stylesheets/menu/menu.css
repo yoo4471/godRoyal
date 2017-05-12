@@ -13,9 +13,9 @@ header#top nav >ul >li >a{padding:0px 10px 0px 10px; display:block; color:#67676
 
 header#top .span_9 >.slide-out-widget-area-toggle{display:none; position:absolute; right:0px; top:50%;  margin-bottom:10px;  margin-top:-5px;  z-index:10000;  transform:translateY(-50%);  -webkit-transform:translateY(-50%)}
 
-#header-outer .row .col.span_3, #header-outer .row .col.span_9{width:auto}
+#header-outer .row .col-TopMenu.span_3, #header-outer .row .col-TopMenu.span_9{width:auto}
 
-#header-outer .row .col.span_9{float:right}
+#header-outer .row .col-TopMenu.span_9{float:right}
 
 #mobile-menu{position:relative; top:0px; display:none; background-color:#1F1F1F;  padding:0px;     z-index:100000}
 
@@ -96,7 +96,7 @@ input[type=text], textarea, input[type=email], input[type=password], input[type=
   #header-space, #search-outer { display: none!important; }
 	header#top #toggle-nav, header#top #mobile-cart-link, header#top .span_9 > .slide-out-widget-area-toggle { display: block!important; }
 
-	header#top .col.span_3 {
+	header#top .col-TopMenu.span_3 {
 		position: absolute;
 		left: 0px;
 		top: 0px;
@@ -104,7 +104,7 @@ input[type=text], textarea, input[type=email], input[type=password], input[type=
   		width: 85%!important;
   	}
 
-  	header#top .col.span_9 {
+  	header#top .col-TopMenu.span_9 {
   		margin-left: 0px;
   		min-height: 48px;
   		margin-bottom: 0px;
@@ -125,7 +125,7 @@ input[type=text], textarea, input[type=email], input[type=password], input[type=
 	position: relative;
 }
 
-.col {
+.col-TopMenu {
   position: relative;
   z-index: 10;
   display: block;
