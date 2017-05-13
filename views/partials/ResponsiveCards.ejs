@@ -4,19 +4,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
-  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/cards/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="/images/cards/logo.svg" color="#111" />
   <title>CodePen - Responsive Company Cards</title>
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
+  <!-- 폰트가 조금 바뀌는디 알아채기 힘듦..;;ㅅㅂㅅㅂㅅㅂㅅㅂ -->
+  <link rel="stylesheet" href="/stylesheets/cards/normalize.min.css">
+
+
+
       <style>
       @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+
 
 *, *::before, *::after { box-sizing: border-box; -webkit-box-sizing: border-box; }
 .cf-Cards::after, .cf-Cards::before { content: ' '; display: table; }
@@ -198,7 +199,7 @@ a {
 
 .card-view-Cards #c_Cards_stars, #c_Cards_stars span { /* white star bottom */
 	display: inline-block;
-	background: url('http://s15.postimg.org/igu2opvh3/stars.png') 0 -12px repeat-x;
+	background: url('/images/cards/stars.png') 0 -12px repeat-x;
 	width: 60px;
 	height: 12px;
 }
@@ -223,14 +224,14 @@ a {
 	line-height: 21px;
 }
 
-.c_Cards_content .title {
+.c_Cards_content .title-Cards {
 	color: #484848;
 	font-weight: 500;
 	font-size: 16px;
 	letter-spacing: 0.02em;
 }
 
-.c_Cards_content .review {
+.c_Cards_content .review-Cards {
 	font-weight: 300;
 	font-size: 14px;
 	letter-spacing: 0.05em;
@@ -341,7 +342,7 @@ a {
 
 .list-view-Cards #c_Cards_stars, #c_Cards_stars span { /* white star bottom */
 	display: inline-block;
-	background: url('http://s15.postimg.org/igu2opvh3/stars.png') 0 -12px repeat-x;
+	background: url('/images/cards/stars.png') 0 -12px repeat-x;
 	width: 60px;
 	height: 12px;
 }
@@ -366,14 +367,14 @@ a {
 	line-height: 21px;
 }
 
-.list-view-Cards .c_Cards_content .title {
+.list-view-Cards .c_Cards_content .title-Cards {
 	color: #484848;
 	font-weight: 500;
 	font-size: 16px;
 	letter-spacing: 0.02em;
 }
 
-.list-view-Cards .c_Cards_content .review {
+.list-view-Cards .c_Cards_content .review-Cards {
 	font-weight: 300;
 	font-size: 14px;
 	letter-spacing: 0.05em;
@@ -453,13 +454,13 @@ a {
 
       <div class="card-view-Cards">
           <div class='bg-Cards'>
-            <img src="http://s4.postimg.org/ysci5cbcd/com1.jpg" alt="company image">
+            <img src="/images/cards/com1.jpg" alt="company image">
           </div>
         <div class="container_Cards">
           <a rel="nofollow" rel="noreferrer"href='#'><div class="tag_name-Cards red_Cards">work / life balance</div></a>
           <div class="company">
             <div class="c_Cards_logo">
-              <a rel="nofollow" rel="noreferrer"href="#"><img src="http://s10.postimg.org/k7scmco79/focuslab.jpg" alt="Focus Lab"></a>
+              <a rel="nofollow" rel="noreferrer"href="#"><img src="/images/cards/focuslab.jpg" alt="Focus Lab"></a>
             </div>
             <div class="c_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="c_Cards_name">Focus Lab</a><br>
@@ -468,14 +469,14 @@ a {
               <div class="c_Cards_num">3.5</div >
             </div>
             <div class="c_Cards_content">
-              <a rel="nofollow" rel="noreferrer"href='#' class="title"><p>The most briliant company that I’ve ever worked for</p></a>
-              <p class="review">Amazing opportunities for any person. The projects we are given always stress new and innovating ideas that constantly challenge ourselves to improve our ...</p>
+              <a rel="nofollow" rel="noreferrer"href='#' class="title-Cards"><p>The most briliant company that I’ve ever worked for</p></a>
+              <p class="review-Cards">Amazing opportunities for any person. The projects we are given always stress new and innovating ideas that constantly challenge ourselves to improve our ...</p>
             </div>
           </div> <!-- end .company -->
 
           <div class="user_Cards">
             <div class="user_Cards_avatar">
-              <img src="http://s4.postimg.org/la5lt1z6x/image.jpg" alt="Bill Kenny">
+              <img src="/images/cards/image.jpg" alt="Bill Kenny">
             </div>
             <div class="user_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="user_Cards_name orange-Cards">Bill Kenny</a> • May 30, 2015<br>Current Brand Director
@@ -489,7 +490,7 @@ a {
           <a rel="nofollow" rel="noreferrer"href='#'><div class="tag_name-Cards blue-Cards">Salary &amp; Benefit</div></a>
           <div class="company">
             <div class="c_Cards_logo">
-              <a rel="nofollow" rel="noreferrer"href="#"><img src="http://s24.postimg.org/a4jaok74x/lo2.jpg" alt="SSS"></a>
+              <a rel="nofollow" rel="noreferrer"href="#"><img src="/images/cards/lo2.jpg" alt="SSS"></a>
             </div>
             <div class="c_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="c_Cards_name">Silicon Straits Saigon</a><br>
@@ -498,13 +499,13 @@ a {
               <div class="c_Cards_num">4.0</div >
             </div>
             <div class="c_Cards_content">
-              <a rel="nofollow" rel="noreferrer"href='#' class="title"><p>Enjoying myself so much I no longer call it work</p></a>
-              <p class="review">Because we all love our job, we're a super passionate team and we always look out for each other. That passion really shows, from the general way our business is ...</p>
+              <a rel="nofollow" rel="noreferrer"href='#' class="title-Cards"><p>Enjoying myself so much I no longer call it work</p></a>
+              <p class="review-Cards">Because we all love our job, we're a super passionate team and we always look out for each other. That passion really shows, from the general way our business is ...</p>
             </div>
           </div> <!-- end .company -->
           <div class="user_Cards">
             <div class="user_Cards_avatar">
-              <img src="http://s1.postimg.org/48vr8yjaz/image.gif" alt="Kent Nguyen">
+              <img src="/images/cards/image2.gif" alt="Kent Nguyen">
             </div>
             <div class="user_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="user_Cards_name orange-Cards">Kent nguyen</a> • May 30, 2015<br>Current CEO
@@ -515,13 +516,13 @@ a {
 
       <div class="card-view-Cards">
           <div class='bg-Cards'>
-            <img src="http://s18.postimg.org/4m9u2dlqx/com3.jpg" alt="company image">
+            <img src="/images/cards/com3.jpg" alt="company image">
           </div>
         <div class="container_Cards">
           <a rel="nofollow" rel="noreferrer"href='#'><div class="tag_name-Cards yellow-Cards">Company Culture</div></a>
           <div class="company">
             <div class="c_Cards_logo">
-              <a rel="nofollow" rel="noreferrer"href="#"><img src="http://s18.postimg.org/er3we7exh/lo3.jpg" alt="Dribbble"></a>
+              <a rel="nofollow" rel="noreferrer"href="#"><img src="/images/cards/lo3.jpg" alt="Dribbble"></a>
             </div>
             <div class="c_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="c_Cards_name">Dribbble</a><br>
@@ -530,14 +531,14 @@ a {
               <div class="c_Cards_num">3.5</div >
             </div>
             <div class="c_Cards_content">
-              <a rel="nofollow" rel="noreferrer"href='#' class="title"><p>The most briliant company that I’ve ever worked for</p></a>
-              <p class="review">Amazing opportunities for any person. The projects we are given always stress new and innovating ideas that constantly challenge ourselves to improve our ...</p>
+              <a rel="nofollow" rel="noreferrer"href='#' class="title-Cards"><p>The most briliant company that I’ve ever worked for</p></a>
+              <p class="review-Cards">Amazing opportunities for any person. The projects we are given always stress new and innovating ideas that constantly challenge ourselves to improve our ...</p>
             </div>
           </div> <!-- end .company -->
 
           <div class="user_Cards">
             <div class="user_Cards_avatar">
-              <img src="http://s18.postimg.org/r36srp2s5/image.jpg" alt="Danis Jack">
+              <img src="/images/cards/image.jpg" alt="Danis Jack">
             </div>
             <div class="user_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="user_Cards_name orange-Cards">Danis Jack</a> • May 30, 2015<br>Current Brand Director
@@ -548,13 +549,13 @@ a {
 
       <div class="card-view-Cards">
           <div class='bg-Cards'>
-            <img src="http://s18.postimg.org/som2jid09/com4.jpg" alt="company image">
+            <img src="/images/cards/com4.jpg" alt="company image">
           </div>
         <div class="container_Cards">
           <a rel="nofollow" rel="noreferrer"href='#'><div class="tag_name-Cards green-Cards">Senior Management</div></a>
           <div class="company">
             <div class="c_Cards_logo">
-              <a rel="nofollow" rel="noreferrer"href="#"><img src="http://s18.postimg.org/8rg5aju51/lo4.gif" alt="W&amp;S"></a>
+              <a rel="nofollow" rel="noreferrer"href="#"><img src="/images/cards/lo4.gif" alt="W&amp;S"></a>
             </div>
             <div class="c_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="c_Cards_name">W&amp;S Group</a><br>
@@ -563,14 +564,14 @@ a {
               <div class="c_Cards_num">4.5</div >
             </div>
             <div class="c_Cards_content">
-              <a rel="nofollow" rel="noreferrer"href='#' class="title"><p>My boss my hero</p></a>
-              <p class="review">Amazing opportunities for any person. The projects we are given always stress new and innovating ideas that constantly challenge ourselves to improve our ...</p>
+              <a rel="nofollow" rel="noreferrer"href='#' class="title-Cards"><p>My boss my hero</p></a>
+              <p class="review-Cards">Amazing opportunities for any person. The projects we are given always stress new and innovating ideas that constantly challenge ourselves to improve our ...</p>
             </div>
           </div> <!-- end .company -->
 
           <div class="user_Cards">
             <div class="user_Cards_avatar">
-              <img src="http://s18.postimg.org/pa3w3dhlh/image.jpg" alt="Karmi Phuc">
+              <img src="/images/cards/image4.jpg" alt="Karmi Phuc">
             </div>
             <div class="user_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="user_Cards_name orange-Cards">Karmi Phuc</a> • May 30, 2015<br>Current Project Manager
@@ -581,13 +582,13 @@ a {
 
       <div class="card-view-Cards">
           <div class='bg-Cards'>
-            <img src="http://s18.postimg.org/4wcr7zazd/com5.jpg" alt="company image">
+            <img src="/images/cards/com5.jpg" alt="company image">
           </div>
         <div class="container_Cards">
           <a rel="nofollow" rel="noreferrer"href='#'><div class="tag_name-Cards cyan-Cards">Organization</div></a>
           <div class="company">
             <div class="c_Cards_logo">
-              <a rel="nofollow" rel="noreferrer"href="#"><img src="http://s18.postimg.org/fs453bvx1/lo5.gif" alt="Medium"></a>
+              <a rel="nofollow" rel="noreferrer"href="#"><img src="/images/cards/lo5.gif" alt="Medium"></a>
             </div>
             <div class="c_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="c_Cards_name">Medium</a><br>
@@ -596,14 +597,14 @@ a {
               <div class="c_Cards_num">5.0</div >
             </div>
             <div class="c_Cards_content">
-              <a rel="nofollow" rel="noreferrer"href='#' class="title"><p>The most briliant company that I’ve ever worked for</p></a>
-              <p class="review">Amazing opportunities for any person. The projects we are given always stress new and innovating ideas that constantly challenge ourselves to improve our ...</p>
+              <a rel="nofollow" rel="noreferrer"href='#' class="title-Cards"><p>The most briliant company that I’ve ever worked for</p></a>
+              <p class="review-Cards">Amazing opportunities for any person. The projects we are given always stress new and innovating ideas that constantly challenge ourselves to improve our ...</p>
             </div>
           </div> <!-- end .company -->
 
           <div class="user_Cards">
             <div class="user_Cards_avatar">
-              <img src="http://s18.postimg.org/thyoc4j11/image.gif" alt="Ev Williams">
+              <img src="/images/cards/image5.gif" alt="Ev Williams">
             </div>
             <div class="user_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="user_Cards_name orange-Cards">Evan Williams</a> • May 30, 2015<br>Current Brand Director
@@ -617,7 +618,7 @@ a {
           <a rel="nofollow" rel="noreferrer"href='#'><div class="tag_name-Cards red_Cards">work / life balance</div></a>
           <div class="company">
             <div class="c_Cards_logo">
-              <a rel="nofollow" rel="noreferrer"href="#"><img src="http://s18.postimg.org/3l4zzifdh/lo6.jpg" alt="Linkedin"></a>
+              <a rel="nofollow" rel="noreferrer"href="#"><img src="/images/cards/lo6.jpg" alt="Linkedin"></a>
             </div>
             <div class="c_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="c_Cards_name">Linkedin</a><br>
@@ -626,13 +627,13 @@ a {
               <div class="c_Cards_num">3.0</div >
             </div>
             <div class="c_Cards_content">
-              <a rel="nofollow" rel="noreferrer"href='#' class="title"><p>Fantastic organisation to work</p></a>
-              <p class="review">True adherence to non discrimination policy. If you are young then rest assure that you will not finish up on the retrenchment list in the later age because of ...</p>
+              <a rel="nofollow" rel="noreferrer"href='#' class="title-Cards"><p>Fantastic organisation to work</p></a>
+              <p class="review-Cards">True adherence to non discrimination policy. If you are young then rest assure that you will not finish up on the retrenchment list in the later age because of ...</p>
             </div>
           </div> <!-- end .company -->
           <div class="user_Cards">
             <div class="user_Cards_avatar">
-              <img src="http://s18.postimg.org/9xk59cifp/image.gifhttp://imgur.com/R6qhkWo.gif" alt="Yukino Kinoshita">
+              <img src="/images/cards/image6.gif" alt="Yukino Kinoshita">
             </div>
             <div class="user_Cards_info">
               <a rel="nofollow" rel="noreferrer"href="#" class="user_Cards_name orange-Cards">Yukino Kinoshita</a> • May 30, 2015<br>Current Brand Director
@@ -643,12 +644,14 @@ a {
 
     </div> <!-- end col-md-3-Cards -->
 </div>
-    <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
 
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js'></script>
-<script src='http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<!-- 카드뷰 위 아래에 공간이 생기면 채워주는 기능을 함 -->
+<script src='/javascripts/cards/masonry.pkgd.min.js'></script>
+<!-- 카드뷰 위 아래에 공간이 생기면 채워주는 기능을 함 -->
+<script src='/javascripts/cards/imagesloaded.pkgd.min.js'></script>
 
     <script>
     var $container_Cards = $(".col-md-3-Cards");
