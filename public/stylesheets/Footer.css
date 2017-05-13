@@ -1,0 +1,67 @@
+
+#footer {
+  background-image: url(https://a0.muscache.com/airbnb/static/footer/background-317dd7c2cb678ddbdb0a983d511cb9a0.png);
+  background-color: #2b2d2e;
+  color: #fff;
+
+}
+
+.top-footer {
+  padding: 50px 0;
+  border-bottom: 1px solid #555758;
+}
+
+
+ul{
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1.125em;
+  margin-bottom: 10px;
+}
+.social {
+  text-align: center;
+}
+.social li{
+  display: inline-block;
+}
+.social a {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #474949;
+  margin: 0 5px;
+  color: #fff;
+  transition: all .2s ease;
+
+}
+
+.facebook {
+  background: url(http://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/facebook-logo_nltwrb.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
+.google {
+    background: url(http://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/google-plus-logo_cmhowf.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
+.pinterest {
+  background: url(http://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/social_ixemm2.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
+.youtube {
+  background: url(http://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/social-1_jo1gvp.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
+.instagram {
+  background: url(http://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/instagram-social-network-logo-of-photo-camera_kensul.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
+.linkedin {
+  background: url(http://res.cloudinary.com/zimniros-spam/image/upload/v1464710399/linkedin-logo_q0pudm.svg) no-repeat 50% 50%;
+  background-size: 20px 20px;
+}
