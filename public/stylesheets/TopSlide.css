@@ -55,28 +55,28 @@ now override the 3.3 new styles for modern browsers & apply opacity
     .carousel,
     .carousel-inner,
     .carousel-inner .item {
-      height: 700px;
+      height: 600px;
     }
 
     .item:nth-child(1) {
-      background-image: url(https://images4.alphacoders.com/680/680316.jpg);
+      background-image: url(http://www.hoyts.com.au/media/8570295/eb_site-page-ad_1034x367web.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
 
     .item:nth-child(2) {
-      background-image: url(http://wallpapers-best.com/uploads/posts/2016-02/24_interstellar.jpg);
+      background-image: url(http://www.hoyts.com.au/media/13096404/HOYTS_Carousel_1034x367px-1.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
 
     .item:nth-child(3) {
-      background-image: url(https://i2.wp.com/www.wallpapersbyte.com/wp-content/uploads/2015/07/Batman-V-Superman-Movie-2016-Logo-Dark-Black-Poster-WallpapersByte-com-1366x768.jpg);
+      background-image: url(http://www.hoyts.co.nz/media/8570294/frozone_site-page-ad_1034x367web.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
     .item:nth-child(4) {
-      background-image: url(https://images5.alphacoders.com/491/491291.jpg);
+      background-image: url(http://corporate.hoyts.com.au/media/2007/sw_bigscreen_cswebpage_header_mobilebanner_640x300.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
