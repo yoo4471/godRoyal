@@ -50,10 +50,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 /* just for demo purpose */
-    html,
-    body,
-    .carousel,
-    .carousel-inner,
     .carousel-inner .item {
       height: 600px;
     }
