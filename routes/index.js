@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/movies', function(req, res, next) {
+  res.render('movies');
+});
+
 router.get('/test', function(req, res, next) {
   res.render('test');
 });
