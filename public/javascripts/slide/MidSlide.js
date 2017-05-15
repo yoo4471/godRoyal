@@ -15,7 +15,7 @@ function goLeft(e) {
     var $slide = $(this);
     var newLeft = $slide.position().left - $slide.width();
     $slide.animate({left: newLeft}, 250, function() {
-      if (0 > newLeft) {
+      if (-1 > newLeft) {
         $(this).remove();
       }
       locked = false;
