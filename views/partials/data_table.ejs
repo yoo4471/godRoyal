@@ -3,20 +3,17 @@
 <html >
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
-  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
-  <title>CodePen - DataTables JSON sample using Material Design</title>
 
 
 
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css'>
+
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
 
-      <style>
-      body {
-  background: #069;
-}
+
+
+<style>
+
 
 div.material-table {
   padding: 0;
@@ -274,8 +271,8 @@ div.material-table table td:last-child {
   <div class="row">
   <div id="admin" class="col s12">
     <div class="card material-table">
-      <div class="table-header">
-        <span class="table-title">Material Datatable</span>
+      <div class="table-header" style="background-color:#23AE89">
+        <span class="table-title"><font color="white">Material Datatable</font></span>
         <div class="actions">
           <a rel="nofollow" rel="noreferrer"href="#add_users" class="modal-trigger waves-effect btn-flat nopadding"><i class="material-icons">person_add</i></a>
           <a rel="nofollow" rel="noreferrer"href="#" class="search-toggle waves-effect btn-flat nopadding"><i class="material-icons">search</i></a>
@@ -489,7 +486,7 @@ window.CP.exitedLoop(1);
 
 $(document).ready(function() {
   $('#datatable').dataTable({
-    "ajax": 'https://gist.githubusercontent.com/heiswayi/7fde241975ed8a80535a/raw/ff1caaeaf62bd6740ab7cafcd61f1215de173379/datatables-data.json',
+    "ajax": 'http://localhost:3000/javascripts/test.json',
     "oLanguage": {
       "sStripClasses": "",
       "sSearch": "",
@@ -502,8 +499,20 @@ $(document).ready(function() {
         '<option value="40">40</option>' +
         '<option value="50">50</option>' +
         '<option value="-1">All</option>' +
-        '</select></div>'
+        '</select></div>',
     },
+    columnDefs: [
+        {
+            targets: 0,
+            render: function ( data, type, row, meta ) {
+                if(type === 'display'){
+                    data = '<a href="' + encodeURIComponent(data) + '" target="_parent">' + data + '</a>';
+                }
+
+                return data;
+            }
+        }
+    ],
     bAutoWidth: false
   });
 });
