@@ -26,7 +26,8 @@ router.post('/movielist/enrollment',function(req,res,next){
   // compiels our schema into a model
   // var User = mongoose.model('User', boardSchema);
 
-  
+
   res.json(req.body);
 });
+
 module.exports = router;
