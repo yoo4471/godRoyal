@@ -17,4 +17,16 @@ router.get('/form', function(req, res, next) {
 router.get('/test', function(req, res, next) {
   res.render('flatUI/form');
 });
+
+
+router.post('/movielist/enrollment',function(req,res,next){
+  console.log(req.body);
+  // creates DB schema
+
+  // compiels our schema into a model
+  // var User = mongoose.model('User', boardSchema);
+
+  
+  res.json(req.body);
+});
 module.exports = router;

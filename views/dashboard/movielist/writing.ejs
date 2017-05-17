@@ -27,96 +27,103 @@
     </style>
 
     <div class="container">
-      <h4>Movie Title</h4>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="KOR">
-          </div><!-- /.form-group -->
-        </div>
-        <div class="col-lg-6">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="ENG">
-          </div><!-- /.form-group -->
-        </div>
-      </div>
-
-      <h4>Movie Details</h4>
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="form-group">
-            <select data-toggle="select" class="form-control select select-default">
-              <option>한국</option>
-              <option>미국</option>
-              <option>영국</option>
-              <option>프랑스</option>
-              <option>중국</option>
-            </select>
+      <form id="joinForm" action="/dashboard/movielist/enrollment" method="post">
+        <h4>Movie Title</h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input name="title_kor" id="title_kor" type="text" class="form-control" placeholder="KOR">
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input name="title_eng" id="title_eng"type="text" class="form-control" placeholder="ENG">
+            </div><!-- /.form-group -->
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Release Date (yyyy/mm/dd)">
-          </div><!-- /.form-group -->
-        </div>
-        <div class="col-lg-3">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Run Time">
-          </div><!-- /.form-group -->
-        </div>
-        <div class="col-lg-3">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Grade">
-          </div><!-- /.form-group -->
-        </div>
-      </div>
 
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="form-group">
-            <select data-toggle="select" multiple class="form-control multiselect multiselect-default mrs mbm">
-              <option value="0" selected>범죄</option>
-              <option value="1">액션</option>
-              <option value="2" selected>드라마</option>
-              <option value="3">전민영</option>
-              <option value="4">공동환</option>
-            </select>
+        <h4>Movie Details</h4>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="form-group">
+              <select name="nation" id="nation" data-toggle="select" class="form-control select select-default">
+                <option>한국</option>
+                <option>미국</option>
+                <option>영국</option>
+                <option>프랑스</option>
+                <option>중국</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <input name="relese_date" id="release_date" type="text" class="form-control" placeholder="Release Date (yyyy/mm/dd)">
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <input name="run_time" id="run_time" type="text" class="form-control" placeholder="Run Time">
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <input name="grade" id="grade"type="text" class="form-control" placeholder="Grade">
+            </div><!-- /.form-group -->
           </div>
         </div>
-      </div>
 
-
-
-      <div class="row">
-        <div class="col-md-12">
-          <h4>Description</h4>
-          <form action="#" class="form">
+        <div class="row">
+          <div class="col-md-12">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="제목">
+              <select name="genre" id="genre" data-toggle="select" multiple class="form-control multiselect multiselect-default mrs mbm">
+                <option></option>
+                <option>액션</option>
+                <option>드라마</option>
+                <option>전민영</option>
+                <option>공동환</option>
+              </select>
             </div>
-            <div class="form-group">
-              <textarea class="form-control" rows="6" placeholder="설명"></textarea>
-            </div>
-
-
-
-
-
-            <div class="form-group">
-              <label class="checkbox" for="checkbox4">
-                <input type="checkbox" data-toggle="checkbox" value="" id="checkbox4" required checked>
-                 Option one is this and that&mdash;be sure to include why it's great
-              </label>
-
-            </div>
-          </form>
+          </div>
         </div>
-      </div><!-- /.row -->
 
-      <div class="row">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Description</h4>
+            <form action="#" class="form">
+              <div class="form-group">
+                <input name="description_title" id="description_title" type="text" class="form-control" placeholder="제목">
+              </div>
+              <div class="form-group">
+                <textarea name="description" id="description"class="form-control" rows="6" placeholder="설명"></textarea>
+              </div>
 
-      </div>
+              <div class="form-group">
+                <label class="checkbox" for="checkbox4">
+                  <input name="current_movie" id="current_movie" type="checkbox" data-toggle="checkbox" value="" id="checkbox4" required checked>
+                   Option one is this and that&mdash;be sure to include why it's great
+                </label>
+
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <button type="submit" class="btn btn-default btn-lg btn-block">Block level button</button>
+                  </p>
+                </div>
+              </div>
+
+
+
+            </form>
+          </div>
+        </div><!-- /.row -->
+      </form>
     </div><!-- /.container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -126,5 +133,39 @@
 
     <script src="/javascripts/flatUI/application.js"></script>
 
+
+    <script>
+
+      var states = new Bloodhound({
+        datumTokenizer: function(d) { return Bloodhound.tokenizers.whitespace(d.word); },
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        limit: 4,
+        local: [
+          { word: "Alabama" },
+          { word: "Alaska" },
+          { word: "Arizona" },
+          { word: "Arkansas" },
+          { word: "California" },
+          { word: "Colorado" }
+        ]
+      });
+
+      states.initialize();
+
+      $('input.tagsinput').tagsinput();
+
+      $('input.tagsinput-typeahead').tagsinput('input').typeahead(null, {
+        name: 'states',
+        displayKey: 'word',
+        source: states.ttAdapter()
+      });
+
+      $('input.typeahead-only').typeahead(null, {
+        name: 'states',
+        displayKey: 'word',
+        source: states.ttAdapter()
+      });
+
+    </script>
   </body>
 </html>
