@@ -7,10 +7,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/movielist', function(req, res, next) {
-  res.render('partials/data_table');
+  res.render('dashboard/data_table');
 });
 
 router.get('/form', function(req, res, next) {
+  res.render('flatUI/form');
+});
+
+router.get('/test', function(req, res, next) {
   res.render('flatUI/form');
 });
 module.exports = router;
