@@ -486,7 +486,8 @@ window.CP.exitedLoop(1);
 
 $(document).ready(function() {
   $('#datatable').dataTable({
-    "ajax": 'http://localhost:3000/javascripts/test.json',
+    "ajax": 'http://localhost:3000/dashboard/all',
+    // 'http://localhost:3000/javascripts/test.json',
     "oLanguage": {
       "sStripClasses": "",
       "sSearch": "",
@@ -506,7 +507,7 @@ $(document).ready(function() {
             targets: 0,
             render: function ( data, type, row, meta ) {
                 if(type === 'display'){
-                    data = '<a href="' + encodeURIComponent(data) + '" target="_parent">' + data + '</a>';
+                    data = '<a href="' + encodeURIComponent(row[6]) + '" target="_parent">' + data + '</a>';
                 }
 
                 return data;
