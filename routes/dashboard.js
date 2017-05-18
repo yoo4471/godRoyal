@@ -19,6 +19,20 @@ router.get('/test', function(req, res, next) {
   res.render('flatUI/form');
 });
 
+
+router.get('/movielist/update/:_id',function(req, res, next) {
+  var _id = req.params._id;
+  console.log(_id)
+  MovieContents.findOne({_id:_id}, function(err, movieContents){
+
+    if(err) return res.status(500).send({error: 'database failure'});
+    console.log(movieContents)
+    res.render('dashboard/movielist/update', {row: movieContents});
+
+  });
+});
+
+
 /* GET users listing. */
 router.get('/all',function(req, res, next) {
 

@@ -27,12 +27,12 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="form-group">
-              <input name="title_kor" id="title_kor" type="text" class="form-control" placeholder="KOR">
+              <input name="title_kor" id="title_kor" type="text" class="form-control" placeholder="KOR" value="<%=row.title_kor%>">
             </div><!-- /.form-group -->
           </div>
           <div class="col-lg-6">
             <div class="form-group">
-              <input name="title_eng" id="title_eng"type="text" class="form-control" placeholder="ENG">
+              <input name="title_eng" id="title_eng"type="text" class="form-control" placeholder="ENG" value="<%=row.title_eng%>">
             </div><!-- /.form-group -->
           </div>
         </div>
@@ -41,9 +41,9 @@
         <div class="row">
           <div class="col-lg-3">
             <div class="form-group">
-              <select name="nation" id="nation" data-toggle="select" class="form-control select select-default">
+              <select name="nation" id="nation" data-toggle="select" class="form-control select select-default" value="<%=row.nation%>">
                 <option>한국</option>
-                <option>미국</option>
+                <option selected>미국</option>
                 <option>영국</option>
                 <option>프랑스</option>
                 <option>중국</option>
