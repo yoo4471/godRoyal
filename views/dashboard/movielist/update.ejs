@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Loading Flat UI -->
+    <link rel="stylesheet" href="/stylesheets/flatUI/flatUI.css" >
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="../../dist/js/vendor/html5shiv.js"></script>
+      <script src="../../dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <div class="container">
+      <form id="movie_form" action="/dashboard/movielist/enrollment" method="post">
+        <h4>Movie Title</h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input name="title_kor" id="title_kor" type="text" class="form-control" placeholder="KOR" value="<%=row.title_kor%>">
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input name="title_eng" id="title_eng"type="text" class="form-control" placeholder="ENG" value="<%=row.title_eng%>">
+            </div><!-- /.form-group -->
+          </div>
+        </div>
+
+        <h4>Movie Details</h4>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="form-group">
+              <select name="nation" id="nation" data-toggle="select" class="form-control select select-default" value="<%=row.nation%>">
+                <option>한국</option>
+                <option selected>미국</option>
+                <option>영국</option>
+                <option>프랑스</option>
+                <option>중국</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <input name="relese_date" id="release_date" type="text" class="form-control" placeholder="Release Date (yyyy/mm/dd)">
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <input name="run_time" id="run_time" type="text" class="form-control" placeholder="Run Time">
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <input name="grade" id="grade"type="text" class="form-control" placeholder="Grade">
+            </div><!-- /.form-group -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <select name="genre" id="genre" data-toggle="select" multiple class="form-control multiselect multiselect-default mrs mbm" placeholder="Genre">
+                <option></option>
+                <option>액션</option>
+                <option>드라마</option>
+                <option>전민영</option>
+                <option>공동환</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <h4>Director &amp; Actors</h4>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="form-group">
+              <input name="director" id="director" type="text" class="form-control" placeholder="Director">
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-md-9">
+              <div class="tagsinput-primary">
+                <input name="actors" class="tagsinput tagsinput-typeahead input-lg" value="" placeholder="Actors"/>
+              </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Description</h4>
+            <form action="#" class="form">
+              <div class="form-group">
+                <input name="description_title" id="description_title" type="text" class="form-control" placeholder="제목">
+              </div>
+              <div class="form-group">
+                <textarea name="description" id="description"class="form-control" rows="6" placeholder="설명"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox" for="checkbox4" id="checkbox4_unchecked">
+
+                  <input name="current" type="checkbox" data-toggle="checkbox" value="1" id="checkbox4">
+                   Option one is this and that&mdash;be sure to include why it's great
+                </label>
+
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <button type="submit" class="btn btn-default btn-lg btn-block">Block level button</button>
+                  </p>
+                </div>
+              </div>
+
+
+
+            </form>
+          </div>
+        </div><!-- /.row -->
+      </form>
+    </div><!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="/javascripts/flatUI/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/javascripts/flatUI/flatUI.min.js"></script>
+
+    <script src="/javascripts/flatUI/application.js"></script>
+
+
+    <script>
+
+      var states = new Bloodhound({
+        datumTokenizer: function(d) { return Bloodhound.tokenizers.whitespace(d.word); },
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        limit: 4,
+        local: [
+          { word: "Alabama" },
+          { word: "Alaska" },
+          { word: "Arizona" },
+          { word: "Arkansas" },
+          { word: "California" },
+          { word: "Colorado" }
+        ]
+      });
+
+      states.initialize();
+
+      $('input.tagsinput').tagsinput();
+
+      $('input.tagsinput-typeahead').tagsinput('input').typeahead(null, {
+        name: 'states',
+        displayKey: 'word',
+        source: states.ttAdapter()
+      });
+
+      $('input.typeahead-only').typeahead(null, {
+        name: 'states',
+        displayKey: 'word',
+        source: states.ttAdapter()
+      });
+
+
+      $("form").submit(function () {
+
+    var this_master = $(this);
+
+    this_master.find('input[type="checkbox"]').each( function () {
+        var checkbox_this = $(this);
+
+
+        if( checkbox_this.is(":checked") == true ) {
+            checkbox_this.attr('value','1');
+        } else {
+            checkbox_this.prop('checked',true);
+            //DONT' ITS JUST CHECK THE CHECKBOX TO SUBMIT FORM DATA
+            checkbox_this.attr('value','0');
+        }
+        })
+    })
+    </script>
+  </body>
+</html>

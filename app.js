@@ -43,4 +43,21 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+// Mongoose
+var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
+// connect to MongoDB / the name of DB is set to 'myDB'
+mongoose.connect('mongodb://localhost/myMovie');
+
+// we get the pending connection to myDB running on localhost
+var db = mongoose.connection;
+// we get notified if error occurs
+db.on('error', console.error.bind(console, 'connection error:'));
+// executed when the connection opens
+db.once('open', function callback () {
+	// add your code here when opening
+  	console.log("Connected to mongod server");
+});
+// Mongoose
+
 module.exports = app;

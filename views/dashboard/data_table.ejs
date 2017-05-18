@@ -266,7 +266,7 @@ div.material-table table td:last-child {
 
 </head>
 
-<body translate="no" >
+<body translate="no">
 
   <div class="row">
   <div id="admin" class="col s12">
@@ -281,12 +281,12 @@ div.material-table table td:last-child {
       <table id="datatable">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
+            <th>Title (KOR)</th>
+            <th>Title (ENG)</th>
+            <th>Nation</th>
+            <th>Director</th>
+            <th>Release Date</th>
+            <th>Screen</th>
           </tr>
         </thead>
       </table>
@@ -486,7 +486,8 @@ window.CP.exitedLoop(1);
 
 $(document).ready(function() {
   $('#datatable').dataTable({
-    "ajax": 'http://localhost:3000/javascripts/test.json',
+    "ajax": 'http://localhost:3000/dashboard/all',
+    // 'http://localhost:3000/javascripts/test.json',
     "oLanguage": {
       "sStripClasses": "",
       "sSearch": "",
@@ -506,7 +507,7 @@ $(document).ready(function() {
             targets: 0,
             render: function ( data, type, row, meta ) {
                 if(type === 'display'){
-                    data = '<a href="' + encodeURIComponent(data) + '" target="_parent">' + data + '</a>';
+                    data = '<a href="' + encodeURIComponent(row[6]) + '" target="_parent">' + data + '</a>';
                 }
 
                 return data;
