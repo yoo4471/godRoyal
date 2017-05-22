@@ -16,7 +16,25 @@ router.get('/form', function(req, res, next) {
 });
 
 router.get('/test', function(req, res, next) {
-  res.render('flatUI/form');
+  var request = require("request");
+  var url = "http://localhost:3000/json/movie.json";
+
+  request({
+      url: url,
+      json: true
+  }, function (error, response, body) {
+
+      if (!error && response.statusCode === 200) {
+          var a = body["data"][0]['title_kor']
+          // var a = body.replace("\n", "")
+          res.json(a);
+
+          console.log() // Print the json response
+      }
+
+  });
+
+
 });
 
 
