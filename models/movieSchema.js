@@ -14,7 +14,8 @@ var movieSchema = mongoose.Schema({
   director: String,
   actors: String,
   description_title: String,
-  current: String
+  current: String,
+  img_url: String
 });
 
 
