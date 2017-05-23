@@ -26,4 +26,7 @@ router.get('/cards', function(req, res, next) {
 router.get('/iframe_TopSlide', function(req, res, next) {
   res.render('partials/TopSlide');
 });
+router.get('/iframe_Movie-Detail', function(req, res, next) {
+  res.render('partials/Movie-Detail');
+});
 module.exports = router;
