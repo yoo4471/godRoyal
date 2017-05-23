@@ -10,30 +10,18 @@
 
 
 
-
     <div class="slider">
+    <%
+        for(var i=0; i<rows.length; i++)
+        {
+          var oneItem = rows[i];
+    %>
         <div class="slide">
-          <img src="http://img.cgv.co.kr/Movie/Thumbnail/Poster/000079/79594/79594_185.jpg">
+          <img src="<%= oneItem.img_url %>">
         </div>
-        <div class="slide">
-          <img src="http://img.cgv.co.kr/Movie/Thumbnail/Poster/000079/79592/79592_185.jpg">
-        </div>
-        <div class="slide">
-          <img src="http://img.cgv.co.kr/Movie/Thumbnail/Poster/000079/79556/79556_185.jpg">
-        </div>
-        <div class="slide">
-          <img src="http://img.cgv.co.kr/Movie/Thumbnail/Poster/000079/79587/79587_185.jpg">
-        </div>
-        <div class="slide">
-          <img src="http://img.cgv.co.kr/Movie/Thumbnail/Poster/000079/79586/79586_185.jpg">
-        </div>
-        <div class="slide">
-          <img src="http://img.cgv.co.kr/Movie/Thumbnail/Poster/000079/79601/79601_185.jpg">
-        </div>
-        <div class="slide">
-          <img src="http://img.cgv.co.kr/Movie/Thumbnail/Poster/000079/79571/79571_185.jpg">
-        </div>
-
+    <%
+        }
+    %>
     </div>
     <div class="controls">
       <button class="prev">&lt;</button>

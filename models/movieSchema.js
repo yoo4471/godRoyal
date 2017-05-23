@@ -8,12 +8,13 @@ var movieSchema = mongoose.Schema({
   title_kor: String,
   title_eng: String,
   nation: String,
-  relese_date: String,
+  release_date: String,
   run_time: String,
   grade: String,
   director: String,
   actors: String,
   description_title: String,
+  description: String,
   current: String,
   img_url: String
 });
