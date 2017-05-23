@@ -4,7 +4,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+  MovieContents.find({current:1}, function(err, boardContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+
+  // console.log(boardContents[0].img_url);
+  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+  res.render('index', {rows: boardContents});
+  });
 });
 
 router.get('/movies', function(req, res, next) {
