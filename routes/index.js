@@ -4,10 +4,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  MovieContents.find({current:1}, function(err, boardContents){
+  MovieContents.find({current:1}, function(err, movieContents){
 
   if(err) return res.status(500).send({error: 'database failure'});
-
+    console.log(movieContents)
   // console.log(boardContents[0].img_url);
   // res.render('update', {title:"글 수정", error:"", row: boardContents});
 

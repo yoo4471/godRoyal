@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var dashboard = require('./routes/dashboard');
-
+var MovieContents = require('./models/movieSchema');
 var app = express();
 
 // view engine setup
@@ -58,6 +58,61 @@ db.once('open', function callback () {
 	// add your code here when opening
   	console.log("Connected to mongod server");
 });
+
+MovieContents.remove({}, function(err) {
+   console.log('collection removed')
+});
+
+
+
+
+
+/* Initialize - insert movie database */
+function insertMovie() {
+  var request = require("request");
+  var url = "http://localhost:3000/json/movie.json";
+
+  request({
+      url: url,
+      json: true
+  }, function (error, response, body) {
+
+      if (!error && response.statusCode === 200) {
+          var a = body["data"]
+
+          for (var i=0; i<a.length; i++) {
+            var newMovieContents = new MovieContents;
+
+            newMovieContents.title_kor = a[i]["title_kor"];
+            newMovieContents.title_eng = a[i]["title_eng"];
+            newMovieContents.nation = a[i]["nation"];
+            newMovieContents.release_date = a[i]["release_date"];
+            newMovieContents.run_time = a[i]["run_time"];
+            newMovieContents.grade = a[i]["grade"];
+            newMovieContents.director = a[i]["director"];
+            newMovieContents.actors = a[i]["actors"];
+            newMovieContents.description_title = a[i]["description_title"];
+            newMovieContents.description = a[i]["description"];
+            newMovieContents.current = a[i]["current"];
+            newMovieContents.poster_img_url = a[i]["poster_img_url"];
+            newMovieContents.wide_img_url = a[i]["wide_img_url"];
+            newMovieContents.rating = a[i]['rating'];
+
+            newMovieContents.save(function (err)  {
+              if (err) throw err;
+              console.log('success join')
+            });
+          }
+          // var a = body.replace("\n", "")
+
+
+
+      }
+
+  });
+}
+
+insertMovie();
 // Mongoose
 
 module.exports = app;

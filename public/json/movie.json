@@ -12,7 +12,9 @@
         "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
         "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
         "current": 1,
-        "img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg"
+        "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+        "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+        "rating":3.8
       },
       {
          "title_kor": "불한당: 나쁜 놈들의 세상",
@@ -26,7 +28,10 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 1,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=154112"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
+
        },
       {
          "title_kor": "킹 아서: 제왕의 검",
@@ -40,7 +45,10 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 1,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=127374"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
+
        },
       {
          "title_kor": "보스 베이비",
@@ -54,7 +62,10 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 1,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=129094"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
+
        },
       {
          "title_kor": "에이리언: 커버넌트",
@@ -68,7 +79,10 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 1,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=99715"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
+
        },
       {
          "title_kor": "보안관",
@@ -82,7 +96,10 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 1,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=146524"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
+
        },
       {
          "title_kor": "가디언즈 오브 갤럭시 VOL. 2",
@@ -96,7 +113,10 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 1,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=127398"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
+
        },
       {
          "title_kor": "목소리의 형태",
@@ -110,7 +130,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 1,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=153964"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "석조저택 살인사건",
@@ -124,7 +146,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 1,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=127346"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "로스트 인 파리",
@@ -138,7 +162,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 1,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=156259"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "해바라기",
@@ -152,7 +178,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 0,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=44529"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "반지의 제왕: 반지 원정대 ",
@@ -166,7 +194,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 0,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=31794"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "호빗: 다섯 군대 전투",
@@ -180,7 +210,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 0,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=97816"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "테이큰",
@@ -194,7 +226,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 0,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=47152"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "해리 포터와 마법사의 돌",
@@ -208,7 +242,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 0,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=30688"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "호빗: 다섯 군대 전투",
@@ -222,7 +258,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 0,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=97816"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "토르: 다크 월드 ",
@@ -236,7 +274,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 0,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=95873"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "어벤져스: 에이지 오브 울트론 ",
@@ -250,7 +290,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 0,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=98438"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        },
       {
          "title_kor": "아일랜드",
@@ -264,7 +306,9 @@
          "description_title": "마법과 인간이 공존하는 세상을 배경으로 펼쳐지는 절대검을 둘러싼 왕좌의 게임을 그린 판타지 액션 어드벤처",
          "description":"마법과 인간이 공존하는 세상, 권력에 눈이 먼 보티건(주드 로)은 어둠의 마법사와 결탁해 형을 죽이고 왕위를 차지한다. 아버지의 처참한 희생으로 목숨을 구한 아서(찰리 헌냄)는 자신의 출신을 모른 채 거리의 아들이 되어 성장한다. 한편 보티건의 강압적인 정치로 인해 핍박 받는 백성들 사이에서는 바위에 꽂혀 있는 엑스칼리버를 뽑는 자가 진짜 왕이라는 소문이 파다하게 퍼진다. 아서는 어떤 힘에 이끌려 검을 뽑게 되고, 이 때부터 아서를 제거하려는 보티건의 무리들과 예언자 멀린의 제자 마법사를 비롯해 아서를 왕으로 추앙하려는 원정대들이 맞서면서 아서의 삶은 완전히 바뀐다. 이제 아서는 본인이 원하든 원하지 않든, 진짜 운명을 받아들일 수 밖에 없게 되는데….",
          "current": 0,
-         "img_url": "http://movie.naver.com/movie/bi/mi/photoViewPopup.nhn?movieCode=39879"
+         "poster_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "wide_img_url": "http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201705/11409_103_1.jpg",
+         "rating":3.8
        }
 
     ]

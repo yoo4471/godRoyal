@@ -64,7 +64,7 @@ router.get('/insert_movie', function(req, res, next) {
             newMovieContents.description = a[i]["description"];
             newMovieContents.current = a[i]["current"];
             newMovieContents.img_url = a[i]["img_url"];
-
+            newMovieContents.rating = a[i]['rating'];
 
             newMovieContents.save(function (err)  {
               if (err) throw err;
