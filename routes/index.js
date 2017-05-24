@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
   // console.log(boardContents[0].img_url);
   // res.render('update', {title:"글 수정", error:"", row: boardContents});
 
-  res.render('index', {rows: boardContents});
+  res.render('index', {rows: movieContents});
   });
 });
 
