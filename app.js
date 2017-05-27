@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var dashboard = require('./routes/dashboard');
 var MovieContents = require('./models/movieSchema');
+var RateContents = require('./models/rateSchema');
 var app = express();
 
 // view engine setup
@@ -59,9 +60,6 @@ db.once('open', function callback () {
   	console.log("Connected to mongod server");
 });
 
-MovieContents.remove({}, function(err) {
-   console.log('collection removed')
-});
 
 
 
@@ -112,7 +110,7 @@ function insertMovie() {
   });
 }
 
-insertMovie();
+// insertMovie();
 // Mongoose
 
 module.exports = app;
