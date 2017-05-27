@@ -1,18 +1,989 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-    </head>
-    <body>
-        <header>
-        </header>
-        <main>
+<html>
+   <head>
+     <title>감동, 그 이상의 영화 GRL</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/images/logo/logo.png">
+      <link rel="stylesheet" media="screen" href="/stylesheets/MenuSlide.css">
+      <script src="/javascripts/MenuSlide.js"></script>
+   </head>
+   <body class="home mac on-the-cover">
+      <div class="payment-bar">
+         <div class="payment-bar__text">
+            [GOD ROYAL] 지금 예매하고, 최신영화를 감상하세요!
+         </div>
+         <a class="payment-bar__button" href="#회원가입">
+         회원가입
+         </a>
+         <a class="payment-bar__button" href="#로그인">
+         로그인
+         </a>
+      </div>
+      <div id="header" class=" with-payment-bar">
+         <div class="for-popup-scroll-area-margin">
+            <div class="inner responsive-mask">
+               <ul class="gnb clearfix">
+                  <li class="navi-item home on">
+                     <a href="/">
+                     <img src="/images/logo/logo.png" width="30" height="30">
+                     </a>
+                     <!-- <span class="highlight"></span> 로고 밑에 빨간 선 -->
+                  </li>
+                  <li class="navi-item boxoffice">
+                     <a href="#">박스오피스</a>
+                     <span class="highlight"></span>
+                  </li>
+                  <li class="navi-item genre ">
+                     <a href="https://watcha.net/recommendation">추천영화</a>
+                     <span class="highlight"></span>
+                  </li>
+               </ul>
+               <form accept-charset="UTF-8" action="#검색" id="search-form" method="get">
+                  <div class="input-wrapper">
+                     <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                     <input id="input-query" name="query" type="search" autocomplete="off" class="ui-autocomplete-input">
+                     <span id="search-icon"></span>
+                  </div>
+               </form>
+               <!-- <div id="gnb-right-menu" class="right-menu">
+                  <div class="menu my">
+                     <a class="name" href="#아이디클릭">
+                          아이디
+                          <img class="thumbnail" src="/images/logo/logo.png" width="30" height="30" onerror="utils.loadDefaultImg(this, &#39;thumb&#39;);">
+                     </a>
+                     <span class="highlight"></span>
+                     <div class="dropdown">
+                        <ul>
+                           <li>
+                              <a href="https://watcha.net/v2/users/k1dp84nRqd4m/wishlist">영화보관함</a>
+                              <span class="count">19</span>
+                           </li>
+                           <li>
+                              <a href="https://watcha.net/giftbox">선물함</a>
+                           </li>
+                           <li class="divide-line">
+                              <a href="https://watcha.net/#" onclick="InviteFriend.popupInviteFriend(event);">친구초대</a>
+                           </li>
+                           <li class="divide-line">
+                              <a href="https://watcha.net/#" class="setting">설정</a>
+                           </li>
+                           <li>
+                              <a href="https://watcha.net/logout">로그아웃</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div> -->
+            </div>
+         </div>
+      </div>
+      <div id="contents" style="min-height: 776px;">
+         <div class="kwz" style="height: 500px; width: 1279px; position: fixed; display: block;">
+            <ul class="items bjqs" style="height: 500px; width: 1279px; display: block;">
 
-        <%- include('partials/MenuSlide') %>
+                <%
+                    for(var i=0; i<rows.length; i++)
+                    {
+                      var oneItem = rows[i];
+                %>
+                <li class="item idx-1 bjqs-slide" style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg&quot;); height: 500px; width: 1279px; display: none;">
+                   <div class="gradation"></div>
+                   <div class="kwz-desc-wrapper">
+                      <div class="kwz-desc responsive-mask">
+                         <div class="predicted-rating">
+
+                         </div>
+                         <dt>오늘의 박스오피스</dt>
+                         <dd>
+                            <a data-movie-title-url="pirates-of-the-caribbean-2013" data-movie-id="m3xlkh" class="title" href="https://watcha.net/movies/m3xlkh?unique_id=m3xlkh"><%=oneItem.title_kor%></a>
+                            <div class="movie-desc">
+                               평균 별점 : <%=oneItem.rating%>
+                               , 예매율
+                               : 52.89%
+                               <br>
+                               <%=oneItem.release_date%>, <%=oneItem.nation%>, <%=oneItem.genre%>, <%=oneItem.grade%>, <%=oneItem.run_time%>
+                               <br>
+                               감독 : <%=oneItem.director%>
+                               <br>
+                               배우 : <%=oneItem.actors%>
+                               <br>
+                               <div class="reservation">
+                                  <span class="text">
+                                  <span class="icon"></span>
+                                  예매하기
+                                  <span class="bar"></span>
+                                  </span>
+                                  <ul class="reservation-list">
+                                     <li class="theater-item megabox_id">
+                                        <a href="http://www.megabox.co.kr/?show=detail&amp;rtnShowMovieCode=011859" target="_blank" data-theater="megabox_id">megabox_id</a>
+                                     </li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </dd>
+                      </div>
+                   </div>
+                </li>
+                <%
+                    }
+                %>
 
 
-        </main>
-        <footer>
-          <%- include('partials/Footer') %>
-        </footer>
-    </body>
+               <!-- <li class="item idx-1 bjqs-slide" style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1463388574/mecox6-4022.jpg&quot;); height: 500px; width: 1279px; display: none;">
+                  <div class="gradation"></div>
+                  <div class="kwz-desc-wrapper">
+                     <div class="kwz-desc responsive-mask">
+                        <div class="predicted-rating">
+                           <div class="my-predicted-rating">
+                              <img src="./b_files/photo_file_name_small-bc8b334acec6a4e386249dedf9e763b5e6aff523fa85cc29211f22e6bed540df.jpg" width="25" height="25" onerror="utils.loadDefaultImg(this, &#39;thumb&#39;);">
+                              <span class="number">4.2</span>
+                           </div>
+                        </div>
+                        <dt>오늘의 PC VOD 영화</dt>
+                        <dd>
+                           <a data-movie-title-url="i-am-number-four-2011" data-movie-id="mecox6" class="title" href="https://watcha.net/movies/mecox6?unique_id=mecox6">아이 엠 넘버 포</a>
+                           <div class="movie-desc">
+                              평균 별점 : 3.1
+                              <br>
+                              2011, 미국, SF, 12세 관람가, 1시간 43분
+                              <br>
+                              감독 : <a href="javascript:void(0)" class="popup-involve-movies" data-person-id="75657">D.J. 카루소</a>
+                              ,&nbsp;
+                              배우 : <a href="javascript:void(0)" class="popup-involve-movies" data-person-id="164526">알렉스 페티퍼</a>, <a href="javascript:void(0)" class="popup-involve-movies" data-person-id="92511">티모시 올리펀트</a>, <a href="javascript:void(0)" class="popup-involve-movies" data-person-id="151425">테레사 팔머</a>
+                              <br>
+                              <div class="watch-link-wrapper googleplay">
+                                 <a href="https://play.google.com/store/movies/details?id=4pUww-Aem-U&amp;PAffiliateID=100l3VK" target="_blank" class="watch-link" data-vod-vendor="googleplay">
+                                 <span class="icon"></span>
+                                 감상하기
+                                 </a>
+                                 Google Play&nbsp;
+                                 원 · HD화질
+                              </div>
+                           </div>
+                        </dd>
+                     </div>
+                  </div>
+               </li>
+               <li class="item idx-2 bjqs-slide" style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1463558370/ms5enj-18127.jpg&quot;); height: 500px; width: 1279px; display: none;">
+                  <div class="gradation"></div>
+                  <div class="kwz-desc-wrapper">
+                     <div class="kwz-desc responsive-mask">
+                        <div class="predicted-rating">
+                           <div class="my-predicted-rating">
+                              <img src="./b_files/photo_file_name_small-bc8b334acec6a4e386249dedf9e763b5e6aff523fa85cc29211f22e6bed540df.jpg" width="25" height="25" onerror="utils.loadDefaultImg(this, &#39;thumb&#39;);">
+                              <span class="number">4.5</span>
+                           </div>
+                        </div>
+                        <dt>오늘의 TV VOD 영화</dt>
+                        <dd>
+                           <a data-movie-title-url="mamma-mia-2008" data-movie-id="ms5enj" class="title" href="https://watcha.net/movies/ms5enj?unique_id=ms5enj">맘마 미아!</a>
+                           <div class="movie-desc">
+                              평균 별점 : 3.8
+                              <br>
+                              2008, 영국, 로맨틱 코미디, 12세 관람가, 1시간 48분
+                              <br>
+                              감독 : <a href="javascript:void(0)" class="popup-involve-movies" data-person-id="258489">필리다 로이드</a>
+                              ,&nbsp;
+                              배우 : <a href="javascript:void(0)" class="popup-involve-movies" data-person-id="140888">아만다 사이프리드</a>, <a href="javascript:void(0)" class="popup-involve-movies" data-person-id="184525">메릴 스트립</a>, <a href="javascript:void(0)" class="popup-involve-movies" data-person-id="13306">피어스 브로스넌</a>
+                              <br>
+                              <span class="home-cover-vendor googleplay">
+                              <span class="price">
+                              <span class="vendor-logo">googleplay</span>
+                              Google Play&nbsp;
+                              원 · HD화질
+                              </span>
+                              </span>
+                           </div>
+                        </dd>
+                     </div>
+                  </div>
+               </li>
+               <li class="item idx-3 bjqs-slide" style="background-image: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/home/appdown_banner_bg-2a01b8bf998d405b924aabded87c756eee033c25acbc720f3d04603a0ddc4bc7.png&quot;); height: 500px; width: 1279px; display: none;">
+                  <div class="kwz-desc-wrapper">
+                     <div class="kwz-desc responsive-mask">
+                        <dd>
+                           <span class="title">모바일에서도 왓챠!</span>
+                           <div class="movie-desc">
+                              모바일 앱을 다운받으면, 언제 어디서나 왓챠와 함께할 수 있답니다!<br>
+                              주변 극장 상영시간표, 지금 TV에서 방영되는 영화들도 확인 해 보세요.<br><br>
+                              <a href="https://play.google.com/store/apps/details?id=com.frograms.watcha" target="_blank" class="play-store"></a>
+                              &nbsp;&nbsp;&nbsp;
+                              <a href="https://itunes.apple.com/kr/app/yeonghwagwan-gal-ttae-pilsuaeb/id644185507?mt=8" target="_blank" class="app-store"></a>
+                           </div>
+                        </dd>
+                     </div>
+                  </div>
+               </li> -->
+            </ul>
+         </div>
+         <div class="recommend-wrapper">
+            <ol class="sections-wrapper">
+                <link rel='stylesheet' href='/stylesheets/Movies.css'>
+                <script type="text/javascript" src="/javascripts/Movies.js"></script>
+               <li id="boxoffice-section" class="boxoffice responsive-mask section" style="height:1000px; min-width:1800px;">
+                 <a class="button" href="/NewMovies">
+                 <h3 class="title" style="margin-left: 100px; margin-bottom: -65px; font-weight: normal;">오늘의 최신영화</h3>
+                </a>
+                 <div class="cards">
+                   <div class="card">
+                     <img src="http://movie.phinf.naver.net/20170517_137/1494988360843qAvzP_JPEG/movie_image.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+
+                       <h2>
+                           <img src="http://tvguide.cablenetcy.net/logos/min_age/18.png">
+                           불한당: 나쁜 놈들의 세상
+                           <small>평점 4.5 &nbsp;
+                               <span class="stars stars--large">
+                                 <span style="width: 90%" />
+                               </span>
+                           </small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         여기다가 장르, 감독, 개봉일 이런거~~~ 리드모어 누르면 줄거리랑 영화상세정보로 이동
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="card">
+                   <img src="http://s4c.cymru/temp/wave2.jpg">
+                   <div class="card-title">
+                     <a href="#" class="toggle-info btn">
+                       <span class="left"></span>
+                       <span class="right"></span>
+                     </a>
+                     <h2>
+                         Card title
+                         <small>Image from unsplash.com</small>
+                     </h2>
+                   </div>
+                   <div class="card-flap flap1">
+                     <div class="card-description">
+                       This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                     </div>
+                     <div class="card-flap flap2">
+                       <div class="card-actions">
+                         <a href="#" class="btn">Read more</a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="card">
+                 <img src="http://s4c.cymru/temp/wave2.jpg">
+                 <div class="card-title">
+                   <a href="#" class="toggle-info btn">
+                     <span class="left"></span>
+                     <span class="right"></span>
+                   </a>
+                   <h2>
+                       Card title
+                       <small>Image from unsplash.com</small>
+                   </h2>
+                 </div>
+                 <div class="card-flap flap1">
+                   <div class="card-description">
+                     This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                   </div>
+                   <div class="card-flap flap2">
+                     <div class="card-actions">
+                       <a href="#" class="btn">Read more</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+                     <div class="card">
+                     <img src="http://s4c.cymru/temp/wave2.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave3.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave2.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave3.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave1.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave3.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave2.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+               <li id="boxoffice-section" class="boxoffice responsive-mask section" style="height:1000px; min-width:1800px;">
+                 <a class="button" href="/OldMovies">
+                 <h3 class="title" style="margin-left: 100px; margin-bottom: -65px; font-weight: normal;">오늘의 추억영화</h3>
+                </a>
+                 <div class="cards">
+                   <div class="card">
+                     <img src="http://movie.phinf.naver.net/20170517_137/1494988360843qAvzP_JPEG/movie_image.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+
+                       <h2>
+                           <img src="http://tvguide.cablenetcy.net/logos/min_age/18.png">
+                           불한당: 나쁜 놈들의 세상
+                           <small>평점 4.5 &nbsp;
+                               <span class="stars stars--large">
+                                 <span style="width: 90%" />
+                               </span>
+                           </small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         여기다가 장르, 감독, 개봉일 이런거~~~ 리드모어 누르면 줄거리랑 영화상세정보로 이동
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="card">
+                   <img src="http://s4c.cymru/temp/wave2.jpg">
+                   <div class="card-title">
+                     <a href="#" class="toggle-info btn">
+                       <span class="left"></span>
+                       <span class="right"></span>
+                     </a>
+                     <h2>
+                         Card title
+                         <small>Image from unsplash.com</small>
+                     </h2>
+                   </div>
+                   <div class="card-flap flap1">
+                     <div class="card-description">
+                       This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                     </div>
+                     <div class="card-flap flap2">
+                       <div class="card-actions">
+                         <a href="#" class="btn">Read more</a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="card">
+                 <img src="http://s4c.cymru/temp/wave2.jpg">
+                 <div class="card-title">
+                   <a href="#" class="toggle-info btn">
+                     <span class="left"></span>
+                     <span class="right"></span>
+                   </a>
+                   <h2>
+                       Card title
+                       <small>Image from unsplash.com</small>
+                   </h2>
+                 </div>
+                 <div class="card-flap flap1">
+                   <div class="card-description">
+                     This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                   </div>
+                   <div class="card-flap flap2">
+                     <div class="card-actions">
+                       <a href="#" class="btn">Read more</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+                     <div class="card">
+                     <img src="http://s4c.cymru/temp/wave2.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave3.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave2.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave3.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave1.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave3.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave2.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+               <li id="boxoffice-section" class="boxoffice responsive-mask section" style="height:1000px; min-width:1800px;">
+                 <a class="button" href="#잡영화">
+                 <h3 class="title" style="margin-left: 100px; margin-bottom: -65px; font-weight: normal;">잡영화</h3>
+                </a>
+                 <div class="cards">
+                   <div class="card">
+                     <img src="http://movie.phinf.naver.net/20170517_137/1494988360843qAvzP_JPEG/movie_image.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+
+                       <h2>
+                           <img src="http://tvguide.cablenetcy.net/logos/min_age/18.png">
+                           불한당: 나쁜 놈들의 세상
+                           <small>평점 4.5 &nbsp;
+                               <span class="stars stars--large">
+                                 <span style="width: 90%" />
+                               </span>
+                           </small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         여기다가 장르, 감독, 개봉일 이런거~~~ 리드모어 누르면 줄거리랑 영화상세정보로 이동
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                     <div class="card">
+                     <img src="http://s4c.cymru/temp/wave2.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="card">
+                   <img src="http://s4c.cymru/temp/wave2.jpg">
+                   <div class="card-title">
+                     <a href="#" class="toggle-info btn">
+                       <span class="left"></span>
+                       <span class="right"></span>
+                     </a>
+                     <h2>
+                         Card title
+                         <small>Image from unsplash.com</small>
+                     </h2>
+                   </div>
+                   <div class="card-flap flap1">
+                     <div class="card-description">
+                       This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                     </div>
+                     <div class="card-flap flap2">
+                       <div class="card-actions">
+                         <a href="#" class="btn">Read more</a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <div class="card">
+                 <img src="http://s4c.cymru/temp/wave2.jpg">
+                 <div class="card-title">
+                   <a href="#" class="toggle-info btn">
+                     <span class="left"></span>
+                     <span class="right"></span>
+                   </a>
+                   <h2>
+                       Card title
+                       <small>Image from unsplash.com</small>
+                   </h2>
+                 </div>
+                 <div class="card-flap flap1">
+                   <div class="card-description">
+                     This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                   </div>
+                   <div class="card-flap flap2">
+                     <div class="card-actions">
+                       <a href="#" class="btn">Read more</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave3.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave2.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave3.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave1.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave3.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="http://s4c.cymru/temp/wave2.jpg">
+                     <div class="card-title">
+                       <a href="#" class="toggle-info btn">
+                         <span class="left"></span>
+                         <span class="right"></span>
+                       </a>
+                       <h2>
+                           Card title
+                           <small>Image from unsplash.com</small>
+                       </h2>
+                     </div>
+                     <div class="card-flap flap1">
+                       <div class="card-description">
+                         This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                       </div>
+                       <div class="card-flap flap2">
+                         <div class="card-actions">
+                           <a href="#" class="btn">Read more</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+         </div>
+      </div>
+
+      <link rel='stylesheet' href='/stylesheets/Footer.css'>
+        <div id="footer">
+          <footer class="top-footer">
+              <h5>Join GodRoyal On</h5>
+              <ul class="social">
+                  <li><a class="facebook" href=#></a></li>
+                  <li><a class="google" href=#></a></li>
+                  <li><a class="pinterest" href=#></a></li>
+                  <li><a class="youtube" href=#></a></li>
+                  <li><a class="instagram" href=#></a></li>
+                  <li><a class="linkedin" href=#></a></li>
+              </ul>
+          </footer>
+        </div>
+   </body>
 </html>

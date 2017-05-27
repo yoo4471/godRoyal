@@ -8,6 +8,7 @@ var movieSchema = mongoose.Schema({
   title_kor: String,
   title_eng: String,
   nation: String,
+  genre: String,
   release_date: String,
   run_time: String,
   grade: String,

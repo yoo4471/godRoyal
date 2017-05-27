@@ -1,0 +1,33 @@
+.stars {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 16px;
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+  margin-top: -3px;
+  margin-bottom: -20px;
+  color: goldenrod;
+}
+.stars:after {
+  content: "☆☆☆☆☆";
+}
+.stars--large {
+  font-size: 18px;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .stars--large {
+    width: 230px;
+  }
+}
+.stars span {
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.stars span:after {
+  content: "★★★★★";
+}
