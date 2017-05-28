@@ -8,7 +8,7 @@ var cookieSession = require('cookie-session')
 
 
 var index = require('./routes/index');
-
+var movies = require('./routes/movies');
 
 var app = express();
 
@@ -25,6 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/movies', movies);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -44,10 +45,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-
-
-
-
+//session
 app.use(cookieSession({
   name: 'session',
   keys: ['A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'],
@@ -55,6 +53,8 @@ app.use(cookieSession({
   // Cookie Options
   maxAge: 24 * 60 * 60 * 1000 // 24 hours
 }))
+
+
 
 // Mongoose
 var mongoose = require('mongoose');
