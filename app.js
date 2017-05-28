@@ -4,6 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var cookieSession = require('cookie-session')
+
 
 var index = require('./routes/index');
 
@@ -41,6 +43,18 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
+
+
+
+app.use(cookieSession({
+  name: 'session',
+  keys: ['A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'],
+
+  // Cookie Options
+  maxAge: 24 * 60 * 60 * 1000 // 24 hours
+}))
 
 // Mongoose
 var mongoose = require('mongoose');
