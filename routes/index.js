@@ -1,5 +1,6 @@
 var express = require('express');
 var MovieContents = require('../models/movieSchema');
+var UserContents = require('../models/userSchema');
 var cookieSession = require('cookie-session')
 var router = express.Router();
 
@@ -16,30 +17,67 @@ router.get('/', function(req, res, next) {
   MovieContents.find({current:1}, function(err, boardContents){
 
   if(err) return res.status(500).send({error: 'database failure'});
-
+  console.log(req.session)
   // console.log(boardContents[0].img_url);
   // res.render('update', {title:"글 수정", error:"", row: boardContents});
 
-  res.render('index', {rows: boardContents});
-  });
-});
+  res.render('index', {
+      rows: boardContents,
+      email: req.session.email,
+    });//render
+  });//find
+});//get
 
 router.get('/login', function(req, res, next) {
-  console.log(req.session.user_id)
-  res.render('login');
+
+  res.render('login', {
+      login:true,
+      email:req.session.email
+    }
+  );
 });
 
 router.post('/login', function(req, res, next) {
-  var id = req.body.id;
+  var email = req.body.email;
   var passwd = req.body.passwd
-  req.session.user_id = id
-  res.send(id+passwd)
+  req.session.email = email
+  res.redirect('/')
+});
+
+router.get('/signup', function(req, res, next) {
+  res.render('login', {
+      login:false,
+      email:req.session.email
+    }
+  );
+});
+
+router.post('/signup', function(req, res, next) {
+  var newUserContents = new UserContents;
+  newUserContents.email = req.body.email;
+  newUserContents.passwd = req.body.passwd;
+
+  newUserContents.save(function (err)  {
+    if (err) {
+      throw err
+      // res.redirect('/login')
+    }
+    else {
+      req.session.email = req.body.email;
+      res.redirect('/')
+    }
+
+  });
 });
 
 router.get('/logout', function(req, res, next) {
-  req.session.destory();  // 세션 삭제
-  res.clearCookie('godRoyal'); // 세션 쿠키 삭제
-  res.redirect('/');
+  if(req.session.email){
+            req.session = null;
+            res.redirect('/')
+  }//if
+  else {
+      res.redirect('/');
+  }//else
 });
 
 router.get('/NewMovies', function(req, res, next) {

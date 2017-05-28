@@ -5,7 +5,7 @@ mongoose.Promise = global.Promise;
 mongoose.plugin(autoincrement);
 
 var userSchema = mongoose.Schema({
-  _id: String,
+  email: { type: String, unique: true },
   passwd: String
 });
 
