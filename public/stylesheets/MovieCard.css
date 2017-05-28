@@ -10585,10 +10585,10 @@ svg.rating-chart path.area {
 .boxoffice-card.card .movie-info .actions .btn.trailer .icon.good.active  {
     background: url(http://localhost:3000/images/icon/good_active.png)
 }
-.boxoffice-card.card .movie-info .actions .btn.trailer:hover .icon.good.active {
+.boxoffice-card.card .movie-info .actions .btn.trailer:hover .icon.good {
     background: url(http://localhost:3000/images/icon/good_active.png)
 }
-.boxoffice-card.card .movie-info .actions .btn.trailer:active .icon.good.active {
+.boxoffice-card.card .movie-info .actions .btn.trailer:active .icon.good {
     background: url(http://localhost:3000/images/icon/good_active.png)
 }
 /*good*/
@@ -10599,10 +10599,10 @@ svg.rating-chart path.area {
 .boxoffice-card.card .movie-info .actions .btn.trailer .icon.bad.active  {
     background: url(http://localhost:3000/images/icon/bad_active.png)
 }
-.boxoffice-card.card .movie-info .actions .btn.trailer:hover .icon.bad.active {
+.boxoffice-card.card .movie-info .actions .btn.trailer:hover .icon.bad {
     background: url(http://localhost:3000/images/icon/bad_active.png)
 }
-.boxoffice-card.card .movie-info .actions .btn.trailer:active .icon.bad.active {
+.boxoffice-card.card .movie-info .actions .btn.trailer:active .icon.bad {
     background: url(http://localhost:3000/images/icon/bad_active.png)
 }
 /*bad*/
