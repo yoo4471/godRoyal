@@ -105,6 +105,21 @@ router.get('/OldMovies', function(req, res, next) {
 });
 
 
+router.get('/movie-detail', function(req, res, next) {
+  MovieContents.find({current:1}, function(err, boardContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+
+  // console.log(boardContents[0].img_url);
+  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+  res.render('movie-detail', {rows: boardContents});
+  });
+});
+
+
+
+
 router.get('/insert_movie', function(req, res, next) {
   var request = require("request");
   var url = "http://localhost:3000/json/movie.json";
