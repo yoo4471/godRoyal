@@ -10532,6 +10532,11 @@ svg.rating-chart path.area {
     left: 16px;
     background: url(https://d3sz5r0rl9fxuc.cloudfront.net/assets/icons/icon_ticket_default-a19cfb7bd2894fecb323c91725c463fd87f065b60b1296bbd303a2e445dc8a4d.png)
 }
+/*.boxoffice-card.card .movie-info .actions .btn.reserve .icon {
+    width: 19px;
+    left: 16px;
+    background: url(https://d3sz5r0rl9fxuc.cloudfront.net/assets/icons/icon_ticket_hover-ebcf182ba82fcf36bd9c926c9c87c8751b74e8a4444cda9780669996ee2941a6.png)
+}*/
 .boxoffice-card.card .movie-info .actions .btn.reserve:hover .icon {
     background: url(https://d3sz5r0rl9fxuc.cloudfront.net/assets/icons/icon_ticket_hover-ebcf182ba82fcf36bd9c926c9c87c8751b74e8a4444cda9780669996ee2941a6.png)
 }
@@ -10573,6 +10578,34 @@ svg.rating-chart path.area {
 .boxoffice-card.card .movie-info .actions .btn.trailer .icon {
     background: url(https://d3sz5r0rl9fxuc.cloudfront.net/assets/icons/icon_trailer_default-05955e405e05d6d45576a03ed986c84005a8b7a0e08b839db0b5867d34b85b1d.png)
 }
+/*good*/
+.boxoffice-card.card .movie-info .actions .btn.trailer .icon.good {
+    background: url(http://localhost:3000/images/icon/good.png)
+}
+.boxoffice-card.card .movie-info .actions .btn.trailer .icon.good.active  {
+    background: url(http://localhost:3000/images/icon/good_active.png)
+}
+.boxoffice-card.card .movie-info .actions .btn.trailer:hover .icon.good.active {
+    background: url(http://localhost:3000/images/icon/good_active.png)
+}
+.boxoffice-card.card .movie-info .actions .btn.trailer:active .icon.good.active {
+    background: url(http://localhost:3000/images/icon/good_active.png)
+}
+/*good*/
+/*bad*/
+.boxoffice-card.card .movie-info .actions .btn.trailer .icon.bad {
+    background: url(http://localhost:3000/images/icon/bad.png)
+}
+.boxoffice-card.card .movie-info .actions .btn.trailer .icon.bad.active  {
+    background: url(http://localhost:3000/images/icon/bad_active.png)
+}
+.boxoffice-card.card .movie-info .actions .btn.trailer:hover .icon.bad.active {
+    background: url(http://localhost:3000/images/icon/bad_active.png)
+}
+.boxoffice-card.card .movie-info .actions .btn.trailer:active .icon.bad.active {
+    background: url(http://localhost:3000/images/icon/bad_active.png)
+}
+/*bad*/
 .boxoffice-card.card .movie-info .actions .btn.trailer:hover .icon {
     background: url(https://d3sz5r0rl9fxuc.cloudfront.net/assets/icons/icon_trailer_hover-8a162442891d632738e854220e4a678ebb969ba5aa8b83e6bb6aa1ca2016186b.png)
 }

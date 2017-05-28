@@ -18,8 +18,8 @@ var movieSchema = mongoose.Schema({
   description: String,
   current: String,
   img_url: String,
-  likes: Number,
-  dislikes: Number
+  likes: [],
+  dislikes: []
 });
 
 

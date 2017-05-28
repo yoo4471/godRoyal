@@ -1,174 +1,20 @@
 var express = require('express');
 var MovieContents = require('../models/movieSchema');
+var UserContents = require('../models/userSchema');
 var RateContents = require('../models/rateSchema');
+var cookieSession = require('cookie-session')
 var router = express.Router();
 
-/* 추천 라이브러리 */
-// require the ger objects
-var g = require('ger')
 
-// Create an Event Store Manager (ESM) that stores events and provides functions to query them
-var esm = new g.MemESM()
+router.use(cookieSession({
+  name: 'session',
+  keys: ['A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'],
 
-// Initialize GER with the esm
-var ger = new g.GER(esm);
+  // Cookie Options
+  maxAge: 24 * 60 * 60 * 1000 // 24 hours
+}))
 
-
-ger.initialize_namespace('movies');
-/* 추천 라이브러리 */
-
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('dashboard');
-});
-
-router.get('/movielist', function(req, res, next) {
-  res.render('dashboard/data_table');
-});
-
-router.get('/form', function(req, res, next) {
-  res.render('flatUI/form');
-});
-
-router.get('/test', function(req, res, next) {
-
-  RateContents.find({}, {'_id':false, '__v':false}, function(err, rateContents){
-    if(err) return res.status(500).send({error: 'database failure'});
-
-    console.log(rateContents)
-
-  });
-});
-
-
-
-router.get('/init1', function(req, res, next) {
-  MovieContents.remove({}, function(err) {
-     console.log('collection moviecontents removed')
-  });
-  init_db_movies(function(response){
-    // Here you have access to your variable
-
-    res.send(response);
-
-  })
-});
-
-router.get('/init2', function(req, res, next) {
-  RateContents.remove({}, function(err) {
-     console.log('collection ratecontents removed')
-  });
-  init_db_rates(function(response){
-    // Here you have access to your variable
-
-    res.send(response);
-
-  })
-
-});
-router.get('/init3', function(req, res, next) {
-  RateContents.find({}, {'_id':false, '__v':false}, function(err, rateContents){
-    if(err) return res.status(500).send({error: 'database failure'});
-
-    user = ['A', 'B', 'C', 'D'];
-    var rannum = Math.floor(Math.random() * 4);
-    console.log(user[rannum])
-
-    ger.events(rateContents);
-    ger.recommendations_for_person('movies', user[rannum], {actions: {likes: 1}, filter_previous_actions:['likes']})
-    .then( function(recommendations) {
-      console.log("\nRecommendations For " + user[rannum])
-      console.log(JSON.stringify(recommendations,null,2))
-      res.json(recommendations,null,2)
-    })
-
-  });
-});
-
-router.get('/init4', function(req, res, next) {
-
-
-
-});
-
-router.get('/movielist/update/:_id',function(req, res, next) {
-  var _id = req.params._id;
-  console.log(_id)
-  MovieContents.findOne({_id:_id}, function(err, movieContents){
-
-    if(err) return res.status(500).send({error: 'database failure'});
-    console.log(movieContents)
-    res.render('dashboard/movielist/update', {row: movieContents});
-
-  });
-});
-
-
-/* GET users listing. */
-router.get('/all',function(req, res, next) {
-
-  MovieContents.find(function(err, movieContents){
-      if(err) return res.status(500).send({error: 'database failure'});
-
-      var data = []
-      var current = ""
-      for (i = 0; i < movieContents.length; i++) {
-        if (movieContents[i]['current'] == "1") { current = "상영중"}
-        else current = ""
-        movielist = [movieContents[i]['title_kor'], movieContents[i]['title_eng'], movieContents[i]['nation'],
-        movieContents[i]['director'], movieContents[i]['release_date'], current, movieContents[i]['_id']]
-        data.push(movielist)
-
-
-      }
-      console.log(data)
-
-      var a = {"data" : data}
-      res.json(a);
-  })
-
-
-
-});
-
-router.post('/movielist/enrollment',function(req,res,next){
-
-  console.log(req.body);
-  // creates DB schema
-
-  // compiels our schema into a model
-  // var User = mongoose.model('User', boardSchema);
-
-  var newMovieContents = new MovieContents;
-
-  newMovieContents.title_kor = req.body.title_kor;
-  newMovieContents.title_eng = req.body.title_eng;
-  newMovieContents.nation = req.body.nation;
-  newMovieContents.relese_date = req.body.relese_date;
-  newMovieContents.run_time = req.body.run_time;
-  newMovieContents.grade = req.body.grade;
-  newMovieContents.director = req.body.director;
-  newMovieContents.actors = req.body.actors;
-  newMovieContents.description_title = req.body.description_title;
-  newMovieContents.description = req.body.description;
-  newMovieContents.current = req.body.current;
-
-
-  newMovieContents.save(function (err)  {
-    if (err) throw err;
-    console.log('success join')
-  });
-  // creates DB schema
-
-  // compiels our schema into a model
-  // var User = mongoose.model('User', boardSchema);
-
-
-  res.json(req.body);
-});
-
-function insert_db_rates(user, title, action) {
+router.insert_db_rates = function(user, title, action) {
 
   var newRateContents = new RateContents;
   newRateContents.person = user
@@ -180,7 +26,7 @@ function insert_db_rates(user, title, action) {
   });
 }
 
-function init_db_rates(callback) {
+router.init_db_rates = function (callback) {
 
   var user = ['A', 'B', 'C', 'D'];
   var action = ''
@@ -197,11 +43,17 @@ function init_db_rates(callback) {
 
           if (rannum == 1) {
             action ='likes';
-            insert_db_rates(user[j], movieContents[i]['title_eng'], action);
+            router.insert_db_rates(user[j], movieContents[i]['title_eng'], action);
+            MovieContents.findOneAndUpdate({ "title_eng": movieContents[i]['title_eng'] }, { "$push": { "likes": user[j]}}).exec(function(err, movieContents){
+               if(err) return res.status(500).send({error: 'database failure'});
+            });
           }
           else {
             action = 'dislikes';
-            insert_db_rates(user[j], movieContents[i]['title_eng'], action);
+            router.insert_db_rates(user[j], movieContents[i]['title_eng'], action);
+            MovieContents.findOneAndUpdate({ "title_eng": movieContents[i]['title_eng'] }, { "$push": { "dislikes": user[j]}}).exec(function(err, movieContents){
+               if(err) return res.status(500).send({error: 'database failure'});
+            });
           }
 
 
@@ -214,11 +66,9 @@ function init_db_rates(callback) {
   })
 }
 
-exports.test = function () {
-  console.log('tetsetestsetsetsetestsetset')
-}
 
-function init_db_movies(callback) {
+
+router.init_db_movies = function(callback) {
   var request = require("request");
   var url = "http://localhost:3000/json/movie.json";
 
@@ -263,4 +113,10 @@ function init_db_movies(callback) {
 
 }
 
+router.test = function(email) {
+  RateContents.find({person:email},function(err, rateContents){
+      if(err) return res.status(500).send({error: 'database failure'});
+      return rateContents;
+  })
+}
 module.exports = router;

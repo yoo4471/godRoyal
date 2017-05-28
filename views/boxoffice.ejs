@@ -18,7 +18,7 @@
                            <span class="highlight"></span>
                        </li>
                        <li class="navi-item boxoffice">
-                          <a href="#">박스오피스</a>
+                          <a href="/movies">박스오피스</a>
                           <span class="highlight"></span>
                        </li>
                        <li class="navi-item genre ">
@@ -196,6 +196,12 @@
                                    <!-- <span class="audience-count">누적 관객수 1천명</span> -->
                                </div>
                                <div class="actions">
+                                   <div class="trailer btn" style="color: #ff5148;" data-youtube-id="5RWz1ostEt8">
+                                       <span class="icon bad"></span> 38
+                                   </div>
+                                   <div class="trailer btn" data-youtube-id="5RWz1ostEt8">
+                                       <span class="icon good"></span> 291
+                                   </div>
                                    <div class="reserve btn">
                                            예매
                                            <span class="icon"></span>
@@ -226,6 +232,7 @@
                                        <span class="number">3.8</span>
                                        <span class="eval-count">(721명 참여)</span>
                                    </div>
+
                                    <div class="directors">
                                        감독 :
                                        <span class="popup-involve-movies" data-person-id="211538"> <%=oneItem.director%></span>
@@ -247,7 +254,7 @@
                                    </p>
                                    <div class="counts">
                                        <span class="wish-count">
-                               <span class="icon"></span> 6,647
+                               <span class="icon"></span> <%=oneItem.likes%>
                                </span>
                                </div>
                                </div>
