@@ -1,6 +1,15 @@
 var express = require('express');
 var MovieContents = require('../models/movieSchema');
+var cookieSession = require('cookie-session')
 var router = express.Router();
+
+router.use(cookieSession({
+  name: 'session',
+  keys: ['A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'],
+
+  // Cookie Options
+  maxAge: 24 * 60 * 60 * 1000 // 24 hours
+}))
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -13,6 +22,24 @@ router.get('/', function(req, res, next) {
 
   res.render('index', {rows: boardContents});
   });
+});
+
+router.get('/login', function(req, res, next) {
+  console.log(req.session.user_id)
+  res.render('login');
+});
+
+router.post('/login', function(req, res, next) {
+  var id = req.body.id;
+  var passwd = req.body.passwd
+  req.session.user_id = id
+  res.send(id+passwd)
+});
+
+router.get('/logout', function(req, res, next) {
+  req.session.destory();  // 세션 삭제
+  res.clearCookie('godRoyal'); // 세션 쿠키 삭제
+  res.redirect('/');
 });
 
 router.get('/NewMovies', function(req, res, next) {
