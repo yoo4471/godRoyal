@@ -39,7 +39,7 @@ router.init_db_rates = function (callback) {
 
 
         for (j = 0; j < 4; j++) {
-          var rannum = Math.floor(Math.random() * 4);
+          var rannum = Math.floor(Math.random() * 3);
 
           if (rannum == 1) {
             action ='likes';
@@ -48,12 +48,15 @@ router.init_db_rates = function (callback) {
                if(err) return res.status(500).send({error: 'database failure'});
             });
           }
-          else {
+          else if(rannum == 2){
             action = 'dislikes';
             router.insert_db_rates(user[j], movieContents[i]['title_eng'], action);
             MovieContents.findOneAndUpdate({ "title_eng": movieContents[i]['title_eng'] }, { "$push": { "dislikes": user[j]}}).exec(function(err, movieContents){
                if(err) return res.status(500).send({error: 'database failure'});
             });
+          }
+          else {
+            
           }
 
 

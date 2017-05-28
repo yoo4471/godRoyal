@@ -32,16 +32,19 @@ router.get('/', function(req, res, next) {
 
 /* GET home page. */
 router.get('/boxoffice', function(req, res, next) {
-  MovieContents.find({current:1}, function(err, boardContents){
+  MovieContents.find({ current:1 }, function(err, movieContents){
 
   if(err) return res.status(500).send({error: 'database failure'});
-
-  // console.log(boardContents[0].img_url);
-  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+  orderContents = movieContents.slice();
+  orderContents.sort(function (a, b) {
+    return b.likes.length - a.likes.length;
+  });
 
   res.render('boxoffice', {
-      rows: boardContents,
+      rows: movieContents,
+      rows_order: orderContents,
       email: req.session.email
+
       }
     );
   });
@@ -116,14 +119,15 @@ router.get('/show2', function(req, res, next) {
 });//get
 
 router.get('/show3', function(req, res, next) {
-  MovieContents.find({current:"1"},function(err, movieContents){
+  MovieContents.find({current:"1"},{},function(err, movieContents){
       if(err) return res.status(500).send({error: 'database failure'});
+      a = movieContents.slice();
+      a.sort(function (a, b) {
+        return b.likes.length - a.likes.length;
+      });
 
-      RateContents.find({person:'A', action:'likes'},function(err, rateContents){
-          if(err) return res.status(500).send({error: 'database failure'});
-          res.json(movieContents)
+      res.json(movieContents)
 
-      })
   })
 
 
