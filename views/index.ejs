@@ -33,7 +33,7 @@
                      <span class="highlight"></span>
                   </li>
                   <li class="navi-item genre ">
-                     <a href="https://watcha.net/recommendation">추천영화</a>
+                     <a href="/movies/recommend">추천영화</a>
                      <span class="highlight"></span>
                   </li>
                </ul>
@@ -115,8 +115,12 @@
                     for(var i=0; i<rows.length; i++)
                     {
                       var oneItem = rows[i];
+                      var total_rate = oneItem.likes.length + oneItem.dislikes.length;
+                      var total_star = (oneItem.likes.length / total_rate) * 5;
+                      total_star = total_star.toFixed(1);
+                      var width_star = total_star * 20;
                 %>
-                <li class="item idx-1 bjqs-slide" style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg&quot;); height: 500px; width: 1279px; display: none;">
+                <li class="item idx-1 bjqs-slide" style="background-image: url('<%=oneItem.wide_img_url%>'); height: 500px; width: 1279px; display: none;">
                    <div class="gradation"></div>
                    <div class="kwz-desc-wrapper">
                       <div class="kwz-desc responsive-mask">
@@ -127,7 +131,7 @@
                          <dd>
                             <a data-movie-title-url="pirates-of-the-caribbean-2013" data-movie-id="m3xlkh" class="title" href="https://watcha.net/movies/m3xlkh?unique_id=m3xlkh"><%=oneItem.title_kor%></a>
                             <div class="movie-desc">
-                               평균 별점 : <%=oneItem.rating%>
+                               평균 별점 : <%=total_star%>
                                , 예매율
                                : 52.89%
                                <br>
@@ -1003,18 +1007,19 @@
       </div>
 
       <link rel='stylesheet' href='/stylesheets/Footer.css'>
-        <div id="footer">
-          <footer class="top-footer">
-              <h5>Join GodRoyal On</h5>
-              <ul class="social">
-                  <li><a class="facebook" href=#></a></li>
-                  <li><a class="google" href=#></a></li>
-                  <li><a class="pinterest" href=#></a></li>
-                  <li><a class="youtube" href=#></a></li>
-                  <li><a class="instagram" href=#></a></li>
-                  <li><a class="linkedin" href=#></a></li>
-              </ul>
-          </footer>
-        </div>
+      <div id="footer" style="clear:both">
+        <footer class="top-footer">
+            <h5>Join GodRoyal On</h5>
+            <ul class="social">
+                <li><a class="facebook" href=#></a></li>
+                <li><a class="google" href=#></a></li>
+                <li><a class="pinterest" href=#></a></li>
+                <li><a class="youtube" href=#></a></li>
+                <li><a class="instagram" href=#></a></li>
+                <li><a class="linkedin" href=#></a></li>
+            </ul>
+        </footer>
+    </div>
+
    </body>
 </html>

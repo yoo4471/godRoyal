@@ -22,7 +22,7 @@
                           <span class="highlight"></span>
                        </li>
                        <li class="navi-item genre ">
-                          <a href="https://watcha.net/recommendation">추천영화</a>
+                          <a href="/movies/recommend">추천영화</a>
                           <span class="highlight"></span>
                        </li>
                    </ul>
@@ -131,16 +131,21 @@
                          for(var i=0; i<rows.length; i++)
                          {
                            var oneItem = rows[i];
+                           var total_rate = oneItem.likes.length + oneItem.dislikes.length;
+                           var total_star = (oneItem.likes.length / total_rate) * 5;
+                           total_star = total_star.toFixed(1);
+                           var width_star = total_star * 20;
+
                      %>
                        <div class="boxoffice-card card grid-4 hei-1">
                            <div class="poster-area">
                                <div class="movie-card size-1x1 poster-type boxoffice_large_movie  user-action-m3xlkh fix-action-box card grid-1 hei-1">
                                    <div class="poster-wrapper">
-                                       <img class="poster" src="http://movie.phinf.naver.net/20170517_137/1494988360843qAvzP_JPEG/movie_image.jpg" width="100%">
+                                       <img class="poster" src="<%=oneItem.poster_img_url%>" width="100%">
                                    </div>
                                </div>
                            </div>
-                           <div class="movie-info">
+                           <div class="movie-info" id="<%=oneItem.title_eng%>">
                                <h5 class="title-filmrate">
                                  <a href="/" class="movie-title">
                                    <%=oneItem.title_kor%>
@@ -158,19 +163,25 @@
                                    </span>
                                    <!-- <span class="audience-count">누적 관객수 1천명</span> -->
                                </div>
+                               <form name="myform" method="post" action="/">
                                <div class="actions">
                                    <%
                                       if(oneItem.likes.indexOf(email)>-1)
                                       {
                                    %>
-                                       <div class="trailer btn" data-youtube-id="5RWz1ostEt8">
+
+                                       <div class="trailer btn"  onclick="rating_bad('<%=email%>', 1, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
                                            <span class="icon bad"></span>
                                            <%=oneItem.dislikes.length%>
                                        </div>
+
                                        <div class="trailer btn" style="color: #ff5148;" data-youtube-id="5RWz1ostEt8">
+
                                            <span class="icon good active"></span>
                                            <%=oneItem.likes.length%>
+
                                        </div>
+
                                    <%
                                       }
                                       else if(oneItem.dislikes.indexOf(email)>-1)
@@ -180,7 +191,7 @@
                                            <span class="icon bad active"></span>
                                            <%=oneItem.dislikes.length%>
                                        </div>
-                                       <div class="trailer btn" data-youtube-id="5RWz1ostEt8">
+                                       <div class="trailer btn" onclick="rating_good('<%=email%>', 1, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
                                            <span class="icon good"></span>
                                            <%=oneItem.likes.length%>
                                        </div>
@@ -189,11 +200,11 @@
                                       else
                                       {
                                    %>
-                                   <div class="trailer btn" data-youtube-id="5RWz1ostEt8">
+                                   <div class="trailer btn" onclick="rating_bad('<%=email%>', 0, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
                                        <span class="icon bad"></span>
                                        <%=oneItem.dislikes.length%>
                                    </div>
-                                   <div class="trailer btn" data-youtube-id="5RWz1ostEt8">
+                                   <div class="trailer btn" onclick="rating_good('<%=email%>', 0, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
                                        <span class="icon good"></span>
                                        <%=oneItem.likes.length%>
                                    </div>
@@ -217,6 +228,7 @@
                                        <span class="icon"></span> 예고편
                                    </div>
                                </div>
+                             </form>
                                <div class="detail-info">
                                    <div class="genre-time-filmrate">
                                        <%=oneItem.genre%>, <%=oneItem.run_time%>, <% if(oneItem.grade == "all") {oneItem.grade="전체관람가";} else { oneItem.grade = oneItem.grade+"세 관람가";}%><%=oneItem.grade%>
@@ -225,10 +237,10 @@
                                    <div class="watcha-rating-wrapper">
                                      <link rel="stylesheet" media="screen" href="/stylesheets/RatingStar.css">
                                      <span class="stars stars--large">
-                                        <span style="width: 50%"></span>
+                                        <span style="width: <%=width_star%>%"></span>
                                      </span>
-                                       <span class="number">3.8</span>
-                                       <span class="eval-count">(721명 참여)</span>
+                                       <span class="number"><%=total_star%></span>
+                                       <span class="eval-count">(<%=total_rate%>명 참여)</span>
                                    </div>
 
                                    <div class="directors">
@@ -251,7 +263,7 @@
                                        본편에서 나온 대사 좀 빌릴게요 " 한 물 갔네.. "
                                    </p>
                                    <div class="counts">
-                                       
+
                                </div>
                                </div>
 
@@ -274,7 +286,7 @@
 
 
         <link rel='stylesheet' href='/stylesheets/Footer.css'>
-        <div id="footer">
+        <div id="footer" style="clear:both">
           <footer class="top-footer">
               <h5>Join GodRoyal On</h5>
               <ul class="social">
@@ -287,5 +299,83 @@
               </ul>
           </footer>
       </div>
+
+
+      <script>
+      
+      var rating_bad = function(email, status, title_eng) {
+
+          var path = '/movies/update/rating_bad'
+
+          var method =  "post"; // Set method to post by default, if not specified.
+
+          // The rest of this code assumes you are not using a library.
+          // It can be made less wordy if you use one.
+          var form = document.createElement("form");
+          form.setAttribute("method", method);
+          form.setAttribute("action", path);
+
+
+          var user = document.createElement("input");
+          user.setAttribute("type", "hidden");
+          user.setAttribute("name", 'email');
+          user.setAttribute("value", email);
+          form.appendChild(user);
+
+          var rate= document.createElement("input");
+          rate.setAttribute("type", "hidden");
+          rate.setAttribute("name", 'status');
+          rate.setAttribute("value", status);
+          form.appendChild(rate);
+
+          var title= document.createElement("input");
+          title.setAttribute("type", "hidden");
+          title.setAttribute("name", 'title_eng');
+          title.setAttribute("value", title_eng);
+          form.appendChild(title);
+
+          document.body.appendChild(form);
+          form.submit();
+
+
+
+
+    };
+
+    var rating_good = function(email, status, title_eng) {
+
+        var path = '/movies/update/rating_good'
+
+        var method =  "post"; // Set method to post by default, if not specified.
+
+        // The rest of this code assumes you are not using a library.
+        // It can be made less wordy if you use one.
+        var form = document.createElement("form");
+        form.setAttribute("method", method);
+        form.setAttribute("action", path);
+
+
+        var user = document.createElement("input");
+        user.setAttribute("type", "hidden");
+        user.setAttribute("name", 'email');
+        user.setAttribute("value", email);
+        form.appendChild(user);
+
+        var rate= document.createElement("input");
+        rate.setAttribute("type", "hidden");
+        rate.setAttribute("name", 'status');
+        rate.setAttribute("value", status);
+        form.appendChild(rate);
+
+        var title= document.createElement("input");
+        title.setAttribute("type", "hidden");
+        title.setAttribute("name", 'title_eng');
+        title.setAttribute("value", title_eng);
+        form.appendChild(title);
+
+        document.body.appendChild(form);
+        form.submit();
+  };
+</script>
    </body>
 </html>

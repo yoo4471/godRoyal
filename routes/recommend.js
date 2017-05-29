@@ -25,49 +25,91 @@ router.insert_db_rates = function(user, title, action) {
     // console.log(user + ' : ' + title + ' ' + action)
   });
 }
-
 router.init_db_rates = function (callback) {
 
-  var user = ['A', 'B', 'C', 'D'];
-  var action = ''
-  console.log("rate 초기화 완료")
-  MovieContents.find(function(err, movieContents){
-      if(err) return res.status(500).send({error: 'database failure'});
+  var request = require("request");
+  var url = "http://localhost:3000/json/rate.json";
+
+  request({
+      url: url,
+      json: true
+  }, function (error, response, body) {
+
+      if (!error && response.statusCode === 200) {
+          var a = body["rate"]
 
 
-      for (i = 0; i < movieContents.length; i++) {
+          for (var i=0; i<a.length; i++) {
+            var thing = a[i]['thing']
+            var action = a[i]['action']
+            var person = a[i]['person']
+            console.log(thing, action, person)
+            router.insert_db_rates(person, thing, action);
+            if(action =='likes') {
+              MovieContents.findOneAndUpdate( { "title_eng": thing } , { "$push": { 'likes' : person}}).exec(function(err, movieContents){
+
+                // console.log(movieContents)
+                 if(err) return res.status(500).send({error: 'database failure'});
+              });
+            }
+            else {
+              MovieContents.findOneAndUpdate( { "title_eng": thing } , { "$push": { 'dislikes' : person}}).exec(function(err, movieContents){
+                // console.log(movieContents)
+                 if(err) return res.status(500).send({error: 'database failure'});
+              });
+            }
 
 
-        for (j = 0; j < 4; j++) {
-          var rannum = Math.floor(Math.random() * 3);
-
-          if (rannum == 1) {
-            action ='likes';
-            router.insert_db_rates(user[j], movieContents[i]['title_eng'], action);
-            MovieContents.findOneAndUpdate({ "title_eng": movieContents[i]['title_eng'] }, { "$push": { "likes": user[j]}}).exec(function(err, movieContents){
-               if(err) return res.status(500).send({error: 'database failure'});
-            });
           }
-          else if(rannum == 2){
-            action = 'dislikes';
-            router.insert_db_rates(user[j], movieContents[i]['title_eng'], action);
-            MovieContents.findOneAndUpdate({ "title_eng": movieContents[i]['title_eng'] }, { "$push": { "dislikes": user[j]}}).exec(function(err, movieContents){
-               if(err) return res.status(500).send({error: 'database failure'});
-            });
-          }
-          else {
-            
-          }
 
-
-
-        }
-
-
+          callback('init rate is done')
       }
-      callback('init rates is done')
-  })
+
+  });
 }
+
+// router.init_db_rates = function (callback) {
+//
+//   var user = ['A', 'B', 'C', 'D'];
+//   var action = ''
+//   console.log("rate 초기화 완료")
+//   MovieContents.find(function(err, movieContents){
+//       if(err) return res.status(500).send({error: 'database failure'});
+//
+//
+//       for (i = 0; i < movieContents.length; i++) {
+//
+//
+//         for (j = 0; j < 4; j++) {
+//           var rannum = Math.floor(Math.random() * 3);
+//
+//           if (rannum == 1) {
+//             action ='likes';
+//             router.insert_db_rates(user[j], movieContents[i]['title_eng'], action);
+//             MovieContents.findOneAndUpdate({ "title_eng": movieContents[i]['title_eng'] }, { "$push": { "likes": user[j]}}).exec(function(err, movieContents){
+//                if(err) return res.status(500).send({error: 'database failure'});
+//             });
+//           }
+//           else if(rannum == 2){
+//             action = 'dislikes';
+//             router.insert_db_rates(user[j], movieContents[i]['title_eng'], action);
+            // MovieContents.findOneAndUpdate({ "title_eng": movieContents[i]['title_eng'] }, { "$push": { "dislikes": user[j]}}).exec(function(err, movieContents){
+            //    if(err) return res.status(500).send({error: 'database failure'});
+            // });
+//           }
+//           else {
+//
+//           }
+//
+//
+//
+//         }
+//
+//
+//       }
+//       callback('init rates is done')
+//   })
+// }
 
 
 
@@ -99,7 +141,8 @@ router.init_db_movies = function(callback) {
             newMovieContents.description_title = a[i]["description_title"];
             newMovieContents.description = a[i]["description"];
             newMovieContents.current = a[i]["current"];
-            newMovieContents.img_url = a[i]["img_url"];
+            newMovieContents.poster_img_url = a[i]["poster_img_url"];
+            newMovieContents.wide_img_url = a[i]["wide_img_url"];
             newMovieContents.rating = a[i]['rating'];
 
 
@@ -114,6 +157,23 @@ router.init_db_movies = function(callback) {
 
   });
 
+}
+router.movies = function(MovieItems, callback) {
+    var lookup = 0;
+    var subOrderList = []
+    // console.log(MovieItems)
+    MovieItems.forEach(function(movieItem) {
+
+        MovieContents.findOne({ 'title_eng' : movieItem.thing }).lean().exec(function (err, thing) {
+
+
+
+
+            subOrderList.push(thing);
+
+            if (++lookup == MovieItems.length) callback(subOrderList);
+        });
+    });
 }
 
 router.test = function(email) {
