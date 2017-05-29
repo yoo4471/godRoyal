@@ -111,7 +111,7 @@
                                    <%
                                        for(var i=0; i<8; i++)
                                        {
-                                         var oneItem_order = rows_order[i]
+                                         var oneItem_order = rows_order[i];
                                    %>
                                    <li class="item rank1" style="">
                                        <a href="https://watcha.net/mv/pirates-of-the-caribbean-2013/m3xlkh" data-movie-id="m3xlkh" data-movie-title-url="pirates-of-the-caribbean-2013">
@@ -165,10 +165,14 @@
                                </div>
                                <form name="myform" method="post" action="/">
                                <div class="actions">
-                                   <%
-                                      if(oneItem.likes.indexOf(email)>-1)
-                                      {
-                                   %>
+                                 <%
+                                 if(email)
+                                 {
+
+
+                                   if(oneItem.likes.indexOf(email)>-1)
+                                   {
+                                     %>
 
                                        <div class="trailer btn"  onclick="rating_bad('<%=email%>', 1, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
                                            <span class="icon bad"></span>
@@ -182,35 +186,53 @@
 
                                        </div>
 
-                                   <%
-                                      }
-                                      else if(oneItem.dislikes.indexOf(email)>-1)
-                                      {
-                                   %>
-                                       <div class="trailer btn" style="color: #ff5148;" data-youtube-id="5RWz1ostEt8">
-                                           <span class="icon bad active"></span>
-                                           <%=oneItem.dislikes.length%>
-                                       </div>
-                                       <div class="trailer btn" onclick="rating_good('<%=email%>', 1, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
-                                           <span class="icon good"></span>
-                                           <%=oneItem.likes.length%>
-                                       </div>
-                                   <%
-                                      }
-                                      else
-                                      {
-                                   %>
-                                   <div class="trailer btn" onclick="rating_bad('<%=email%>', 0, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
-                                       <span class="icon bad"></span>
-                                       <%=oneItem.dislikes.length%>
-                                   </div>
-                                   <div class="trailer btn" onclick="rating_good('<%=email%>', 0, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
-                                       <span class="icon good"></span>
-                                       <%=oneItem.likes.length%>
-                                   </div>
-                                   <%
-                                      }
-                                   %>
+                                       <%
+                                          }
+                                          else if(oneItem.dislikes.indexOf(email)>-1)
+                                          {
+                                          %>
+                                         <div class="trailer btn" style="color: #ff5148;" data-youtube-id="5RWz1ostEt8">
+                                             <span class="icon bad active"></span>
+                                             <%=oneItem.dislikes.length%>
+                                         </div>
+                                         <div class="trailer btn" onclick="rating_good('<%=email%>', 1, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
+                                             <span class="icon good"></span>
+                                             <%=oneItem.likes.length%>
+                                         </div>
+                                        <%
+                                        }
+                                        else
+                                        {
+                                        %>
+                                          <div class="trailer btn" onclick="rating_bad('<%=email%>', 0, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
+                                              <span class="icon bad"></span>
+                                              <%=oneItem.dislikes.length%>
+                                          </div>
+                                          <div class="trailer btn" onclick="rating_good('<%=email%>', 0, '<%=oneItem.title_eng%>')" data-youtube-id="5RWz1ostEt8">
+                                              <span class="icon good"></span>
+                                              <%=oneItem.likes.length%>
+                                          </div>
+                                        <%
+                                        }
+
+                                   }
+                                   else
+                                   {
+                                 %>
+                                 <div class="trailer btn" data-youtube-id="5RWz1ostEt8">
+                                     <span class="icon bad"></span>
+                                     <%=oneItem.dislikes.length%>
+                                 </div>
+                                 <div class="trailer btn" data-youtube-id="5RWz1ostEt8">
+                                     <span class="icon good"></span>
+                                     <%=oneItem.likes.length%>
+                                 </div>
+                                 <%
+                                    }
+                                 %>
+
+
+
                                    <div class="reserve btn">
                                            예매
                                            <span class="icon"></span>
@@ -302,7 +324,7 @@
 
 
       <script>
-      
+
       var rating_bad = function(email, status, title_eng) {
 
           var path = '/movies/update/rating_bad'
