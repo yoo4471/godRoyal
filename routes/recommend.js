@@ -68,48 +68,7 @@ router.init_db_rates = function (callback) {
   });
 }
 
-// router.init_db_rates = function (callback) {
-//
-//   var user = ['A', 'B', 'C', 'D'];
-//   var action = ''
-//   console.log("rate 초기화 완료")
-//   MovieContents.find(function(err, movieContents){
-//       if(err) return res.status(500).send({error: 'database failure'});
-//
-//
-//       for (i = 0; i < movieContents.length; i++) {
-//
-//
-//         for (j = 0; j < 4; j++) {
-//           var rannum = Math.floor(Math.random() * 3);
-//
-//           if (rannum == 1) {
-//             action ='likes';
-//             router.insert_db_rates(user[j], movieContents[i]['title_eng'], action);
-//             MovieContents.findOneAndUpdate({ "title_eng": movieContents[i]['title_eng'] }, { "$push": { "likes": user[j]}}).exec(function(err, movieContents){
-//                if(err) return res.status(500).send({error: 'database failure'});
-//             });
-//           }
-//           else if(rannum == 2){
-//             action = 'dislikes';
-//             router.insert_db_rates(user[j], movieContents[i]['title_eng'], action);
-            // MovieContents.findOneAndUpdate({ "title_eng": movieContents[i]['title_eng'] }, { "$push": { "dislikes": user[j]}}).exec(function(err, movieContents){
-            //    if(err) return res.status(500).send({error: 'database failure'});
-            // });
-//           }
-//           else {
-//
-//           }
-//
-//
-//
-//         }
-//
-//
-//       }
-//       callback('init rates is done')
-//   })
-// }
+
 
 
 
@@ -144,6 +103,10 @@ router.init_db_movies = function(callback) {
             newMovieContents.poster_img_url = a[i]["poster_img_url"];
             newMovieContents.wide_img_url = a[i]["wide_img_url"];
             newMovieContents.rating = a[i]['rating'];
+
+            for (var j = 0; j < a[i]['comment'].length; j++) {
+              newMovieContents.comment.push(a[i]['comment'][j])
+            }
 
             for (var j = 0; j < a[i]['genre'].length; j++) {
               newMovieContents.genre.push(a[i]['genre'][j])

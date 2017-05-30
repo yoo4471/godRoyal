@@ -21,10 +21,21 @@ router.get('/', function(req, res, next) {
   // console.log(boardContents[0].img_url);
   // res.render('update', {title:"글 수정", error:"", row: boardContents});
 
-  res.render('index', {
-      rows: boardContents,
-      email: req.session.email,
-    });//render
+  MovieContents.find(function(err, latestContents){
+  if(err) return res.status(500).send({error: 'database failure'});
+
+    movieContents_date = latestContents.slice();
+    movieContents_date.sort(function (a, b) {
+      return b.release_date - a.release_date;
+    });
+    res.render('index', {
+        rows: boardContents,
+        rowslatest: movieContents_date,
+        email: req.session.email
+
+    });
+  });
+
   });//find
 });//get
 
@@ -132,17 +143,7 @@ router.get('/booking-movie-detail', function(req, res, next) {
   });
 });
 
-router.get('/movie-comment', function(req, res, next) {
-  MovieContents.find({current:1}, function(err, boardContents){
 
-  if(err) return res.status(500).send({error: 'database failure'});
-
-  // console.log(boardContents[0].img_url);
-  // res.render('update', {title:"글 수정", error:"", row: boardContents});
-
-  res.render('movie-comment', {rows: boardContents});
-  });
-});
 
 router.get('/booking-three', function(req, res, next) {
   MovieContents.find({current:1}, function(err, boardContents){

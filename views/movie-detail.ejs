@@ -218,165 +218,46 @@
                      코멘트
                   </h5>
                   <ul class="all-review review-list">
-                     <li>
-                        <div class="blur-area">
-                           <div class="user-pic" onclick="closePopupBeforeLeave(event);"><img src="https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg"></div>
-                           <div class="review">
-                              <div class="interest-status"><span class="rating-icon"><span style="display: inline-block; width: 12px; height: 11px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_off-67d9f104a21affb0809d5870464325b270281f06b4bb09c63a812877da6dd8e6.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_off-67d9f104a21affb0809d5870464325b270281f06b4bb09c63a812877da6dd8e6.png&quot;) 0px 0px / 12px 11px no-repeat;"></span></span></div>
-                              <div class="name">메뚜리언</div>
-                              <p class="text">세상의 끝에서 낯선 조류를 만나 길을 잃었던 영화가 다시 항로를 찾기 시작했다.  <br>  <br># 쿠키 영상 있음. 좀 오래 기다려야 함.<br># 너무 기대를 안해서 그런지 생각보다 재밌게...</p>
-                              <div class="watch-records" style="display: none;"></div>
-                              <div class="bottom-left"><span class="updated-at">3일 전</span><span class="like-module rl-4993362">
-                                <span class="count">
-                                  <span class="like-count-text">164</span></span></span>
+                      <%
+                        if(rows[0].comment.length > 8) num = 8;
+                        else num = rows[0].comment.length;
+
+                        for (var k = rows[0].comment.length - 1 ; k >= rows[0].comment.length - num; k--)
+                        {
+                            oneComment = rows[0].comment[k]
+                      %>
+                            <li>
+                               <div class="blur-area">
+                                  <div class="user-pic" onclick="closePopupBeforeLeave(event);"><img src="https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg"></div>
+                                  <div class="review">
+
+                                     <div class="name"><%=oneComment['email']%></div>
+                                     <p class="text"><%=oneComment['text']%></p>
+                                     <div class="watch-records" style="display: none;"></div>
+                                     <div class="bottom-left"><span class="updated-at">3일 전</span><span class="like-module rl-4993362">
+                                       </span>
+                                         </div>
                                   </div>
-                           </div>
-                           <span class="balloon-arrow"></span>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="blur-area">
-                           <div class="user-pic" onclick="closePopupBeforeLeave(event);"><img src="https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg"></div>
-                           <div class="review">
-                              <div class="interest-status"><span class="rating-icon"><span style="display: inline-block; width: 12px; height: 11px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_off-67d9f104a21affb0809d5870464325b270281f06b4bb09c63a812877da6dd8e6.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_off-67d9f104a21affb0809d5870464325b270281f06b4bb09c63a812877da6dd8e6.png&quot;) 0px 0px / 12px 11px no-repeat;"></span></span></div>
-                              <div class="name">메뚜리언</div>
-                              <p class="text">세상의 끝에서 낯선 조류를 만나 길을 잃었던 영화가 다시 항로를 찾기 시작했다.  <br>  <br># 쿠키 영상 있음. 좀 오래 기다려야 함.<br># 너무 기대를 안해서 그런지 생각보다 재밌게...</p>
-                              <div class="watch-records" style="display: none;"></div>
-                              <div class="bottom-left"><span class="updated-at">3일 전</span><span class="like-module rl-4993362">
-                                <span class="count">
-                                  <span class="like-count-text">164</span></span></span>
-                                  </div>
-                           </div>
-                           <span class="balloon-arrow"></span>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="blur-area">
-                           <div class="user-pic" onclick="closePopupBeforeLeave(event);"><img src="https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg"></div>
-                           <div class="review">
-                              <div class="interest-status"><span class="rating-icon"><span style="display: inline-block; width: 12px; height: 11px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_off-67d9f104a21affb0809d5870464325b270281f06b4bb09c63a812877da6dd8e6.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_off-67d9f104a21affb0809d5870464325b270281f06b4bb09c63a812877da6dd8e6.png&quot;) 0px 0px / 12px 11px no-repeat;"></span></span></div>
-                              <div class="name">메뚜리언</div>
-                              <p class="text">세상의 끝에서 낯선 조류를 만나 길을 잃었던 영화가 다시 항로를 찾기 시작했다.  <br>  <br># 쿠키 영상 있음. 좀 오래 기다려야 함.<br># 너무 기대를 안해서 그런지 생각보다 재밌게...</p>
-                              <div class="watch-records" style="display: none;"></div>
-                              <div class="bottom-left"><span class="updated-at">3일 전</span><span class="like-module rl-4993362">
-                                <span class="count">
-                                  <span class="like-count-text">164</span></span></span>
-                                  </div>
-                           </div>
-                           <span class="balloon-arrow"></span>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="blur-area">
-                           <div class="user-pic" onclick="closePopupBeforeLeave(event);"><img src="https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg"></div>
-                           <div class="review">
-                              <div class="interest-status"><span class="rating-icon"><span style="display: inline-block; width: 12px; height: 11px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_on-b72e8d7703fae1d31eb798bb047c304805c292e63782b1efccd7511324f65f44.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_off-67d9f104a21affb0809d5870464325b270281f06b4bb09c63a812877da6dd8e6.png&quot;) 0px 0px / 12px 11px no-repeat;"></span><span style="display: inline-block; width: 12px; height: 11px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_mini_off-67d9f104a21affb0809d5870464325b270281f06b4bb09c63a812877da6dd8e6.png&quot;) 0px 0px / 12px 11px no-repeat;"></span></span></div>
-                              <div class="name">메뚜리언</div>
-                              <p class="text">세상의 끝에서 낯선 조류를 만나 길을 잃었던 영화가 다시 항로를 찾기 시작했다.  <br>  <br># 쿠키 영상 있음. 좀 오래 기다려야 함.<br># 너무 기대를 안해서 그런지 생각보다 재밌게...</p>
-                              <div class="watch-records" style="display: none;"></div>
-                              <div class="bottom-left"><span class="updated-at">3일 전</span><span class="like-module rl-4993362">
-                                <span class="count">
-                                  <span class="like-count-text">164</span></span></span>
-                                  </div>
-                           </div>
-                           <span class="balloon-arrow"></span>
-                        </div>
-                     </li>
-                     <div style="margin-top:-100px;"><iframe width="100%" height="300px" scrolling="no" frameborder="0" src="http://localhost:3000/movie-comment"></iframe></div>
+                                  <span class="balloon-arrow"></span>
+                               </div>
+                            </li>
+                      <%
+                        }
+                      %>
+
+                      <%
+                        if (email)
+                        {
+                      %>
+                          <div style="margin-top:-100px;"><iframe width="100%" height="300px" scrolling="no" frameborder="0" src="http://localhost:3000/movies/comment/<%=email%>/<%=rows[0].title_eng%>"></iframe></div>
+                      <%
+                        }
+                      %>
+
+
                   </ul>
 
-                  <!-- <h5 class="similar-movie-heading">비슷한 영화</h5>
-                  <ul class="similar-movie-list">
-                     <div class="movie-card mini-poster-card user-action-mcskoh card grid-1 hei-1 first">
-                        <div class="poster-wrapper">
-                           <img class="poster" src="./test1_files/dlvnw4brvskzxrw4ewxf.jpg" width="140" height="200">
-                           <div class="gradation detail-opener"></div>
-                        </div>
-                        <div class="action-wrapper">
-                           <div class="movie-title">캐리비안의 해적 - 블랙 펄의 저주</div>
-                           <div class="rating"><span class="watcha-star half left" data-value="0.5"></span><span class="watcha-star half right" data-value="1"></span><span class="watcha-star half left" data-value="1.5"></span><span class="watcha-star half right" data-value="2"></span><span class="watcha-star half left" data-value="2.5"></span><span class="watcha-star half right" data-value="3"></span><span class="watcha-star half left" data-value="3.5"></span><span class="watcha-star half right" data-value="4"></span><span class="watcha-star half left" data-value="4.5"></span><span class="watcha-star half right" data-value="5"></span></div>
-                           <div class="wish-comment">
-                              <div class="wish">
-                                 <span class="icon"></span>
-                                 보고싶어요
-                              </div>
-                              <div class="bar"></div>
-                              <div class="comment">
-                                 <span class="icon"></span>
-                                 코멘트 쓰기
-                              </div>
-                           </div>
-                           <div class="meh">관심없어요</div>
-                        </div>
-                     </div>
-                     <div class="movie-card mini-poster-card user-action-mmp3jg card grid-1 hei-1">
-                        <div class="poster-wrapper">
-                           <img class="poster" src="./test1_files/arq3uwmkitmnu3qw08z0.jpg" width="140" height="200">
-                           <div class="gradation detail-opener"></div>
-                        </div>
-                        <div class="action-wrapper">
-                           <div class="movie-title">캐리비안의 해적 - 미녀와 보물섬</div>
-                           <div class="rating"><span class="watcha-star half left" data-value="0.5"></span><span class="watcha-star half right" data-value="1"></span><span class="watcha-star half left" data-value="1.5"></span><span class="watcha-star half right" data-value="2"></span><span class="watcha-star half left" data-value="2.5"></span><span class="watcha-star half right" data-value="3"></span><span class="watcha-star half left" data-value="3.5"></span><span class="watcha-star half right" data-value="4"></span><span class="watcha-star half left" data-value="4.5"></span><span class="watcha-star half right" data-value="5"></span></div>
-                           <div class="wish-comment">
-                              <div class="wish">
-                                 <span class="icon"></span>
-                                 보고싶어요
-                              </div>
-                              <div class="bar"></div>
-                              <div class="comment">
-                                 <span class="icon"></span>
-                                 코멘트 쓰기
-                              </div>
-                           </div>
-                           <div class="meh">관심없어요</div>
-                        </div>
-                     </div>
-                     <div class="movie-card mini-poster-card user-action-mg64md card grid-1 hei-1">
-                        <div class="poster-wrapper">
-                           <img class="poster" src="./test1_files/gtxn5vpuo3kbvw8rb5sb.jpg" width="140" height="200">
-                           <div class="gradation detail-opener"></div>
-                        </div>
-                        <div class="action-wrapper">
-                           <div class="movie-title">캐리비안의 해적 - 망자의 함</div>
-                           <div class="rating"><span class="watcha-star half left" data-value="0.5"></span><span class="watcha-star half right" data-value="1"></span><span class="watcha-star half left" data-value="1.5"></span><span class="watcha-star half right" data-value="2"></span><span class="watcha-star half left" data-value="2.5"></span><span class="watcha-star half right" data-value="3"></span><span class="watcha-star half left" data-value="3.5"></span><span class="watcha-star half right" data-value="4"></span><span class="watcha-star half left" data-value="4.5"></span><span class="watcha-star half right" data-value="5"></span></div>
-                           <div class="wish-comment">
-                              <div class="wish">
-                                 <span class="icon"></span>
-                                 보고싶어요
-                              </div>
-                              <div class="bar"></div>
-                              <div class="comment">
-                                 <span class="icon"></span>
-                                 코멘트 쓰기
-                              </div>
-                           </div>
-                           <div class="meh">관심없어요</div>
-                        </div>
-                     </div>
-                     <div class="movie-card mini-poster-card user-action-mpj7jp card grid-1 hei-1">
-                        <div class="poster-wrapper">
-                           <img class="poster" src="./test1_files/r9loxmmuld86ruini2ck.jpg" width="140" height="200">
-                           <div class="gradation detail-opener"></div>
-                        </div>
-                        <div class="action-wrapper">
-                           <div class="movie-title">캐리비안의 해적: 낯선 조류</div>
-                           <div class="rating"><span class="watcha-star half left" data-value="0.5"></span><span class="watcha-star half right" data-value="1"></span><span class="watcha-star half left" data-value="1.5"></span><span class="watcha-star half right" data-value="2"></span><span class="watcha-star half left" data-value="2.5"></span><span class="watcha-star half right" data-value="3"></span><span class="watcha-star half left" data-value="3.5"></span><span class="watcha-star half right" data-value="4"></span><span class="watcha-star half left" data-value="4.5"></span><span class="watcha-star half right" data-value="5"></span></div>
-                           <div class="wish-comment">
-                              <div class="wish">
-                                 <span class="icon"></span>
-                                 보고싶어요
-                              </div>
-                              <div class="bar"></div>
-                              <div class="comment">
-                                 <span class="icon"></span>
-                                 코멘트 쓰기
-                              </div>
-                           </div>
-                           <div class="meh">관심없어요</div>
-                        </div>
-                     </div>
-                     <li class="clear"></li>
-                  </ul> -->
+
 
                </div>
 

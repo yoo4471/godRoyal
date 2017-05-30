@@ -22,7 +22,8 @@ var movieSchema = mongoose.Schema({
   slide_img_url: [],
   likes: [],
   dislikes: [],
-  genre: []
+  genre: [],
+  comment: []
 });
 
 
