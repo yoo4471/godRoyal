@@ -1,0 +1,57 @@
+/*
+  Modulr.css
+  ---------------------
+  @desc: Modular CSS Framework
+  @author: Decorator.io
+  @twitter: https://www.twitter.com/_uloga
+  @source: http://www.decorator.io/modulr
+\--------------------------------------------*/
+
+/* __ extra edits __ */
+
+body{
+  background: #eee;
+}
+.shadow{
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+}
+.thumbnail img{
+  float: left;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.before{
+  border: 1px solid #009688;
+}
+.before:before {
+  content: "";
+  border-left: 1px solid #009688;
+  position: absolute;
+  left: -12%;
+  height: 112%;
+  top: -22px;
+}
+.after:after {
+  content: "";
+  border-bottom: 1px solid #009688;
+  position: absolute;
+  width: 60%;
+  left: 41%;
+  top: 45%;
+}
+.filter .label{
+  float: left;
+  margin-top: 13px;
+  margin-right: 5px;
+}
+@media (max-width: 800px){
+  .after:after {
+    border-bottom: none;
+    border-left: 1px solid #009688;
+    height: 50px;
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    z-index: -1;
+  }
+}
