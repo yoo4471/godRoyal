@@ -7,97 +7,101 @@
      <script src="/javascripts/MenuSlide.js"></script>
    </head>
    <body class="boxoffice linux">
-       <div id="header">
-           <div class="for-popup-scroll-area-margin">
-               <div class="inner responsive-mask">
-                   <ul class="gnb clearfix">
-                       <li class="navi-item home ">
-                           <a href="/">
-                           <img src="/images/logo/logo.png" width="30" height="30">
-                           </a>
-                           <span class="highlight"></span>
-                       </li>
-                       <li class="navi-item boxoffice">
-                          <a href="/movies">박스오피스</a>
-                          <span class="highlight"></span>
-                       </li>
-                       <li class="navi-item genre ">
-                          <a href="/movies/recommend">추천영화</a>
-                          <span class="highlight"></span>
-                       </li>
-                   </ul>
-                   <form accept-charset="UTF-8" action="https://watcha.net/search/search" id="search-form" method="get">
-                       <div class="input-wrapper">
-                           <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="input-query" name="query" type="search" autocomplete="off" class="ui-autocomplete-input">
-                           <span id="search-icon"></span>
-                       </div>
-                       <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul>
-                   </form>
-                   <% if(email){ %>
-                     <div id="gnb-right-menu" class="right-menu">
-
-
-                        <div class="menu my" style="padding-bottom: 10px;padding-right: 14px;padding-left: 10px;">
-                           <a class="name" href="/logout">
-                                로그아웃
-
-                           </a>
-                           <span class="highlight"></span>
-
-                        </div>
-                        <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
-                           <a class="name" href="#아이디클릭" onclick="window.open('/', 'newwindow', 'width=300, height=250'); return false;">
-                                내정보
-
-                           </a>
-                           <span class="highlight"></span>
-                           <div class="dropdown">
-                              <ul>
-                                 <li>
-                                    <a href="https://watcha.net/v2/users/k1dp84nRqd4m/wishlist">영화보관함</a>
-                                    <span class="count">19</span>
-                                 </li>
-                                 <li>
-                                    <a href="https://watcha.net/giftbox">선물함</a>
-                                 </li>
-                                 <li class="divide-line">
-                                    <a href="https://watcha.net/#" onclick="InviteFriend.popupInviteFriend(event);">친구초대</a>
-                                 </li>
-                                 <li class="divide-line">
-                                    <a href="https://watcha.net/#" class="setting">설정</a>
-                                 </li>
-                                 <li>
-                                    <a href="https://watcha.net/logout">로그아웃</a>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
+     <div id="header">
+         <div class="for-popup-scroll-area-margin">
+             <div class="inner responsive-mask">
+                 <ul class="gnb clearfix">
+                     <li class="navi-item home ">
+                         <a href="/">
+                         <img src="/images/logo/logo.png" width="30" height="30">
+                         </a>
+                         <span class="highlight"></span>
+                     </li>
+                     <li class="navi-item boxoffice">
+                        <a href="/movies">박스오피스</a>
+                        <span class="highlight"></span>
+                     </li>
+                     <li class="navi-item genre ">
+                        <a href="/movies/latestoffice">최신영화</a>
+                        <span class="highlight"></span>
+                     </li>
+                     <li class="navi-item genre ">
+                        <a href="/movies/recommend">추천영화</a>
+                        <span class="highlight"></span>
+                     </li>
+                 </ul>
+                 <form accept-charset="UTF-8" action="https://watcha.net/search/search" id="search-form" method="get">
+                     <div class="input-wrapper">
+                         <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="input-query" name="query" type="search" autocomplete="off" class="ui-autocomplete-input">
+                         <span id="search-icon"></span>
                      </div>
-                   <% }else{ %>
-                     <div id="gnb-right-menu" class="right-menu">
-                        <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
-                           <a class="name" href="/signup">
-                                회원가입
-
-                           </a>
-                           <span class="highlight"></span>
-                        </div>
-                        <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
-                           <a class="name" href="/login">
-                                로그인
-
-                           </a>
-                           <span class="highlight"></span>
-
-                        </div>
-                     </div>
-
-                   <% } %>
+                     <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul>
+                 </form>
+                 <% if(email){ %>
+                   <div id="gnb-right-menu" class="right-menu">
 
 
-               </div>
-           </div>
-       </div>
+                      <div class="menu my" style="padding-bottom: 10px;padding-right: 14px;padding-left: 10px;">
+                         <a class="name" href="/logout">
+                              로그아웃
+
+                         </a>
+                         <span class="highlight"></span>
+
+                      </div>
+                      <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
+                         <a class="name" href="#아이디클릭" onclick="window.open('/', 'newwindow', 'width=300, height=250'); return false;">
+                              내정보
+
+                         </a>
+                         <span class="highlight"></span>
+                         <div class="dropdown">
+                            <ul>
+                               <li>
+                                  <a href="https://watcha.net/v2/users/k1dp84nRqd4m/wishlist">영화보관함</a>
+                                  <span class="count">19</span>
+                               </li>
+                               <li>
+                                  <a href="https://watcha.net/giftbox">선물함</a>
+                               </li>
+                               <li class="divide-line">
+                                  <a href="https://watcha.net/#" onclick="InviteFriend.popupInviteFriend(event);">친구초대</a>
+                               </li>
+                               <li class="divide-line">
+                                  <a href="https://watcha.net/#" class="setting">설정</a>
+                               </li>
+                               <li>
+                                  <a href="https://watcha.net/logout">로그아웃</a>
+                               </li>
+                            </ul>
+                         </div>
+                      </div>
+                   </div>
+                 <% }else{ %>
+                   <div id="gnb-right-menu" class="right-menu">
+                      <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
+                         <a class="name" href="/signup">
+                              회원가입
+
+                         </a>
+                         <span class="highlight"></span>
+                      </div>
+                      <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
+                         <a class="name" href="/login">
+                              로그인
+
+                         </a>
+                         <span class="highlight"></span>
+
+                      </div>
+                   </div>
+
+                 <% } %>
+
+
+             </div>
+         </div>
+     </div>
 
        <link rel="stylesheet" media="screen" href="/stylesheets/MovieCard.css">
        <div id="contents" style="min-height: 927px;">
@@ -114,7 +118,7 @@
                                          var oneItem_order = rows_order[i];
                                    %>
                                    <li class="item rank1" style="">
-                                       <a href="https://watcha.net/mv/pirates-of-the-caribbean-2013/m3xlkh" data-movie-id="m3xlkh" data-movie-title-url="pirates-of-the-caribbean-2013">
+                                       <a href="/movies/detail/<%=oneItem_order.title_eng%>">
                                            <span class="number"><%=i+1%></span><%=oneItem_order.title_kor%>
                                        </a>
                                    </li>
@@ -131,10 +135,17 @@
                          for(var i=0; i<rows.length; i++)
                          {
                            var oneItem = rows[i];
+                           var width_star = 0;
+                           var total_star = 0
+
                            var total_rate = oneItem.likes.length + oneItem.dislikes.length;
-                           var total_star = (oneItem.likes.length / total_rate) * 5;
-                           total_star = total_star.toFixed(1);
-                           var width_star = total_star * 20;
+
+                           if (total_rate != 0) {
+                             total_star = (oneItem.likes.length / total_rate) * 5;
+                             total_star = total_star.toFixed(1);
+                             width_star = total_star * 20;
+                           }
+
 
                      %>
                        <div class="boxoffice-card card grid-4 hei-1">
@@ -147,7 +158,7 @@
                            </div>
                            <div class="movie-info" id="<%=oneItem.title_eng%>">
                                <h5 class="title-filmrate">
-                                 <a href="/" class="movie-title">
+                                 <a href="/movies/detail/<%=oneItem.title_eng%>" class="movie-title">
                                    <%=oneItem.title_kor%>
                                  </a>
                                  <span class="filmrate rate-<%=oneItem.grade%>"><%=oneItem.grade%></span>

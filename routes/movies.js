@@ -62,18 +62,30 @@ router.get('/latestoffice', function(req, res, next) {
   MovieContents.find({ current:1 }, function(err, movieContents){
 
   if(err) return res.status(500).send({error: 'database failure'});
+
   orderContents = movieContents.slice();
   orderContents.sort(function (a, b) {
     return b.likes.length - a.likes.length;
   });
 
-  res.render('latestoffice', {
-      rows: movieContents,
-      rows_order: orderContents,
-      email: req.session.email
 
-      }
-    );
+  MovieContents.find(function(err, boardContents){
+  if(err) return res.status(500).send({error: 'database failure'});
+
+    movieContents_date = boardContents.slice();
+    movieContents_date.sort(function (a, b) {
+      return b.release_date - a.release_date;
+    });
+    res.render('latestoffice', {
+        rows: movieContents_date,
+        rows_order: orderContents,
+        email: req.session.email
+
+    });
+  });
+
+
+
   });
 });//get
 
@@ -132,6 +144,28 @@ router.get('/recommend', function(req, res, next) {
   }//endelse
 
 });//get
+
+router.get('/detail/:title_eng', function(req, res, next) {
+  var title = req.params.title_eng;
+  console.log(title)
+  MovieContents.find({title_eng:title}, function(err, movieContents){
+    if(err) return res.status(500).send({error: 'database failure'});
+
+    
+    if (movieContents.length == 0) {
+      res.send('영화없음.')
+    }
+    else {
+
+      res.render('movie-detail', {rows: movieContents, email: req.session.email})
+      }
+    }
+    );
+    // console.log(boardContents[0].img_url);
+    // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+
+});
 
 router.post('/update/rating_bad', function(req, res, next) {
 

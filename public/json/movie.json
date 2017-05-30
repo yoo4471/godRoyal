@@ -14,7 +14,15 @@
         "current": 1,
         "poster_img_url": "/images/poster/get_out_poster.jpg",
         "wide_img_url": "/images/poster/get_out_wide.jpg",
-        "rating":3.8
+        "slide_img_url": [
+          "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+          "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+        ],
+        "rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
       },
       {
          "title_kor": "불한당: 나쁜 놈들의 세상",
@@ -30,7 +38,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/The_Merciless_poster.jpg",
          "wide_img_url": "/images/poster/The_Merciless_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+            "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+            "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+          ],
+          "rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
 
        },
       {
@@ -47,7 +63,16 @@
          "current": 1,
          "poster_img_url": "/images/poster/King Arthur_poster.jpg",
          "wide_img_url": "/images/poster/King Arthur_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+            "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+            "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+          ],
+          "rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
+
 
        },
       {
@@ -64,7 +89,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/The_Boss_Baby_poster.jpg",
          "wide_img_url": "/images/poster/The_Boss_Baby_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
 
        },
       {
@@ -81,7 +114,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/Alien_poster.jpg",
          "wide_img_url": "/images/poster/Alien_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
 
        },
       {
@@ -98,7 +139,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/The_Sheriff_poster.jpg",
          "wide_img_url": "/images/poster/The_Sheriff_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
 
        },
       {
@@ -115,7 +164,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/Guardians_of_the_Galaxy_poster.jpg",
          "wide_img_url": "/images/poster/Guardians_of_the_Galaxy_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
 
        },
       {
@@ -132,7 +189,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/A_Silent_Voice_poster.jpg",
          "wide_img_url": "/images/poster/A_Silent_Voice_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
       {
          "title_kor": "석조저택 살인사건",
@@ -148,7 +213,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/The_Tooth_and_the_Nail_poster.jpg",
          "wide_img_url": "/images/poster/The_Tooth_and_the_Nail_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
       {
          "title_kor": "로스트 인 파리",
@@ -164,7 +237,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/Lost_in_Paris_poster.jpg",
          "wide_img_url": "/images/poster/Lost_in_Paris_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
       {
          "title_kor": "해바라기",
@@ -180,7 +261,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Sunflower_poster.jpg",
          "wide_img_url": "/images/poster/Sunflower_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
       {
          "title_kor": "반지의 제왕: 반지 원정대 ",
@@ -196,7 +285,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/The_Lord_Of_The_Rings_poster.jpg",
          "wide_img_url": "/images/poster/The_Lord_Of_The_Rings_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
       {
          "title_kor": "호빗: 다섯 군대 전투",
@@ -212,7 +309,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/The_Hobbit_poster.jpg",
          "wide_img_url": "/images/poster/The_Hobbit_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
       {
          "title_kor": "테이큰",
@@ -228,7 +333,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Taken_poster.jpg",
          "wide_img_url": "/images/poster/Taken_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
       {
          "title_kor": "해리 포터와 마법사의 돌",
@@ -244,7 +357,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Harry_Potter_poster.jpg",
          "wide_img_url": "/images/poster/Harry_Potter_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
       {
          "title_kor": "토르: 다크 월드 ",
@@ -260,7 +381,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Thor_poster.jpg",
          "wide_img_url": "/images/poster/Thor_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
       {
          "title_kor": "어벤져스: 에이지 오브 울트론 ",
@@ -276,7 +405,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/The_Avengers_poster.jpg",
          "wide_img_url": "/images/poster/The_Avengers_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "니모를 찾아서",
@@ -292,7 +429,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Finding_Nemo_poster.jpg",
          "wide_img_url": "/images/poster/Finding_Nemo_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "주토피아",
@@ -308,7 +453,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Zootopia_poster.jpg",
          "wide_img_url": "/images/poster/Zootopia_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "쿵푸팬더3",
@@ -324,7 +477,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Kung_Fu_poster.jpg",
          "wide_img_url": "/images/poster/Kung_Fu_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "드래곤 길들이기2",
@@ -340,7 +501,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Dragon_poster.jpg",
          "wide_img_url": "/images/poster/Dragon_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "업",
@@ -356,7 +525,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Up_poster.jpg",
          "wide_img_url": "/images/poster/Up_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "아저씨",
@@ -372,7 +549,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/The_Man_poster.jpg",
          "wide_img_url": "/images/poster/The_Man_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "탐정 홍길동: 사라진 마을",
@@ -388,7 +573,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/Phantom_poster.jpg",
          "wide_img_url": "/images/poster/Phantom_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "에너미 오브 스테이트",
@@ -404,7 +597,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Enemy_poster.jpg",
          "wide_img_url": "/images/poster/Enemy_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "언스토퍼블",
@@ -420,7 +621,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Unstoppable_poster.jpg",
          "wide_img_url": "/images/poster/Unstoppable_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "데자뷰",
@@ -436,7 +645,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Deja_poster.jpg",
          "wide_img_url": "/images/poster/Deja_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "노무현입니다",
@@ -452,7 +669,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/Our_poster.jpg",
          "wide_img_url": "/images/poster/Our_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "컨저링",
@@ -468,7 +693,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Conjuring_poster.jpg",
          "wide_img_url": "/images/poster/Conjuring_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "라이트 아웃",
@@ -484,7 +717,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Lights_poster.jpg",
          "wide_img_url": "/images/poster/Lights_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "타이타닉",
@@ -500,7 +741,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Titanic_poster.jpg",
          "wide_img_url": "/images/poster/Titanic_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "너와 100번째 사랑",
@@ -516,7 +765,15 @@
          "current": 1,
          "poster_img_url": "/images/poster/love_poster.jpg",
          "wide_img_url": "/images/poster/love_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "솔트",
@@ -532,7 +789,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Salt_poster.jpg",
          "wide_img_url": "/images/poster/Salt_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "원티드",
@@ -548,7 +813,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Wanted_poster.jpg",
          "wide_img_url": "/images/poster/Wanted_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "베오울프",
@@ -564,7 +837,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/BeoWulf_poster.jpg",
          "wide_img_url": "/images/poster/BeoWulf_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "본 아이덴티티",
@@ -580,7 +861,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Identity_poster.jpg",
          "wide_img_url": "/images/poster/Identity_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "점퍼",
@@ -596,7 +885,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Jumper_poster.jpg",
          "wide_img_url": "/images/poster/Jumper_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "쥬라기 월드",
@@ -612,7 +909,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/World_poster.jpg",
          "wide_img_url": "/images/poster/World_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "스타트랙 비욘드",
@@ -628,7 +933,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Star_poster.jpg",
          "wide_img_url": "/images/poster/Star_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "인셉션",
@@ -644,7 +957,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Inception_poster.jpg",
          "wide_img_url": "/images/poster/Inception_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "인 타임",
@@ -660,7 +981,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Time_poster.jpg",
          "wide_img_url": "/images/poster/Time_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "캡틴 아메리카: 시빌 워",
@@ -676,7 +1005,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Captain_poster.jpg",
          "wide_img_url": "/images/poster/Captain_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "레지던트 이블: 파멸의 날",
@@ -692,7 +1029,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/Evil_poster.jpg",
          "wide_img_url": "/images/poster/Evil_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
 	   {
          "title_kor": "월드워Z",
@@ -708,7 +1053,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/War_poster.jpg",
          "wide_img_url": "/images/poster/War_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        },
       {
          "title_kor": "아일랜드",
@@ -724,7 +1077,15 @@
          "current": 0,
          "poster_img_url": "/images/poster/The_Island_poster.jpg",
          "wide_img_url": "/images/poster/The_Island_wide.jpg",
-         "rating":3.8
+         "slide_img_url": [
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg",
+  "https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg"
+],
+"rating":3.8,
+"genre" :[
+  "액션",
+  "코미디"
+]
        }
 
     ]

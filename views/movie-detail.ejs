@@ -9,71 +9,101 @@
    </head>
    <body class="landing nanum-gothic linux">
 
-      <div id="header" class=" ">
+     <div id="header">
          <div class="for-popup-scroll-area-margin">
-            <div class="inner responsive-mask">
-               <ul class="gnb clearfix">
-                  <li class="navi-item home ">
-                    <a href="/">
-                    <img src="/images/logo/logo.png" width="30" height="30">
-                    </a>
-                     <span class="highlight"></span>
-                  </li>
-                  <li class="navi-item boxoffice">
-                     <a href="#">박스오피스</a>
-                     <span class="highlight"></span>
-                  </li>
-                  <li class="navi-item genre ">
-                     <a href="/movies/recommend">추천영화</a>
-                     <span class="highlight"></span>
-                  </li>
-               </ul>
-               <form accept-charset="UTF-8" action="https://watcha.net/search/search" id="search-form" method="get">
-                  <div class="input-wrapper">
-                     <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="input-query" name="query" type="search" autocomplete="off" class="ui-autocomplete-input">
-                     <span id="search-icon"></span>
-                  </div>
-                  <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul>
-               </form>
-               <div id="gnb-right-menu" class="right-menu">
-                 <div class="menu my" style="padding-bottom: 10px;padding-right: 14px;padding-left: 10px;">
-                    <a class="name" href="#아이디클릭" onclick="window.open('/', 'newwindow', 'width=300, height=250'); return false;">
-                         회원가입
+             <div class="inner responsive-mask">
+                 <ul class="gnb clearfix">
+                     <li class="navi-item home ">
+                         <a href="/">
+                         <img src="/images/logo/logo.png" width="30" height="30">
+                         </a>
+                         <span class="highlight"></span>
+                     </li>
+                     <li class="navi-item boxoffice">
+                        <a href="/movies">박스오피스</a>
+                        <span class="highlight"></span>
+                     </li>
+                     <li class="navi-item genre ">
+                        <a href="/movies/latestoffice">최신영화</a>
+                        <span class="highlight"></span>
+                     </li>
+                     <li class="navi-item genre ">
+                        <a href="/movies/recommend">추천영화</a>
+                        <span class="highlight"></span>
+                     </li>
+                 </ul>
+                 <form accept-charset="UTF-8" action="https://watcha.net/search/search" id="search-form" method="get">
+                     <div class="input-wrapper">
+                         <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="input-query" name="query" type="search" autocomplete="off" class="ui-autocomplete-input">
+                         <span id="search-icon"></span>
+                     </div>
+                     <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul>
+                 </form>
+                 <% if(email){ %>
+                   <div id="gnb-right-menu" class="right-menu">
 
-                    </a>
-                    <span class="highlight"></span>
-                    <!-- <div class="dropdown">
-                       <ul>
-                          <li>
-                             <a href="https://watcha.net/v2/users/k1dp84nRqd4m/wishlist">영화보관함</a>
-                             <span class="count">19</span>
-                          </li>
-                          <li>
-                             <a href="https://watcha.net/giftbox">선물함</a>
-                          </li>
-                          <li class="divide-line">
-                             <a href="https://watcha.net/#" onclick="InviteFriend.popupInviteFriend(event);">친구초대</a>
-                          </li>
-                          <li class="divide-line">
-                             <a href="https://watcha.net/#" class="setting">설정</a>
-                          </li>
-                          <li>
-                             <a href="https://watcha.net/logout">로그아웃</a>
-                          </li>
-                       </ul>
-                    </div> -->
-                 </div>
-                 <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
-                    <a class="name" href="#아이디클릭">
-                         로그인
-                    </a>
-                    <span class="highlight"></span>
 
-                 </div>
-               </div>
-            </div>
+                      <div class="menu my" style="padding-bottom: 10px;padding-right: 14px;padding-left: 10px;">
+                         <a class="name" href="/logout">
+                              로그아웃
+
+                         </a>
+                         <span class="highlight"></span>
+
+                      </div>
+                      <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
+                         <a class="name" href="#아이디클릭" onclick="window.open('/', 'newwindow', 'width=300, height=250'); return false;">
+                              내정보
+
+                         </a>
+                         <span class="highlight"></span>
+                         <div class="dropdown">
+                            <ul>
+                               <li>
+                                  <a href="https://watcha.net/v2/users/k1dp84nRqd4m/wishlist">영화보관함</a>
+                                  <span class="count">19</span>
+                               </li>
+                               <li>
+                                  <a href="https://watcha.net/giftbox">선물함</a>
+                               </li>
+                               <li class="divide-line">
+                                  <a href="https://watcha.net/#" onclick="InviteFriend.popupInviteFriend(event);">친구초대</a>
+                               </li>
+                               <li class="divide-line">
+                                  <a href="https://watcha.net/#" class="setting">설정</a>
+                               </li>
+                               <li>
+                                  <a href="https://watcha.net/logout">로그아웃</a>
+                               </li>
+                            </ul>
+                         </div>
+                      </div>
+                   </div>
+                 <% }else{ %>
+                   <div id="gnb-right-menu" class="right-menu">
+                      <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
+                         <a class="name" href="/signup">
+                              회원가입
+
+                         </a>
+                         <span class="highlight"></span>
+                      </div>
+                      <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
+                         <a class="name" href="/login">
+                              로그인
+
+                         </a>
+                         <span class="highlight"></span>
+
+                      </div>
+                   </div>
+
+                 <% } %>
+
+
+             </div>
          </div>
-      </div>
+     </div>
       <div id="contents" style="min-height: 927px;">
          <div class="movie-detail-container">
             <div class="movie-detail m3xlkh detail-page ">
@@ -82,19 +112,37 @@
                   <div class="biggest-stillcut ">
                      <div id="slider" class="swipe" style="visibility: visible;">
                         <div class="swipe-wrap" style="width: 12220px;">
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555564/zvbkw1dpyb1rpoxkyxgp.jpg&quot;); width: 940px; left: 0px; transition-duration: 0ms; transform: translate(-940px, 0px) translateZ(0px);" data-index="0"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555567/okg7xpzzw0kiztvn9rbu.jpg&quot;); width: 940px; left: -940px; transition-duration: 0ms; transform: translate(-940px, 0px) translateZ(0px);" data-index="1"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555604/pldxzkuceavqwjpiupmg.jpg&quot;); width: 940px; left: -1880px; transition-duration: 0ms; transform: translate(-940px, 0px) translateZ(0px);" data-index="2"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555616/fqgzm0bgiyreyp5gm7g0.jpg&quot;); width: 940px; left: -2820px; transition-duration: 0ms; transform: translate(-940px, 0px) translateZ(0px);" data-index="3"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555631/aptyk6e7latbigc0m69u.jpg&quot;); width: 940px; left: -3760px; transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);" data-index="4"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494555649/kv9my4ajllnmtni0ejso.jpg&quot;); width: 940px; left: -4700px; transition-duration: 0ms; transform: translate(940px, 0px) translateZ(0px);" data-index="5"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1495431000/mruzqbcatsciculgeecc.jpg&quot;); width: 940px; left: -5640px; transition-duration: 0ms; transform: translate(940px, 0px) translateZ(0px);" data-index="6"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1495430999/llshxan6lucshg4letec.jpg&quot;); width: 940px; left: -6580px; transition-duration: 0ms; transform: translate(940px, 0px) translateZ(0px);" data-index="7"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494561166/v04kowmycdfmqgh1raby.jpg&quot;); width: 940px; left: -7520px; transition-duration: 0ms; transform: translate(940px, 0px) translateZ(0px);" data-index="8"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494561183/oygluwykoe7azrlxtpcy.jpg&quot;); width: 940px; left: -8460px; transition-duration: 0ms; transform: translate(940px, 0px) translateZ(0px);" data-index="9"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494561213/db6ltln6q7aaibplxqqo.jpg&quot;); width: 940px; left: -9400px; transition-duration: 0ms; transform: translate(940px, 0px) translateZ(0px);" data-index="10"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1494561246/u688swwuqavzpn7prgrz.jpg&quot;); width: 940px; left: -10340px; transition-duration: 0ms; transform: translate(940px, 0px) translateZ(0px);" data-index="11"></div>
-                           <div style="background-image: url(&quot;https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/v1495430997/hypxdlycqjplmivvklxq.jpg&quot;); width: 940px; left: -11280px; transition-duration: 0ms; transform: translate(940px, 0px) translateZ(0px);" data-index="12"></div>
+                          <%
+                            var left = 0
+                            var rightNow = new Date();
+                            var today = rightNow.toISOString().slice(0,10).replace(/-/g,"");
+                            var dday = today - parseInt(rows[0].release_date);
+                            var dday_str = ''
+                            if (dday >= 0) dday_str  = 'D + ' + dday
+                            else dday_str = 'D ' + dday
+
+                            var oneItem = rows[0];
+                            var width_star = 0;
+                            var total_star = 0
+
+                            var total_rate = oneItem.likes.length + oneItem.dislikes.length;
+
+                            if (total_rate != 0) {
+                              total_star = (oneItem.likes.length / total_rate) * 5;
+                              total_star = total_star.toFixed(1);
+                              width_star = total_star * 20;
+                            }
+
+                            for(var i = 0; i < rows[0]['slide_img_url'].length; i++)
+                            {
+                              left = left + 940
+                          %>
+                              <div style="background-image: url('<%=rows[0]['slide_img_url'][i]%>'); width: 940px; left: -<%=left%>px; transition-duration: 0ms; transform: translate(-940px, 0px) translateZ(0px);" data-index="<%=i%>"></div>
+                          <%
+                            }
+                          %>
+
+
                         </div>
                      </div>
                      <ul class="swipe-controls">
@@ -120,7 +168,7 @@
                      </div>
                      <div class="item d-day">
                         <div class="head">개봉일</div>
-                        <div class="data english">D +4</div>
+                        <div class="data english"><%=dday_str%></div>
                      </div>
                   </div>
                   <a href="예매로넘어가기"><div class="booking-button book"><span class="icon"></span>예매하기</div></a>
@@ -129,7 +177,7 @@
                   <div id="detailWatchaCard" style="">
                      <div class="movie-card size-1x1 poster-type base_movie  user-action-m3xlkh card grid-1 hei-1">
                         <div class="poster-wrapper">
-                           <img class="poster" src="./test1_files/zvf1qwfhuack56zpnoto.jpg" width="100%">
+                           <img class="poster" src="<%=rows[0].poster_img_url%>" width="100%">
                         </div>
                      </div>
                   </div>
@@ -149,22 +197,23 @@
                      })
                   </script>
                   <div class="info">
-                     <div class="title">캐리비안의 해적: 죽은 자는 말이 없다</div>
+                     <div class="title"><%=rows[0].title_kor%></div>
                   </div>
 
-                  <div class="desc">Pirates of the Caribbean: Dead Men Tell No Tales, 2017, 미국, 오스트레일리아, 액션, 모험, 코미디, 판타지, 12세 관람가, 2시간 9분</div>
+                  <div class="desc"><%=rows[0].title_eng%>, <%=rows[0].release_date%>, <%=rows[0].nation%>, <%=rows[0].genre%>, <%=rows[0].grade%>, <%=rows[0].run_time%></div>
                   <div class="watcha-rating-wrapper">
                   <link rel="stylesheet" media="screen" href="/stylesheets/RatingStar.css">
                   <span class="stars stars--large">
-                     <span style="width: 50%"></span>
+                     <span style="width: <%=width_star%>%"></span>
                   </span>
-                     <span class="number" itemprop="rating">3.5</span>
-                     <span class="eval-count" itemprop="votes">(7,273명 참여)</span>
+                     <span class="number" itemprop="rating"><%=total_star%></span>
+                     <span class="eval-count" itemprop="votes">(<%=total_rate%>명 참여)</span>
                   </div>
                </div>
                <div class="west">
                   <h5>줄거리</h5>
-                  <div class="story">전설적인 해적 캡틴 ‘잭 스패로우’(조니 뎁)의 눈 앞에 죽음마저 집어삼킨 바다의 학살자 ‘살라자르’(하비에르 바르뎀)가 복수를 위해 찾아온다. 둘 사이에 숨겨진 엄청난 비밀, 잭은 자신과 동료들의 죽음에 맞서 살아남기 위해 사투를 시작하는데... 지금, 모든 것을 압도할 거대한 전투가 펼쳐진다.</div>
+                  <h3>"<%=rows[0].description_title%>"<h3><br>
+                  <div class="story"><%=rows[0].description%></div>
                   <h5 class="all-review heading">
                      코멘트
                      <span class="count">(1516)</span>

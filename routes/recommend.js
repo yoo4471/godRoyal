@@ -145,6 +145,13 @@ router.init_db_movies = function(callback) {
             newMovieContents.wide_img_url = a[i]["wide_img_url"];
             newMovieContents.rating = a[i]['rating'];
 
+            for (var j = 0; j < a[i]['genre'].length; j++) {
+              newMovieContents.genre.push(a[i]['genre'][j])
+            }
+            for (var j = 0; j < a[i]['slide_img_url'].length; j++) {
+              newMovieContents.slide_img_url.push(a[i]['slide_img_url'][j])
+            }
+
 
             newMovieContents.save(function (err)  {
               if (err) throw err;
