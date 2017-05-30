@@ -29,26 +29,11 @@ router.get('/', function(req, res, next) {
 });//get
 
 /* GET home page. */
-router.get('/test', function(req, res, next) {
+router.post('/test', function(req, res, next) {
 
-  var request = require("request");
-  var url = "http://localhost:3000/json/rate.json";
+  console.log(req.body)
+  res.send("done")
 
-  request({
-      url: url,
-      json: true
-  }, function (error, response, body) {
-
-      if (!error && response.statusCode === 200) {
-          var a = body["Rate"]
-          res.json(a)
-
-
-
-
-      }
-
-  });
 });//get
 
 
@@ -73,6 +58,26 @@ router.get('/boxoffice', function(req, res, next) {
 });//get
 
 /* GET home page. */
+router.get('/latestoffice', function(req, res, next) {
+  MovieContents.find({ current:1 }, function(err, movieContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+  orderContents = movieContents.slice();
+  orderContents.sort(function (a, b) {
+    return b.likes.length - a.likes.length;
+  });
+
+  res.render('latestoffice', {
+      rows: movieContents,
+      rows_order: orderContents,
+      email: req.session.email
+
+      }
+    );
+  });
+});//get
+
+/* GET home page. */
 router.get('/recommend', function(req, res, next) {
   if (req.session.email) {
     RateContents.find({}, {'_id':false, '__v':false}, function(err, rateContents){
@@ -84,26 +89,38 @@ router.get('/recommend', function(req, res, next) {
       ger.recommendations_for_person('movies', req.session.email, {actions: {likes: 1}, filter_previous_actions:['likes']})
       .then( function(recommendations) {
 
-        var recomm_list = []
-        console.log("\nRecommendations For " + req.session.email)
-        console.log(JSON.stringify(recommendations,null,2))
-        recommend.movies(recommendations['recommendations'], (function(response){
-          for (var i = 0; i < recommendations['recommendations'].length; i++) {
-            recomm_list.push(recommendations['recommendations'][i]['thing'])
-          }
-
-          response.sort(function(a,b){
-            return recomm_list.indexOf(a.title_eng) < recomm_list.indexOf(b.title_eng) ? -1 : 1;
-          });
-          console.log(recommendations['recommendations'])
-          res.render('recommend', {
-              rows: response,
-              rows_recomm: recommendations['recommendations'],
-              email: req.session.email
-
+        if(recommendations['recommendations'].length == 0) {
+          res.send('추천 기록 없음')
+        }
+        else {
+          var recomm_list = []
+          var recomm_NaN = []
+          console.log("\nRecommendations For " + req.session.email)
+          console.log(JSON.stringify(recommendations,null,2))
+          recommend.movies(recommendations['recommendations'], (function(response){
+            for (var i = 0; i < recommendations['recommendations'].length; i++) {
+              if(recommendations['recommendations'][i]['weight'] != 'NaN') {
+                recomm_NaN.push(recommendations['recommendations'][i])
+                recomm_list.push(recommendations['recommendations'][i]['thing'])
               }
-            );//res
-        }))//end_recommed
+
+            }
+
+            response.sort(function(a,b){
+              return recomm_list.indexOf(a.title_eng) < recomm_list.indexOf(b.title_eng) ? -1 : 1;
+            });
+
+            console.log(recommendations['recommendations'])
+            res.render('recommend', {
+                rows: response,
+                rows_recomm: recommendations['recommendations'],
+                email: req.session.email
+
+                }
+              );//res.render
+          }))//end_recommed
+        }
+
 
       })//then`
 
@@ -124,7 +141,7 @@ router.post('/update/rating_bad', function(req, res, next) {
        if(err) return res.status(500).send({error: 'database failure'});
        RateContents.findOneAndUpdate({ "thing": req.body.title_eng, "person": req.body.email}, { "$set": { "action": 'dislikes'}}).exec(function(err, rateContents){
           if(err) return res.status(500).send({error: 'database failure'});
-          res.redirect('/movies')
+          res.send('done')
        });
     });
 
@@ -133,7 +150,7 @@ router.post('/update/rating_bad', function(req, res, next) {
     MovieContents.findOneAndUpdate({ "title_eng": req.body.title_eng}, {"$push": { "dislikes": req.body.email} } ).exec(function(err, rateContents){
        if(err) return res.status(500).send({error: 'database failure'});
        recommend.insert_db_rates(req.body.email, req.body.title_eng, 'dislikes')
-       res.redirect('/movies')
+       res.send('done')
     });
   }
 
@@ -148,7 +165,7 @@ router.post('/update/rating_good', function(req, res, next) {
        if(err) return res.status(500).send({error: 'database failure'});
        RateContents.findOneAndUpdate({ "thing": req.body.title_eng, "person": req.body.email}, { "$set": { "action": 'likes'}}).exec(function(err, rateContents){
           if(err) return res.status(500).send({error: 'database failure'});
-          res.redirect('/movies')
+          res.send('done')
        });
     });
 
@@ -157,7 +174,7 @@ router.post('/update/rating_good', function(req, res, next) {
     MovieContents.findOneAndUpdate({ "title_eng": req.body.title_eng}, {"$push": { "likes": req.body.email} } ).exec(function(err, rateContents){
        if(err) return res.status(500).send({error: 'database failure'});
        recommend.insert_db_rates(req.body.email, req.body.title_eng, 'likes')
-       res.redirect('/movies')
+       res.send('done')
     });
   }
 
