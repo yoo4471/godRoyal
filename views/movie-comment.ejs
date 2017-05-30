@@ -17,15 +17,18 @@
         <!-- Comment Form Start -->
         <div class="row shadow padding-15 white">
 
-          <form class="form wire teal">
-            <textarea placeholder="say something..."></textarea>
+          <form target="_parent" class="form wire teal" method="post" formaction"/movies/comment/enroll">
+            <input type="hidden" name="email" value="<%=email%>">
+            <input type="hidden" name="title_eng" value="<%=title_eng%>">
+            <textarea name="comment" placeholder="say something..."></textarea>
 
             <!-- Submit Start -->
             <div class="row pull-left -margin padding-top-10">
+
               <span class="btn fill-transparent text-gray hover-disable -padding-left">
                 500 characters left
               </span>
-              <button class="btn teal pull-right">Submit</button>
+              <button  type="submit" class="btn teal pull-right">Submit</button>
             </div>
             <!-- Submit End -->
           </form>

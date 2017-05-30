@@ -290,10 +290,10 @@
                                    <a href="https://watcha.net/v2/users/BX2PMysxMWhs/comments">
                                        <img width="30" height="30" src="/images/logo/logo.png" onerror="loadDefaultImg(this, &#39;medium&#39;);return false;">
                                    </a>
-                                   <a href="https://watcha.net/v2/users/BX2PMysxMWhs/comments" class="name">김형중</a>
-                                   <span class="interesting-comment-rating" data-rating="1.5"><span style="display: inline-block; width: 11px; height: 10px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_H.gray_1-2502b64644c5146129a92d5849112b08e460a5c3ca270048e8d708edf5d115fe.png&quot;) 0px 0px / 11px 10px no-repeat;"></span><span style="display: inline-block; width: 6px; height: 10px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_H.gray_1-2502b64644c5146129a92d5849112b08e460a5c3ca270048e8d708edf5d115fe.png&quot;) 0px 0px / 11px 10px no-repeat;"></span><span style="display: inline-block; width: 5px; height: 10px; margin-left: 0px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_gray-ab3f922b9014d6e60902dec1d93ae5493f36f7f37971c6791be64c56d903ef63.png&quot;) -6px 0px / 11px 10px no-repeat;"></span><span style="display: inline-block; width: 11px; height: 10px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_gray-ab3f922b9014d6e60902dec1d93ae5493f36f7f37971c6791be64c56d903ef63.png&quot;) 0px 0px / 11px 10px no-repeat;"></span><span style="display: inline-block; width: 11px; height: 10px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_gray-ab3f922b9014d6e60902dec1d93ae5493f36f7f37971c6791be64c56d903ef63.png&quot;) 0px 0px / 11px 10px no-repeat;"></span><span style="display: inline-block; width: 11px; height: 10px; margin-left: 1px; background: url(&quot;https://d3sz5r0rl9fxuc.cloudfront.net/assets/stars/star_gray-ab3f922b9014d6e60902dec1d93ae5493f36f7f37971c6791be64c56d903ef63.png&quot;) 0px 0px / 11px 10px no-repeat;"></span></span>
+                                   <a href="https://watcha.net/v2/users/BX2PMysxMWhs/comments" class="name"><%=oneItem.comment[oneItem.comment.length-1]['email']%></a>
+                                   
                                    <p class="text">
-                                       본편에서 나온 대사 좀 빌릴게요 " 한 물 갔네.. "
+                                       <%=oneItem.comment[oneItem.comment.length-1]['text']%>
                                    </p>
                                    <div class="counts">
 
