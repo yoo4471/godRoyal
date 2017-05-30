@@ -156,7 +156,20 @@ router.get('/booking-three', function(req, res, next) {
   });
 });
 
+router.get('/seat', function(req, res, next) {
+  MovieContents.find({current:1}, function(err, boardContents){
 
+  if(err) return res.status(500).send({error: 'database failure'});
 
+  // console.log(boardContents[0].img_url);
+  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+  res.render('seat', {rows: boardContents});
+  });
+});
+
+router.post('/seat', function(req, res, next) {
+  res.json(req.body)
+});
 
 module.exports = router;
