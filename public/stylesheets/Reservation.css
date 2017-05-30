@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  /*background: rgba(36,20,69, 0.6);*/
+  opacity:1;
+  padding: 0;
+  margin: 20px 0;
+}
+
+
+#container {
+  font-family: "Open sans";
+  width: 465px;
+  height: 500px;
+  margin: auto;
+  /* border: 1px solid #aaa; */
+  background: #ccc;
+  color: #404040;
+  overflow:auto;
+}
+
+.title {
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  height: 35px;
+  font-size: 1.2em;
+}
+
+.list {
+  width: 100%;
+  background: #aaa;
+  padding: 2px 2px 2px 55px;
+  box-sizing: border-box;
+  position: relative;
+  font-size: .8em;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+ul {
+  transition: all ease 1s;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+ul.open {
+  max-height: 200px;
+}
+
+ul li:first-child {
+  margin-top: 15px;
+}
+
+.list:not(:first-child) {
+  margin-top: 5px;
+}
+
+.list li {
+  height: 30px;
+  margin-botton: 100px;
+}
+
+.icon {
+  position: absolute;
+  width: 15px;
+  left: 20px;
+  top: 12px;
+  bottom: 13px;
+  background: darkblue;
+  border-radius: 25px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+
+}

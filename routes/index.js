@@ -132,6 +132,42 @@ router.get('/search', function(req, res, next) {
   });
 });
 
+router.get('/booking-one', function(req, res, next) {
+  MovieContents.find({current:1}, function(err, boardContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+
+  // console.log(boardContents[0].img_url);
+  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+  res.render('booking-one', {rows: boardContents});
+  });
+});
+router.get('/booking-two', function(req, res, next) {
+  MovieContents.find({current:1}, function(err, boardContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+
+  // console.log(boardContents[0].img_url);
+  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+  res.render('booking-two', {rows: boardContents});
+  });
+});
+
+router.get('/booking-movie-detail', function(req, res, next) {
+  MovieContents.find({current:1}, function(err, boardContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+
+  // console.log(boardContents[0].img_url);
+  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+  res.render('booking-movie-detail', {rows: boardContents});
+  });
+});
+
+
 
 
 
