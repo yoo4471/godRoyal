@@ -22,6 +22,10 @@
                           <span class="highlight"></span>
                        </li>
                        <li class="navi-item genre ">
+                          <a href="/movies/latestoffice">최신영화</a>
+                          <span class="highlight"></span>
+                       </li>
+                       <li class="navi-item genre ">
                           <a href="/movies/recommend">추천영화</a>
                           <span class="highlight"></span>
                        </li>
@@ -114,7 +118,7 @@
                                          var oneItem_order = rows_order[i];
                                    %>
                                    <li class="item rank1" style="">
-                                       <a href="https://watcha.net/mv/pirates-of-the-caribbean-2013/m3xlkh" data-movie-id="m3xlkh" data-movie-title-url="pirates-of-the-caribbean-2013">
+                                       <a href="/movies/detail/<%=oneItem_order.title_eng%>">
                                            <span class="number"><%=i+1%></span><%=oneItem_order.title_kor%>
                                        </a>
                                    </li>
@@ -131,10 +135,16 @@
                          for(var i=0; i<rows.length; i++)
                          {
                            var oneItem = rows[i];
+                           var width_star = 0;
+                           var total_star = 0
+
                            var total_rate = oneItem.likes.length + oneItem.dislikes.length;
-                           var total_star = (oneItem.likes.length / total_rate) * 5;
-                           total_star = total_star.toFixed(1);
-                           var width_star = total_star * 20;
+
+                           if (total_rate != 0) {
+                             total_star = (oneItem.likes.length / total_rate) * 5;
+                             total_star = total_star.toFixed(1);
+                             width_star = total_star * 20;
+                           }
 
                      %>
                        <div class="boxoffice-card card grid-4 hei-1">
@@ -147,7 +157,7 @@
                            </div>
                            <div class="movie-info" id="<%=oneItem.title_eng%>">
                                <h5 class="title-filmrate">
-                                 <a href="/" class="movie-title">
+                                 <a href="/movies/detail/<%=oneItem.title_eng%>" class="movie-title">
                                    <%=oneItem.title_kor%>
                                  </a>
                                  <span class="filmrate rate-<%=oneItem.grade%>"><%=oneItem.grade%></span>
