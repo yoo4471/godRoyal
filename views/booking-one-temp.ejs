@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>감동, 그 이상의 영화 GRL</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/images/logo/logo.png">
+      <link rel="stylesheet" media="screen" href="/stylesheets/Booking.css">
+      <script src="/javascripts/Movie-Detail1.js"></script>
+      <script src="/javascripts/Movie-Detail2.js"></script>
+   </head>
+   <body class="landing nanum-gothic linux">
+
+       <link rel="stylesheet" media="screen" href="/stylesheets/Reservation.css">
+       <script src="/javascripts/Reservation.js"></script>
+
+       <div style="height:600px">
+         <div style="position:relative; margin-left:475px;">
+             <div id="container">
+               <div id="list-1" class="list">
+                 <div class="icon"></div>
+                 <div class="title">극장을 선택해 주세요.</div>
+               </div>
+
+             </div>
+         </div>
+         <div style="position:relative; margin-right:475px; margin-top: -500px;">
+             <div id="container">
+
+
+
+                  <div id="list-1" class="list">
+                  <div class="icon"></div>
+                  <div class="title">서울</div><ul>
+
+                  <%
+                    for( var i = 0; i < screens.length; i++)
+                    {
+                      if(screens[i].state == '서울')
+                      {
+                      %>
+                        <a href="/movies/booking-two-temp/<%=rows[0].title_eng%>/<%=screens[i].theater%>"><li><%=screens[i].theater%></li></a>
+                      <%
+                      }
+                    }
+                  %>
+                    </ul>
+                  </div>
+                  <div id="list-1" class="list">
+                  <div class="icon"></div>
+                  <div class="title">경기</div>
+                  <ul>
+                  <%
+                    for( var i = 0; i < screens.length; i++)
+                    {
+                      if(screens[i].state == '경기')
+                      {
+                      %>
+                        <a href="/movies/booking-two-temp/GET%20OUT"><li><%=screens[i].theater%></li></a>
+                      <%
+                      }
+                    }
+                  %>
+                    </ul>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+         </div>
+       </div>
+
+
+
+   </body>
+</html>
