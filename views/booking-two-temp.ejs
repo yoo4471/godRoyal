@@ -24,42 +24,121 @@
            <div style="position:relative; margin-left:475px; margin-top:-600px; height:600px;">
              <div style="">
                  <div id="container" class="container">
-                   <div id="list-1" class="list">
-                     <div class="icon"></div>
-                     <div class="title">1관</div>
-                     <ul>
-                       <a href="/"><li>Chicken</li></a>
-                       <a href="/"><li>Chicken</li></a>
-                       <a href="/"><li>Chicken</li></a>
-                     </ul>
-                   </div>
-                   <div id="list-1" class="list">
-                     <div class="icon"></div>
-                     <div class="title">2관</div>
-                     <ul>
-                       <a href="/"><li>Chicken</li></a>
-                       <a href="/"><li>Chicken</li></a>
-                       <a href="/"><li>Chicken</li></a>
-                     </ul>
-                   </div>
-                   <div id="list-1" class="list">
-                     <div class="icon"></div>
-                     <div class="title">3관</div>
-                     <ul>
-                       <a href="/"><li>Chicken</li></a>
-                       <a href="/"><li>Chicken</li></a>
-                       <a href="/"><li>Chicken</li></a>
-                     </ul>
-                   </div>
-                   <div id="list-1" class="list">
-                     <div class="icon"></div>
-                     <div class="title">4관</div>
-                     <ul>
-                       <a href="/"><li>Chicken</li></a>
-                       <a href="/"><li>Chicken</li></a>
-                       <a href="/"><li>Chicken</li></a>
-                     </ul>
-                   </div>
+
+                   <%
+                    var one=0, two=0, three=0, four =0
+                    for(var i=0;i<screens.length; i++)
+                    {
+                      if(screens[i].room == '1관')
+                      {
+                          if(one == 0)
+                          {
+                            one = 1
+                            %>
+                            <div id="list-1" class="list">
+                              <div class="icon"></div>
+                              <div class="title">1관</div>
+                              <ul>
+
+                                <%
+                                for(var j=0;j<screens.length; j++)
+                                {
+                                  if(screens[j].room == '1관')
+                                  {
+                                    %>
+                                      <a href="/"><li>시작시간: <%=screens[j].start_time%></li></a>
+                                    <%
+                                  }
+                                }
+                                %>
+                              </ul>
+                            </div>
+                            <%
+                          }
+                      }
+                      if(screens[i].room == '2관')
+                      {
+                          if(one == 0)
+                          {
+                            one = 1
+                            %>
+                            <div id="list-1" class="list">
+                              <div class="icon"></div>
+                              <div class="title">2관</div>
+                              <ul>
+                                <%
+                                for(var j=0;j<screens.length; j++)
+                                {
+                                  if(screens[j].room == '2관')
+                                  {
+                                    %>
+                                      <a href="/"><li>시작시간: <%=screens[j].start_time%></li></a>
+                                    <%
+                                  }
+                                }
+                                %>
+                              </ul>
+                            </div>
+                            <%
+                          }
+                      }
+                      if(screens[i].room == '3관')
+                      {
+                          if(one == 0)
+                          {
+                            one = 1
+                            %>
+                            <div id="list-1" class="list">
+                              <div class="icon"></div>
+                              <div class="title">3관</div>
+                              <ul>
+                                <%
+                                for(var j=0;j<screens.length; j++)
+                                {
+                                  if(screens[j].room == '3관')
+                                  {
+                                    %>
+                                      <a href="/"><li>시작시간: <%=screens[j].start_time%></li></a>
+                                    <%
+                                  }
+                                }
+                                %>
+                              </ul>
+                            </div>
+                            <%
+                          }
+                      }
+                      if(screens[i].room == '4관')
+                      {
+                          if(one == 0)
+                          {
+                            one = 1
+                            %>
+                            <div id="list-1" class="list">
+                              <div class="icon"></div>
+                              <div class="title">4관</div>
+                              <ul>
+                                <%
+                                for(var j=0;j<screens.length; j++)
+                                {
+                                  if(screens[j].room == '4관')
+                                  {
+                                    %>
+                                      <a href="/"><li>시작시간: <%=screens[j].start_time%></li></a>
+                                    <%
+                                  }
+                                }
+                                %>
+                              </ul>
+                            </div>
+                            <%
+                          }
+                      }
+                    }
+                   %>
+
+
+
                  </div>
              </div>
 

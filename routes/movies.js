@@ -196,16 +196,16 @@ router.get('/booking-one-temp/:title_eng', function(req, res, next) {
 });
 router.get('/booking-two-temp/:title_eng/:theater', function(req, res, next) {
   var title = req.params.title_eng
+  var tt = req.params.theater
   console.log(title)
   MovieContents.find({title_eng:title}, function(err, movieContents){
       if(err) return res.status(500).send({error: 'database failure'});
 
-      ScreenContents.find({title_eng:title, screen_num:'1', }, function(err, screenContents){
+      ScreenContents.find({title_eng:title, theater: tt }, function(err, screenContents){
           if(err) return res.status(500).send({error: 'database failure'});
-
+          console.log(screenContents)
           res.render('booking-two-temp', {
             screens: screenContents,
-
             rows: movieContents,
             email: req.session.email
           })
