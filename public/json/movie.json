@@ -37,10 +37,9 @@
   "미스터리",
   "스릴러",
   "드라마"
-]
+],
 "youtube" : "https://youtu.be/Qu5JDOpMuEk"
-
-      },
+	  },
       {
          "title_kor": "불한당: 나쁜 놈들의 세상",
          "title_eng": "The Merciless",
@@ -76,7 +75,7 @@
   "범죄",
   "액션",
   "드라마"
-]
+],
 "youtube" : "https://youtu.be/pWpGlD4D7X0"
        },
       {
@@ -115,10 +114,8 @@
   "모험",
   "드라마",
   "판타지"
-]
-
+],
 "youtube" : "https://youtu.be/3UCFRk0nxzc"
-
        },
       {
          "title_kor": "보스 베이비",
@@ -153,11 +150,8 @@
 ],
 "genre" :[
   "애니메이션"
-]
-
+],
 "youtube" : "https://youtu.be/t-TBvBKi1kA"
-
-
        },
       {
          "title_kor": "에이리언: 커버넌트",
@@ -194,10 +188,8 @@
   "SF",
   "공포",
   "스릴러"
-]
-
-"https://youtu.be/P7lmmnZ18VQ"
-
+],
+"youtube" : "https://youtu.be/P7lmmnZ18VQ"
        },
       {
          "title_kor": "보안관",
@@ -233,12 +225,9 @@
 "genre" :[
   "범죄",
   "코미디"
-]
-
+],
 "youtube" : "https://youtu.be/5c-dva-4BMs"
-
-
-       },
+	},
       {
          "title_kor": "가디언즈 오브 갤럭시 VOL. 2",
          "title_eng": "Guardians of the Galaxy Vol. 2",
@@ -273,10 +262,8 @@
 "genre" :[
   "액션",
   "SF"
-]
-
+],
 "youtube" : "https://youtu.be/xf2jT5uOsd4"
-
        },
       {
          "title_kor": "목소리의 형태",
@@ -313,12 +300,9 @@
   "애니메이션",
   "멜로",
   "로맨스"
-]
-
+],
 "youtube" : "https://youtu.be/TaBV8rBzZ50"
-
-
-       },
+		},
       {
          "title_kor": "석조저택 살인사건",
          "title_eng": "The Tooth and the Nail",
@@ -353,12 +337,9 @@
 "genre" :[
   "스릴러",
   "서스펜스"
-]
-
+],
 "youtube" : "https://youtu.be/HojyytzcL5A"
-
-
-       },
+		},
       {
          "title_kor": "로스트 인 파리",
          "title_eng": "Lost in Paris",
@@ -394,12 +375,9 @@
   "로맨스",
   "멜로",
   "코미디"
-]
-
+],
 "youtube" : "https://youtu.be/IlnbTjsNyUg"
-
-
-       },
+		},
       {
          "title_kor": "해바라기",
          "title_eng": "Sunflower",
@@ -917,12 +895,9 @@
 "genre" :[
   "액션",
   "드라마"
-]
-
+],
 "youtube" : "https://youtu.be/o0o1qWnMt_c"
-
-
-       },
+		},
 	   {
          "title_kor": "에너미 오브 스테이트",
          "title_eng": "Enemy Of The State",
@@ -1067,12 +1042,9 @@
 ],
 "genre" :[
   "다큐멘터리"
-]
-
+],
 "youtube" : "https://youtu.be/PmMwsM7FW-U"
-
-
-       },
+		},
 	   {
          "title_kor": "컨저링",
          "title_eng": "The Conjuring",
@@ -1215,11 +1187,9 @@
   "드라마",
   "멜로",
   "로맨스"
-]
+],
 "youtube" : "https://youtu.be/xIgIhwp78aM"
-
-
-       },
+		},
 	   {
          "title_kor": "솔트",
          "title_eng": "Salt",
@@ -1289,18 +1259,11 @@
       "text" : "내가 보기엔 노잼 영화같았는데..."
     }
 ],
-
 "genre" :[
   "액션",
   "범죄",
   "스릴러"
-],
-
-
-
-
-
-
+]
        },
 	   {
          "title_kor": "베오울프",

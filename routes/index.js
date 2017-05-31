@@ -96,15 +96,21 @@ router.get('/logout', function(req, res, next) {
 
 
 
-router.get('/search', function(req, res, next) {
-  MovieContents.find({current:1}, function(err, boardContents){
+router.get('/search/:title_eng', function(req, res, next) {
+  var title = req.params.title_eng;
+  console.log(title)
+  MovieContents.find({title_eng:{$regex:title}}, function(err, movieContents){
+    MovieContents.find({title_kor:{$regex:title}}, function(err, movieContentsk){
+        if(err) return res.status(500).send({error: 'database failure'});
 
-  if(err) return res.status(500).send({error: 'database failure'});
 
-  // console.log(boardContents[0].img_url);
-  // res.render('update', {title:"글 수정", error:"", row: boardContents});
-
-  res.render('search', {rows: boardContents});
+          res.render('search', {
+            str: title,
+            rows: movieContents,
+            rowsk: movieContentsk,
+            email: req.session.email
+          })
+    });
   });
 });
 

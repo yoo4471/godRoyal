@@ -36,50 +36,38 @@
                      <span class="highlight"></span>
                   </li>
                </ul>
-               <form accept-charset="UTF-8" action="#검색" id="search-form" method="get">
+
+
+               <form accept-charset="UTF-8" action="/search" id="search-form" method="get">
                   <div class="input-wrapper">
                      <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
                      <input id="input-query" name="query" type="search" autocomplete="off" class="ui-autocomplete-input">
                      <span id="search-icon"></span>
                   </div>
                </form>
+
+
                <% if(email){ %>
                  <div id="gnb-right-menu" class="right-menu">
 
                     <div class="menu my" style="padding-bottom: 10px;">
                        <a class="name" href="/logout">
                             로그아웃
-
                        </a>
                        <span class="highlight"></span>
 
                     </div>
                     <div class="menu my" style="padding-bottom: 10px;">
-                       <a class="name" href="#아이디클릭" onclick="window.open('/', 'newwindow', 'width=300, height=250'); return false;">
-                            내정보
-
+                       <a class="name" href="">
+                            예약내역
                        </a>
                        <span class="highlight"></span>
-                       <div class="dropdown">
-                          <ul>
-                             <li>
-                                <a href="https://watcha.net/v2/users/k1dp84nRqd4m/wishlist">영화보관함</a>
-                                <span class="count">19</span>
-                             </li>
-                             <li>
-                                <a href="https://watcha.net/giftbox">선물함</a>
-                             </li>
-                             <li class="divide-line">
-                                <a href="https://watcha.net/#" onclick="InviteFriend.popupInviteFriend(event);">친구초대</a>
-                             </li>
-                             <li class="divide-line">
-                                <a href="https://watcha.net/#" class="setting">설정</a>
-                             </li>
-                             <li>
-                                <a href="https://watcha.net/logout">로그아웃</a>
-                             </li>
-                          </ul>
-                       </div>
+                    </div>
+                    <div class="menu my" style="padding-bottom: 10px;">
+                       <a class="name" href="">
+                            영화보관함
+                       </a>
+                       <span class="highlight"></span>
                     </div>
                  </div>
                <% }else{ %>
@@ -137,8 +125,11 @@
                             <a class="title" href="/movies/detail/<%=oneItem.title_eng%>"><%=oneItem.title_kor%></a>
                             <div class="movie-desc">
                                평균 별점 : <%=total_star%>
-                               , 예매율
-                               : 52.89%
+                               <span class="stars stars--large">
+                                 <span style="width: <%=total_star*20%>%">
+                               </span></span>
+                               <!-- 예매율
+                               : 52.89% -->
                                <br>
                                <%=oneItem.release_date%>, <%=oneItem.nation%>, <%=oneItem.genre%>, <%=oneItem.grade%>, <%=oneItem.run_time%>
                                <br>
@@ -165,7 +156,7 @@
                 <link rel='stylesheet' href='/stylesheets/Movies.css'>
                 <script type="text/javascript" src="/javascripts/Movies.js"></script>
                <li id="boxoffice-section" class="boxoffice responsive-mask section" style="height:1000px; min-width:1800px;">
-                 <a class="button" href="/NewMovies">
+                 <a class="button" href="/movies">
                  <h3 class="title" style="margin-left: 130px; margin-bottom: -65px; font-weight: normal; font-size:25px;">박스오피스</h3>
                 </a>
                  <div class="cards">
@@ -197,7 +188,7 @@
                    <div class="card">
                      <img src="<%=oneItem.poster_img_url%>">
                      <div class="card-title">
-                       <a href="/" class="toggle-info btn">
+                       <a href="/" class="toggle-info btn-1">
                          <span class="left"></span>
                          <span class="right"></span>
                        </a>
@@ -234,7 +225,7 @@
                  </div>
                </li>
                <li id="boxoffice-section" class="boxoffice responsive-mask section" style="height:1000px; min-width:1800px;">
-                 <a class="button" href="/OldMovies">
+                 <a class="button" href="/movies/latestoffice">
                  <h3 class="title" style="margin-left: 130px; margin-bottom: -65px; font-weight: normal; font-size:25px;">최신 영화</h3>
                 </a>
                 <div class="cards">
@@ -266,7 +257,7 @@
                   <div class="card">
                     <img src="<%=oneItem.poster_img_url%>">
                     <div class="card-title">
-                      <a href="#" class="toggle-info btn">
+                      <a href="#" class="toggle-info btn-1">
                         <span class="left"></span>
                         <span class="right"></span>
                       </a>

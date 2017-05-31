@@ -33,11 +33,6 @@ router.get('/', function(req, res, next) {
 });//get
 
 
-
-
-
-
-
 /* GET home page. */
 router.get('/boxoffice', function(req, res, next) {
   MovieContents.find({ current:1 }, function(err, movieContents){
@@ -262,33 +257,39 @@ router.get('/:title_eng/booking-movie-detail', function(req, res, next) {
 
 
 
-router.get('/booking-three', function(req, res, next) {
-  MovieContents.find({current:1}, function(err, boardContents){
+router.get('/booking-three/:title_eng/:theater/:start_time', function(req, res, next) {
+  var title = req.params.title_eng
+  var tt = req.params.theater
+  var st = req.params.start_time
+  console.log(title)
+  MovieContents.find({title_eng:title}, function(err, movieContents){
+      if(err) return res.status(500).send({error: 'database failure'});
 
-  if(err) return res.status(500).send({error: 'database failure'});
+      ScreenContents.find({title_eng:title, theater: tt, start_time: st}, function(err, screenContents){
+          if(err) return res.status(500).send({error: 'database failure'});
+          console.log(screenContents)
+          res.render('booking-three', {
+            screens: screenContents,
+            rows: movieContents,
+            email: req.session.email
+          })
 
-  // console.log(boardContents[0].img_url);
-  // res.render('update', {title:"글 수정", error:"", row: boardContents});
-
-  res.render('booking-three', {rows: boardContents});
+      });
   });
 });
+
+
+
+
 
 router.get('/seat', function(req, res, next) {
-  MovieContents.find({current:1}, function(err, boardContents){
-
-  if(err) return res.status(500).send({error: 'database failure'});
 
   // console.log(boardContents[0].img_url);
   // res.render('update', {title:"글 수정", error:"", row: boardContents});
 
-  res.render('seat', {rows: boardContents});
-  });
+  res.render('seat');
 });
 
-router.post('/seat', function(req, res, next) {
-  res.json(req.body)
-});
 
 
 

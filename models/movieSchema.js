@@ -19,6 +19,7 @@ var movieSchema = mongoose.Schema({
   current: String,
   poster_img_url: String,
   wide_img_url: String,
+  youtube: String,
   slide_img_url: [],
   likes: [],
   dislikes: [],
