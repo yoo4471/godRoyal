@@ -173,27 +173,22 @@ router.get('/detail/:title_eng', function(req, res, next) {
 
 });
 
-
-router.get('/detail/:title_eng/booking-one', function(req, res, next) {
-  var title = req.params.title_eng;
+router.get('/booking-one/:title_eng', function(req, res, next) {
+  var title = req.params.title_eng
   console.log(title)
   MovieContents.find({title_eng:title}, function(err, movieContents){
       if(err) return res.status(500).send({error: 'database failure'});
 
+      ScreenContents.find({title_eng:title, screen_num:'1'}, function(err, screenContents){
+          if(err) return res.status(500).send({error: 'database failure'});
 
-      if (movieContents.length == 0) {
-        res.send('영화없음.')
-      }
-      else {
+          res.render('booking-one', {
+            screens: screenContents,
+            rows: movieContents,
+            email: req.session.email
+          })
 
-        var a = movieContents[0].comment
-
-        console.log(a.length)
-        res.render('booking-one', {
-          rows: movieContents,
-          email: req.session.email
-        })
-      }
+      });
   });
     // console.log(boardContents[0].img_url);
     // res.render('update', {title:"글 수정", error:"", row: boardContents});

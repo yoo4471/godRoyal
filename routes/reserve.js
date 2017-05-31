@@ -12,70 +12,107 @@ router.get('/', function(req, res, next) {
 });//get
 
 /* GET home page. */
-router.get('/test', function(req, res, next) {
-  ScreenContents.remove({}, function(err) {
-     console.log('collection moviecontents removed')
-  });
-  seat = [
-    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-  ]
-  var newScreenContents = new ScreenContents;
-  newScreenContents.theater = "가산디지털"
-  newScreenContents.screen_num = "1"
-  newScreenContents.screen_type = "2D"
-  newScreenContents.title_eng = "Lost in Paris"
-  newScreenContents.start_time = "1000"
-  newScreenContents.end_time = "1200"
-  newScreenContents.seat.push(seat)
-  newScreenContents.save(function (err)  {
-    if (err) throw err;
-    // console.log(user + ' : ' + title + ' ' + action)
+router.get('/init1', function(req, res, next) {
+
+  var request = require("request");
+  var url = "http://localhost:3000/json/screen.json";
+
+  request({
+      url: url,
+      json: true
+  }, function (error, response, body) {
+
+      if (!error && response.statusCode === 200) {
+        ScreenContents.remove({}, function(err) {
+           console.log('collection moviecontents removed')
+        });
+          var a = body["data"]
+
+          for (var i=0; i<a.length; i++) {
+
+            seat = [
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+            ]
+            var newScreenContents = new ScreenContents;
+            newScreenContents.theater = a[i].theater
+            newScreenContents.state = a[i].state
+            newScreenContents.screen_num = a[i].screen_num
+            newScreenContents.room = a[i].room
+            newScreenContents.title_eng = a[i].title_eng
+            newScreenContents.start_time = a[i].start_time
+            newScreenContents.seat.push(seat)
+            newScreenContents.save(function (err)  {
+              if (err) throw err;
+              // console.log(user + ' : ' + title + ' ' + action)
+            });
+          }
+
+      }
+
   });
 
-  res.send('good')
+
+
+
+
+
+
+
+  res.send('init완료')
 
 });//get
-router.get('/:title_eng/:theater/:screen_num', function(req, res, next) {
-  var theater = req.params.theater
-  var title_eng = req.params.title_eng
-  var screen_num = req.params.screen_num
+router.get('/show1', function(req, res, next) {
 
-  console.log(theater, title_eng, screen_num)
-  ScreenContents.find({"title_eng":title_eng, "theater":theater, "screen_num":screen_num}, function(err, screenContents){
+
+  ScreenContents.find({}, function(err, screenContents){
 
 
     if(err) return res.status(500).send({error: 'database failure'});
-    // res.json(screenContents);
-    var seat = screenContents[0].seat[0]
+    res.json(screenContents);
 
-    res.render('reserve', {
-        seat: seat,
-        title_eng: title_eng,
-        theater: theater,
-        screen_num: screen_num,
-        email: req.session.email
-
-        }
-      );
   });
 });//get
+// router.get('/:title_eng/:theater/:screen_num', function(req, res, next) {
+//   var theater = req.params.theater
+//   var title_eng = req.params.title_eng
+//   var screen_num = req.params.screen_num
+//
+//   console.log(theater, title_eng, screen_num)
+//   ScreenContents.find({"title_eng":title_eng, "theater":theater, "screen_num":screen_num}, function(err, screenContents){
+//
+//
+//     if(err) return res.status(500).send({error: 'database failure'});
+//     // res.json(screenContents);
+//     var seat = screenContents[0].seat[0]
+//
+//     res.render('reserve', {
+//         seat: seat,
+//         title_eng: title_eng,
+//         theater: theater,
+//         screen_num: screen_num,
+//         email: req.session.email
+//
+//         }
+//       );
+//   });
+// });//get
 
 router.post('/', function(req, res, next) {
   console.log(req.body)

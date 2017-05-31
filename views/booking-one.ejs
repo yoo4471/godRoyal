@@ -90,27 +90,58 @@
          </div>
          <div style="position:relative; margin-right:475px; margin-top: -500px;">
              <div id="container">
-                <div id="list-1" class="list">
+
+
+
+                  <div id="list-1" class="list">
                   <div class="icon"></div>
                   <div class="title">서울</div><ul>
-                    <a href="/booking-two"><li>구로 GRL</li></a>
-                    <a href="/booking-two"><li>강남 GRL</li></a>
-                  </ul>
-                </div>
-                <div id="list-1" class="list">
+
+                  <%
+                    for( var i = 0; i < screens.length; i++)
+                    {
+                      if(screens[i].state == '서울')
+                      {
+                      %>
+                        <a href="/booking-two"><li><%=screens[i].theater%></li></a>
+                      <%
+                      }
+                    }
+                  %>
+                    </ul>
+                  </div>
+                  <div id="list-1" class="list">
                   <div class="icon"></div>
-                  <div class="title">인천</div><ul>
-                    <a href="/booking-two"><li>부평 GRL</li></a>
-                    <a href="/booking-two"><li>송도 GRL</li></a>
-                  </ul>
-                </div>
-                <div id="list-1" class="list">
-                  <div class="icon"></div>
-                  <div class="title">경기</div><ul>
-                    <a href="/booking-two"><li>수원 GRL</li></a>
-                    <a href="/booking-two"><li>일산 GRL</li></a>
-                  </ul>
-                </div>
+                  <div class="title">경기</div>
+                  <ul>
+                  <%
+                    for( var i = 0; i < screens.length; i++)
+                    {
+                      if(screens[i].state == '경기')
+                      {
+                      %>
+                        <a href="/booking-two"><li><%=screens[i].theater%></li></a>
+                      <%
+                      }
+                    }
+                  %>
+                    </ul>
+                  </div>
+
+
+
+
+
+
+
+
+              
+
+
+
+
+
+
               </div>
          </div>
        </div>
