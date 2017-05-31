@@ -213,6 +213,97 @@ router.get('/detail/:title_eng', function(req, res, next) {
 
 });
 
+
+router.get('/detail/:title_eng/booking-one', function(req, res, next) {
+  var title = req.params.title_eng;
+  console.log(title)
+  MovieContents.find({title_eng:title}, function(err, movieContents){
+      if(err) return res.status(500).send({error: 'database failure'});
+
+
+      if (movieContents.length == 0) {
+        res.send('영화없음.')
+      }
+      else {
+
+        var a = movieContents[0].comment
+
+        console.log(a.length)
+        res.render('booking-one', {
+          rows: movieContents,
+          email: req.session.email
+        })
+      }
+  });
+    // console.log(boardContents[0].img_url);
+    // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+});
+router.get('/booking-two', function(req, res, next) {
+  MovieContents.find({current:1}, function(err, boardContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+
+  // console.log(boardContents[0].img_url);
+  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+  res.render('booking-two', {rows: boardContents});
+  });
+});
+
+router.get('/booking-movie-detail', function(req, res, next) {
+  MovieContents.find({current:1}, function(err, boardContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+
+  // console.log(boardContents[0].img_url);
+  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+  res.render('booking-movie-detail', {rows: boardContents});
+  });
+});
+
+
+
+router.get('/booking-three', function(req, res, next) {
+  MovieContents.find({current:1}, function(err, boardContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+
+  // console.log(boardContents[0].img_url);
+  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+  res.render('booking-three', {rows: boardContents});
+  });
+});
+
+router.get('/seat', function(req, res, next) {
+  MovieContents.find({current:1}, function(err, boardContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+
+  // console.log(boardContents[0].img_url);
+  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+
+  res.render('seat', {rows: boardContents});
+  });
+});
+
+router.post('/seat', function(req, res, next) {
+  res.json(req.body)
+});
+
+
+
+
+
+
+
+
+
+
+
+
 router.post('/update/rating_bad', function(req, res, next) {
 
   console.log(req.body)
@@ -361,7 +452,7 @@ router.post('/reserve', function(req, res, next) {
 
          });
 
-         
+
 
 
 
