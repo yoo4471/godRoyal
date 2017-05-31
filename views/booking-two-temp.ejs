@@ -46,7 +46,7 @@
                                   if(screens[j].room == '1관')
                                   {
                                     %>
-                                      <a href="/"><li>시작시간: <%=screens[j].start_time%></li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
                                     <%
                                   }
                                 }

@@ -103,6 +103,7 @@ router.init_db_movies = function(callback) {
             newMovieContents.poster_img_url = a[i]["poster_img_url"];
             newMovieContents.wide_img_url = a[i]["wide_img_url"];
             newMovieContents.rating = a[i]['rating'];
+            newMovieContents.youtube = a[i]['youtube'];
 
             for (var j = 0; j < a[i]['comment'].length; j++) {
               newMovieContents.comment.push(a[i]['comment'][j])

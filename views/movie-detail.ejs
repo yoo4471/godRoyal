@@ -51,32 +51,17 @@
                          <span class="highlight"></span>
 
                       </div>
-                      <div class="menu my" style="padding-bottom: 10px; padding-right: 14px;padding-left: 10px;">
-                         <a class="name" href="#아이디클릭" onclick="window.open('/', 'newwindow', 'width=300, height=250'); return false;">
-                              내정보
-
+                      <div class="menu my" style="padding-bottom: 10px;padding-right: 14px;padding-left: 10px;">
+                         <a class="name" href="">
+                              예약내역
                          </a>
                          <span class="highlight"></span>
-                         <div class="dropdown">
-                            <ul>
-                               <li>
-                                  <a href="https://watcha.net/v2/users/k1dp84nRqd4m/wishlist">영화보관함</a>
-                                  <span class="count">19</span>
-                               </li>
-                               <li>
-                                  <a href="https://watcha.net/giftbox">선물함</a>
-                               </li>
-                               <li class="divide-line">
-                                  <a href="https://watcha.net/#" onclick="InviteFriend.popupInviteFriend(event);">친구초대</a>
-                               </li>
-                               <li class="divide-line">
-                                  <a href="https://watcha.net/#" class="setting">설정</a>
-                               </li>
-                               <li>
-                                  <a href="https://watcha.net/logout">로그아웃</a>
-                               </li>
-                            </ul>
-                         </div>
+                      </div>
+                      <div class="menu my" style="padding-bottom: 10px;padding-right: 14px;padding-left: 10px;">
+                         <a class="name" href="">
+                              영화보관함
+                         </a>
+                         <span class="highlight"></span>
                       </div>
                    </div>
                  <% }else{ %>
@@ -157,21 +142,35 @@
                   <div class="stillcut-shadow"></div>
                   <div class="running-info">
                      <div class="item booking-rate">
-                        <div class="head">예매율</div>
-                        <div class="data"><span class="number">26.09</span>%</div>
+                        <div class="head">평점</div>
+                        <div class="data"><span class="number"></span><%=total_star*2%> / 10</div>
                         <span class="divider"></span>
                      </div>
                      <div class="item customer-count">
-                        <div class="head">누적관객수</div>
-                        <div class="data">1,080,385</div>
+                        <div class="head">관람등급</div>
+                        <div class="data"><%=rows[0].grade%></div>
                         <span class="divider"></span>
                      </div>
                      <div class="item d-day">
                         <div class="head">개봉일</div>
-                        <div class="data english"><%=dday_str%></div>
+                        <div class="data english"><%=rows[0].release_date[0]%><%=rows[0].release_date[1]%><%=rows[0].release_date[2]%><%=rows[0].release_date[3]%>.
+                        <%=rows[0].release_date[4]%><%=rows[0].release_date[5]%>.<%=rows[0].release_date[6]%><%=rows[0].release_date[7]%></div>
                      </div>
                   </div>
-                  <a href="/movies/booking-one/<%=oneItem.title_eng%>"><div class="booking-button book"><span class="icon"></span>예매하기</div></a>
+
+                  <%
+                    if(rows[0].current == "1")
+                  {
+                  %>
+                  <a href="/movies/booking-one/<%=oneItem.title_eng%>">
+                      <div class="booking-button book">
+                          <span class="icon"></span>예매하기
+                      </div>
+                  </a>
+                  <%
+                }
+                  %>
+
                </div>
                <div class="cise-wrapper" itemscope="" itemtype="http://data-vocabulary.org/review-aggregate">
                   <div id="detailWatchaCard" style="">
@@ -268,94 +267,29 @@
                   <ul class="movie-people">
                      <li class="movie-person director">
                         <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="211538"><img src="https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg" class="pic" width="40" height="40"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="211538">요아킴 뢰닝</a>
-                        <span class="eng-name">Joachim Ronning</span>
-                     </li>
-                     <li class="movie-person director">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="24086"><img src="https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg" class="pic" width="40" height="40"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="24086">에스펜 잔드베르크</a>
-                        <span class="eng-name">Espen Sandberg</span>
+                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="211538"><%=rows[0].director%></a>
+                        <span class="eng-name">Director</span>
                      </li>
                   </ul>
                   <h5>주연</h5>
                   <ul class="movie-people">
+
+                    <%
+                      var fields = rows[0].actors.split(',')
+                      for(var m=0;m<fields.length;m++)
+                      {
+                    %>
+
+
                      <li class="movie-person actor">
                         <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="35059"><img src="./test1_files/cbe45b5cb13e7c73231e.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="35059">조니 뎁</a>
-                        <span class="kor-role">잭 스패로우 역</span>
-                        <span class="eng-name">Johnny Depp</span>
+                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="35059"><%=fields[m]%></a>
+                        <span class="eng-name">Actor</span>
                      </li>
-                     <li class="movie-person actor">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="21470"><img src="./test1_files/cedcd411399aa84966ad.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="21470">하비에르 바르뎀</a>
-                        <span class="kor-role">살라자르 역</span>
-                        <span class="eng-name">Javier Bardem</span>
-                     </li>
-                     <li class="movie-person actor">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="283328"><img src="./test1_files/a5403163a9c9fd9d1648.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="283328">브렌튼 스웨이츠</a>
-                        <span class="kor-role">헨리 터너 역</span>
-                        <span class="eng-name">Brenton Thwaites</span>
-                     </li>
-                     <li class="movie-person actor">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="140742"><img src="./test1_files/94fe1b8582c752d03902.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="140742">카야 스코델라리오</a>
-                        <span class="kor-role">카리나 스미스 역</span>
-                        <span class="eng-name">Kaya Scodelario</span>
-                     </li>
-                  </ul>
-                  <h5>조연</h5>
-                  <ul class="movie-people">
-                     <li class="movie-person actor">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="72166"><img src="./test1_files/4a681c1747c28b4e6bca.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="72166">올랜도 블룸</a>
-                        <span class="kor-role">윌 터너 역</span>
-                        <span class="eng-name">Orlando Bloom</span>
-                     </li>
-                     <li class="movie-person actor">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="87915"><img src="./test1_files/e939f08ec402fbc834e9.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="87915">제프리 러쉬</a>
-                        <span class="kor-role">헥터 바르보사 역</span>
-                        <span class="eng-name">Geoffrey Rush</span>
-                     </li>
-                     <li class="movie-person actor">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="303069"><img src="./test1_files/59c44d927f355f54d219.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="303069">데이빗 웬햄</a>
-                        <span class="kor-role">스카필드 역</span>
-                        <span class="eng-name">David Wenham</span>
-                     </li>
-                     <li class="movie-person actor">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="102448"><img src="./test1_files/8178a5614a0633ca136d.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="102448">골쉬프테 파라하니</a>
-                        <span class="kor-role">하이파 메니 역</span>
-                        <span class="eng-name">Golshifteh Farahani</span>
-                     </li>
-                     <li class="movie-person actor">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="251122"><img src="./test1_files/201c8cb2e5ab47a140e7.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="251122">스티븐 그레이엄</a>
-                        <span class="kor-role">스크럼 역</span>
-                        <span class="eng-name">Stephen Graham</span>
-                     </li>
-                     <li class="movie-person actor" style="display:none;">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="248478"><img src="./test1_files/4c9d746c780802a547dc.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="248478">케빈 맥널리</a>
-                        <span class="kor-role">깁스 역</span>
-                        <span class="eng-name">Kevin McNally</span>
-                     </li>
-                     <li class="movie-person actor" style="display:none;">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="62769"><img src="./test1_files/9f2ab20eb1ee95a4766a.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="62769">마틴 클레바</a>
-                        <span class="kor-role">마티 역</span>
-                        <span class="eng-name">Martin Klebba</span>
-                     </li>
-                     <li class="movie-person actor" style="display:none;">
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="91306"><img src="./test1_files/f9c2d62a4a9439b235ca.jpg" class="pic" width="40" height="40" onerror="this.src = &#39;https://d3sz5r0rl9fxuc.cloudfront.net/assets/default/movie_person/photo_n_cr-145b0954def96700f003183e1841c4a67c1d9db03e8ca6f724e79c05dce13f4c.jpg&#39;;return false;"></a>
-                        <a href="javascript:void(0)" class="kor-name popup-involve-movies" data-person-id="91306">키이라 나이틀리</a>
-                        <span class="kor-role">엘리자베스 스완 역</span>
-                        <span class="eng-name">Keira Knightley</span>
-                     </li>
-                  </ul>
 
+                     <% } %>
+
+                  </ul>
 
                </div>
 
@@ -402,12 +336,12 @@
         <footer class="top-footer">
             <h5>Join GodRoyal On</h5>
             <ul class="social">
-                <li><a class="facebook" href=#></a></li>
-                <li><a class="google" href=#></a></li>
-                <li><a class="pinterest" href=#></a></li>
-                <li><a class="youtube" href=#></a></li>
-                <li><a class="instagram" href=#></a></li>
-                <li><a class="linkedin" href=#></a></li>
+              <li><a class="facebook" href=//facebook.com></a></li>
+              <li><a class="google" href=//google.com></a></li>
+              <li><a class="pinterest" href=//pinterest.com></a></li>
+              <li><a class="youtube" href=//youtube.com></a></li>
+              <li><a class="instagram" href=//instagram.com></a></li>
+              <li><a class="linkedin" href=//linkedin.com></a></li>
             </ul>
         </footer>
     </div>

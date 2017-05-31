@@ -13,107 +13,111 @@
         <div class="movie-detail-container">
            <div class="movie-detail m3xlkh detail-page ">
 
-              <div class="top-area">
-                 <div class="biggest-stillcut ">
-                    <div id="slider" class="swipe" style="visibility: visible;">
-                       <div class="swipe-wrap" style="width: 12220px;">
-                         <%
-                           var left = 0
-                           var rightNow = new Date();
-                           var today = rightNow.toISOString().slice(0,10).replace(/-/g,"");
-                           var dday = today - parseInt(rows[0].release_date);
-                           var dday_str = ''
-                           if (dday >= 0) dday_str  = 'D + ' + dday
-                           else dday_str = 'D ' + dday
+             <div class="top-area">
+                <div class="biggest-stillcut ">
+                   <div id="slider" class="swipe" style="visibility: visible;">
+                      <div class="swipe-wrap" style="width: 12220px;">
+                        <%
+                          var left = 0
+                          var rightNow = new Date();
+                          var today = rightNow.toISOString().slice(0,10).replace(/-/g,"");
+                          var dday = today - parseInt(rows[0].release_date);
+                          var dday_str = ''
+                          if (dday >= 0) dday_str  = 'D + ' + dday
+                          else dday_str = 'D ' + dday
 
-                           var oneItem = rows[0];
-                           var width_star = 0;
-                           var total_star = 0
+                          var oneItem = rows[0];
+                          var width_star = 0;
+                          var total_star = 0
 
-                           var total_rate = oneItem.likes.length + oneItem.dislikes.length;
+                          var total_rate = oneItem.likes.length + oneItem.dislikes.length;
 
-                           if (total_rate != 0) {
-                             total_star = (oneItem.likes.length / total_rate) * 5;
-                             total_star = total_star.toFixed(1);
-                             width_star = total_star * 20;
-                           }
+                          if (total_rate != 0) {
+                            total_star = (oneItem.likes.length / total_rate) * 5;
+                            total_star = total_star.toFixed(1);
+                            width_star = total_star * 20;
+                          }
 
-                           for(var i = 0; i < rows[0]['slide_img_url'].length; i++)
-                           {
-                             left = left + 940
-                         %>
-                             <div style="background-image: url('<%=rows[0]['slide_img_url'][i]%>'); width: 940px; left: -<%=left%>px; transition-duration: 0ms; transform: translate(-940px, 0px) translateZ(0px);" data-index="<%=i%>"></div>
-                         <%
-                           }
-                         %>
+                          for(var i = 0; i < rows[0]['slide_img_url'].length; i++)
+                          {
+                            left = left + 940
+                        %>
+                            <div style="background-image: url('<%=rows[0]['slide_img_url'][i]%>'); width: 940px; left: -<%=left%>px; transition-duration: 0ms; transform: translate(-940px, 0px) translateZ(0px);" data-index="<%=i%>"></div>
+                        <%
+                          }
+                        %>
 
 
-                       </div>
-                    </div>
-                    <ul class="swipe-controls">
-                       <li class="swipe-prev">
-                          <a href="#">이전</a>
-                       </li>
-                       <li class="swipe-next">
-                          <a href="#">다음</a>
-                       </li>
-                    </ul>
-                 </div>
-                 <div class="stillcut-shadow"></div>
-                 <div class="running-info">
-                    <div class="item booking-rate">
-                       <div class="head">예매율</div>
-                       <div class="data"><span class="number">26.09</span>%</div>
-                       <span class="divider"></span>
-                    </div>
-                    <div class="item customer-count">
-                       <div class="head">누적관객수</div>
-                       <div class="data">1,080,385</div>
-                       <span class="divider"></span>
-                    </div>
-                    <div class="item d-day">
-                       <div class="head">개봉일</div>
-                       <div class="data english"><%=dday_str%></div>
-                    </div>
-                 </div>
-              </div>
-              <div class="cise-wrapper" itemscope="" itemtype="http://data-vocabulary.org/review-aggregate">
-                 <div id="detailWatchaCard" style="">
-                    <div class="movie-card size-1x1 poster-type base_movie  user-action-m3xlkh card grid-1 hei-1">
-                       <div class="poster-wrapper">
-                          <img class="poster" src="<%=rows[0].poster_img_url%>" width="100%">
-                       </div>
-                    </div>
-                 </div>
-                 <script type="text/javascript">
-                    var movieDetailWrapper = $('.movie-detail.m3xlkh.detail-page')
-                    var detailWatchaCard = movieDetailWrapper.find('#detailWatchaCard')
-                    $.ajax({
-                      url: '/movie/m3xlkh.json',
-                      success: function(movie){
-                        card = new MovieCard('poster_movie_card', '1x1', movie.items[0], {
-                          preventDetailPopup: true,
-                          hidePredictedRating: true
-                        });0
-                        detailWatchaCard.append(card.el);
-                        detailWatchaCard.show();
-                      }
-                    })
-                 </script>
-                 <div class="info">
-                    <div class="title"><%=rows[0].title_kor%></div>
-                 </div>
+                      </div>
+                   </div>
+                   <ul class="swipe-controls">
+                      <li class="swipe-prev">
+                         <a href="#">이전</a>
+                      </li>
+                      <li class="swipe-next">
+                         <a href="#">다음</a>
+                      </li>
+                   </ul>
+                </div>
+                <div class="stillcut-shadow"></div>
+                <div class="running-info">
+                   <div class="item booking-rate">
+                      <div class="head">평점</div>
+                      <div class="data"><span class="number"></span><%=total_star*2%> / 10</div>
+                      <span class="divider"></span>
+                   </div>
+                   <div class="item customer-count">
+                      <div class="head">관람등급</div>
+                      <div class="data"><%=rows[0].grade%></div>
+                      <span class="divider"></span>
+                   </div>
+                   <div class="item d-day">
+                      <div class="head">개봉일</div>
+                      <div class="data english"><%=rows[0].release_date[0]%><%=rows[0].release_date[1]%><%=rows[0].release_date[2]%><%=rows[0].release_date[3]%>.
+                      <%=rows[0].release_date[4]%><%=rows[0].release_date[5]%>.<%=rows[0].release_date[6]%><%=rows[0].release_date[7]%></div>
+                   </div>
+                </div>
 
-                 <div class="desc"><%=rows[0].title_eng%>, <%=rows[0].release_date%>, <%=rows[0].nation%>, <%=rows[0].genre%>, <%=rows[0].grade%>, <%=rows[0].run_time%></div>
-                 <div class="watcha-rating-wrapper">
-                 <link rel="stylesheet" media="screen" href="/stylesheets/RatingStar.css">
-                 <span class="stars stars--large">
-                    <span style="width: <%=width_star%>%"></span>
-                 </span>
-                    <span class="number" itemprop="rating"><%=total_star%></span>
-                    <span class="eval-count" itemprop="votes">(<%=total_rate%>명 참여)</span>
-                 </div>
-              </div>
+
+
+             </div>
+             <div class="cise-wrapper" itemscope="" itemtype="http://data-vocabulary.org/review-aggregate">
+                <div id="detailWatchaCard" style="">
+                   <div class="movie-card size-1x1 poster-type base_movie  user-action-m3xlkh card grid-1 hei-1">
+                      <div class="poster-wrapper">
+                         <img class="poster" src="<%=rows[0].poster_img_url%>" width="100%">
+                      </div>
+                   </div>
+                </div>
+                <script type="text/javascript">
+                   var movieDetailWrapper = $('.movie-detail.m3xlkh.detail-page')
+                   var detailWatchaCard = movieDetailWrapper.find('#detailWatchaCard')
+                   $.ajax({
+                     url: '/movie/m3xlkh.json',
+                     success: function(movie){
+                       card = new MovieCard('poster_movie_card', '1x1', movie.items[0], {
+                         preventDetailPopup: true,
+                         hidePredictedRating: true
+                       });0
+                       detailWatchaCard.append(card.el);
+                       detailWatchaCard.show();
+                     }
+                   })
+                </script>
+                <div class="info">
+                   <div class="title"><%=rows[0].title_kor%></div>
+                </div>
+
+                <div class="desc"><%=rows[0].title_eng%>, <%=rows[0].release_date%>, <%=rows[0].nation%>, <%=rows[0].genre%>, <%=rows[0].grade%>, <%=rows[0].run_time%></div>
+                <div class="watcha-rating-wrapper">
+                <link rel="stylesheet" media="screen" href="/stylesheets/RatingStar.css">
+                <span class="stars stars--large">
+                   <span style="width: <%=width_star%>%"></span>
+                </span>
+                   <span class="number" itemprop="rating"><%=total_star%></span>
+                   <span class="eval-count" itemprop="votes">(<%=total_rate%>명 참여)</span>
+                </div>
+             </div>
 
 
 
