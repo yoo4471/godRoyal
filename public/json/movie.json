@@ -38,6 +38,8 @@
   "스릴러",
   "드라마"
 ]
+"youtube" : "https://youtu.be/Qu5JDOpMuEk"
+
       },
       {
          "title_kor": "불한당: 나쁜 놈들의 세상",
@@ -75,7 +77,7 @@
   "액션",
   "드라마"
 ]
-
+"youtube" : "https://youtu.be/pWpGlD4D7X0"
        },
       {
          "title_kor": "킹 아서: 제왕의 검",
@@ -115,6 +117,7 @@
   "판타지"
 ]
 
+"youtube" : "https://youtu.be/3UCFRk0nxzc"
 
        },
       {
@@ -151,6 +154,9 @@
 "genre" :[
   "애니메이션"
 ]
+
+"youtube" : "https://youtu.be/t-TBvBKi1kA"
+
 
        },
       {
@@ -190,6 +196,8 @@
   "스릴러"
 ]
 
+"https://youtu.be/P7lmmnZ18VQ"
+
        },
       {
          "title_kor": "보안관",
@@ -226,6 +234,9 @@
   "범죄",
   "코미디"
 ]
+
+"youtube" : "https://youtu.be/5c-dva-4BMs"
+
 
        },
       {
@@ -264,6 +275,8 @@
   "SF"
 ]
 
+"youtube" : "https://youtu.be/xf2jT5uOsd4"
+
        },
       {
          "title_kor": "목소리의 형태",
@@ -301,6 +314,10 @@
   "멜로",
   "로맨스"
 ]
+
+"youtube" : "https://youtu.be/TaBV8rBzZ50"
+
+
        },
       {
          "title_kor": "석조저택 살인사건",
@@ -337,6 +354,10 @@
   "스릴러",
   "서스펜스"
 ]
+
+"youtube" : "https://youtu.be/HojyytzcL5A"
+
+
        },
       {
          "title_kor": "로스트 인 파리",
@@ -374,6 +395,10 @@
   "멜로",
   "코미디"
 ]
+
+"youtube" : "https://youtu.be/IlnbTjsNyUg"
+
+
        },
       {
          "title_kor": "해바라기",
@@ -893,6 +918,10 @@
   "액션",
   "드라마"
 ]
+
+"youtube" : "https://youtu.be/o0o1qWnMt_c"
+
+
        },
 	   {
          "title_kor": "에너미 오브 스테이트",
@@ -1039,6 +1068,10 @@
 "genre" :[
   "다큐멘터리"
 ]
+
+"youtube" : "https://youtu.be/PmMwsM7FW-U"
+
+
        },
 	   {
          "title_kor": "컨저링",
@@ -1183,6 +1216,9 @@
   "멜로",
   "로맨스"
 ]
+"youtube" : "https://youtu.be/xIgIhwp78aM"
+
+
        },
 	   {
          "title_kor": "솔트",
@@ -1253,11 +1289,18 @@
       "text" : "내가 보기엔 노잼 영화같았는데..."
     }
 ],
+
 "genre" :[
   "액션",
   "범죄",
   "스릴러"
-]
+],
+
+
+
+
+
+
        },
 	   {
          "title_kor": "베오울프",
