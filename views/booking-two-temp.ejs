@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>감동, 그 이상의 영화 GRL</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/images/logo/logo.png">
+      <link rel="stylesheet" media="screen" href="/stylesheets/Booking.css">
+   </head>
+   <body class="landing nanum-gothic linux">
+
+       <link rel="stylesheet" media="screen" href="/stylesheets/Reservation.css">
+       <!-- <script src="/javascripts/Reservation.js"></script> -->
+
+       <div>
+           <div style="position:relative; margin-right:475px; height:600px;">
+             <div style="">
+                 <div id="container" class="container">
+                   <div id="list-1" class="list">
+                     <div class="icon"></div>
+                     <div class="title"><%=rows[0].title_eng%>&nbsp;&nbsp; / &nbsp;&nbsp;<%=screens[0].theater%></div>
+                   </div>
+                 </div>
+             </div>
+           </div>
+           <div style="position:relative; margin-left:475px; margin-top:-600px; height:600px;">
+             <div style="">
+                 <div id="container" class="container">
+                   <div id="list-1" class="list">
+                     <div class="icon"></div>
+                     <div class="title">1관</div>
+                     <ul>
+                       <a href="/"><li>Chicken</li></a>
+                       <a href="/"><li>Chicken</li></a>
+                       <a href="/"><li>Chicken</li></a>
+                     </ul>
+                   </div>
+                   <div id="list-1" class="list">
+                     <div class="icon"></div>
+                     <div class="title">2관</div>
+                     <ul>
+                       <a href="/"><li>Chicken</li></a>
+                       <a href="/"><li>Chicken</li></a>
+                       <a href="/"><li>Chicken</li></a>
+                     </ul>
+                   </div>
+                   <div id="list-1" class="list">
+                     <div class="icon"></div>
+                     <div class="title">3관</div>
+                     <ul>
+                       <a href="/"><li>Chicken</li></a>
+                       <a href="/"><li>Chicken</li></a>
+                       <a href="/"><li>Chicken</li></a>
+                     </ul>
+                   </div>
+                   <div id="list-1" class="list">
+                     <div class="icon"></div>
+                     <div class="title">4관</div>
+                     <ul>
+                       <a href="/"><li>Chicken</li></a>
+                       <a href="/"><li>Chicken</li></a>
+                       <a href="/"><li>Chicken</li></a>
+                     </ul>
+                   </div>
+                 </div>
+             </div>
+
+           </div>
+       </div>
+       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+       <script>
+       $('.list').click(function(){
+         $(this).find('ul').toggleClass('open');
+       });
+       </script>
+
+   </body>
+</html>
