@@ -9,7 +9,7 @@ var cookieSession = require('cookie-session')
 
 var index = require('./routes/index');
 var movies = require('./routes/movies');
-
+var reserve = require('./routes/reserve');
 var app = express();
 
 // view engine setup
@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/movies', movies);
+app.use('/reserve', reserve)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

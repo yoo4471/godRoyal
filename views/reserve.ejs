@@ -637,14 +637,6 @@ body #cdawrap {
     <script>
     $('.btn').click(function(event) {
 
-
-      // var div = $('#rows').find('row__seat--reserved')
-      // var a = $( "div.row__seat--reserved")
-      // console.log(a[0])
-
-
-
-      // var div = $('#rows').find('row__seat--reserved')
       var a = $( "div.row__seat--selected")
       var selected = []
       for(var i = 0; i < a.length; i++)
@@ -653,29 +645,29 @@ body #cdawrap {
         selected.push(b.getAttribute('data-tooltip'))
 
 
-        // console.log(b.find('data-tooltip'))
       }
       console.log(selected)
-      // var selected_list = selected.serialize();
+      if(selected.length>0){
+        $.ajax({
+            type: "post",
+            url: "http://localhost:3000/reserve",
 
-      $.ajax({
-          type: "post",
-          url: "http://localhost:3000/movies/reserve",
-          // data: $(this).serialize(),
-          data: { title_eng:"<%=title_eng%>", email:"<%=email%>", theater:"<%=theater%>", screen_num:"<%=screen_num%>", seat: selected},
+            data: { title_eng:"<%=title_eng%>", email:"<%=email%>", theater:"<%=theater%>", screen_num:"<%=screen_num%>", seat: selected},
 
-          traditional: true,
-          success: function (response) {
-              if (response == "done") {
-                  // alert(response + "Form submitted successfully!");
-              } else {
-                  // alert(response + "Form submission failed!");
-              }
-          },
-          error: function (response) {
-              alert(response);
-          }
-      });
+            traditional: true,
+            success: function (response) {
+                if (response == "done") {
+                    window.location.href = 'http://localhost:3000/reserve/complete/<%=email%>';
+                } else {
+                    // alert(response + "Form submission failed!");
+                }
+            },
+            error: function (response) {
+                alert(response);
+            }
+        });
+
+      }
 
 
     });
