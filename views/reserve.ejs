@@ -180,10 +180,9 @@ body #cdawrap {
 
   <header class="header">
 			<div class="codrops-links">
-				<a rel="nofollow" rel="noreferrer"class="codrops-icon codrops-icon--prev" href="#" title="Previous Demo"><span>Previous Demo</span></a>
-				<a rel="nofollow" rel="noreferrer"class="codrops-icon codrops-icon--drop" href="#" title="Back to the article"><span>Back to the Codrops article</span></a>
+
 			</div>
-			<h1 class="header__title">Cinema Seat Preview</h1>
+
 			<p class="note note--screen">Please view on a larger screen</p>
 			<p class="note note--support">Sorry, but your browser doesn't support preserve-3d!</p>
 			<a rel="nofollow" rel="noreferrer"href="#" class="github-icon" aria-label="Find this project on GitHub" title="Find this project on GitHub"></a>
@@ -204,8 +203,8 @@ body #cdawrap {
 						<div class="intro intro--shown">
 							<div class="intro__side">
 								<h2 class="intro__title">
-									<span class="intro__up">The Open Cinema <em>presents</em></span>
-									<span class="intro__down">Sintel <span class="intro__partial"><em>by</em> <a rel="nofollow" rel="noreferrer"href="#">The Mahi Foundation</a></span></span>
+
+
 								</h2>
 							</div>
 							<div class="intro__side">
@@ -588,13 +587,13 @@ body #cdawrap {
 			<div class="rows rows--mini" id="rows">
         <%
           var columns = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R"]
-          for(var i = 0; i < 16; i++)
+          for(var i = 0; i < 18; i++)
           {
             var column = columns[i]
         %>
           <div class="row">
         <%
-              for(var j = 0; j < 16; j++)
+              for(var j = 0; j < 18; j++)
               {
                 if(seat[i][j] == "1"){
 
@@ -605,7 +604,7 @@ body #cdawrap {
                 else
                 {
                 %>
-                    <div class="row__seat tooltip" data-tooltip="<%=column%><%=j%>"></div>
+                    <div class="row__seat tooltip" data-tooltip="<%=column%><%=j+1%>"></div>
                 <%
                 }
                 %>
@@ -647,35 +646,40 @@ body #cdawrap {
 
       // var div = $('#rows').find('row__seat--reserved')
       var a = $( "div.row__seat--selected")
+      var selected = []
       for(var i = 0; i < a.length; i++)
       {
         var b = a[i]
-        console.log(b.getAttribute('data-tooltip'))
+        selected.push(b.getAttribute('data-tooltip'))
+
+
         // console.log(b.find('data-tooltip'))
       }
-      //
-      //
-      // $.ajax({
-      //     type: "post",
-      //     url: "http://localhost:3000/movies/update/rating_bad",
-      //     // data: $(this).serialize(),
-      //     data: { title_eng:$(this).attr('title_eng'), email:$(this).attr('email'), status:stat },
-      //     success: function (response) {
-      //         if (response == "done") {
-      //             // alert(response + "Form submitted successfully!");
-      //         } else {
-      //             // alert(response + "Form submission failed!");
-      //         }
-      //     },
-      //     error: function (response) {
-      //         alert(response);
-      //     }
-      // });
-      // $(this).attr({ status: "1" });
-      // a.attr({ status: "0" })
+      console.log(selected)
+      // var selected_list = selected.serialize();
+
+      $.ajax({
+          type: "post",
+          url: "http://localhost:3000/movies/reserve",
+          // data: $(this).serialize(),
+          data: { title_eng:"<%=title_eng%>", email:"<%=email%>", theater:"<%=theater%>", screen_num:"<%=screen_num%>", seat: selected},
+
+          traditional: true,
+          success: function (response) {
+              if (response == "done") {
+                  // alert(response + "Form submitted successfully!");
+              } else {
+                  // alert(response + "Form submission failed!");
+              }
+          },
+          error: function (response) {
+              alert(response);
+          }
+      });
+
 
     });
-  //# sourceURL=pen.js
+
   </script>
 
 

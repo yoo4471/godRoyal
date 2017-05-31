@@ -74,31 +74,8 @@ router.get('/test', function(req, res, next) {
 
 });//get
 
-/* GET home page. */
-router.get('/reserve/:title_eng/:theater/:screen_num', function(req, res, next) {
-  var theater = req.params.theater
-  var title_eng = req.params.title_eng
-  var screen_num = req.params.screen_num
-
-  console.log(theater, title_eng, screen_num)
-  ScreenContents.find({"title_eng":title_eng, "theater":theater, "screen_num":screen_num}, function(err, screenContents){
 
 
-    if(err) return res.status(500).send({error: 'database failure'});
-    // res.json(screenContents);
-    var seat = screenContents[0].seat[0]
-
-    res.render('reserve', {
-        seat: seat,
-        title_eng: title_eng,
-        theater: theater,
-        screen_num: screen_num,
-        email: req.session.email
-
-        }
-      );
-  });
-});//get
 
 
 /* GET home page. */
@@ -322,6 +299,81 @@ router.get('/reserve', function(req, res, next) {
   res.render('reserve')
 });//get
 
+router.get('/reserve/:title_eng/:theater/:screen_num', function(req, res, next) {
+  var theater = req.params.theater
+  var title_eng = req.params.title_eng
+  var screen_num = req.params.screen_num
+
+  console.log(theater, title_eng, screen_num)
+  ScreenContents.find({"title_eng":title_eng, "theater":theater, "screen_num":screen_num}, function(err, screenContents){
+
+
+    if(err) return res.status(500).send({error: 'database failure'});
+    // res.json(screenContents);
+    var seat = screenContents[0].seat[0]
+
+    res.render('reserve', {
+        seat: seat,
+        title_eng: title_eng,
+        theater: theater,
+        screen_num: screen_num,
+        email: req.session.email
+
+        }
+      );
+  });
+});//get
+
+router.post('/reserve', function(req, res, next) {
+  console.log(req.body.seat)
+  var columns = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R"]
+
+
+  ScreenContents.find({"title_eng":req.body.title_eng, "theater":req.body.theater, "screen_num":req.body.screen_num}, function(err, screenContents){
+    if(err) return res.status(500).send({error: 'database failure'});
+      // res.json(screenContents);
+
+      var seat = screenContents[0].seat[0]
+
+      for( var i = 0; i < req.body.seat.length; i++){
+        var column = columns.indexOf(req.body.seat[i][0])
+        var row = parseInt(req.body.seat[i].substring(1,3)) - 1
+
+        console.log(column, row)
+        seat[column][row] = 1
+
+
+
+
+      }
+
+      // console.log(seat)
+      ScreenContents.findOneAndUpdate({"title_eng":req.body.title_eng, "theater":req.body.theater, "screen_num":req.body.screen_num}, { "$pop": { "seat": -1 }} ).exec(function(err, screenContents){
+         if(err) return res.status(500).send({error: 'database failure'});
+
+         ScreenContents.findOneAndUpdate({"title_eng":req.body.title_eng, "theater":req.body.theater, "screen_num":req.body.screen_num}, { "$push": { "seat": seat}} ).exec(function(err, screenContents){
+            if(err) return res.status(500).send({error: 'database failure'});
+            console.log(screenContents.seat)
+            res.send('done')
+
+
+
+
+         });
+
+         
+
+
+
+      });
+
+      // console.log(seat)
+
+
+
+    });
+});//get
+
 router.get('/init1', function(req, res, next) {
   MovieContents.remove({}, function(err) {
      console.log('collection moviecontents removed')
@@ -386,12 +438,9 @@ router.get('/show2', function(req, res, next) {
 });//get
 
 router.get('/show3', function(req, res, next) {
-  MovieContents.find({current:"1"},{},function(err, movieContents){
+  ScreenContents.find({"title_eng":"Lost in Paris", "theater":"가산디지털", "screen_num":'1'},{},function(err, movieContents){
       if(err) return res.status(500).send({error: 'database failure'});
-      a = movieContents.slice();
-      a.sort(function (a, b) {
-        return b.likes.length - a.likes.length;
-      });
+
 
       res.json(movieContents)
 
