@@ -251,15 +251,26 @@ router.get('/booking-two', function(req, res, next) {
   });
 });
 
-router.get('/booking-movie-detail', function(req, res, next) {
-  MovieContents.find({current:1}, function(err, boardContents){
+router.get('/:title_eng/booking-movie-detail', function(req, res, next) {
+  var title = req.params.title_eng;
+  console.log(title)
+  MovieContents.find({title_eng:title}, function(err, movieContents){
+      if(err) return res.status(500).send({error: 'database failure'});
 
-  if(err) return res.status(500).send({error: 'database failure'});
 
-  // console.log(boardContents[0].img_url);
-  // res.render('update', {title:"글 수정", error:"", row: boardContents});
+      if (movieContents.length == 0) {
+        res.send('영화없음.')
+      }
+      else {
 
-  res.render('booking-movie-detail', {rows: boardContents});
+        var a = movieContents[0].comment
+
+        console.log(a.length)
+        res.render('booking-movie-detail', {
+          rows: movieContents,
+          email: req.session.email
+        })
+      }
   });
 });
 
