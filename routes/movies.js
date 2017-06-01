@@ -56,7 +56,7 @@ router.get('/boxoffice', function(req, res, next) {
 /* GET home page. */
 router.get('/latestoffice', function(req, res, next) {
   MovieContents.find({ current:1 }, function(err, movieContents){
-  
+
   if(err) return res.status(500).send({error: 'database failure'});
 
   orderContents = movieContents.slice();
@@ -288,6 +288,9 @@ router.get('/booking-three/:title_eng/:theater/:start_time', function(req, res, 
           res.render('booking-three', {
             screens: screenContents,
             rows: movieContents,
+            title_eng:title,
+            theater:tt,
+            start_time:st,
             email: req.session.email
           })
 
@@ -295,17 +298,6 @@ router.get('/booking-three/:title_eng/:theater/:start_time', function(req, res, 
   });
 });
 
-
-
-
-
-router.get('/seat', function(req, res, next) {
-
-  // console.log(boardContents[0].img_url);
-  // res.render('update', {title:"글 수정", error:"", row: boardContents});
-
-  res.render('seat');
-});
 
 
 
