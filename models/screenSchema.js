@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
+var autoincrement = require('mongoose-autoincrement');
 mongoose.Promise = global.Promise;
 
+mongoose.plugin(autoincrement);
 var screenSchema = mongoose.Schema({
   state: String,
   theater: String,

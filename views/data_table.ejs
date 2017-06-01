@@ -274,7 +274,7 @@ div.material-table table td:last-child {
       <div class="table-header" style="background-color:#23AE89">
         <span class="table-title"><font color="white">영화 목록</font></span>
         <div class="actions">
-          <a rel="nofollow" rel="noreferrer"href="#add_users" class="modal-trigger waves-effect btn-flat nopadding"><i class="material-icons">person_add</i></a>
+          <a rel="nofollow" rel="noreferrer"href="/dashboard/write" class="modal-trigger waves-effect btn-flat nopadding"><i class="material-icons">person_add</i></a>
           <a rel="nofollow" rel="noreferrer"href="#" class="search-toggle waves-effect btn-flat nopadding"><i class="material-icons">search</i></a>
         </div>
       </div>
@@ -486,7 +486,7 @@ window.CP.exitedLoop(1);
 
 $(document).ready(function() {
   $('#datatable').dataTable({
-    "ajax": 'http://localhost:3000/dashboard/all',
+    "ajax": 'http://localhost:3000/dashboard/movie',
     // 'http://localhost:3000/javascripts/test.json',
     "oLanguage": {
       "sStripClasses": "",
@@ -507,7 +507,7 @@ $(document).ready(function() {
             targets: 0,
             render: function ( data, type, row, meta ) {
                 if(type === 'display'){
-                    data = '<a href="' + encodeURIComponent(row[6]) + '" target="_parent">' + data + '</a>';
+                    data = '<a href="/dashboard/update/' + row[6] + '" target="_parent">' + data + '</a>';
                 }
 
                 return data;
