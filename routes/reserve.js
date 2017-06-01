@@ -3,6 +3,7 @@ var MovieContents = require('../models/movieSchema');
 var UserContents = require('../models/userSchema');
 var RateContents = require('../models/rateSchema');
 var ScreenContents = require('../models/screenSchema');
+var ReserveContents = require('../models/reserveSchema');
 var cookieSession = require('cookie-session')
 var recommend = require('./recommend')
 var router = express.Router();
@@ -152,7 +153,20 @@ router.post('/', function(req, res, next) {
 
          ScreenContents.findOneAndUpdate({"title_eng":req.body.title_eng, "theater":req.body.theater, "start_time":req.body.start_time}, { "$push": { "seat": seat}} ).exec(function(err, screenContents){
             if(err) return res.status(500).send({error: 'database failure'});
+            var newReserveContents = new ReserveContents;
+            newReserveContents.email = req.body.email
+            newReserveContents.theater = req.body.theater
+            newReserveContents.title_eng = req.body.title_eng
+            newReserveContents.start_time = req.body.start_time
+            newReserveContents.status = 1
+            for( var j = 0; j < body_seat.length; j++) {
+              newReserveContents.seat.push(body_seat[j])
+            }
 
+            newReserveContents.save(function (err)  {
+              if (err) throw err;
+              // console.log(user + ' : ' + title + ' ' + action)
+            });
             res.send('done')
          });
       });
@@ -163,8 +177,21 @@ router.post('/', function(req, res, next) {
 
 
 
-router.get('/complete/:email', function(req, res, next) {
-  res.send(req.params.email + ' 이 유저에 대한 예약 내역 보여주는 페이지 만들면 된다.')
+router.get('/complete', function(req, res, next) {
+
+  ReserveContents.find({"email":req.session.email}, function(err, reserveContents){
+    if(err) return res.status(500).send({error: 'database failure'});
+    console.log(reserveContents)
+    // res.json(screenContents);
+    // res.render('reserve', {
+    //     seat: seat,
+    //     title_eng: title_eng,
+    //     theater: theater,
+    //     start_time: start_time,
+    //     email: req.session.email
+    //
+    //     });
+  });
 });//get
 
 router.get('/show1', function(req, res, next) {
@@ -178,7 +205,9 @@ router.get('/show1', function(req, res, next) {
   });
 });//get
 
-
+router.get('/test', function(req, res, next) {
+  res.render('complete_reserve')
+});//get
 
 
 module.exports = router;
