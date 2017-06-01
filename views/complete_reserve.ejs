@@ -10,8 +10,8 @@
 
 
 
-
       <style>
+
 a, u {
   text-decoration: none;
   color: inherit;
@@ -166,23 +166,18 @@ div.container {
       for (var i = 0; i < rows.length; i++)
       {
         var oneItem = rows[i]
-        for (var j = 0 ; j < title.length; j++)
-        {
-          if(oneItem.title_eng == title[j].title_eng)
-          {
-            var pur = title[j].poster_img_url
-          }
-        }
   %>
         <div class="item">
           <div class="item-right">
-            <img class="poster" src="<%=pur%>" width="162px;" height="273px"style="margin-top:-71px; margin-left:-62px;">
+            <img class="poster" src="<%=oneItem.poster_img_url%>" width="100%">
+            <h2 class="num">23</h2>
+            <p class="day">Feb</p>
             <span class="up-border"></span>
             <span class="down-border"></span>
           </div> <!-- end item-right -->
           <div class="item-left">
             <p class="event">God Royal</p>
-            <h2 class="title"><a href="/movies/detail/<%=oneItem.title_eng%>"><%=oneItem.title_eng%></a></h2>
+            <h2 class="title" style="width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" ><a target="_parent" href="/movies/detail/<%=oneItem.title_eng%>"><%=oneItem.title_eng%></a></h2>
             <div class="sce">
               <div class="icon">
                 <i class="fa fa-table"></i>
@@ -207,7 +202,7 @@ div.container {
               </p>
             </div>
             <div class="fix"></div>
-            <button class="booked"><a target="_parent"href="/movies/detail/<%=oneItem.title_eng%>">Booked</a></button>
+            <a target="_parent" href="/movies/detail/<%=oneItem.title_eng%>"><button class="booked">Booked</button></a>
           </div> <!-- end item-right -->
         </div> <!-- end item -->
   <%

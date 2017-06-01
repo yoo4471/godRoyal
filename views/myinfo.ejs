@@ -86,71 +86,124 @@
              </div>
          </div>
      </div>
-      <div id="contents" style="min-height: 927px;">
+      <div id="contents" style="min-height: 1035px;height: 2000px;">
          <header id="profile" style="background-image:url(https://d12hfz37g51hrt.cloudfront.net/s/large/-352c8d13f8d511729508.jpg?1451498050); ">
             <div class="dimmer"></div>
             <section id="account">
                <div class="thumbnail"><img onerror="utils.loadDefaultImg(this, &#39;medium&#39;);" src="/images/icon/profile.jpg"></div>
-               <h1 class="name">유저아이디</h1>
+               <h1 class="name"><%=email%></h1>
             </section>
-            <section id="watched-hours"><span class="icon-clock"></span><strong class="stat-count">111</strong><span class="label">상영한 영화 수</span></section>
-            <section id="received-likes"><span class="icon-like"></span><strong class="stat-count">222</strong><span class="label">평가한 영화 수</span></section>
+
          </header>
          <section id="taste" style="position: relative; height: 1142px;">
             <div class="card" id="rating-distribution" style="position: absolute; left: 10px; top: 36px;">
                <div class="row header">
                   <h2 class="small">별점분포</h2>
-                  <span class="flavor-text">세상을 긍정적으로 바라보는 '긍정파'</span>
+                  <%
+                    if(num_rate_average < 2)
+                    {
+                  %>
+                    <span class="flavor-text">세상을 부정적으로 바라보는 '부정파' </span>
+                  <%
+                    }
+                    else if(num_rate_average > 4)
+                    {
+                  %>
+                    <span class="flavor-text">세상을 긍정적으로 바라보는 '긍정파'</span>
+                  <%
+                    }
+                    else
+                    {
+                  %>
+                  <span class="flavor-text">세상을 애매하게 바라보는 '애매파'</span>
+                  <%
+                    }
+                  %>
+
                </div>
                <div class="row chart" data-distribution="{&quot;1&quot;:0,&quot;2&quot;:1,&quot;3&quot;:0,&quot;4&quot;:2,&quot;5&quot;:1,&quot;6&quot;:1,&quot;7&quot;:1,&quot;8&quot;:2,&quot;9&quot;:4,&quot;10&quot;:3}">
-                  <div style="margin-left:150px; margin-top:25px;"><img src="http://www.carlswebgraphics.com/smiley/happy-smiley-face.png"></div>
-                  <!-- <div style="margin-left:150px; margin-top:25px;"><img src="https://s-media-cache-ak0.pinimg.com/736x/50/3e/89/503e89bda8a1b47400be44846f7c9554.jpg"></div>
-                  <div style="margin-left:150px; margin-top:25px;"><img src="http://www.organizaracasa.com/wp-content/uploads/2016/02/angry-icon-150x150.png"></div> -->
+                  <%
+                    if(num_rate_average < 2)
+                    {
+                  %>
+                    <div style="margin-left:150px; margin-top:25px;"><img src="http://www.organizaracasa.com/wp-content/uploads/2016/02/angry-icon-150x150.png"></div>
+                  <%
+                    }
+                    else if(num_rate_average > 4)
+                    {
+                  %>
+                    <div style="margin-left:150px; margin-top:25px;"><img src="http://www.carlswebgraphics.com/smiley/happy-smiley-face.png"></div>
+                  <%
+                    }
+                    else
+                    {
+                  %>
+                  <div style="margin-left:150px; margin-top:25px;"><img src="https://s-media-cache-ak0.pinimg.com/736x/50/3e/89/503e89bda8a1b47400be44846f7c9554.jpg"></div>
+                  <%
+                    }
+                  %>
+
+
+
                </div>
                <div class="row stats">
-                  <div class="col-2"><strong class="stat-count average-rating">3.7</strong>별점 평균</div>
-                  <div class="col-2"><strong class="stat-count">15</strong>평가한 영화 수</div>
-                  <div class="col-2"><strong class="stat-count">10</strong>코멘트 수</div>
+                  <div class="col-2"><strong class="stat-count average-rating"><%=num_rate_average%></strong>별점 평균</div>
+                  <div class="col-2"><strong class="stat-count"><%=num_rate_total%></strong>평가한 영화 수</div>
+                  <div class="col-2"><strong class="stat-count"><%=num_comment_total%></strong>코멘트 수</div>
                </div>
             </div>
             <div class="card sorted-by-rating expanded" id="favorite-nations" style="position: absolute; left: 490px; top: 36px;">
                <div class="row header">
                   <h2 class="small">선호국가</h2>
-                  <span class="flavor-text">한국 영화를 재밌게 보셨어요</span>
+                  <span class="flavor-text"><%=dic_nation[0].key%> 영화를 재밌게 보셨어요</span>
                </div>
                <div class="row map"><span class="marker icon-favorite-3" data-nation-id=""></span></div>
-               <div class="row best">
-                  <div class="col-2 left"><span class="icon-favorite-1"></span>한국</div>
-                  <div class="col-2">89점</div>
-                  <div class="col-2 right">7편</div>
-               </div>
-               <div class="row best">
-                  <div class="col-2 left"><span class="icon-favorite-2"></span>미국</div>
-                  <div class="col-2">88점</div>
-                  <div class="col-2 right">8편</div>
-               </div>
-               <div class="row best">
-                  <div class="col-2 left"><span class="icon-favorite-3"></span>오스트레일리아</div>
-                  <div class="col-2">73점</div>
-                  <div class="col-2 right">1편</div>
-               </div>
-               <div class="runner-ups" style="display: block;">
-                  <div class="row">
-                     <div class="col-2 left"><span class="icon-favorite-3"></span>어</div>
-                     <div class="col-2">73점</div>
-                     <div class="col-2 right">1편</div>
-                  </div>
-                  <div class="row">
-                     <div class="col-2 left"><span class="icon-favorite-3"></span>딘ㅇ</div>
-                     <div class="col-2">73점</div>
-                     <div class="col-2 right">1편</div>
-                  </div>
-                  <div class="row">
-                     <div class="col-2 left"><span class="icon-favorite-3"></span>ㅇㄴㄴ</div>
-                     <div class="col-2">73점</div>
-                     <div class="col-2 right">1편</div>
-                  </div>
-               </div>
+
+               <%
+                  for(var i = 0; i < dic_nation.length; i++)
+                  {
+                    oneItem = dic_nation[i]
+                    num_score = (oneItem.like / oneItem.value) * 5;
+                    num_score = num_score.toFixed(0);
+                    num_score = num_score * 20
+                    if(i == 0)
+                    {
+                    %>
+                    <div class="row best">
+                       <div class="col-2 left"><span class="icon-favorite-1"></span><%=oneItem.key%></div>
+                       <div class="col-2"><%=num_score%>점</div>
+                       <div class="col-2 right"><%=oneItem.value%>편</div>
+                    </div>
+                    <%
+                    }
+                    else if(i == 1)
+                    {
+                    %>
+                    <div class="row best">
+                       <div class="col-2 left"><span class="icon-favorite-2"></span><%=oneItem.key%></div>
+                       <div class="col-2"><%=num_score%>점</div>
+                       <div class="col-2 right"><%=oneItem.value%>편</div>
+                    </div>
+                    <%
+                    }
+                    else
+                    {
+                    %>
+                    <div class="row best">
+                       <div class="col-2 left"><span class="icon-favorite-3"></span><%=oneItem.key%></div>
+                       <div class="col-2"><%=num_score%>점</div>
+                       <div class="col-2 right"><%=oneItem.value%>편</div>
+                    </div>
+                    <%
+                    }
+
+
+
+                  }
+               %>
+
+
+
                <script>(function() {
                   $('#show-more-nations').on('click', function() {
                     $('#favorite-nations .runner-ups').show();
@@ -164,103 +217,18 @@
                   }).call(this);
                </script>
             </div>
-            <!-- <div class="card sorted-by-rating not-available hide-sample" id="favorite-actors" style="position: absolute; left: 970px; top: 36px;">
-               <div class="row header">
-                  <h2>선호배우</h2>
-               </div>
-               <div class="ribbon"></div>
-               <div class="row message">
-                  <p>평가가 부족해서 아직 선호배우를 뽑지 못했어요 ㅠㅠ <br> 더 많은 영화를 평가하시면 선호하시는 배우를 샘플카드처럼 뽑아드려요!</p>
-               </div>
-               <div class="row sample best">
-                  <ol>
-                     <li>
-                        <img class="photo" src="./공동환님의 영화 취향 __ 왓챠_files/be55bbf02061747a0ef7.jpg">
-                        <div class="person"><a class="popup-involve-movies name" data-person-id="177661">러셀 크로우</a><span class="stat">
-                           <strong class="rating">5점</strong>/<strong class="count">5</strong>편
-                           </span>
-                           <span class="watched-movies"><a data-movie-title-url="les-miserables-2012" data-movie-id="mi7d0g" class="title" href="https://watcha.net/movies/mi7d0g?unique_id=mi7d0g">레미제라블</a></span>
-                        </div>
-                     </li>
-                     <li>
-                        <img class="photo" src="./공동환님의 영화 취향 __ 왓챠_files/ec79aacce192bee1941a.jpg">
-                        <div class="person"><a class="popup-involve-movies name" data-person-id="254783">스칼렛 요한슨</a><span class="stat">
-                           <strong class="rating">5점</strong>/<strong class="count">6</strong>편
-                           </span>
-                           <span class="watched-movies"><a data-movie-title-url="the-avengers-2012" data-movie-id="m3smdg" class="title" href="https://watcha.net/movies/m3smdg?unique_id=m3smdg">어벤져스</a></span>
-                        </div>
-                     </li>
-                     <li>
-                        <img class="photo" src="./공동환님의 영화 취향 __ 왓챠_files/a7906ba7d528ef69e678.jpg">
-                        <div class="person"><a class="popup-involve-movies name" data-person-id="206894">최민식</a><span class="stat">
-                           <strong class="rating">5점</strong>/<strong class="count">5</strong>편
-                           </span>
-                           <span class="watched-movies"><a data-movie-title-url="teugbyeolsimin-2016" data-movie-id="m8dh1l" class="title" href="https://watcha.net/movies/m8dh1l?unique_id=m8dh1l">특별시민</a></span>
-                        </div>
-                     </li>
-                  </ol>
-               </div>
-               <button class="show-sample" id="show-sample-actors">샘플카드 보기</button><a class="evalmore" href="https://watcha.net/evalmore">영화 평가 늘리기 ▶︎</a><script>(function() {
-                  $('#show-sample-actors').on('click', function() {
-                    $(this).parent().removeClass('hide-sample');
-                    $(this).parent().addClass('show-sample');
-                    $(this).remove();
-                    try {
-                      return $('#taste').masonry();
-                    } catch (error) {}
-                  });
 
-                  }).call(this);
-               </script>
-            </div>
             <div class="card sorted-by-rating not-available hide-sample" id="favorite-directors" style="position: absolute; left: 970px; top: 315px;">
                <div class="row header">
-                  <h2>선호감독</h2>
+                  <h2>평가</h2>
                </div>
                <div class="ribbon"></div>
                <div class="row message">
-                  <p>평가가 부족해서 아직 선호감독을 뽑지 못했어요 ㅠㅠ <br> 더 많은 영화를 평가하시면 선호하시는 감독을 샘플카드처럼 뽑아드려요!</p>
+                  <p>지금 당장 영화를 더 보시는 건 어떤가요?<br> 더 많은 영화를 보고 평가를 해주세요. 더 정확한 추천이 가능해요! </p>
                </div>
-               <div class="row sample best">
-                  <ol>
-                     <li>
-                        <img class="photo" src="./공동환님의 영화 취향 __ 왓챠_files/630e5988f73aa186fa47.jpg">
-                        <div class="person"><a class="popup-involve-movies name" data-person-id="165014">박찬욱</a><span class="stat">
-                           <strong class="rating">5점</strong>/<strong class="count">6</strong>편
-                           </span>
-                           <span class="watched-movies"><a data-movie-title-url="oldboy-2003" data-movie-id="mopgut" class="title" href="https://watcha.net/movies/mopgut?unique_id=mopgut">올드보이</a></span>
-                        </div>
-                     </li>
-                     <li>
-                        <img class="photo" src="./공동환님의 영화 취향 __ 왓챠_files/5e7eed064ed73748c126.jpg">
-                        <div class="person"><a class="popup-involve-movies name" data-person-id="1583">크리스토퍼 놀란</a><span class="stat">
-                           <strong class="rating">5점</strong>/<strong class="count">4</strong>편
-                           </span>
-                           <span class="watched-movies"><a data-movie-title-url="inception-2010" data-movie-id="mevucc" class="title" href="https://watcha.net/movies/mevucc?unique_id=mevucc">인셉션</a></span>
-                        </div>
-                     </li>
-                     <li>
-                        <img class="photo" src="./공동환님의 영화 취향 __ 왓챠_files/b805bc648a4e9f9e6ca4.jpg">
-                        <div class="person"><a class="popup-involve-movies name" data-person-id="184436">알폰소 쿠아론</a><span class="stat">
-                           <strong class="rating">5점</strong>/<strong class="count">6</strong>편
-                           </span>
-                           <span class="watched-movies"><a data-movie-title-url="harry-potter-and-the-2004" data-movie-id="m3r075" class="title" href="https://watcha.net/movies/m3r075?unique_id=m3r075">해리 포터와 아즈카반의 죄수</a></span>
-                        </div>
-                     </li>
-                  </ol>
-               </div>
-               <button class="show-sample" id="show-sample-directors">샘플카드 보기</button><a class="evalmore" href="https://watcha.net/evalmore">영화 평가 늘리기 ▶︎</a><script>(function() {
-                  $('#show-sample-directors').on('click', function() {
-                    $(this).parent().removeClass('hide-sample');
-                    $(this).parent().addClass('show-sample');
-                    $(this).remove();
-                    try {
-                      return $('#taste').masonry();
-                    } catch (error) {}
-                  });
 
-                  }).call(this);
-               </script>
+               <a href="/movies/recommend" style="color: inherit;"><button class="show-sample" id="show-sample-directors">추천 영화</button></a><a class="evalmore" href="/movies/latestoffice">영화 평가 늘리기 ▶︎</a>
+
             </div>
             <div class="card sorted-by-rating" id="favorite-genres" style="position: absolute; left: 10px; top: 494px;">
                <div class="row header">
@@ -285,53 +253,73 @@
                            </g>
                         </g>
                      </svg>
-                     <img class="thumbnail" onerror="utils.loadDefaultImg(this, &#39;medium&#39;);" src="./공동환님의 영화 취향 __ 왓챠_files/photo_file_name_small-bc8b334acec6a4e386249dedf9e763b5e6aff523fa85cc29211f22e6bed540df.jpg">
+
                   </div>
                </div>
-               <div class="row best">
-                  <div class="genre"><span class="icon-favorite-1"></span><a class="name" href="https://watcha.net/v2/users/k3QELceSuQje/movies?filter%5Bgenre%5D%5B%5D=45">액션</a><span class="stat">
-                     <strong class="rating">84점</strong>/<strong class="count">6</strong>편
-                     </span>
+
+                 <%
+                    for(var i = 0; i < dic_genre.length; i++)
+                    {
+                      oneItem = dic_genre[i]
+                      num_score = (oneItem.like / oneItem.value) * 5;
+                      num_score = num_score.toFixed(0);
+                      num_score = num_score * 20
+
+                      if(i == 0)
+                      {
+                      %>
+                      <div class="row best">
+                      <div class="genre"><span class="icon-favorite-1"></span><a class="name" href="#"><%=oneItem.key%></a><span class="stat">
+                      <strong class="rating"><%=num_score%>점  </strong>/<strong class="count"><%=oneItem.value%></strong>편
+                         </span>
+                      </div>
+                      <%
+                      }
+                      else if(i == 1)
+                      {
+                      %>
+                      <div class="genre"><span class="icon-favorite-2"></span><a class="name" href="#"><%=oneItem.key%></a><span class="stat">
+                         <strong class="rating"><%=num_score%>점  </strong>/<strong class="count"><%=oneItem.value%></strong>편
+                         </span>
+                      </div>
+                      <%
+                      }
+                      else if(i == 2)
+                      {
+                      %>
+                      <div class="genre"><span class="icon-favorite-3"></span><a class="name" href="#"><%=oneItem.key%></a><span class="stat">
+                         <strong class="rating"><%=num_score%>점  </strong>/<strong class="count"><%=oneItem.value%></strong>편
+                         </span>
+                      </div>
+                      </div>
+                      <div class="runner-ups">
+                      <%
+                      }
+                      else
+                      {
+                      %>
+                      <div class="row">
+                     <div class="col-2 left"><a class="name" href="#"><%=oneItem.key%></a></div>
+                     <div class="col-2"><%=num_score%>점  </div>
+                     <div class="col-2 right"><%=oneItem.value%>편</div>
                   </div>
-                  <div class="genre"><span class="icon-favorite-2"></span><a class="name" href="https://watcha.net/v2/users/k3QELceSuQje/movies?filter%5Bgenre%5D%5B%5D=35">범죄</a><span class="stat">
-                     <strong class="rating">69점</strong>/<strong class="count">2</strong>편
-                     </span>
-                  </div>
-                  <div class="genre"><span class="icon-favorite-3"></span><a class="name" href="https://watcha.net/v2/users/k3QELceSuQje/movies?filter%5Bgenre%5D%5B%5D=49">공포</a><span class="stat">
-                     <strong class="rating">68점</strong>/<strong class="count">2</strong>편
-                     </span>
-                  </div>
+
+                      <%
+                      }
+
+
+
+                    }
+                 %>
                </div>
-               <div class="runner-ups">
-                  <div class="row">
-                     <div class="col-2 left"><a class="name" href="https://watcha.net/v2/users/k3QELceSuQje/movies?filter%5Bgenre%5D%5B%5D=36">드라마</a></div>
-                     <div class="col-2">59점</div>
-                     <div class="col-2 right">2편</div>
-                  </div>
-                  <div class="row">
-                     <div class="col-2 left"><a class="name" href="https://watcha.net/v2/users/k3QELceSuQje/movies?filter%5Bgenre%5D%5B%5D=44">판타지</a></div>
-                     <div class="col-2">56점</div>
-                     <div class="col-2 right">1편</div>
-                  </div>
-                  <div class="row">
-                     <div class="col-2 left"><a class="name" href="https://watcha.net/v2/users/k3QELceSuQje/movies?filter%5Bgenre%5D%5B%5D=46">SF</a></div>
-                     <div class="col-2">54점</div>
-                     <div class="col-2 right">1편</div>
-                  </div>
-                  <div class="row">
-                     <div class="col-2 left"><a class="name" href="https://watcha.net/v2/users/k3QELceSuQje/movies?filter%5Bgenre%5D%5B%5D=39">스릴러</a></div>
-                     <div class="col-2">52점</div>
-                     <div class="col-2 right">1편</div>
-                  </div>
-               </div>
-            </div> -->
+            </div>
             <div class="card" id="watched-hours" style="position: absolute; left: 970px; top: 36px;">
                <div class="row header">
                  <h2 class="small">관람시간</h2>
                   <h2 class="flavor-text">에이 설마 이것만 본 건 아닐 거예요.</h2>
                </div>
                <div class="row stats">
-                  <div class="bubble"><span class="icon-clock"></span><span class="label">시간</span><strong class="stat-count">50000</strong></div>
+                  <div class="bubble"><span class="icon-clock"></span><span class="label">시간</span><strong class="stat-count"><%=num_total_time%></strong></div>
                </div>
             </div>
             <!-- <div class="card" id="favorite-keywords" style="position: absolute; left: 490px; top: 700px;">
