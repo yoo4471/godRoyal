@@ -33,6 +33,49 @@ router.get('/', function(req, res, next) {
 });//get
 
 
+
+
+
+router.get('/myinfo', function(req, res, next) {
+  MovieContents.find({ current:1 }, function(err, movieContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+  orderContents = movieContents.slice();
+  orderContents.sort(function (a, b) {
+    return b.likes.length - a.likes.length;
+  });
+
+  res.render('myinfo', {
+      rows: movieContents,
+      rows_order: orderContents,
+      email: req.session.email
+
+      }
+    );
+  });
+});//get
+
+router.get('/myticket', function(req, res, next) {
+  MovieContents.find({ current:1 }, function(err, movieContents){
+
+  if(err) return res.status(500).send({error: 'database failure'});
+  orderContents = movieContents.slice();
+  orderContents.sort(function (a, b) {
+    return b.likes.length - a.likes.length;
+  });
+
+  res.render('myticket', {
+      rows: movieContents,
+      rows_order: orderContents,
+      email: req.session.email
+
+      }
+    );
+  });
+});//get
+
+
+
 /* GET home page. */
 router.get('/boxoffice', function(req, res, next) {
   MovieContents.find({ current:1 }, function(err, movieContents){
