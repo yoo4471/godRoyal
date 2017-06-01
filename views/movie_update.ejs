@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
 
     <!-- Loading Flat UI -->
-    <link rel="stylesheet" href="/stylesheets/flatUI/flatUI.css" >
+    <link rel="stylesheet" href="/stylesheets/flatUI.css" >
 
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -27,12 +27,12 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="form-group">
-              <input name="title_kor" id="title_kor" type="text" class="form-control" placeholder="KOR" value="<%=row.title_kor%>">
+              <input name="title_kor" id="title_kor" type="text" class="form-control" placeholder="KOR" value=<%=row.title_kor%>>
             </div><!-- /.form-group -->
           </div>
           <div class="col-lg-6">
             <div class="form-group">
-              <input name="title_eng" id="title_eng"type="text" class="form-control" placeholder="ENG" value="<%=row.title_eng%>">
+              <input name="title_eng" id="title_eng"type="text" class="form-control" placeholder="ENG" value=<%=row.title_eng%>>
             </div><!-- /.form-group -->
           </div>
         </div>
@@ -41,9 +41,9 @@
         <div class="row">
           <div class="col-lg-3">
             <div class="form-group">
-              <select name="nation" id="nation" data-toggle="select" class="form-control select select-default" value="<%=row.nation%>">
+              <select name="nation" id="nation" data-toggle="select" class="form-control select select-default">
                 <option>한국</option>
-                <option selected>미국</option>
+                <option>미국</option>
                 <option>영국</option>
                 <option>프랑스</option>
                 <option>중국</option>
@@ -52,17 +52,17 @@
           </div>
           <div class="col-lg-3">
             <div class="form-group">
-              <input name="relese_date" id="release_date" type="text" class="form-control" placeholder="Release Date (yyyy/mm/dd)">
+              <input name="relesae_date" id="release_date" type="text" class="form-control" placeholder="Release Date (yyyy/mm/dd)" value=<%=row.release_date%>>
             </div><!-- /.form-group -->
           </div>
           <div class="col-lg-3">
             <div class="form-group">
-              <input name="run_time" id="run_time" type="text" class="form-control" placeholder="Run Time">
+              <input name="run_time" id="run_time" type="text" class="form-control" placeholder="Run Time" value=<%=row.run_time%>>
             </div><!-- /.form-group -->
           </div>
           <div class="col-lg-3">
             <div class="form-group">
-              <input name="grade" id="grade"type="text" class="form-control" placeholder="Grade">
+              <input name="grade" id="grade"type="text" class="form-control" placeholder="Grade" value=<%=row.grade%>>
             </div><!-- /.form-group -->
           </div>
         </div>
@@ -70,12 +70,12 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              <select name="genre" id="genre" data-toggle="select" multiple class="form-control multiselect multiselect-default mrs mbm" placeholder="Genre">
+              <select name="genre" id="genre" data-toggle="select" multiple class="form-control multiselect multiselect-default mrs mbm" placeholder="Genre" >>
                 <option></option>
                 <option>액션</option>
                 <option>드라마</option>
-                <option>전민영</option>
-                <option>공동환</option>
+                <option>멜로</option>
+                <option>로맨스</option>
               </select>
             </div>
           </div>
@@ -85,36 +85,74 @@
         <div class="row">
           <div class="col-lg-3">
             <div class="form-group">
-              <input name="director" id="director" type="text" class="form-control" placeholder="Director">
+              <input name="director" id="director" type="text" class="form-control" placeholder="Director" value=<%=row.director%>>
             </div><!-- /.form-group -->
           </div>
           <div class="col-md-9">
               <div class="tagsinput-primary">
-                <input name="actors" class="tagsinput tagsinput-typeahead input-lg" value="" placeholder="Actors"/>
+                <input name="actors" class="tagsinput tagsinput-typeahead input-lg" value="" placeholder="Actors" value=<%=row.actors%>/>
               </div>
           </div>
         </div>
 
+        <h4>Images</h4>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <input name="poster_img_url" id="director" type="text" class="form-control" placeholder="Poster" value=<%=row.poster_img_url%>>
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-12">
+            <div class="form-group">
+              <input name="wide_img_url" id="director" type="text" class="form-control" placeholder="Wide Poster" value=<%=row.wide_img_url%>>
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input name="slide_img_url1" id="director" type="text" class="form-control" placeholder="Slide Poster 1" value=<%=row.slide_img_url[0]%>>
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input name="slide_img_url2" id="director" type="text" class="form-control" placeholder="Slide Poster 2" value=<%=row.slide_img_url[1]%>>
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input name="slide_img_url3" id="director" type="text" class="form-control" placeholder="Slide Poster 3" value=<%=row.slide_img_url[2]%>>
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input name="slide_img_url4" id="director" type="text" class="form-control" placeholder="Slide Poster 4" value=<%=row.slide_img_url[3]%>>
+            </div><!-- /.form-group -->
+          </div>
+        </div>
 
-
-
+        <h4>Youtube</h4>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <input name="youtube" id="director" type="text" class="form-control" placeholder="Youtube" value=<%=row.youtube%>>
+            </div><!-- /.form-group -->
+          </div>
 
         <div class="row">
           <div class="col-md-12">
             <h4>Description</h4>
             <form action="#" class="form">
               <div class="form-group">
-                <input name="description_title" id="description_title" type="text" class="form-control" placeholder="제목">
+                <input name="description_title" id="description_title" type="text" class="form-control" placeholder="제목" value=<%=row.description_title%>>
               </div>
               <div class="form-group">
-                <textarea name="description" id="description"class="form-control" rows="6" placeholder="설명"></textarea>
+                <textarea name="description" id="description"class="form-control" rows="6" placeholder="설명" ><%=row.description%></textarea>
               </div>
 
               <div class="form-group">
                 <label class="checkbox" for="checkbox4" id="checkbox4_unchecked">
 
                   <input name="current" type="checkbox" data-toggle="checkbox" value="1" id="checkbox4">
-                   Option one is this and that&mdash;be sure to include why it's great
+                   현재 상영중
                 </label>
 
               </div>
@@ -122,12 +160,12 @@
               <div class="row">
                 <div class="col-md-6">
                   <p>
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Enrollment</button>
                   </p>
                 </div>
                 <div class="col-md-6">
                   <p>
-                    <button type="submit" class="btn btn-default btn-lg btn-block">Block level button</button>
+                    <button type="submit" class="btn btn-default btn-lg btn-block">Cancel</button>
                   </p>
                 </div>
               </div>
@@ -141,11 +179,11 @@
     </div><!-- /.container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="/javascripts/flatUI/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/javascripts/flatUI/flatUI.min.js"></script>
+    <script src="/javascripts/flatUI.min.js"></script>
 
-    <script src="/javascripts/flatUI/application.js"></script>
+    <script src="/javascripts/application.js"></script>
 
 
     <script>

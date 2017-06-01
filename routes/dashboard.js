@@ -43,11 +43,21 @@ router.get('/test', function(req, res, next) {
 
 
 
-router.get('/:_id',function(req, res, next) {
+router.get('/movielist/:_id',function(req, res, next) {
   var _id = req.params._id;
   console.log(_id)
   MovieContents.findOne({_id:_id}, function(err, movieContents){
 
+    if(err) return res.status(500).send({error: 'database failure'});
+    console.log(movieContents)
+    res.render('dashboard/update', {row: movieContents});
+
+  });
+});
+
+router.get('/update/:_id',function(req, res, next) {
+  var _id = req.params._id;
+  MovieContents.findOne({_id:_id}, function(err, movieContents){
     if(err) return res.status(500).send({error: 'database failure'});
     console.log(movieContents)
     res.render('movie_update', {row: movieContents});
@@ -57,7 +67,7 @@ router.get('/:_id',function(req, res, next) {
 
 
 /* GET users listing. */
-router.get('/all',function(req, res, next) {
+router.get('/movie',function(req, res, next) {
 
   MovieContents.find(function(err, movieContents){
       if(err) return res.status(500).send({error: 'database failure'});
