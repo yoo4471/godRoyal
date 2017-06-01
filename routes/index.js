@@ -43,42 +43,101 @@ router.get('/login', function(req, res, next) {
 
   res.render('login', {
       login:true,
-      email:req.session.email
-    }
-  );
+      email:req.session.email,
+      status:"Login",
+      signup:"REGISTER"
+    });
 });
 
 router.post('/login', function(req, res, next) {
   var email = req.body.email;
   var passwd = req.body.passwd
-  req.session.email = email
-  res.redirect('/')
+
+
+  UserContents.findOne({email:email}, function(err, userContents){
+
+    if(userContents == null) {
+      res.render('login', {
+          login:true,
+          email:req.session.email,
+          status:"Invalid Email",
+          signup:"REGISTER"
+        });
+    }
+    else {
+      userContents.comparepasswd(passwd, function(err, isMatch) {
+        if (err) throw err;
+
+        if(isMatch) {
+          req.session.email = email
+          res.redirect('/')
+        }
+        else {
+          res.render('login', {
+              login:true,
+              email:req.session.email,
+              status:"Invalid Password",
+              signup:"REGISTER"
+            });
+        }
+      });
+    }
+
+
+
+
+  });
+
 });
 
 router.get('/signup', function(req, res, next) {
   res.render('login', {
       login:false,
-      email:req.session.email
-    }
-  );
+      email:req.session.email,
+      status:"Login",
+      signup:"REGISTER"
+    });
 });
 
 router.post('/signup', function(req, res, next) {
-  var newUserContents = new UserContents;
-  newUserContents.email = req.body.email;
-  newUserContents.passwd = req.body.passwd;
+  var email = req.body.email;
+  var passwd = req.body.passwd;
+  var passwd_check = req.body.passwd_check;
 
-  newUserContents.save(function (err)  {
-    if (err) {
-      throw err
-      // res.redirect('/login')
+  UserContents.findOne({email:email}, function(err, userContents){
+
+    if(userContents == null) {
+      var newUserContents = new UserContents;
+      newUserContents.email = req.body.email;
+      newUserContents.passwd = req.body.passwd;
+
+      newUserContents.save(function (err)  {
+        if (err) {
+          throw err
+          // res.redirect('/login')
+        }
+        else {
+          req.session.email = req.body.email;
+          res.redirect('/')
+        }
+
+      });
     }
     else {
-      req.session.email = req.body.email;
-      res.redirect('/')
+      res.render('login', {
+          login:false,
+          email:req.session.email,
+          status:"Login",
+          signup:"Existing email"
+        });
     }
 
+
+
+
   });
+
+
 });
 
 router.get('/logout', function(req, res, next) {
