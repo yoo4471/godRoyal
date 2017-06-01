@@ -182,16 +182,12 @@ router.get('/complete', function(req, res, next) {
   ReserveContents.find({"email":req.session.email}, function(err, reserveContents){
     if(err) return res.status(500).send({error: 'database failure'});
     console.log(reserveContents)
-    var teet = reserveContents[0].title_eng
-    MovieContents.find({ }, function(err, movieContents){
 
     res.render('complete_reserve', {
         rows: reserveContents,
-        title: movieContents,
         email: req.session.email
 
         });
-     });
   });
 });//get
 

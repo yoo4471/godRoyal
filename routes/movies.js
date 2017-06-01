@@ -37,23 +37,139 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/myinfo', function(req, res, next) {
-  MovieContents.find({ current:1 }, function(err, movieContents){
+  var num_rate_total= 0
+  var num_rate_good = 0
+  var num_rate_bad = 0
+  var num_rate_average = 0
+  var num_comment_total = 0
+  var dic_nation = []
+  var list_rate_nation = []
+  var num_total_time = 0
+  var dic_genre = []
+  RateContents.find({ person:req.session.email }, function(err, rateContents){
+      if(err) return res.status(500).send({error: 'database failure'});
 
-  if(err) return res.status(500).send({error: 'database failure'});
-  orderContents = movieContents.slice();
-  orderContents.sort(function (a, b) {
-    return b.likes.length - a.likes.length;
-  });
+      num_rate_total= rateContents.length
 
-  res.render('myinfo', {
-      rows: movieContents,
-      rows_order: orderContents,
-      email: req.session.email
-
+      for (var i = 0; i < rateContents.length; i++) {
+        list_rate_nation.push(rateContents[i].thing)
+        if(rateContents[i].action == 'likes') {
+          num_rate_good = num_rate_good + 1
+        }
+        else {
+          num_rate_bad = num_rate_bad + 1
+        }
       }
-    );
+
+      if (num_rate_total != 0) {
+        num_rate_average = (num_rate_good / num_rate_total) * 5;
+        num_rate_average = num_rate_average.toFixed(1);
+      }
+
+
+      MovieContents.find({}, function(err, movieContents){
+          if(err) return res.status(500).send({error: 'database failure'});
+
+
+          var num_like = 0
+
+          for (var i = 0; i < movieContents.length; i++) {
+
+            if(list_rate_nation.indexOf(movieContents[i].title_eng) > -1) {
+              num_total_time = num_total_time + parseInt(movieContents[i].run_time)
+              //if user likes this movie
+              if(movieContents[i].likes.indexOf(req.session.email) > -1) {
+                num_like = 1
+              }
+              else {
+                num_like = 0
+              }
+
+              //search nation
+              var result = dic_nation.filter(function(v) {
+                  return v.key === movieContents[i].nation; // Filter out the appropriate one
+              })
+
+              if(result.length == 0) {
+                dic_nation.push({
+                    key:   movieContents[i].nation,
+                    value: 1,
+                    like: num_like
+                });
+              }
+              else {
+                result[0].value = result[0].value + 1
+                result[0].like = result[0].like + num_like
+              }
+
+              //search genre
+              var list_genre = movieContents[i].genre
+              for (var k = 0; k < list_genre.length; k++) {
+                var result_genre = dic_genre.filter(function(v) {
+                    return v.key === list_genre[k]; // Filter out the appropriate one
+                })
+                if(result_genre.length == 0) {
+                  dic_genre.push({
+                      key:   list_genre[k],
+                      value: 1,
+                      like:num_like
+                  });
+                }
+                else {
+                  result_genre[0].value = result_genre[0].value + 1,
+                  result_genre[0].like = result_genre[0].like + 1
+                }
+              }
+
+            }
+
+
+            // calculate number of comment
+            var comment = movieContents[i].comment
+            for (var j = 0; j < comment.length; j++) {
+              if(comment[j]['email'] == req.session.email) {
+                num_comment_total = num_comment_total + 1
+              }
+            }
+          }
+
+          dic_nation.sort(function (a, b) {
+            return b.like - a.like;
+          });
+          dic_genre.sort(function (a, b) {
+            return b.value - a.value;
+          });
+          num_total_time = num_total_time / 60
+          num_total_time = num_total_time.toFixed(0)
+
+          console.log(dic_genre)
+
+
+          res.render('myinfo', {
+              num_rate_total: num_rate_total,
+              num_rate_average:num_rate_average,
+              num_comment_total:num_comment_total,
+              dic_nation: dic_nation,
+              dic_genre:dic_genre,
+              num_total_time: num_total_time,
+              email: req.session.email,
+
+          });
+
+  // orderContents = movieContents.slice();
+  // orderContents.sort(function (a, b) {
+  //   return b.likes.length - a.likes.length;
+  // });
+  //
+  // res.render('myinfo', {
+  //     rows: movieContents,
+  //     rows_order: orderContents,
+  //     email: req.session.email
+  //
+      });
   });
 });//get
+
 
 router.get('/myticket', function(req, res, next) {
   MovieContents.find({ current:1 }, function(err, movieContents){
