@@ -41,6 +41,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/login', function(req, res, next) {
 
+
   res.render('login', {
       login:true,
       email:req.session.email,
@@ -70,7 +71,14 @@ router.post('/login', function(req, res, next) {
 
         if(isMatch) {
           req.session.email = email
-          res.redirect('/')
+          if(req.session.email == 'admin')
+          {
+            res.redirect('/dashboard')
+          }
+          else {
+            res.redirect('/')
+          }
+
         }
         else {
           res.render('login', {
