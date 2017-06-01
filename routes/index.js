@@ -93,6 +93,24 @@ router.get('/logout', function(req, res, next) {
 
 
 
+router.get('/search', function(req, res, next) {
+  var title = req.query.title_eng
+  console.log(title)
+  MovieContents.find({title_eng:{$regex:title}}, function(err, movieContents){
+    MovieContents.find({title_kor:{$regex:title}}, function(err, movieContentsk){
+        if(err) return res.status(500).send({error: 'database failure'});
+
+
+          res.render('search', {
+            str: title,
+            rows: movieContents,
+            rowsk: movieContentsk,
+            email: req.session.email
+          })
+    });
+  });
+});
+
 
 
 
