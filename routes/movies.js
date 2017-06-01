@@ -477,19 +477,6 @@ router.get('/booking-three/:title_eng/:theater/:start_time', function(req, res, 
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 router.post('/update/rating_bad', function(req, res, next) {
 
   console.log(req.body)
@@ -560,9 +547,12 @@ router.get('/comment/:email/:title_eng', function(req, res, next) {
 
 router.post('/comment/:email/:title_eng', function(req, res, next) {
   console.log(req.body)
+  var today = new Date();
+
   var comment = {
     "email" : req.body.email,
-    "text" : req.body.comment
+    "text" : req.body.comment,
+    "date" : today.toISOString().substring(0, 10)
   }
 
   MovieContents.findOneAndUpdate({ "title_eng": req.body.title_eng}, {"$push": { "comment": comment} } ).exec(function(err, rateContents){
@@ -637,17 +627,13 @@ router.get('/show2', function(req, res, next) {
 });//get
 
 router.get('/show3', function(req, res, next) {
-  ScreenContents.find({"title_eng":"Lost in Paris", "theater":"가산디지털", "screen_num":'1'},{},function(err, movieContents){
-      if(err) return res.status(500).send({error: 'database failure'});
-
-      a = 'A5'
-      a = a.substr(1)
-      console.log(a)
-      res.json(movieContents)
-
-  })
+  ScreenContents.find({}, function(err, screenContents){
 
 
+    if(err) return res.status(500).send({error: 'database failure'});
+    res.json(screenContents);
+
+  });
 });//get
 
 module.exports = router;
