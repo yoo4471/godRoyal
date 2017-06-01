@@ -208,7 +208,7 @@ body #cdawrap {
 								</h2>
 							</div>
 							<div class="intro__side">
-								<button class="action action--seats">Select your seats</button>
+								<button id="select_your_seat"class="action action--seats">Select your seats</button>
 							</div>
 						</div>
 					</div>
@@ -635,6 +635,10 @@ body #cdawrap {
 <script src='https://tympanus.net/Development/SeatPreview/js/main.js'></script>
 
     <script>
+    $(document).ready(function(){
+      $('#select_your_seat').trigger('click');
+    });
+
     $('.btn').click(function(event) {
 
       var a = $( "div.row__seat--selected")
@@ -657,7 +661,7 @@ body #cdawrap {
             traditional: true,
             success: function (response) {
                 if (response == "done") {
-                    window.location.href = 'http://localhost:3000/reserve/complete/<%=email%>';
+                    window.top.location.href = 'http://localhost:3000/reserve/complete/<%=email%>';
                 } else {
                     // alert(response + "Form submission failed!");
                 }
