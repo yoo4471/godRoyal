@@ -48,17 +48,17 @@
                   <div class="icon"></div>
                   <div class="title">경기</div>
                   <ul>
-                  <%
-                    for( var i = 0; i < screens.length; i++)
-                    {
-                      if(screens[i].state == '경기')
+                    <%
+                      for( var i = 0; i < screens.length; i++)
                       {
-                      %>
-                        <a href="/movies/booking-two-temp/GET%20OUT"><li><%=screens[i].theater%></li></a>
-                      <%
+                        if(screens[i].state == '경기')
+                        {
+                        %>
+                          <a href="/movies/booking-two-temp/<%=rows[0].title_eng%>/<%=screens[i].theater%>"><li style="font-size:13px;"><%=screens[i].theater%></li></a>
+                        <%
+                        }
                       }
-                    }
-                  %>
+                    %>
                     </ul>
                   </div>
 
