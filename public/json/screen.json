@@ -1,131 +1,3973 @@
 {
-	"data": [{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "1관",
-			"screen_num": "1",
-			"title_eng": "GET OUT",
-			"start_time": "1000"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "1관",
-			"screen_num": "2",
-			"title_eng": "GET OUT",
-			"start_time": "1400"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "1관",
-			"screen_num": "3",
-			"title_eng": "GET OUT",
-			"start_time": "1800"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "1관",
-			"screen_num": "4",
-			"title_eng": "GET OUT",
-			"start_time": "2200"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "2관",
-			"screen_num": "1",
-			"title_eng": "The Merciless",
-			"start_time": "1000"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "2관",
-			"screen_num": "2",
-			"title_eng": "The Merciless",
-			"start_time": "1400"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "2관",
-			"screen_num": "3",
-			"title_eng": "The Merciless",
-			"start_time": "1800"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "2관",
-			"screen_num": "4",
-			"title_eng": "The Merciless",
-			"start_time": "2200"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "3관",
-			"screen_num": "1",
-			"title_eng": "King Arthur: Legend of the Sword",
-			"start_time": "1000"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "3관",
-			"screen_num": "2",
-			"title_eng": "King Arthur: Legend of the Sword",
-			"start_time": "1400"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "3관",
-			"screen_num": "3",
-			"title_eng": "King Arthur: Legend of the Sword",
-			"start_time": "1800"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "3관",
-			"screen_num": "4",
-			"title_eng": "King Arthur: Legend of the Sword",
-			"start_time": "2200"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "4관",
-			"screen_num": "1",
-			"title_eng": "The Boss Baby",
-			"start_time": "1000"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "4관",
-			"screen_num": "2",
-			"title_eng": "The Boss Baby",
-			"start_time": "1400"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "4관",
-			"screen_num": "3",
-			"title_eng": "The Boss Baby",
-			"start_time": "1800"
-		},
-		{
-			"state": "서울",
-			"theater": "강남 GRL",
-			"room": "4관",
-			"screen_num": "4",
-			"title_eng": "The Boss Baby",
-			"start_time": "2200"
-		}
-	]
+    "data":[
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "1관",
+        "screen_num": "1",
+        "title_eng": "GET OUT",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "1관",
+        "screen_num": "2",
+        "title_eng": "GET OUT",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "1관",
+        "screen_num": "3",
+        "title_eng": "GET OUT",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "1관",
+        "screen_num": "4",
+        "title_eng": "GET OUT",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "2관",
+        "screen_num": "1",
+        "title_eng": "The Merciless",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "2관",
+        "screen_num": "2",
+        "title_eng": "The Merciless",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "2관",
+        "screen_num": "3",
+        "title_eng": "The Merciless",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "2관",
+        "screen_num": "4",
+        "title_eng": "The Merciless",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "3관",
+        "screen_num": "1",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "3관",
+        "screen_num": "2",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "3관",
+        "screen_num": "3",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "3관",
+        "screen_num": "4",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "4관",
+        "screen_num": "1",
+        "title_eng": "The Boss Baby",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "4관",
+        "screen_num": "2",
+        "title_eng": "The Boss Baby",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "4관",
+        "screen_num": "3",
+        "title_eng": "The Boss Baby",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "4관",
+        "screen_num": "4",
+        "title_eng": "The Boss Baby",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "5관",
+        "screen_num": "1",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "5관",
+        "screen_num": "2",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "5관",
+        "screen_num": "3",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "5관",
+        "screen_num": "4",
+        "title_eng": "Alien: Covenant",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "6관",
+        "screen_num": "1",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "6관",
+        "screen_num": "2",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "6관",
+        "screen_num": "3",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "6관",
+        "screen_num": "4",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "7관",
+        "screen_num": "1",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "7관",
+        "screen_num": "2",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "7관",
+        "screen_num": "3",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "7관",
+        "screen_num": "4",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "8관",
+        "screen_num": "1",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "8관",
+        "screen_num": "2",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "8관",
+        "screen_num": "3",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "8관",
+        "screen_num": "4",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "9관",
+        "screen_num": "1",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "9관",
+        "screen_num": "2",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "9관",
+        "screen_num": "3",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "9관",
+        "screen_num": "4",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "10관",
+        "screen_num": "1",
+        "title_eng": "Lost in Paris",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "10관",
+        "screen_num": "2",
+        "title_eng": "Lost in Paris",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "10관",
+        "screen_num": "3",
+        "title_eng": "Lost in Paris",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "10관",
+        "screen_num": "4",
+        "title_eng": "Lost in Paris",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "11관",
+        "screen_num": "1",
+        "title_eng": "Phantom Detective",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "11관",
+        "screen_num": "2",
+        "title_eng": "Phantom Detective",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "11관",
+        "screen_num": "3",
+        "title_eng": "Phantom Detective",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "11관",
+        "screen_num": "4",
+        "title_eng": "Phantom Detective",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "12관",
+        "screen_num": "1",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "12관",
+        "screen_num": "2",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "12관",
+        "screen_num": "3",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "12관",
+        "screen_num": "4",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "13관",
+        "screen_num": "1",
+        "title_eng": "The 100th love with you",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "13관",
+        "screen_num": "2",
+        "title_eng": "The 100th love with you",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "13관",
+        "screen_num": "3",
+        "title_eng": "The 100th love with you",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "강남 GRL",
+        "room": "13관",
+        "screen_num": "4",
+        "title_eng": "The 100th love with you",
+        "start_time": "2200"
+      },
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "1관",
+        "screen_num": "1",
+        "title_eng": "GET OUT",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "1관",
+        "screen_num": "2",
+        "title_eng": "GET OUT",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "1관",
+        "screen_num": "3",
+        "title_eng": "GET OUT",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "1관",
+        "screen_num": "4",
+        "title_eng": "GET OUT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "2관",
+        "screen_num": "1",
+        "title_eng": "The Merciless",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "2관",
+        "screen_num": "2",
+        "title_eng": "The Merciless",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "2관",
+        "screen_num": "3",
+        "title_eng": "The Merciless",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "2관",
+        "screen_num": "4",
+        "title_eng": "The Merciless",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "3관",
+        "screen_num": "1",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "3관",
+        "screen_num": "2",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "3관",
+        "screen_num": "3",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "3관",
+        "screen_num": "4",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "4관",
+        "screen_num": "1",
+        "title_eng": "The Boss Baby",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "4관",
+        "screen_num": "2",
+        "title_eng": "The Boss Baby",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "4관",
+        "screen_num": "3",
+        "title_eng": "The Boss Baby",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "4관",
+        "screen_num": "4",
+        "title_eng": "The Boss Baby",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "5관",
+        "screen_num": "1",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "5관",
+        "screen_num": "2",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "5관",
+        "screen_num": "3",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "5관",
+        "screen_num": "4",
+        "title_eng": "Alien: Covenant",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "6관",
+        "screen_num": "1",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "6관",
+        "screen_num": "2",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "6관",
+        "screen_num": "3",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "6관",
+        "screen_num": "4",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "7관",
+        "screen_num": "1",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "7관",
+        "screen_num": "2",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "7관",
+        "screen_num": "3",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "7관",
+        "screen_num": "4",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "8관",
+        "screen_num": "1",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "8관",
+        "screen_num": "2",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "8관",
+        "screen_num": "3",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "8관",
+        "screen_num": "4",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "2200"
+      },
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "9관",
+        "screen_num": "1",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "9관",
+        "screen_num": "2",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "9관",
+        "screen_num": "3",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "9관",
+        "screen_num": "4",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "10관",
+        "screen_num": "1",
+        "title_eng": "Lost in Paris",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "10관",
+        "screen_num": "2",
+        "title_eng": "Lost in Paris",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "10관",
+        "screen_num": "3",
+        "title_eng": "Lost in Paris",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "10관",
+        "screen_num": "4",
+        "title_eng": "Lost in Paris",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "11관",
+        "screen_num": "1",
+        "title_eng": "Phantom Detective",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "11관",
+        "screen_num": "2",
+        "title_eng": "Phantom Detective",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "11관",
+        "screen_num": "3",
+        "title_eng": "Phantom Detective",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "11관",
+        "screen_num": "4",
+        "title_eng": "Phantom Detective",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "12관",
+        "screen_num": "1",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "12관",
+        "screen_num": "2",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "12관",
+        "screen_num": "3",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "12관",
+        "screen_num": "4",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "13관",
+        "screen_num": "1",
+        "title_eng": "The 100th love with you",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "13관",
+        "screen_num": "2",
+        "title_eng": "The 100th love with you",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "13관",
+        "screen_num": "3",
+        "title_eng": "The 100th love with you",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "종로 GRL",
+        "room": "13관",
+        "screen_num": "4",
+        "title_eng": "The 100th love with you",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "1관",
+        "screen_num": "1",
+        "title_eng": "GET OUT",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "1관",
+        "screen_num": "2",
+        "title_eng": "GET OUT",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "1관",
+        "screen_num": "3",
+        "title_eng": "GET OUT",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "1관",
+        "screen_num": "4",
+        "title_eng": "GET OUT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "2관",
+        "screen_num": "1",
+        "title_eng": "The Merciless",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "2관",
+        "screen_num": "2",
+        "title_eng": "The Merciless",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "2관",
+        "screen_num": "3",
+        "title_eng": "The Merciless",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "2관",
+        "screen_num": "4",
+        "title_eng": "The Merciless",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "3관",
+        "screen_num": "1",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "3관",
+        "screen_num": "2",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "3관",
+        "screen_num": "3",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "3관",
+        "screen_num": "4",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "4관",
+        "screen_num": "1",
+        "title_eng": "The Boss Baby",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "4관",
+        "screen_num": "2",
+        "title_eng": "The Boss Baby",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "4관",
+        "screen_num": "3",
+        "title_eng": "The Boss Baby",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "4관",
+        "screen_num": "4",
+        "title_eng": "The Boss Baby",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "5관",
+        "screen_num": "1",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "5관",
+        "screen_num": "2",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "5관",
+        "screen_num": "3",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "5관",
+        "screen_num": "4",
+        "title_eng": "Alien: Covenant",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "6관",
+        "screen_num": "1",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "6관",
+        "screen_num": "2",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "6관",
+        "screen_num": "3",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "6관",
+        "screen_num": "4",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "7관",
+        "screen_num": "1",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "7관",
+        "screen_num": "2",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "7관",
+        "screen_num": "3",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "7관",
+        "screen_num": "4",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "8관",
+        "screen_num": "1",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "8관",
+        "screen_num": "2",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "8관",
+        "screen_num": "3",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "8관",
+        "screen_num": "4",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "2200"
+      },
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "9관",
+        "screen_num": "1",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "9관",
+        "screen_num": "2",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "9관",
+        "screen_num": "3",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "9관",
+        "screen_num": "4",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "10관",
+        "screen_num": "1",
+        "title_eng": "Lost in Paris",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "10관",
+        "screen_num": "2",
+        "title_eng": "Lost in Paris",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "10관",
+        "screen_num": "3",
+        "title_eng": "Lost in Paris",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "10관",
+        "screen_num": "4",
+        "title_eng": "Lost in Paris",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "11관",
+        "screen_num": "1",
+        "title_eng": "Phantom Detective",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "11관",
+        "screen_num": "2",
+        "title_eng": "Phantom Detective",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "11관",
+        "screen_num": "3",
+        "title_eng": "Phantom Detective",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "11관",
+        "screen_num": "4",
+        "title_eng": "Phantom Detective",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "12관",
+        "screen_num": "1",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "12관",
+        "screen_num": "2",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "12관",
+        "screen_num": "3",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "12관",
+        "screen_num": "4",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "13관",
+        "screen_num": "1",
+        "title_eng": "The 100th love with you",
+        "start_time": "1000"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "13관",
+        "screen_num": "2",
+        "title_eng": "The 100th love with you",
+        "start_time": "1400"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "13관",
+        "screen_num": "3",
+        "title_eng": "The 100th love with you",
+        "start_time": "1800"
+      },
+      {
+        "state": "서울",
+        "theater": "신촌 GRL",
+        "room": "13관",
+        "screen_num": "4",
+        "title_eng": "The 100th love with you",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "1관",
+        "screen_num": "1",
+        "title_eng": "GET OUT",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "1관",
+        "screen_num": "2",
+        "title_eng": "GET OUT",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "1관",
+        "screen_num": "3",
+        "title_eng": "GET OUT",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "1관",
+        "screen_num": "4",
+        "title_eng": "GET OUT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "2관",
+        "screen_num": "1",
+        "title_eng": "The Merciless",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "2관",
+        "screen_num": "2",
+        "title_eng": "The Merciless",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "2관",
+        "screen_num": "3",
+        "title_eng": "The Merciless",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "2관",
+        "screen_num": "4",
+        "title_eng": "The Merciless",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "3관",
+        "screen_num": "1",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "3관",
+        "screen_num": "2",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "3관",
+        "screen_num": "3",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "3관",
+        "screen_num": "4",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "4관",
+        "screen_num": "1",
+        "title_eng": "The Boss Baby",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "4관",
+        "screen_num": "2",
+        "title_eng": "The Boss Baby",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "4관",
+        "screen_num": "3",
+        "title_eng": "The Boss Baby",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "4관",
+        "screen_num": "4",
+        "title_eng": "The Boss Baby",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "5관",
+        "screen_num": "1",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "5관",
+        "screen_num": "2",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "5관",
+        "screen_num": "3",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "5관",
+        "screen_num": "4",
+        "title_eng": "Alien: Covenant",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "6관",
+        "screen_num": "1",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "6관",
+        "screen_num": "2",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "6관",
+        "screen_num": "3",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "6관",
+        "screen_num": "4",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "7관",
+        "screen_num": "1",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "7관",
+        "screen_num": "2",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "7관",
+        "screen_num": "3",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "7관",
+        "screen_num": "4",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "8관",
+        "screen_num": "1",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "8관",
+        "screen_num": "2",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "8관",
+        "screen_num": "3",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "8관",
+        "screen_num": "4",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "2200"
+      },
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "9관",
+        "screen_num": "1",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "9관",
+        "screen_num": "2",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "9관",
+        "screen_num": "3",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "9관",
+        "screen_num": "4",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "10관",
+        "screen_num": "1",
+        "title_eng": "Lost in Paris",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "10관",
+        "screen_num": "2",
+        "title_eng": "Lost in Paris",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "10관",
+        "screen_num": "3",
+        "title_eng": "Lost in Paris",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "10관",
+        "screen_num": "4",
+        "title_eng": "Lost in Paris",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "11관",
+        "screen_num": "1",
+        "title_eng": "Phantom Detective",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "11관",
+        "screen_num": "2",
+        "title_eng": "Phantom Detective",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "11관",
+        "screen_num": "3",
+        "title_eng": "Phantom Detective",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "11관",
+        "screen_num": "4",
+        "title_eng": "Phantom Detective",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "12관",
+        "screen_num": "1",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "12관",
+        "screen_num": "2",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "12관",
+        "screen_num": "3",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "12관",
+        "screen_num": "4",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "13관",
+        "screen_num": "1",
+        "title_eng": "The 100th love with you",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "13관",
+        "screen_num": "2",
+        "title_eng": "The 100th love with you",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "13관",
+        "screen_num": "3",
+        "title_eng": "The 100th love with you",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "부평 GRL",
+        "room": "13관",
+        "screen_num": "4",
+        "title_eng": "The 100th love with you",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "1관",
+        "screen_num": "1",
+        "title_eng": "GET OUT",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "1관",
+        "screen_num": "2",
+        "title_eng": "GET OUT",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "1관",
+        "screen_num": "3",
+        "title_eng": "GET OUT",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "1관",
+        "screen_num": "4",
+        "title_eng": "GET OUT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "2관",
+        "screen_num": "1",
+        "title_eng": "The Merciless",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "2관",
+        "screen_num": "2",
+        "title_eng": "The Merciless",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "2관",
+        "screen_num": "3",
+        "title_eng": "The Merciless",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "2관",
+        "screen_num": "4",
+        "title_eng": "The Merciless",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "3관",
+        "screen_num": "1",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "3관",
+        "screen_num": "2",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "3관",
+        "screen_num": "3",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "3관",
+        "screen_num": "4",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "4관",
+        "screen_num": "1",
+        "title_eng": "The Boss Baby",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "4관",
+        "screen_num": "2",
+        "title_eng": "The Boss Baby",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "4관",
+        "screen_num": "3",
+        "title_eng": "The Boss Baby",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "4관",
+        "screen_num": "4",
+        "title_eng": "The Boss Baby",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "5관",
+        "screen_num": "1",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "5관",
+        "screen_num": "2",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "5관",
+        "screen_num": "3",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "5관",
+        "screen_num": "4",
+        "title_eng": "Alien: Covenant",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "6관",
+        "screen_num": "1",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "6관",
+        "screen_num": "2",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "6관",
+        "screen_num": "3",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "6관",
+        "screen_num": "4",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "7관",
+        "screen_num": "1",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "7관",
+        "screen_num": "2",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "7관",
+        "screen_num": "3",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "7관",
+        "screen_num": "4",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "8관",
+        "screen_num": "1",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "8관",
+        "screen_num": "2",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "8관",
+        "screen_num": "3",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "8관",
+        "screen_num": "4",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "2200"
+      },
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "9관",
+        "screen_num": "1",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "9관",
+        "screen_num": "2",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "9관",
+        "screen_num": "3",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "9관",
+        "screen_num": "4",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "10관",
+        "screen_num": "1",
+        "title_eng": "Lost in Paris",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "10관",
+        "screen_num": "2",
+        "title_eng": "Lost in Paris",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "10관",
+        "screen_num": "3",
+        "title_eng": "Lost in Paris",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "10관",
+        "screen_num": "4",
+        "title_eng": "Lost in Paris",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "11관",
+        "screen_num": "1",
+        "title_eng": "Phantom Detective",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "11관",
+        "screen_num": "2",
+        "title_eng": "Phantom Detective",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "11관",
+        "screen_num": "3",
+        "title_eng": "Phantom Detective",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "11관",
+        "screen_num": "4",
+        "title_eng": "Phantom Detective",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "12관",
+        "screen_num": "1",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "12관",
+        "screen_num": "2",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "12관",
+        "screen_num": "3",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "12관",
+        "screen_num": "4",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "13관",
+        "screen_num": "1",
+        "title_eng": "The 100th love with you",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "13관",
+        "screen_num": "2",
+        "title_eng": "The 100th love with you",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "13관",
+        "screen_num": "3",
+        "title_eng": "The 100th love with you",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "주안 GRL",
+        "room": "13관",
+        "screen_num": "4",
+        "title_eng": "The 100th love with you",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "1관",
+        "screen_num": "1",
+        "title_eng": "GET OUT",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "1관",
+        "screen_num": "2",
+        "title_eng": "GET OUT",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "1관",
+        "screen_num": "3",
+        "title_eng": "GET OUT",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "1관",
+        "screen_num": "4",
+        "title_eng": "GET OUT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "2관",
+        "screen_num": "1",
+        "title_eng": "The Merciless",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "2관",
+        "screen_num": "2",
+        "title_eng": "The Merciless",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "2관",
+        "screen_num": "3",
+        "title_eng": "The Merciless",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "2관",
+        "screen_num": "4",
+        "title_eng": "The Merciless",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "3관",
+        "screen_num": "1",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "3관",
+        "screen_num": "2",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "3관",
+        "screen_num": "3",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "3관",
+        "screen_num": "4",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "4관",
+        "screen_num": "1",
+        "title_eng": "The Boss Baby",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "4관",
+        "screen_num": "2",
+        "title_eng": "The Boss Baby",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "4관",
+        "screen_num": "3",
+        "title_eng": "The Boss Baby",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "4관",
+        "screen_num": "4",
+        "title_eng": "The Boss Baby",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "5관",
+        "screen_num": "1",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "5관",
+        "screen_num": "2",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "5관",
+        "screen_num": "3",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "5관",
+        "screen_num": "4",
+        "title_eng": "Alien: Covenant",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "6관",
+        "screen_num": "1",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "6관",
+        "screen_num": "2",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "6관",
+        "screen_num": "3",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "6관",
+        "screen_num": "4",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "7관",
+        "screen_num": "1",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "7관",
+        "screen_num": "2",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "7관",
+        "screen_num": "3",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "7관",
+        "screen_num": "4",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "8관",
+        "screen_num": "1",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "8관",
+        "screen_num": "2",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "8관",
+        "screen_num": "3",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "8관",
+        "screen_num": "4",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "2200"
+      },
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "9관",
+        "screen_num": "1",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "9관",
+        "screen_num": "2",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "9관",
+        "screen_num": "3",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "9관",
+        "screen_num": "4",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "10관",
+        "screen_num": "1",
+        "title_eng": "Lost in Paris",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "10관",
+        "screen_num": "2",
+        "title_eng": "Lost in Paris",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "10관",
+        "screen_num": "3",
+        "title_eng": "Lost in Paris",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "10관",
+        "screen_num": "4",
+        "title_eng": "Lost in Paris",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "11관",
+        "screen_num": "1",
+        "title_eng": "Phantom Detective",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "11관",
+        "screen_num": "2",
+        "title_eng": "Phantom Detective",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "11관",
+        "screen_num": "3",
+        "title_eng": "Phantom Detective",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "11관",
+        "screen_num": "4",
+        "title_eng": "Phantom Detective",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "12관",
+        "screen_num": "1",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "12관",
+        "screen_num": "2",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "12관",
+        "screen_num": "3",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "12관",
+        "screen_num": "4",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "13관",
+        "screen_num": "1",
+        "title_eng": "The 100th love with you",
+        "start_time": "1000"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "13관",
+        "screen_num": "2",
+        "title_eng": "The 100th love with you",
+        "start_time": "1400"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "13관",
+        "screen_num": "3",
+        "title_eng": "The 100th love with you",
+        "start_time": "1800"
+      },
+      {
+        "state": "인천",
+        "theater": "송도 GRL",
+        "room": "13관",
+        "screen_num": "4",
+        "title_eng": "The 100th love with you",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "1관",
+        "screen_num": "1",
+        "title_eng": "GET OUT",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "1관",
+        "screen_num": "2",
+        "title_eng": "GET OUT",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "1관",
+        "screen_num": "3",
+        "title_eng": "GET OUT",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "1관",
+        "screen_num": "4",
+        "title_eng": "GET OUT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "2관",
+        "screen_num": "1",
+        "title_eng": "The Merciless",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "2관",
+        "screen_num": "2",
+        "title_eng": "The Merciless",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "2관",
+        "screen_num": "3",
+        "title_eng": "The Merciless",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "2관",
+        "screen_num": "4",
+        "title_eng": "The Merciless",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "3관",
+        "screen_num": "1",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "3관",
+        "screen_num": "2",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "3관",
+        "screen_num": "3",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "3관",
+        "screen_num": "4",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "4관",
+        "screen_num": "1",
+        "title_eng": "The Boss Baby",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "4관",
+        "screen_num": "2",
+        "title_eng": "The Boss Baby",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "4관",
+        "screen_num": "3",
+        "title_eng": "The Boss Baby",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "4관",
+        "screen_num": "4",
+        "title_eng": "The Boss Baby",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "5관",
+        "screen_num": "1",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "5관",
+        "screen_num": "2",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "5관",
+        "screen_num": "3",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "5관",
+        "screen_num": "4",
+        "title_eng": "Alien: Covenant",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "6관",
+        "screen_num": "1",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "6관",
+        "screen_num": "2",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "6관",
+        "screen_num": "3",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "6관",
+        "screen_num": "4",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "7관",
+        "screen_num": "1",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "7관",
+        "screen_num": "2",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "7관",
+        "screen_num": "3",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "7관",
+        "screen_num": "4",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "8관",
+        "screen_num": "1",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "8관",
+        "screen_num": "2",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "8관",
+        "screen_num": "3",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "8관",
+        "screen_num": "4",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "2200"
+      },
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "9관",
+        "screen_num": "1",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "9관",
+        "screen_num": "2",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "9관",
+        "screen_num": "3",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "9관",
+        "screen_num": "4",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "10관",
+        "screen_num": "1",
+        "title_eng": "Lost in Paris",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "10관",
+        "screen_num": "2",
+        "title_eng": "Lost in Paris",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "10관",
+        "screen_num": "3",
+        "title_eng": "Lost in Paris",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "10관",
+        "screen_num": "4",
+        "title_eng": "Lost in Paris",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "11관",
+        "screen_num": "1",
+        "title_eng": "Phantom Detective",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "11관",
+        "screen_num": "2",
+        "title_eng": "Phantom Detective",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "11관",
+        "screen_num": "3",
+        "title_eng": "Phantom Detective",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "11관",
+        "screen_num": "4",
+        "title_eng": "Phantom Detective",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "12관",
+        "screen_num": "1",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "12관",
+        "screen_num": "2",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "12관",
+        "screen_num": "3",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "12관",
+        "screen_num": "4",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "13관",
+        "screen_num": "1",
+        "title_eng": "The 100th love with you",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "13관",
+        "screen_num": "2",
+        "title_eng": "The 100th love with you",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "13관",
+        "screen_num": "3",
+        "title_eng": "The 100th love with you",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "수원 GRL",
+        "room": "13관",
+        "screen_num": "4",
+        "title_eng": "The 100th love with you",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "1관",
+        "screen_num": "1",
+        "title_eng": "GET OUT",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "1관",
+        "screen_num": "2",
+        "title_eng": "GET OUT",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "1관",
+        "screen_num": "3",
+        "title_eng": "GET OUT",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "1관",
+        "screen_num": "4",
+        "title_eng": "GET OUT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "2관",
+        "screen_num": "1",
+        "title_eng": "The Merciless",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "2관",
+        "screen_num": "2",
+        "title_eng": "The Merciless",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "2관",
+        "screen_num": "3",
+        "title_eng": "The Merciless",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "2관",
+        "screen_num": "4",
+        "title_eng": "The Merciless",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "3관",
+        "screen_num": "1",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "3관",
+        "screen_num": "2",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "3관",
+        "screen_num": "3",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "3관",
+        "screen_num": "4",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "4관",
+        "screen_num": "1",
+        "title_eng": "The Boss Baby",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "4관",
+        "screen_num": "2",
+        "title_eng": "The Boss Baby",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "4관",
+        "screen_num": "3",
+        "title_eng": "The Boss Baby",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "4관",
+        "screen_num": "4",
+        "title_eng": "The Boss Baby",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "5관",
+        "screen_num": "1",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "5관",
+        "screen_num": "2",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "5관",
+        "screen_num": "3",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "5관",
+        "screen_num": "4",
+        "title_eng": "Alien: Covenant",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "6관",
+        "screen_num": "1",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "6관",
+        "screen_num": "2",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "6관",
+        "screen_num": "3",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "6관",
+        "screen_num": "4",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "7관",
+        "screen_num": "1",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "7관",
+        "screen_num": "2",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "7관",
+        "screen_num": "3",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "7관",
+        "screen_num": "4",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "8관",
+        "screen_num": "1",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "8관",
+        "screen_num": "2",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "8관",
+        "screen_num": "3",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "8관",
+        "screen_num": "4",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "2200"
+      },
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "9관",
+        "screen_num": "1",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "9관",
+        "screen_num": "2",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "9관",
+        "screen_num": "3",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "9관",
+        "screen_num": "4",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "10관",
+        "screen_num": "1",
+        "title_eng": "Lost in Paris",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "10관",
+        "screen_num": "2",
+        "title_eng": "Lost in Paris",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "10관",
+        "screen_num": "3",
+        "title_eng": "Lost in Paris",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "10관",
+        "screen_num": "4",
+        "title_eng": "Lost in Paris",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "11관",
+        "screen_num": "1",
+        "title_eng": "Phantom Detective",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "11관",
+        "screen_num": "2",
+        "title_eng": "Phantom Detective",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "11관",
+        "screen_num": "3",
+        "title_eng": "Phantom Detective",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "11관",
+        "screen_num": "4",
+        "title_eng": "Phantom Detective",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "12관",
+        "screen_num": "1",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "12관",
+        "screen_num": "2",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "12관",
+        "screen_num": "3",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "12관",
+        "screen_num": "4",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "13관",
+        "screen_num": "1",
+        "title_eng": "The 100th love with you",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "13관",
+        "screen_num": "2",
+        "title_eng": "The 100th love with you",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "13관",
+        "screen_num": "3",
+        "title_eng": "The 100th love with you",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "일산 GRL",
+        "room": "13관",
+        "screen_num": "4",
+        "title_eng": "The 100th love with you",
+        "start_time": "2200"
+      },
+	  
+	  {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "1관",
+        "screen_num": "1",
+        "title_eng": "GET OUT",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "1관",
+        "screen_num": "2",
+        "title_eng": "GET OUT",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "1관",
+        "screen_num": "3",
+        "title_eng": "GET OUT",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "1관",
+        "screen_num": "4",
+        "title_eng": "GET OUT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "2관",
+        "screen_num": "1",
+        "title_eng": "The Merciless",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "2관",
+        "screen_num": "2",
+        "title_eng": "The Merciless",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "2관",
+        "screen_num": "3",
+        "title_eng": "The Merciless",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "2관",
+        "screen_num": "4",
+        "title_eng": "The Merciless",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "3관",
+        "screen_num": "1",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "3관",
+        "screen_num": "2",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "3관",
+        "screen_num": "3",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "3관",
+        "screen_num": "4",
+        "title_eng": "King Arthur: Legend of the Sword",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "4관",
+        "screen_num": "1",
+        "title_eng": "The Boss Baby",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "4관",
+        "screen_num": "2",
+        "title_eng": "The Boss Baby",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "4관",
+        "screen_num": "3",
+        "title_eng": "The Boss Baby",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "4관",
+        "screen_num": "4",
+        "title_eng": "The Boss Baby",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "5관",
+        "screen_num": "1",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "5관",
+        "screen_num": "2",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "5관",
+        "screen_num": "3",
+        "title_eng": "Alien: Covenant",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "5관",
+        "screen_num": "4",
+        "title_eng": "Alien: Covenant",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "6관",
+        "screen_num": "1",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "6관",
+        "screen_num": "2",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "6관",
+        "screen_num": "3",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "6관",
+        "screen_num": "4",
+        "title_eng": "The Sheriff In Town",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "7관",
+        "screen_num": "1",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "7관",
+        "screen_num": "2",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "7관",
+        "screen_num": "3",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "7관",
+        "screen_num": "4",
+        "title_eng": "Guardians of the Galaxy Vol. 2",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "8관",
+        "screen_num": "1",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "8관",
+        "screen_num": "2",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "8관",
+        "screen_num": "3",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "8관",
+        "screen_num": "4",
+        "title_eng": "A Silent Voice : The Movie",
+        "start_time": "2200"
+      },
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "9관",
+        "screen_num": "1",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "9관",
+        "screen_num": "2",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "9관",
+        "screen_num": "3",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "9관",
+        "screen_num": "4",
+        "title_eng": "The Tooth and the Nail",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "10관",
+        "screen_num": "1",
+        "title_eng": "Lost in Paris",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "10관",
+        "screen_num": "2",
+        "title_eng": "Lost in Paris",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "10관",
+        "screen_num": "3",
+        "title_eng": "Lost in Paris",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "10관",
+        "screen_num": "4",
+        "title_eng": "Lost in Paris",
+        "start_time": "2200"
+      },
+
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "11관",
+        "screen_num": "1",
+        "title_eng": "Phantom Detective",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "11관",
+        "screen_num": "2",
+        "title_eng": "Phantom Detective",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "11관",
+        "screen_num": "3",
+        "title_eng": "Phantom Detective",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "11관",
+        "screen_num": "4",
+        "title_eng": "Phantom Detective",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "12관",
+        "screen_num": "1",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "12관",
+        "screen_num": "2",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "12관",
+        "screen_num": "3",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "12관",
+        "screen_num": "4",
+        "title_eng": "OUR PRESIDENT",
+        "start_time": "2200"
+      },
+
+
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "13관",
+        "screen_num": "1",
+        "title_eng": "The 100th love with you",
+        "start_time": "1000"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "13관",
+        "screen_num": "2",
+        "title_eng": "The 100th love with you",
+        "start_time": "1400"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "13관",
+        "screen_num": "3",
+        "title_eng": "The 100th love with you",
+        "start_time": "1800"
+      },
+      {
+        "state": "경기",
+        "theater": "안산 GRL",
+        "room": "13관",
+        "screen_num": "4",
+        "title_eng": "The 100th love with you",
+        "start_time": "2200"
+      }
+      
+    ]
 }

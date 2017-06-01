@@ -31,7 +31,7 @@
       "text" : "내가 보기엔 노잼 영화같았는데..."
     }
 ],
-
+        
 "genre" :[
   "공포",
   "미스터리",
@@ -412,8 +412,9 @@
 "genre" :[
   "액션",
   "드라마"
-]
-       },
+],
+"youtube" : "https://youtu.be/dryPnMLJia0"
+		},
       {
          "title_kor": "반지의 제왕: 반지 원정대 ",
          "title_eng": "The Lord Of The Rings: The Fellowship Of The Ring",
@@ -448,8 +449,9 @@
 "genre" :[
   "판타지",
   "액션"
-]
-       },
+],
+"youtube" : "https://youtu.be/7OIzI2_Byds"
+		},
       {
          "title_kor": "호빗: 다섯 군대 전투",
          "title_eng": "The Hobbit: The Battle of the Five Armies",
@@ -484,8 +486,9 @@
 ],
 "genre" :[
   "판타지"
-]
-       },
+],
+"youtube" : "https://youtu.be/iLBP3s2_AjA"
+		},
       {
          "title_kor": "테이큰",
          "title_eng": "Taken",
@@ -522,8 +525,9 @@
   "액션",
   "범죄",
   "스릴러"
-]
-       },
+],
+"youtube" : "https://youtu.be/oS7VuzZqFSw"
+		},
       {
          "title_kor": "해리 포터와 마법사의 돌",
          "title_eng": "Harry Potter And The Sorcerer's Stone",
@@ -556,8 +560,9 @@
 ],
 "genre" :[
   "판타지"
-]
-       },
+],
+"youtube" : "https://youtu.be/_Y9EpOL7dmw"
+		},
       {
          "title_kor": "토르: 다크 월드 ",
          "title_eng": "Thor: The Dark World",
@@ -593,8 +598,9 @@
 "genre" :[
   "액션",
   "판타지"
-]
-       },
+],
+"youtube" : "https://youtu.be/uZ9ZEbiNF8M"
+		},
       {
          "title_kor": "어벤져스: 에이지 오브 울트론 ",
          "title_eng": "The Avengers: Age of Ultron",
@@ -615,7 +621,7 @@
 		 "/images/slides/Avengers_slide3.jpg",
 		 "/images/slides/Avengers_slide4.jpg"
 
-
+		
 ],
 "rating":3.8,
 "comment" : [
@@ -631,8 +637,9 @@
 "genre" :[
   "액션",
   "판타지"
-]
-       },
+],
+"youtube" : "https://youtu.be/mck3JCl2uwQ"
+		},
 	   {
          "title_kor": "니모를 찾아서",
          "title_eng": "Finding Nemo",
@@ -668,8 +675,9 @@
 "genre" :[
   "애니메이션",
   "코미디"
-]
-       },
+],
+"youtube" : "https://youtu.be/nfuWsdE-HQs"
+		},
 	   {
          "title_kor": "주토피아",
          "title_eng": "Zootopia",
@@ -706,8 +714,9 @@
   "액션",
   "코미디",
   "가족"
-]
-       },
+],
+"youtube" : "https://youtu.be/dc_xyYxTy-U"
+		},
 	   {
          "title_kor": "쿵푸팬더3",
          "title_eng": "Kung Fu Panda 3",
@@ -745,8 +754,9 @@
   "액션",
   "코미디",
   "가족"
-]
-       },
+],
+"youtube" : "https://youtu.be/oQo62zqNnlM"
+		},
 	   {
          "title_kor": "드래곤 길들이기2",
          "title_eng": "How To Train Your Dragon 2",
@@ -783,8 +793,9 @@
   "애니메이션",
   "판타지",
   "코미디"
-]
-       },
+],
+"youtube" : "https://youtu.be/a6rll9bwqhc"
+		},
 	   {
          "title_kor": "업",
          "title_eng": "Up",
@@ -820,8 +831,9 @@
 "genre" :[
   "애니메이션",
   "드라마"
-]
-       },
+],
+"youtube" : "https://youtu.be/Sg6HoCam4xk"
+		},
 	   {
          "title_kor": "아저씨",
          "title_eng": "The Man from Nowhere",
@@ -858,8 +870,9 @@
   "액션",
   "범죄",
   "드라마"
-]
-       },
+],
+"youtube" : "https://youtu.be/aM0OUNRwlL8"
+		},
 	   {
          "title_kor": "탐정 홍길동: 사라진 마을",
          "title_eng": "Phantom Detective",
@@ -934,8 +947,9 @@
   "액션",
   "스릴러",
   "드라마"
-]
-       },
+],
+"youtube" : "https://youtu.be/AoNT6u3mQew"
+		},
 	   {
          "title_kor": "언스토퍼블",
          "title_eng": "Unstoppable",
@@ -968,8 +982,9 @@
   "액션",
   "드라마",
   "스릴러"
-]
-       },
+],
+"youtube" : "https://youtu.be/mkhD-mNEGrI"
+		},
 	   {
          "title_kor": "데자뷰",
          "title_eng": "Deja Vu",
@@ -1006,8 +1021,9 @@
   "SF",
   "스릴러",
   "액션"
-]
-       },
+],
+"youtube" : "https://youtu.be/Tz2NdPdnVZw"
+		},
 	   {
          "title_kor": "노무현입니다",
          "title_eng": "OUR PRESIDENT",
@@ -1077,8 +1093,9 @@
 "genre" :[
   "공포",
   "스릴러"
-]
-       },
+],
+"youtube" : "https://youtu.be/ZmJ_Djcidic"
+		},
 	   {
          "title_kor": "라이트 아웃",
          "title_eng": "Lights Out",
@@ -1111,8 +1128,9 @@
 ],
 "genre" :[
   "공포"
-]
-       },
+],
+"youtube" : "https://youtu.be/pHKjR6EMhi4"
+		},
 	   {
          "title_kor": "타이타닉",
          "title_eng": "Titanic",
@@ -1149,8 +1167,9 @@
   "로맨스",
   "멜로",
   "드라마"
-]
-       },
+],
+"youtube" : "https://youtu.be/rP7Y5pqf-1w"
+		},
 	   {
          "title_kor": "너와 100번째 사랑",
          "title_eng": "The 100th love with you",
@@ -1225,8 +1244,9 @@
 "genre" :[
   "액션",
   "스릴러"
-]
-       },
+],
+"youtube" : "https://youtu.be/sRtWUy9e2ow"
+		},
 	   {
          "title_kor": "원티드",
          "title_eng": "Wanted",
@@ -1263,8 +1283,9 @@
   "액션",
   "범죄",
   "스릴러"
-]
-       },
+],
+"youtube" : "https://youtu.be/OPwuaP7L2LU"
+		},
 	   {
          "title_kor": "베오울프",
          "title_eng": "BeoWulf",
@@ -1298,8 +1319,9 @@
   "판타지",
   "애니메이션",
   "드라마"
-]
-       },
+],
+"youtube" : "https://youtu.be/6LETvY2mdls"
+		},
 	   {
          "title_kor": "본 아이덴티티",
          "title_eng": "The Bourne Identity",
@@ -1332,8 +1354,9 @@
 "genre" :[
   "액션",
   "스릴러"
-]
-       },
+],
+"youtube" : "https://youtu.be/COATYBZCD4U"
+		},
 	   {
          "title_kor": "점퍼",
          "title_eng": "Jumper",
@@ -1366,8 +1389,9 @@
 "genre" :[
   "SF",
   "판타지"
-]
-       },
+],
+"youtube" : "https://youtu.be/mEdQV7f-zw4"
+		},
 	   {
          "title_kor": "쥬라기 월드",
          "title_eng": "Jurassic World",
@@ -1402,8 +1426,9 @@
 ],
 "genre" :[
   "SF"
-]
-       },
+],
+"youtube" : "https://youtu.be/xfvxK19CqQw"
+		},
 	   {
          "title_kor": "스타트랙 비욘드",
          "title_eng": "Star Trek Beyond",
@@ -1440,8 +1465,9 @@
   "SF",
   "액션",
   "스릴러"
-]
-       },
+],
+"youtube" : "https://youtu.be/dRJoU-XwPZI"
+		},
 	   {
          "title_kor": "인셉션",
          "title_eng": "Inception",
@@ -1475,9 +1501,9 @@
   "SF",
   "스릴러",
   "액션"
-
-]
-       },
+],
+"youtube" : "https://youtu.be/hx1fqhNoH8A"
+		},
 	   {
          "title_kor": "인 타임",
          "title_eng": "In Time",
@@ -1511,8 +1537,9 @@
   "액션",
   "스릴러",
   "SF"
-]
-       },
+],
+"youtube" : "https://youtu.be/HjkNlz_1WKQ"
+		},
 	   {
          "title_kor": "캡틴 아메리카: 시빌 워",
          "title_eng": "Captain America: Civil War",
@@ -1549,8 +1576,9 @@
   "액션",
   "SF",
   "스릴러"
-]
-       },
+],
+"youtube" : "https://youtu.be/ehOCWue0Ww0"
+		},
 	   {
          "title_kor": "레지던트 이블: 파멸의 날",
          "title_eng": "Resident Evil: The Final Chapter",
@@ -1586,8 +1614,9 @@
   "액션",
   "SF",
   "스릴러"
-]
-       },
+],
+"youtube" : "https://youtu.be/f5WdLGDA_D8"
+		},
 	   {
          "title_kor": "월드워Z",
          "title_eng": "World War Z",
@@ -1624,8 +1653,9 @@
   "공포",
   "액션",
   "SF"
-]
-       },
+],
+"youtube" : "https://youtu.be/wXOcmczgGec"
+		},
       {
          "title_kor": "아일랜드",
          "title_eng": "The Island",
@@ -1658,8 +1688,9 @@
 "genre" :[
   "액션",
   "SF"
-]
-       }
+],
+"youtube" : "https://youtu.be/vrQZSco77Pg"
+		}
 
     ]
 
