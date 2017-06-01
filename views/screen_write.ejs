@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+
+    <!-- Loading Flat UI -->
+    <link rel="stylesheet" href="/stylesheets/flatUI.css" >
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="../../dist/js/vendor/html5shiv.js"></script>
+      <script src="../../dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <div class="container">
+      <form id="movie_form" action="/dashboard/movielist/enrollment" method="post">
+        <h4>Movie Title</h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input name="title_eng" id="title_eng"type="text" class="form-control" placeholder="ENG">
+            </div><!-- /.form-group -->
+          </div>
+        </div>
+
+        <h4>Theater &amp; Room</h4>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="form-group">
+              <select name="state_theater" id="nation" data-toggle="select" class="form-control select select-default">
+                <option>서울, 강남 GRL</option>
+                <option>서울, 종로 GRL</option>
+                <option>서울, 신촌 GRL</option>
+                <option>인천, 부평 GRL</option>
+                <option>인천, 주안 GRL</option>
+                <option>인천, 송도 GRL</option>
+                <option>경기, 수원 GRL</option>
+                <option>경기, 일산 GRL</option>
+                <option>경기, 안산 GRL</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="form-group">
+              <select name="room" id="nation" data-toggle="select" class="form-control select select-default">
+                <option>1관</option>
+                <option>2관</option>
+                <option>3관</option>
+                <option>4관</option>
+                <option>5관</option>
+                <option>6관</option>
+                <option>7관</option>
+                <option>8관</option>
+                <option>9관</option>
+                <option>10관</option>
+                <option>11관</option>
+                <option>12관</option>
+                <option>13관</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <h4>Date &amp; Start time</h4>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="form-group">
+              <input name="date" id="director" type="text" class="form-control" placeholder="Date">
+            </div><!-- /.form-group -->
+          </div>
+          <div class="col-md-9">
+              <div class="tagsinput-primary">
+                <input name="start_time" class="tagsinput tagsinput-typeahead input-lg" value="" placeholder="Start time"/>
+              </div>
+          </div>
+        </div>
+
+        <h4>Screen number</h4>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <input name="screen_num" id="director" type="text" class="form-control" placeholder="Screen number">
+            </div><!-- /.form-group -->
+          </div>
+        </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/javascripts/flatUI.min.js"></script>
+
+    <script src="/javascripts/application.js"></script>
+
+
+    <script>
+
+      var states = new Bloodhound({
+        datumTokenizer: function(d) { return Bloodhound.tokenizers.whitespace(d.word); },
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        limit: 4,
+        local: [
+          { word: "Alabama" },
+          { word: "Alaska" },
+          { word: "Arizona" },
+          { word: "Arkansas" },
+          { word: "California" },
+          { word: "Colorado" }
+        ]
+      });
+
+      states.initialize();
+
+      $('input.tagsinput').tagsinput();
+
+      $('input.tagsinput-typeahead').tagsinput('input').typeahead(null, {
+        name: 'states',
+        displayKey: 'word',
+        source: states.ttAdapter()
+      });
+
+      $('input.typeahead-only').typeahead(null, {
+        name: 'states',
+        displayKey: 'word',
+        source: states.ttAdapter()
+      });
+
+
+      $("form").submit(function () {
+
+    var this_master = $(this);
+
+    this_master.find('input[type="checkbox"]').each( function () {
+        var checkbox_this = $(this);
+
+
+        if( checkbox_this.is(":checked") == true ) {
+            checkbox_this.attr('value','1');
+        } else {
+            checkbox_this.prop('checked',true);
+            //DONT' ITS JUST CHECK THE CHECKBOX TO SUBMIT FORM DATA
+            checkbox_this.attr('value','0');
+        }
+        })
+    })
+    </script>
+  </body>
+</html>
