@@ -21,6 +21,9 @@ router.get('/movielist', function(req, res, next) {
   res.render('data_table');
 });
 
+router.get('/write', function(req, res, next) {
+  res.render('movie_write');
+});
 router.get('/form', function(req, res, next) {
   res.render('flatUI/form');
 });
@@ -40,14 +43,14 @@ router.get('/test', function(req, res, next) {
 
 
 
-router.get('/movielist/update/:_id',function(req, res, next) {
+router.get('/:_id',function(req, res, next) {
   var _id = req.params._id;
   console.log(_id)
   MovieContents.findOne({_id:_id}, function(err, movieContents){
 
     if(err) return res.status(500).send({error: 'database failure'});
     console.log(movieContents)
-    res.render('dashboard/movielist/update', {row: movieContents});
+    res.render('movie_update', {row: movieContents});
 
   });
 });
@@ -101,7 +104,17 @@ router.post('/movielist/enrollment',function(req,res,next){
   newMovieContents.description_title = req.body.description_title;
   newMovieContents.description = req.body.description;
   newMovieContents.current = req.body.current;
+  newMovieContents.poster_img_url = req.body.poster_img_url;
+  newMovieContents.wide_img_url = req.body.wide_img_url;
+  newMovieContents.slide_img_url.push(req.body.slide_img_url1)
+  newMovieContents.slide_img_url.push(req.body.slide_img_url2)
+  newMovieContents.slide_img_url.push(req.body.slide_img_url3)
+  newMovieContents.slide_img_url.push(req.body.slide_img_url4)
+  newMovieContents.youtube = req.body.youtube
 
+  for (var i = 0; i < req.body.genre.length; i++) {
+    newMovieContents.genre.push(req.body.genre[i])
+  }
 
   newMovieContents.save(function (err)  {
     if (err) throw err;
