@@ -44,10 +44,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '1관')
                                   {
                                     %>
-                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -70,10 +91,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '2관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -96,10 +138,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '3관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -122,10 +185,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '4관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -148,10 +232,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '5관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -174,10 +279,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '6관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -200,10 +326,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '7관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -226,10 +373,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '8관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -252,10 +420,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '9관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -278,10 +467,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '10관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -304,10 +514,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '11관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -330,10 +561,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '12관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }
@@ -356,10 +608,31 @@
                                 <%
                                 for(var j=0;j<screens.length; j++)
                                 {
+                                  var run_time = rows[0].run_time
+                                  run_time = run_time.slice(0, -1);
+                                  run_time = parseInt(run_time)
+
+                                  var start_time = screens[j].start_time
+                                  var hour = start_time.slice(0,2)
+                                  hour = parseInt(hour)
+                                  var minute = start_time.slice(2,4)
+                                  minute = parseInt(minute)
+                                  minute = minute + run_time
+                                  var remainder = minute % 60
+                                  var quota = parseInt(minute / 60)
+                                  hour = hour + quota
+                                  var str_remainder = ''
+                                  if(remainder < 10) {
+                                    str_remainder = '0' + remainder.toString()
+                                  }
+                                  else {
+                                    str_remainder = remainder.toString()
+                                  }
+
                                   if(screens[j].room == '13관')
                                   {
                                     %>
-                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                      <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>: <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%> ~ <%=hour%>:<%=str_remainder%></li></a>
                                     <%
                                   }
                                 }

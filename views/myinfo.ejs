@@ -96,214 +96,108 @@
 
          </header>
          <section id="taste" style="position: relative; height: 1142px;">
-            <div class="card" id="rating-distribution" style="position: absolute; left: 10px; top: 36px;">
-               <div class="row header">
-                  <h2 class="small">별점분포</h2>
-                  <%
-                    if(num_rate_average < 2)
-                    {
-                  %>
-                    <span class="flavor-text">세상을 부정적으로 바라보는 '부정파' </span>
-                  <%
-                    }
-                    else if(num_rate_average > 4)
-                    {
-                  %>
-                    <span class="flavor-text">세상을 긍정적으로 바라보는 '긍정파'</span>
-                  <%
-                    }
-                    else
-                    {
-                  %>
-                  <span class="flavor-text">세상을 애매하게 바라보는 '애매파'</span>
-                  <%
-                    }
-                  %>
-
-               </div>
-               <div class="row chart" data-distribution="{&quot;1&quot;:0,&quot;2&quot;:1,&quot;3&quot;:0,&quot;4&quot;:2,&quot;5&quot;:1,&quot;6&quot;:1,&quot;7&quot;:1,&quot;8&quot;:2,&quot;9&quot;:4,&quot;10&quot;:3}">
-                  <%
-                    if(num_rate_average < 2)
-                    {
-                  %>
-                    <div style="margin-left:150px; margin-top:25px;"><img src="http://www.organizaracasa.com/wp-content/uploads/2016/02/angry-icon-150x150.png"></div>
-                  <%
-                    }
-                    else if(num_rate_average > 4)
-                    {
-                  %>
-                    <div style="margin-left:150px; margin-top:25px;"><img src="http://www.carlswebgraphics.com/smiley/happy-smiley-face.png"></div>
-                  <%
-                    }
-                    else
-                    {
-                  %>
-                  <div style="margin-left:150px; margin-top:25px;"><img src="https://s-media-cache-ak0.pinimg.com/736x/50/3e/89/503e89bda8a1b47400be44846f7c9554.jpg"></div>
-                  <%
-                    }
-                  %>
-
-
-
-               </div>
-               <div class="row stats">
-                  <div class="col-2"><strong class="stat-count average-rating"><%=num_rate_average%></strong>별점 평균</div>
-                  <div class="col-2"><strong class="stat-count"><%=num_rate_total%></strong>평가한 영화 수</div>
-                  <div class="col-2"><strong class="stat-count"><%=num_comment_total%></strong>코멘트 수</div>
-               </div>
-            </div>
-            <div class="card sorted-by-rating expanded" id="favorite-nations" style="position: absolute; left: 490px; top: 36px;">
-               <div class="row header">
-                  <h2 class="small">선호국가</h2>
-                  <span class="flavor-text"><%=dic_nation[0].key%> 영화를 재밌게 보셨어요</span>
-               </div>
-               <div class="row map"><span class="marker icon-favorite-3" data-nation-id=""></span></div>
-
-               <%
-                  for(var i = 0; i < dic_nation.length; i++)
-                  {
-                    oneItem = dic_nation[i]
-                    num_score = (oneItem.like / oneItem.value) * 5;
-                    num_score = num_score.toFixed(0);
-                    num_score = num_score * 20
-                    if(i == 0)
-                    {
-                    %>
-                    <div class="row best">
-                       <div class="col-2 left"><span class="icon-favorite-1"></span><%=oneItem.key%></div>
-                       <div class="col-2"><%=num_score%>점</div>
-                       <div class="col-2 right"><%=oneItem.value%>편</div>
-                    </div>
+           <%
+              if(dic_nation[0])
+              {
+              %>
+              <div class="card" id="rating-distribution" style="position: absolute; left: 10px; top: 36px;">
+                 <div class="row header">
+                    <h2 class="small">별점분포</h2>
                     <%
-                    }
-                    else if(i == 1)
-                    {
+                      if(num_rate_average < 2)
+                      {
                     %>
-                    <div class="row best">
-                       <div class="col-2 left"><span class="icon-favorite-2"></span><%=oneItem.key%></div>
-                       <div class="col-2"><%=num_score%>점</div>
-                       <div class="col-2 right"><%=oneItem.value%>편</div>
-                    </div>
+                      <span class="flavor-text">세상을 부정적으로 바라보는 '부정파' </span>
                     <%
-                    }
-                    else
-                    {
+                      }
+                      else if(num_rate_average > 4)
+                      {
                     %>
-                    <div class="row best">
-                       <div class="col-2 left"><span class="icon-favorite-3"></span><%=oneItem.key%></div>
-                       <div class="col-2"><%=num_score%>점</div>
-                       <div class="col-2 right"><%=oneItem.value%>편</div>
-                    </div>
+                      <span class="flavor-text">세상을 긍정적으로 바라보는 '긍정파'</span>
                     <%
-                    }
+                      }
+                      else
+                      {
+                    %>
+                    <span class="flavor-text">세상을 애매하게 바라보는 '애매파'</span>
+                    <%
+                      }
+                    %>
+
+                 </div>
+                 <div class="row chart" data-distribution="{&quot;1&quot;:0,&quot;2&quot;:1,&quot;3&quot;:0,&quot;4&quot;:2,&quot;5&quot;:1,&quot;6&quot;:1,&quot;7&quot;:1,&quot;8&quot;:2,&quot;9&quot;:4,&quot;10&quot;:3}">
+                    <%
+                      if(num_rate_average < 2)
+                      {
+                    %>
+                      <div style="margin-left:150px; margin-top:25px;"><img src="http://www.organizaracasa.com/wp-content/uploads/2016/02/angry-icon-150x150.png"></div>
+                    <%
+                      }
+                      else if(num_rate_average > 4)
+                      {
+                    %>
+                      <div style="margin-left:150px; margin-top:25px;"><img src="http://www.carlswebgraphics.com/smiley/happy-smiley-face.png"></div>
+                    <%
+                      }
+                      else
+                      {
+                    %>
+                    <div style="margin-left:150px; margin-top:25px;"><img src="https://s-media-cache-ak0.pinimg.com/736x/50/3e/89/503e89bda8a1b47400be44846f7c9554.jpg"></div>
+                    <%
+                      }
+                    %>
 
 
 
-                  }
-               %>
-
-
-
-               <script>(function() {
-                  $('#show-more-nations').on('click', function() {
-                    $('#favorite-nations .runner-ups').show();
-                    $(this).parent().addClass('expanded');
-                    $(this).remove();
-                    try {
-                      return $('#taste').masonry();
-                    } catch (error) {}
-                  });
-
-                  }).call(this);
-               </script>
-            </div>
-
-            <div class="card sorted-by-rating not-available hide-sample" id="favorite-directors" style="position: absolute; left: 970px; top: 315px;">
-               <div class="row header">
-                  <h2>평가</h2>
-               </div>
-               <div class="ribbon"></div>
-               <div class="row message">
-                  <p>지금 당장 영화를 더 보시는 건 어떤가요?<br> 더 많은 영화를 보고 평가를 해주세요. 더 정확한 추천이 가능해요! </p>
-               </div>
-
-               <a href="/movies/recommend" style="color: inherit;"><button class="show-sample" id="show-sample-directors">추천 영화</button></a><a class="evalmore" href="/movies/latestoffice">영화 평가 늘리기 ▶︎</a>
-
-            </div>
-            <div class="card sorted-by-rating" id="favorite-genres" style="position: absolute; left: 10px; top: 494px;">
-               <div class="row header">
-                  <h2 class="small">선호장르</h2>
-                  <span class="flavor-text">즐겨먹는 과자는 뿌셔뿌셔</span>
-               </div>
-               <div class="row chart">
-                  <div class="col-6">
-                     <svg data-distribution="[6, 2, 2, 2]" id="favorite-genres-chart">
-                        <g transform="translate(81,81)">
-                           <g class="arc">
-                              <path d="M-25.03037654437077,77.03557781990743A81,81 0 0,1 25.030376544370725,-77.03557781990745L20.395121628746516,-62.76973007548014A66,66 0 0,0 -20.395121628746555,62.769730075480126Z"></path>
-                           </g>
-                           <g class="arc">
-                              <path d="M25.030376544370725,-77.03557781990745A81,81 0 0,1 79.22995565943826,-16.840846956238476L64.55774164843118,-13.722171593972092A66,66 0 0,0 20.395121628746516,-62.76973007548014Z"></path>
-                           </g>
-                           <g class="arc">
-                              <path d="M79.22995565943826,-16.840846956238476A81,81 0 0,1 54.19957911506757,60.19473086366889L44.16262001968469,49.047558481507984A66,66 0 0,0 64.55774164843118,-13.722171593972092Z"></path>
-                           </g>
-                           <g class="arc">
-                              <path d="M54.19957911506757,60.19473086366889A81,81 0 0,1 -25.030376544370718,77.03557781990745L-20.39512162874651,62.76973007548014A66,66 0 0,0 44.16262001968469,49.047558481507984Z"></path>
-                           </g>
-                        </g>
-                     </svg>
-
-                  </div>
-               </div>
+                 </div>
+                 <div class="row stats">
+                    <div class="col-2"><strong class="stat-count average-rating"><%=num_rate_average%></strong>별점 평균</div>
+                    <div class="col-2"><strong class="stat-count"><%=num_rate_total%></strong>평가한 영화 수</div>
+                    <div class="col-2"><strong class="stat-count"><%=num_comment_total%></strong>코멘트 수</div>
+                 </div>
+              </div>
+              <div class="card sorted-by-rating expanded" id="favorite-nations" style="position: absolute; left: 490px; top: 36px;">
+                 <div class="row header">
+                    <h2 class="small">선호국가</h2>
+                    <span class="flavor-text"><%=dic_nation[0].key%> 영화를 재밌게 보셨어요</span>
+                 </div>
+                 <div class="row map"><span class="marker icon-favorite-3" data-nation-id=""></span></div>
 
                  <%
-                    for(var i = 0; i < dic_genre.length; i++)
+                    for(var i = 0; i < dic_nation.length; i++)
                     {
-                      oneItem = dic_genre[i]
+                      oneItem = dic_nation[i]
                       num_score = (oneItem.like / oneItem.value) * 5;
                       num_score = num_score.toFixed(0);
                       num_score = num_score * 20
-
                       if(i == 0)
                       {
                       %>
                       <div class="row best">
-                      <div class="genre"><span class="icon-favorite-1"></span><a class="name" href="#"><%=oneItem.key%></a><span class="stat">
-                      <strong class="rating"><%=num_score%>점  </strong>/<strong class="count"><%=oneItem.value%></strong>편
-                         </span>
+                         <div class="col-2 left"><span class="icon-favorite-1"></span><%=oneItem.key%></div>
+                         <div class="col-2"><%=num_score%>점</div>
+                         <div class="col-2 right"><%=oneItem.value%>편</div>
                       </div>
                       <%
                       }
                       else if(i == 1)
                       {
                       %>
-                      <div class="genre"><span class="icon-favorite-2"></span><a class="name" href="#"><%=oneItem.key%></a><span class="stat">
-                         <strong class="rating"><%=num_score%>점  </strong>/<strong class="count"><%=oneItem.value%></strong>편
-                         </span>
+                      <div class="row best">
+                         <div class="col-2 left"><span class="icon-favorite-2"></span><%=oneItem.key%></div>
+                         <div class="col-2"><%=num_score%>점</div>
+                         <div class="col-2 right"><%=oneItem.value%>편</div>
                       </div>
-                      <%
-                      }
-                      else if(i == 2)
-                      {
-                      %>
-                      <div class="genre"><span class="icon-favorite-3"></span><a class="name" href="#"><%=oneItem.key%></a><span class="stat">
-                         <strong class="rating"><%=num_score%>점  </strong>/<strong class="count"><%=oneItem.value%></strong>편
-                         </span>
-                      </div>
-                      </div>
-                      <div class="runner-ups">
                       <%
                       }
                       else
                       {
                       %>
-                      <div class="row">
-                     <div class="col-2 left"><a class="name" href="#"><%=oneItem.key%></a></div>
-                     <div class="col-2"><%=num_score%>점  </div>
-                     <div class="col-2 right"><%=oneItem.value%>편</div>
-                  </div>
-
+                      <div class="row best">
+                         <div class="col-2 left"><span class="icon-favorite-3"></span><%=oneItem.key%></div>
+                         <div class="col-2"><%=num_score%>점</div>
+                         <div class="col-2 right"><%=oneItem.value%>편</div>
+                      </div>
                       <%
                       }
 
@@ -311,17 +205,131 @@
 
                     }
                  %>
-               </div>
-            </div>
-            <div class="card" id="watched-hours" style="position: absolute; left: 970px; top: 36px;">
-               <div class="row header">
-                 <h2 class="small">관람시간</h2>
-                  <h2 class="flavor-text">에이 설마 이것만 본 건 아닐 거예요.</h2>
-               </div>
-               <div class="row stats">
-                  <div class="bubble"><span class="icon-clock"></span><span class="label">시간</span><strong class="stat-count"><%=num_total_time%></strong></div>
-               </div>
-            </div>
+
+
+
+                 <script>(function() {
+                    $('#show-more-nations').on('click', function() {
+                      $('#favorite-nations .runner-ups').show();
+                      $(this).parent().addClass('expanded');
+                      $(this).remove();
+                      try {
+                        return $('#taste').masonry();
+                      } catch (error) {}
+                    });
+
+                    }).call(this);
+                 </script>
+              </div>
+              <div class="card sorted-by-rating not-available hide-sample" id="favorite-directors" style="position: absolute; left: 970px; top: 315px;">
+                 <div class="row header">
+                    <h2>평가</h2>
+                 </div>
+                 <div class="ribbon"></div>
+                 <div class="row message">
+                    <p>지금 당장 영화를 더 보시는 건 어떤가요?<br> 더 많은 영화를 보고 평가를 해주세요. 더 정확한 추천이 가능해요! </p>
+                 </div>
+
+                 <a href="/movies/recommend" style="color: inherit;"><button class="show-sample" id="show-sample-directors">추천 영화</button></a><a class="evalmore" href="/movies/latestoffice">영화 평가 늘리기 ▶︎</a>
+
+              </div>
+              <div class="card sorted-by-rating" id="favorite-genres" style="position: absolute; left: 10px; top: 494px;">
+                 <div class="row header">
+                    <h2 class="small">선호장르</h2>
+                    <span class="flavor-text">즐겨먹는 과자는 뿌셔뿌셔</span>
+                 </div>
+                 <div class="row chart">
+                    <div class="col-6">
+                       <svg data-distribution="[6, 2, 2, 2]" id="favorite-genres-chart">
+                          <g transform="translate(81,81)">
+                             <g class="arc">
+                                <path d="M-25.03037654437077,77.03557781990743A81,81 0 0,1 25.030376544370725,-77.03557781990745L20.395121628746516,-62.76973007548014A66,66 0 0,0 -20.395121628746555,62.769730075480126Z"></path>
+                             </g>
+                             <g class="arc">
+                                <path d="M25.030376544370725,-77.03557781990745A81,81 0 0,1 79.22995565943826,-16.840846956238476L64.55774164843118,-13.722171593972092A66,66 0 0,0 20.395121628746516,-62.76973007548014Z"></path>
+                             </g>
+                             <g class="arc">
+                                <path d="M79.22995565943826,-16.840846956238476A81,81 0 0,1 54.19957911506757,60.19473086366889L44.16262001968469,49.047558481507984A66,66 0 0,0 64.55774164843118,-13.722171593972092Z"></path>
+                             </g>
+                             <g class="arc">
+                                <path d="M54.19957911506757,60.19473086366889A81,81 0 0,1 -25.030376544370718,77.03557781990745L-20.39512162874651,62.76973007548014A66,66 0 0,0 44.16262001968469,49.047558481507984Z"></path>
+                             </g>
+                          </g>
+                       </svg>
+
+                    </div>
+                 </div>
+
+                   <%
+                      for(var i = 0; i < dic_genre.length; i++)
+                      {
+                        oneItem = dic_genre[i]
+                        num_score = (oneItem.like / oneItem.value) * 5;
+                        num_score = num_score.toFixed(0);
+                        num_score = num_score * 20
+
+                        if(i == 0)
+                        {
+                        %>
+                        <div class="row best">
+                        <div class="genre"><span class="icon-favorite-1"></span><a class="name" href="#"><%=oneItem.key%></a><span class="stat">
+                        <strong class="rating"><%=num_score%>점  </strong>/<strong class="count"><%=oneItem.value%></strong>편
+                           </span>
+                        </div>
+                        <%
+                        }
+                        else if(i == 1)
+                        {
+                        %>
+                        <div class="genre"><span class="icon-favorite-2"></span><a class="name" href="#"><%=oneItem.key%></a><span class="stat">
+                           <strong class="rating"><%=num_score%>점  </strong>/<strong class="count"><%=oneItem.value%></strong>편
+                           </span>
+                        </div>
+                        <%
+                        }
+                        else if(i == 2)
+                        {
+                        %>
+                        <div class="genre"><span class="icon-favorite-3"></span><a class="name" href="#"><%=oneItem.key%></a><span class="stat">
+                           <strong class="rating"><%=num_score%>점  </strong>/<strong class="count"><%=oneItem.value%></strong>편
+                           </span>
+                        </div>
+                        </div>
+                        <div class="runner-ups">
+                        <%
+                        }
+                        else
+                        {
+                        %>
+                        <div class="row">
+                       <div class="col-2 left"><a class="name" href="#"><%=oneItem.key%></a></div>
+                       <div class="col-2"><%=num_score%>점  </div>
+                       <div class="col-2 right"><%=oneItem.value%>편</div>
+                    </div>
+
+                        <%
+                        }
+
+
+
+                      }
+                   %>
+                 </div>
+              </div>
+              <div class="card" id="watched-hours" style="position: absolute; left: 970px; top: 36px;">
+                 <div class="row header">
+                   <h2 class="small">관람시간</h2>
+                    <h2 class="flavor-text">에이 설마 이것만 본 건 아닐 거예요.</h2>
+                 </div>
+                 <div class="row stats">
+                    <div class="bubble"><span class="icon-clock"></span><span class="label">시간</span><strong class="stat-count"><%=num_total_time%></strong></div>
+                 </div>
+              </div>
+              <%
+              }
+           %>
+
+
             <!-- <div class="card" id="favorite-keywords" style="position: absolute; left: 490px; top: 700px;">
                <div class="row header">
                   <h2 class="small">선호키워드</h2>

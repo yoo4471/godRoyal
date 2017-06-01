@@ -6,7 +6,8 @@
         "room": "1관",
         "screen_num": "1",
         "title_eng": "GET OUT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -14,7 +15,8 @@
         "room": "1관",
         "screen_num": "2",
         "title_eng": "GET OUT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -22,7 +24,8 @@
         "room": "1관",
         "screen_num": "3",
         "title_eng": "GET OUT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -30,7 +33,8 @@
         "room": "1관",
         "screen_num": "4",
         "title_eng": "GET OUT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -39,7 +43,8 @@
         "room": "2관",
         "screen_num": "1",
         "title_eng": "The Merciless",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -47,7 +52,8 @@
         "room": "2관",
         "screen_num": "2",
         "title_eng": "The Merciless",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -55,7 +61,8 @@
         "room": "2관",
         "screen_num": "3",
         "title_eng": "The Merciless",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -63,7 +70,8 @@
         "room": "2관",
         "screen_num": "4",
         "title_eng": "The Merciless",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -72,7 +80,8 @@
         "room": "3관",
         "screen_num": "1",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -80,7 +89,8 @@
         "room": "3관",
         "screen_num": "2",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -88,7 +98,8 @@
         "room": "3관",
         "screen_num": "3",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -96,7 +107,8 @@
         "room": "3관",
         "screen_num": "4",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -105,7 +117,8 @@
         "room": "4관",
         "screen_num": "1",
         "title_eng": "The Boss Baby",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -113,7 +126,8 @@
         "room": "4관",
         "screen_num": "2",
         "title_eng": "The Boss Baby",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -121,7 +135,8 @@
         "room": "4관",
         "screen_num": "3",
         "title_eng": "The Boss Baby",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -129,7 +144,8 @@
         "room": "4관",
         "screen_num": "4",
         "title_eng": "The Boss Baby",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -138,7 +154,8 @@
         "room": "5관",
         "screen_num": "1",
         "title_eng": "Alien: Covenant",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -146,7 +163,8 @@
         "room": "5관",
         "screen_num": "2",
         "title_eng": "Alien: Covenant",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -154,7 +172,8 @@
         "room": "5관",
         "screen_num": "3",
         "title_eng": "Alien: Covenant",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -162,7 +181,8 @@
         "room": "5관",
         "screen_num": "4",
         "title_eng": "Alien: Covenant",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -171,7 +191,8 @@
         "room": "6관",
         "screen_num": "1",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -179,7 +200,8 @@
         "room": "6관",
         "screen_num": "2",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -187,7 +209,8 @@
         "room": "6관",
         "screen_num": "3",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -195,7 +218,8 @@
         "room": "6관",
         "screen_num": "4",
         "title_eng": "The Sheriff In Town",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -204,7 +228,8 @@
         "room": "7관",
         "screen_num": "1",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -212,7 +237,8 @@
         "room": "7관",
         "screen_num": "2",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -220,7 +246,8 @@
         "room": "7관",
         "screen_num": "3",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -228,7 +255,8 @@
         "room": "7관",
         "screen_num": "4",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -237,7 +265,8 @@
         "room": "8관",
         "screen_num": "1",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -245,7 +274,8 @@
         "room": "8관",
         "screen_num": "2",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -253,7 +283,8 @@
         "room": "8관",
         "screen_num": "3",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -261,7 +292,8 @@
         "room": "8관",
         "screen_num": "4",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -270,7 +302,8 @@
         "room": "9관",
         "screen_num": "1",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -278,7 +311,8 @@
         "room": "9관",
         "screen_num": "2",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -286,7 +320,8 @@
         "room": "9관",
         "screen_num": "3",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -294,7 +329,8 @@
         "room": "9관",
         "screen_num": "4",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -303,7 +339,8 @@
         "room": "10관",
         "screen_num": "1",
         "title_eng": "Lost in Paris",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -311,7 +348,8 @@
         "room": "10관",
         "screen_num": "2",
         "title_eng": "Lost in Paris",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -319,7 +357,8 @@
         "room": "10관",
         "screen_num": "3",
         "title_eng": "Lost in Paris",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -327,7 +366,8 @@
         "room": "10관",
         "screen_num": "4",
         "title_eng": "Lost in Paris",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -338,7 +378,8 @@
         "room": "11관",
         "screen_num": "1",
         "title_eng": "Phantom Detective",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -346,7 +387,8 @@
         "room": "11관",
         "screen_num": "2",
         "title_eng": "Phantom Detective",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -354,7 +396,8 @@
         "room": "11관",
         "screen_num": "3",
         "title_eng": "Phantom Detective",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -362,7 +405,8 @@
         "room": "11관",
         "screen_num": "4",
         "title_eng": "Phantom Detective",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -372,7 +416,8 @@
         "room": "12관",
         "screen_num": "1",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -380,7 +425,8 @@
         "room": "12관",
         "screen_num": "2",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -388,7 +434,8 @@
         "room": "12관",
         "screen_num": "3",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -396,7 +443,8 @@
         "room": "12관",
         "screen_num": "4",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -406,7 +454,8 @@
         "room": "13관",
         "screen_num": "1",
         "title_eng": "The 100th love with you",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -414,7 +463,8 @@
         "room": "13관",
         "screen_num": "2",
         "title_eng": "The 100th love with you",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -422,7 +472,8 @@
         "room": "13관",
         "screen_num": "3",
         "title_eng": "The 100th love with you",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -430,7 +481,8 @@
         "room": "13관",
         "screen_num": "4",
         "title_eng": "The 100th love with you",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
       {
@@ -439,7 +491,8 @@
         "room": "1관",
         "screen_num": "1",
         "title_eng": "GET OUT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -447,7 +500,8 @@
         "room": "1관",
         "screen_num": "2",
         "title_eng": "GET OUT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -455,7 +509,8 @@
         "room": "1관",
         "screen_num": "3",
         "title_eng": "GET OUT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -463,7 +518,8 @@
         "room": "1관",
         "screen_num": "4",
         "title_eng": "GET OUT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -473,7 +529,8 @@
         "room": "2관",
         "screen_num": "1",
         "title_eng": "The Merciless",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -481,7 +538,8 @@
         "room": "2관",
         "screen_num": "2",
         "title_eng": "The Merciless",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -489,7 +547,8 @@
         "room": "2관",
         "screen_num": "3",
         "title_eng": "The Merciless",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -497,7 +556,8 @@
         "room": "2관",
         "screen_num": "4",
         "title_eng": "The Merciless",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -507,7 +567,8 @@
         "room": "3관",
         "screen_num": "1",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -515,7 +576,8 @@
         "room": "3관",
         "screen_num": "2",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -523,7 +585,8 @@
         "room": "3관",
         "screen_num": "3",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -531,7 +594,8 @@
         "room": "3관",
         "screen_num": "4",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -541,7 +605,8 @@
         "room": "4관",
         "screen_num": "1",
         "title_eng": "The Boss Baby",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -549,7 +614,8 @@
         "room": "4관",
         "screen_num": "2",
         "title_eng": "The Boss Baby",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -557,7 +623,8 @@
         "room": "4관",
         "screen_num": "3",
         "title_eng": "The Boss Baby",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -565,7 +632,8 @@
         "room": "4관",
         "screen_num": "4",
         "title_eng": "The Boss Baby",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -575,7 +643,8 @@
         "room": "5관",
         "screen_num": "1",
         "title_eng": "Alien: Covenant",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -583,7 +652,8 @@
         "room": "5관",
         "screen_num": "2",
         "title_eng": "Alien: Covenant",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -591,7 +661,8 @@
         "room": "5관",
         "screen_num": "3",
         "title_eng": "Alien: Covenant",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -599,7 +670,8 @@
         "room": "5관",
         "screen_num": "4",
         "title_eng": "Alien: Covenant",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -609,7 +681,8 @@
         "room": "6관",
         "screen_num": "1",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -617,7 +690,8 @@
         "room": "6관",
         "screen_num": "2",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -625,7 +699,8 @@
         "room": "6관",
         "screen_num": "3",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -633,7 +708,8 @@
         "room": "6관",
         "screen_num": "4",
         "title_eng": "The Sheriff In Town",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -643,7 +719,8 @@
         "room": "7관",
         "screen_num": "1",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -651,7 +728,8 @@
         "room": "7관",
         "screen_num": "2",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -659,7 +737,8 @@
         "room": "7관",
         "screen_num": "3",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -667,7 +746,8 @@
         "room": "7관",
         "screen_num": "4",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -678,7 +758,8 @@
         "room": "8관",
         "screen_num": "1",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -686,7 +767,8 @@
         "room": "8관",
         "screen_num": "2",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -694,7 +776,8 @@
         "room": "8관",
         "screen_num": "3",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -702,7 +785,8 @@
         "room": "8관",
         "screen_num": "4",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
       {
@@ -711,7 +795,8 @@
         "room": "9관",
         "screen_num": "1",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -719,7 +804,8 @@
         "room": "9관",
         "screen_num": "2",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -727,7 +813,8 @@
         "room": "9관",
         "screen_num": "3",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -735,7 +822,8 @@
         "room": "9관",
         "screen_num": "4",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -745,7 +833,8 @@
         "room": "10관",
         "screen_num": "1",
         "title_eng": "Lost in Paris",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -753,7 +842,8 @@
         "room": "10관",
         "screen_num": "2",
         "title_eng": "Lost in Paris",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -761,7 +851,8 @@
         "room": "10관",
         "screen_num": "3",
         "title_eng": "Lost in Paris",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -769,7 +860,8 @@
         "room": "10관",
         "screen_num": "4",
         "title_eng": "Lost in Paris",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -780,7 +872,8 @@
         "room": "11관",
         "screen_num": "1",
         "title_eng": "Phantom Detective",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -788,7 +881,8 @@
         "room": "11관",
         "screen_num": "2",
         "title_eng": "Phantom Detective",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -796,7 +890,8 @@
         "room": "11관",
         "screen_num": "3",
         "title_eng": "Phantom Detective",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -804,7 +899,8 @@
         "room": "11관",
         "screen_num": "4",
         "title_eng": "Phantom Detective",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -814,7 +910,8 @@
         "room": "12관",
         "screen_num": "1",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -822,7 +919,8 @@
         "room": "12관",
         "screen_num": "2",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -830,7 +928,8 @@
         "room": "12관",
         "screen_num": "3",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -838,7 +937,8 @@
         "room": "12관",
         "screen_num": "4",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -848,7 +948,8 @@
         "room": "13관",
         "screen_num": "1",
         "title_eng": "The 100th love with you",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -856,7 +957,8 @@
         "room": "13관",
         "screen_num": "2",
         "title_eng": "The 100th love with you",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -864,7 +966,8 @@
         "room": "13관",
         "screen_num": "3",
         "title_eng": "The 100th love with you",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -872,7 +975,8 @@
         "room": "13관",
         "screen_num": "4",
         "title_eng": "The 100th love with you",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -881,7 +985,8 @@
         "room": "1관",
         "screen_num": "1",
         "title_eng": "GET OUT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -889,7 +994,8 @@
         "room": "1관",
         "screen_num": "2",
         "title_eng": "GET OUT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -897,7 +1003,8 @@
         "room": "1관",
         "screen_num": "3",
         "title_eng": "GET OUT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -905,7 +1012,8 @@
         "room": "1관",
         "screen_num": "4",
         "title_eng": "GET OUT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -915,7 +1023,8 @@
         "room": "2관",
         "screen_num": "1",
         "title_eng": "The Merciless",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -923,7 +1032,8 @@
         "room": "2관",
         "screen_num": "2",
         "title_eng": "The Merciless",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -931,7 +1041,8 @@
         "room": "2관",
         "screen_num": "3",
         "title_eng": "The Merciless",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -939,7 +1050,8 @@
         "room": "2관",
         "screen_num": "4",
         "title_eng": "The Merciless",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -949,7 +1061,8 @@
         "room": "3관",
         "screen_num": "1",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -957,7 +1070,8 @@
         "room": "3관",
         "screen_num": "2",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -965,7 +1079,8 @@
         "room": "3관",
         "screen_num": "3",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -973,7 +1088,8 @@
         "room": "3관",
         "screen_num": "4",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -983,7 +1099,8 @@
         "room": "4관",
         "screen_num": "1",
         "title_eng": "The Boss Baby",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -991,7 +1108,8 @@
         "room": "4관",
         "screen_num": "2",
         "title_eng": "The Boss Baby",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -999,7 +1117,8 @@
         "room": "4관",
         "screen_num": "3",
         "title_eng": "The Boss Baby",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1007,7 +1126,8 @@
         "room": "4관",
         "screen_num": "4",
         "title_eng": "The Boss Baby",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1017,7 +1137,8 @@
         "room": "5관",
         "screen_num": "1",
         "title_eng": "Alien: Covenant",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1025,7 +1146,8 @@
         "room": "5관",
         "screen_num": "2",
         "title_eng": "Alien: Covenant",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1033,7 +1155,8 @@
         "room": "5관",
         "screen_num": "3",
         "title_eng": "Alien: Covenant",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1041,7 +1164,8 @@
         "room": "5관",
         "screen_num": "4",
         "title_eng": "Alien: Covenant",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1051,7 +1175,8 @@
         "room": "6관",
         "screen_num": "1",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1059,7 +1184,8 @@
         "room": "6관",
         "screen_num": "2",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1067,7 +1193,8 @@
         "room": "6관",
         "screen_num": "3",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1075,7 +1202,8 @@
         "room": "6관",
         "screen_num": "4",
         "title_eng": "The Sheriff In Town",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1085,7 +1213,8 @@
         "room": "7관",
         "screen_num": "1",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1093,7 +1222,8 @@
         "room": "7관",
         "screen_num": "2",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1101,7 +1231,8 @@
         "room": "7관",
         "screen_num": "3",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1109,7 +1240,8 @@
         "room": "7관",
         "screen_num": "4",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1120,7 +1252,8 @@
         "room": "8관",
         "screen_num": "1",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1128,7 +1261,8 @@
         "room": "8관",
         "screen_num": "2",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1136,7 +1270,8 @@
         "room": "8관",
         "screen_num": "3",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1144,7 +1279,8 @@
         "room": "8관",
         "screen_num": "4",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
       {
@@ -1153,7 +1289,8 @@
         "room": "9관",
         "screen_num": "1",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1161,7 +1298,8 @@
         "room": "9관",
         "screen_num": "2",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1169,7 +1307,8 @@
         "room": "9관",
         "screen_num": "3",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1177,7 +1316,8 @@
         "room": "9관",
         "screen_num": "4",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1187,7 +1327,8 @@
         "room": "10관",
         "screen_num": "1",
         "title_eng": "Lost in Paris",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1195,7 +1336,8 @@
         "room": "10관",
         "screen_num": "2",
         "title_eng": "Lost in Paris",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1203,7 +1345,8 @@
         "room": "10관",
         "screen_num": "3",
         "title_eng": "Lost in Paris",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1211,7 +1354,8 @@
         "room": "10관",
         "screen_num": "4",
         "title_eng": "Lost in Paris",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1222,7 +1366,8 @@
         "room": "11관",
         "screen_num": "1",
         "title_eng": "Phantom Detective",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1230,7 +1375,8 @@
         "room": "11관",
         "screen_num": "2",
         "title_eng": "Phantom Detective",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1238,7 +1384,8 @@
         "room": "11관",
         "screen_num": "3",
         "title_eng": "Phantom Detective",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1246,7 +1393,8 @@
         "room": "11관",
         "screen_num": "4",
         "title_eng": "Phantom Detective",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1256,7 +1404,8 @@
         "room": "12관",
         "screen_num": "1",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1264,7 +1413,8 @@
         "room": "12관",
         "screen_num": "2",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1272,7 +1422,8 @@
         "room": "12관",
         "screen_num": "3",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1280,7 +1431,8 @@
         "room": "12관",
         "screen_num": "4",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1290,7 +1442,8 @@
         "room": "13관",
         "screen_num": "1",
         "title_eng": "The 100th love with you",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1298,7 +1451,8 @@
         "room": "13관",
         "screen_num": "2",
         "title_eng": "The 100th love with you",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1306,7 +1460,8 @@
         "room": "13관",
         "screen_num": "3",
         "title_eng": "The 100th love with you",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "서울",
@@ -1314,7 +1469,8 @@
         "room": "13관",
         "screen_num": "4",
         "title_eng": "The 100th love with you",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -1323,7 +1479,8 @@
         "room": "1관",
         "screen_num": "1",
         "title_eng": "GET OUT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1331,7 +1488,8 @@
         "room": "1관",
         "screen_num": "2",
         "title_eng": "GET OUT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1339,7 +1497,8 @@
         "room": "1관",
         "screen_num": "3",
         "title_eng": "GET OUT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1347,7 +1506,8 @@
         "room": "1관",
         "screen_num": "4",
         "title_eng": "GET OUT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1357,7 +1517,8 @@
         "room": "2관",
         "screen_num": "1",
         "title_eng": "The Merciless",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1365,7 +1526,8 @@
         "room": "2관",
         "screen_num": "2",
         "title_eng": "The Merciless",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1373,7 +1535,8 @@
         "room": "2관",
         "screen_num": "3",
         "title_eng": "The Merciless",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1381,7 +1544,8 @@
         "room": "2관",
         "screen_num": "4",
         "title_eng": "The Merciless",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1391,7 +1555,8 @@
         "room": "3관",
         "screen_num": "1",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1399,7 +1564,8 @@
         "room": "3관",
         "screen_num": "2",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1407,7 +1573,8 @@
         "room": "3관",
         "screen_num": "3",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1415,7 +1582,8 @@
         "room": "3관",
         "screen_num": "4",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1425,7 +1593,8 @@
         "room": "4관",
         "screen_num": "1",
         "title_eng": "The Boss Baby",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1433,7 +1602,8 @@
         "room": "4관",
         "screen_num": "2",
         "title_eng": "The Boss Baby",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1441,7 +1611,8 @@
         "room": "4관",
         "screen_num": "3",
         "title_eng": "The Boss Baby",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1449,7 +1620,8 @@
         "room": "4관",
         "screen_num": "4",
         "title_eng": "The Boss Baby",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1459,7 +1631,8 @@
         "room": "5관",
         "screen_num": "1",
         "title_eng": "Alien: Covenant",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1467,7 +1640,8 @@
         "room": "5관",
         "screen_num": "2",
         "title_eng": "Alien: Covenant",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1475,7 +1649,8 @@
         "room": "5관",
         "screen_num": "3",
         "title_eng": "Alien: Covenant",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1483,7 +1658,8 @@
         "room": "5관",
         "screen_num": "4",
         "title_eng": "Alien: Covenant",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1493,7 +1669,8 @@
         "room": "6관",
         "screen_num": "1",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1501,7 +1678,8 @@
         "room": "6관",
         "screen_num": "2",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1509,7 +1687,8 @@
         "room": "6관",
         "screen_num": "3",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1517,7 +1696,8 @@
         "room": "6관",
         "screen_num": "4",
         "title_eng": "The Sheriff In Town",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1527,7 +1707,8 @@
         "room": "7관",
         "screen_num": "1",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1535,7 +1716,8 @@
         "room": "7관",
         "screen_num": "2",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1543,7 +1725,8 @@
         "room": "7관",
         "screen_num": "3",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1551,7 +1734,8 @@
         "room": "7관",
         "screen_num": "4",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1562,7 +1746,8 @@
         "room": "8관",
         "screen_num": "1",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1570,7 +1755,8 @@
         "room": "8관",
         "screen_num": "2",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1578,7 +1764,8 @@
         "room": "8관",
         "screen_num": "3",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1586,7 +1773,8 @@
         "room": "8관",
         "screen_num": "4",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
       {
@@ -1595,7 +1783,8 @@
         "room": "9관",
         "screen_num": "1",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1603,7 +1792,8 @@
         "room": "9관",
         "screen_num": "2",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1611,7 +1801,8 @@
         "room": "9관",
         "screen_num": "3",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1619,7 +1810,8 @@
         "room": "9관",
         "screen_num": "4",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1629,7 +1821,8 @@
         "room": "10관",
         "screen_num": "1",
         "title_eng": "Lost in Paris",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1637,7 +1830,8 @@
         "room": "10관",
         "screen_num": "2",
         "title_eng": "Lost in Paris",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1645,7 +1839,8 @@
         "room": "10관",
         "screen_num": "3",
         "title_eng": "Lost in Paris",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1653,7 +1848,8 @@
         "room": "10관",
         "screen_num": "4",
         "title_eng": "Lost in Paris",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1664,7 +1860,8 @@
         "room": "11관",
         "screen_num": "1",
         "title_eng": "Phantom Detective",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1672,7 +1869,8 @@
         "room": "11관",
         "screen_num": "2",
         "title_eng": "Phantom Detective",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1680,7 +1878,8 @@
         "room": "11관",
         "screen_num": "3",
         "title_eng": "Phantom Detective",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1688,7 +1887,8 @@
         "room": "11관",
         "screen_num": "4",
         "title_eng": "Phantom Detective",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1698,7 +1898,8 @@
         "room": "12관",
         "screen_num": "1",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1706,7 +1907,8 @@
         "room": "12관",
         "screen_num": "2",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1714,7 +1916,8 @@
         "room": "12관",
         "screen_num": "3",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1722,7 +1925,8 @@
         "room": "12관",
         "screen_num": "4",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1732,7 +1936,8 @@
         "room": "13관",
         "screen_num": "1",
         "title_eng": "The 100th love with you",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1740,7 +1945,8 @@
         "room": "13관",
         "screen_num": "2",
         "title_eng": "The 100th love with you",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1748,7 +1954,8 @@
         "room": "13관",
         "screen_num": "3",
         "title_eng": "The 100th love with you",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1756,7 +1963,8 @@
         "room": "13관",
         "screen_num": "4",
         "title_eng": "The 100th love with you",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -1765,7 +1973,8 @@
         "room": "1관",
         "screen_num": "1",
         "title_eng": "GET OUT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1773,7 +1982,8 @@
         "room": "1관",
         "screen_num": "2",
         "title_eng": "GET OUT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1781,7 +1991,8 @@
         "room": "1관",
         "screen_num": "3",
         "title_eng": "GET OUT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1789,7 +2000,8 @@
         "room": "1관",
         "screen_num": "4",
         "title_eng": "GET OUT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1799,7 +2011,8 @@
         "room": "2관",
         "screen_num": "1",
         "title_eng": "The Merciless",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1807,7 +2020,8 @@
         "room": "2관",
         "screen_num": "2",
         "title_eng": "The Merciless",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1815,7 +2029,8 @@
         "room": "2관",
         "screen_num": "3",
         "title_eng": "The Merciless",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1823,7 +2038,8 @@
         "room": "2관",
         "screen_num": "4",
         "title_eng": "The Merciless",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1833,7 +2049,8 @@
         "room": "3관",
         "screen_num": "1",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1841,7 +2058,8 @@
         "room": "3관",
         "screen_num": "2",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1849,7 +2067,8 @@
         "room": "3관",
         "screen_num": "3",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1857,7 +2076,8 @@
         "room": "3관",
         "screen_num": "4",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1867,7 +2087,8 @@
         "room": "4관",
         "screen_num": "1",
         "title_eng": "The Boss Baby",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1875,7 +2096,8 @@
         "room": "4관",
         "screen_num": "2",
         "title_eng": "The Boss Baby",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1883,7 +2105,8 @@
         "room": "4관",
         "screen_num": "3",
         "title_eng": "The Boss Baby",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1891,7 +2114,8 @@
         "room": "4관",
         "screen_num": "4",
         "title_eng": "The Boss Baby",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1901,7 +2125,8 @@
         "room": "5관",
         "screen_num": "1",
         "title_eng": "Alien: Covenant",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1909,7 +2134,8 @@
         "room": "5관",
         "screen_num": "2",
         "title_eng": "Alien: Covenant",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1917,7 +2143,8 @@
         "room": "5관",
         "screen_num": "3",
         "title_eng": "Alien: Covenant",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1925,7 +2152,8 @@
         "room": "5관",
         "screen_num": "4",
         "title_eng": "Alien: Covenant",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1935,7 +2163,8 @@
         "room": "6관",
         "screen_num": "1",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1943,7 +2172,8 @@
         "room": "6관",
         "screen_num": "2",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1951,7 +2181,8 @@
         "room": "6관",
         "screen_num": "3",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1959,7 +2190,8 @@
         "room": "6관",
         "screen_num": "4",
         "title_eng": "The Sheriff In Town",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -1969,7 +2201,8 @@
         "room": "7관",
         "screen_num": "1",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1977,7 +2210,8 @@
         "room": "7관",
         "screen_num": "2",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1985,7 +2219,8 @@
         "room": "7관",
         "screen_num": "3",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -1993,7 +2228,8 @@
         "room": "7관",
         "screen_num": "4",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2004,7 +2240,8 @@
         "room": "8관",
         "screen_num": "1",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2012,7 +2249,8 @@
         "room": "8관",
         "screen_num": "2",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2020,7 +2258,8 @@
         "room": "8관",
         "screen_num": "3",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2028,7 +2267,8 @@
         "room": "8관",
         "screen_num": "4",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
       {
@@ -2037,7 +2277,8 @@
         "room": "9관",
         "screen_num": "1",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2045,7 +2286,8 @@
         "room": "9관",
         "screen_num": "2",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2053,7 +2295,8 @@
         "room": "9관",
         "screen_num": "3",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2061,7 +2304,8 @@
         "room": "9관",
         "screen_num": "4",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2071,7 +2315,8 @@
         "room": "10관",
         "screen_num": "1",
         "title_eng": "Lost in Paris",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2079,7 +2324,8 @@
         "room": "10관",
         "screen_num": "2",
         "title_eng": "Lost in Paris",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2087,7 +2333,8 @@
         "room": "10관",
         "screen_num": "3",
         "title_eng": "Lost in Paris",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2095,7 +2342,8 @@
         "room": "10관",
         "screen_num": "4",
         "title_eng": "Lost in Paris",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2106,7 +2354,8 @@
         "room": "11관",
         "screen_num": "1",
         "title_eng": "Phantom Detective",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2114,7 +2363,8 @@
         "room": "11관",
         "screen_num": "2",
         "title_eng": "Phantom Detective",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2122,7 +2372,8 @@
         "room": "11관",
         "screen_num": "3",
         "title_eng": "Phantom Detective",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2130,7 +2381,8 @@
         "room": "11관",
         "screen_num": "4",
         "title_eng": "Phantom Detective",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2140,7 +2392,8 @@
         "room": "12관",
         "screen_num": "1",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2148,7 +2401,8 @@
         "room": "12관",
         "screen_num": "2",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2156,7 +2410,8 @@
         "room": "12관",
         "screen_num": "3",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2164,7 +2419,8 @@
         "room": "12관",
         "screen_num": "4",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2174,7 +2430,8 @@
         "room": "13관",
         "screen_num": "1",
         "title_eng": "The 100th love with you",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2182,7 +2439,8 @@
         "room": "13관",
         "screen_num": "2",
         "title_eng": "The 100th love with you",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2190,7 +2448,8 @@
         "room": "13관",
         "screen_num": "3",
         "title_eng": "The 100th love with you",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2198,7 +2457,8 @@
         "room": "13관",
         "screen_num": "4",
         "title_eng": "The 100th love with you",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -2207,7 +2467,8 @@
         "room": "1관",
         "screen_num": "1",
         "title_eng": "GET OUT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2215,7 +2476,8 @@
         "room": "1관",
         "screen_num": "2",
         "title_eng": "GET OUT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2223,7 +2485,8 @@
         "room": "1관",
         "screen_num": "3",
         "title_eng": "GET OUT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2231,7 +2494,8 @@
         "room": "1관",
         "screen_num": "4",
         "title_eng": "GET OUT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2241,7 +2505,8 @@
         "room": "2관",
         "screen_num": "1",
         "title_eng": "The Merciless",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2249,7 +2514,8 @@
         "room": "2관",
         "screen_num": "2",
         "title_eng": "The Merciless",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2257,7 +2523,8 @@
         "room": "2관",
         "screen_num": "3",
         "title_eng": "The Merciless",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2265,7 +2532,8 @@
         "room": "2관",
         "screen_num": "4",
         "title_eng": "The Merciless",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2275,7 +2543,8 @@
         "room": "3관",
         "screen_num": "1",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2283,7 +2552,8 @@
         "room": "3관",
         "screen_num": "2",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2291,7 +2561,8 @@
         "room": "3관",
         "screen_num": "3",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2299,7 +2570,8 @@
         "room": "3관",
         "screen_num": "4",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2309,7 +2581,8 @@
         "room": "4관",
         "screen_num": "1",
         "title_eng": "The Boss Baby",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2317,7 +2590,8 @@
         "room": "4관",
         "screen_num": "2",
         "title_eng": "The Boss Baby",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2325,7 +2599,8 @@
         "room": "4관",
         "screen_num": "3",
         "title_eng": "The Boss Baby",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2333,7 +2608,8 @@
         "room": "4관",
         "screen_num": "4",
         "title_eng": "The Boss Baby",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2343,7 +2619,8 @@
         "room": "5관",
         "screen_num": "1",
         "title_eng": "Alien: Covenant",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2351,7 +2628,8 @@
         "room": "5관",
         "screen_num": "2",
         "title_eng": "Alien: Covenant",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2359,7 +2637,8 @@
         "room": "5관",
         "screen_num": "3",
         "title_eng": "Alien: Covenant",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2367,7 +2646,8 @@
         "room": "5관",
         "screen_num": "4",
         "title_eng": "Alien: Covenant",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2377,7 +2657,8 @@
         "room": "6관",
         "screen_num": "1",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2385,7 +2666,8 @@
         "room": "6관",
         "screen_num": "2",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2393,7 +2675,8 @@
         "room": "6관",
         "screen_num": "3",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2401,7 +2684,8 @@
         "room": "6관",
         "screen_num": "4",
         "title_eng": "The Sheriff In Town",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2411,7 +2695,8 @@
         "room": "7관",
         "screen_num": "1",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2419,7 +2704,8 @@
         "room": "7관",
         "screen_num": "2",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2427,7 +2713,8 @@
         "room": "7관",
         "screen_num": "3",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2435,7 +2722,8 @@
         "room": "7관",
         "screen_num": "4",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2446,7 +2734,8 @@
         "room": "8관",
         "screen_num": "1",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2454,7 +2743,8 @@
         "room": "8관",
         "screen_num": "2",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2462,7 +2752,8 @@
         "room": "8관",
         "screen_num": "3",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2470,7 +2761,8 @@
         "room": "8관",
         "screen_num": "4",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
       {
@@ -2479,7 +2771,8 @@
         "room": "9관",
         "screen_num": "1",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2487,7 +2780,8 @@
         "room": "9관",
         "screen_num": "2",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2495,7 +2789,8 @@
         "room": "9관",
         "screen_num": "3",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2503,7 +2798,8 @@
         "room": "9관",
         "screen_num": "4",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2513,7 +2809,8 @@
         "room": "10관",
         "screen_num": "1",
         "title_eng": "Lost in Paris",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2521,7 +2818,8 @@
         "room": "10관",
         "screen_num": "2",
         "title_eng": "Lost in Paris",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2529,7 +2827,8 @@
         "room": "10관",
         "screen_num": "3",
         "title_eng": "Lost in Paris",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2537,7 +2836,8 @@
         "room": "10관",
         "screen_num": "4",
         "title_eng": "Lost in Paris",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2548,7 +2848,8 @@
         "room": "11관",
         "screen_num": "1",
         "title_eng": "Phantom Detective",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2556,7 +2857,8 @@
         "room": "11관",
         "screen_num": "2",
         "title_eng": "Phantom Detective",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2564,7 +2866,8 @@
         "room": "11관",
         "screen_num": "3",
         "title_eng": "Phantom Detective",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2572,7 +2875,8 @@
         "room": "11관",
         "screen_num": "4",
         "title_eng": "Phantom Detective",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2582,7 +2886,8 @@
         "room": "12관",
         "screen_num": "1",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2590,7 +2895,8 @@
         "room": "12관",
         "screen_num": "2",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2598,7 +2904,8 @@
         "room": "12관",
         "screen_num": "3",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2606,7 +2913,8 @@
         "room": "12관",
         "screen_num": "4",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2616,7 +2924,8 @@
         "room": "13관",
         "screen_num": "1",
         "title_eng": "The 100th love with you",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2624,7 +2933,8 @@
         "room": "13관",
         "screen_num": "2",
         "title_eng": "The 100th love with you",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2632,7 +2942,8 @@
         "room": "13관",
         "screen_num": "3",
         "title_eng": "The 100th love with you",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "인천",
@@ -2640,7 +2951,8 @@
         "room": "13관",
         "screen_num": "4",
         "title_eng": "The 100th love with you",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -2649,7 +2961,8 @@
         "room": "1관",
         "screen_num": "1",
         "title_eng": "GET OUT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2657,7 +2970,8 @@
         "room": "1관",
         "screen_num": "2",
         "title_eng": "GET OUT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2665,7 +2979,8 @@
         "room": "1관",
         "screen_num": "3",
         "title_eng": "GET OUT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2673,7 +2988,8 @@
         "room": "1관",
         "screen_num": "4",
         "title_eng": "GET OUT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2683,7 +2999,8 @@
         "room": "2관",
         "screen_num": "1",
         "title_eng": "The Merciless",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2691,7 +3008,8 @@
         "room": "2관",
         "screen_num": "2",
         "title_eng": "The Merciless",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2699,7 +3017,8 @@
         "room": "2관",
         "screen_num": "3",
         "title_eng": "The Merciless",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2707,7 +3026,8 @@
         "room": "2관",
         "screen_num": "4",
         "title_eng": "The Merciless",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2717,7 +3037,8 @@
         "room": "3관",
         "screen_num": "1",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2725,7 +3046,8 @@
         "room": "3관",
         "screen_num": "2",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2733,7 +3055,8 @@
         "room": "3관",
         "screen_num": "3",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2741,7 +3064,8 @@
         "room": "3관",
         "screen_num": "4",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2751,7 +3075,8 @@
         "room": "4관",
         "screen_num": "1",
         "title_eng": "The Boss Baby",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2759,7 +3084,8 @@
         "room": "4관",
         "screen_num": "2",
         "title_eng": "The Boss Baby",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2767,7 +3093,8 @@
         "room": "4관",
         "screen_num": "3",
         "title_eng": "The Boss Baby",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2775,7 +3102,8 @@
         "room": "4관",
         "screen_num": "4",
         "title_eng": "The Boss Baby",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2785,7 +3113,8 @@
         "room": "5관",
         "screen_num": "1",
         "title_eng": "Alien: Covenant",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2793,7 +3122,8 @@
         "room": "5관",
         "screen_num": "2",
         "title_eng": "Alien: Covenant",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2801,7 +3131,8 @@
         "room": "5관",
         "screen_num": "3",
         "title_eng": "Alien: Covenant",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2809,7 +3140,8 @@
         "room": "5관",
         "screen_num": "4",
         "title_eng": "Alien: Covenant",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2819,7 +3151,8 @@
         "room": "6관",
         "screen_num": "1",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2827,7 +3160,8 @@
         "room": "6관",
         "screen_num": "2",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2835,7 +3169,8 @@
         "room": "6관",
         "screen_num": "3",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2843,7 +3178,8 @@
         "room": "6관",
         "screen_num": "4",
         "title_eng": "The Sheriff In Town",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2853,7 +3189,8 @@
         "room": "7관",
         "screen_num": "1",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2861,7 +3198,8 @@
         "room": "7관",
         "screen_num": "2",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2869,7 +3207,8 @@
         "room": "7관",
         "screen_num": "3",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2877,7 +3216,8 @@
         "room": "7관",
         "screen_num": "4",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2888,7 +3228,8 @@
         "room": "8관",
         "screen_num": "1",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2896,7 +3237,8 @@
         "room": "8관",
         "screen_num": "2",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2904,7 +3246,8 @@
         "room": "8관",
         "screen_num": "3",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2912,7 +3255,8 @@
         "room": "8관",
         "screen_num": "4",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
       {
@@ -2921,7 +3265,8 @@
         "room": "9관",
         "screen_num": "1",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2929,7 +3274,8 @@
         "room": "9관",
         "screen_num": "2",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2937,7 +3283,8 @@
         "room": "9관",
         "screen_num": "3",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2945,7 +3292,8 @@
         "room": "9관",
         "screen_num": "4",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2955,7 +3303,8 @@
         "room": "10관",
         "screen_num": "1",
         "title_eng": "Lost in Paris",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2963,7 +3312,8 @@
         "room": "10관",
         "screen_num": "2",
         "title_eng": "Lost in Paris",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2971,7 +3321,8 @@
         "room": "10관",
         "screen_num": "3",
         "title_eng": "Lost in Paris",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2979,7 +3330,8 @@
         "room": "10관",
         "screen_num": "4",
         "title_eng": "Lost in Paris",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -2990,7 +3342,8 @@
         "room": "11관",
         "screen_num": "1",
         "title_eng": "Phantom Detective",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -2998,7 +3351,8 @@
         "room": "11관",
         "screen_num": "2",
         "title_eng": "Phantom Detective",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3006,7 +3360,8 @@
         "room": "11관",
         "screen_num": "3",
         "title_eng": "Phantom Detective",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3014,7 +3369,8 @@
         "room": "11관",
         "screen_num": "4",
         "title_eng": "Phantom Detective",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3024,7 +3380,8 @@
         "room": "12관",
         "screen_num": "1",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3032,7 +3389,8 @@
         "room": "12관",
         "screen_num": "2",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3040,7 +3398,8 @@
         "room": "12관",
         "screen_num": "3",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3048,7 +3407,8 @@
         "room": "12관",
         "screen_num": "4",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3058,7 +3418,8 @@
         "room": "13관",
         "screen_num": "1",
         "title_eng": "The 100th love with you",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3066,7 +3427,8 @@
         "room": "13관",
         "screen_num": "2",
         "title_eng": "The 100th love with you",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3074,7 +3436,8 @@
         "room": "13관",
         "screen_num": "3",
         "title_eng": "The 100th love with you",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3082,7 +3445,8 @@
         "room": "13관",
         "screen_num": "4",
         "title_eng": "The 100th love with you",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -3091,7 +3455,8 @@
         "room": "1관",
         "screen_num": "1",
         "title_eng": "GET OUT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3099,7 +3464,8 @@
         "room": "1관",
         "screen_num": "2",
         "title_eng": "GET OUT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3107,7 +3473,8 @@
         "room": "1관",
         "screen_num": "3",
         "title_eng": "GET OUT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3115,7 +3482,8 @@
         "room": "1관",
         "screen_num": "4",
         "title_eng": "GET OUT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3125,7 +3493,8 @@
         "room": "2관",
         "screen_num": "1",
         "title_eng": "The Merciless",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3133,7 +3502,8 @@
         "room": "2관",
         "screen_num": "2",
         "title_eng": "The Merciless",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3141,7 +3511,8 @@
         "room": "2관",
         "screen_num": "3",
         "title_eng": "The Merciless",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3149,7 +3520,8 @@
         "room": "2관",
         "screen_num": "4",
         "title_eng": "The Merciless",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3159,7 +3531,8 @@
         "room": "3관",
         "screen_num": "1",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3167,7 +3540,8 @@
         "room": "3관",
         "screen_num": "2",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3175,7 +3549,8 @@
         "room": "3관",
         "screen_num": "3",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3183,7 +3558,8 @@
         "room": "3관",
         "screen_num": "4",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3193,7 +3569,8 @@
         "room": "4관",
         "screen_num": "1",
         "title_eng": "The Boss Baby",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3201,7 +3578,8 @@
         "room": "4관",
         "screen_num": "2",
         "title_eng": "The Boss Baby",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3209,7 +3587,8 @@
         "room": "4관",
         "screen_num": "3",
         "title_eng": "The Boss Baby",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3217,7 +3596,8 @@
         "room": "4관",
         "screen_num": "4",
         "title_eng": "The Boss Baby",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3227,7 +3607,8 @@
         "room": "5관",
         "screen_num": "1",
         "title_eng": "Alien: Covenant",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3235,7 +3616,8 @@
         "room": "5관",
         "screen_num": "2",
         "title_eng": "Alien: Covenant",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3243,7 +3625,8 @@
         "room": "5관",
         "screen_num": "3",
         "title_eng": "Alien: Covenant",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3251,7 +3634,8 @@
         "room": "5관",
         "screen_num": "4",
         "title_eng": "Alien: Covenant",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3261,7 +3645,8 @@
         "room": "6관",
         "screen_num": "1",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3269,7 +3654,8 @@
         "room": "6관",
         "screen_num": "2",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3277,7 +3663,8 @@
         "room": "6관",
         "screen_num": "3",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3285,7 +3672,8 @@
         "room": "6관",
         "screen_num": "4",
         "title_eng": "The Sheriff In Town",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3295,7 +3683,8 @@
         "room": "7관",
         "screen_num": "1",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3303,7 +3692,8 @@
         "room": "7관",
         "screen_num": "2",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3311,7 +3701,8 @@
         "room": "7관",
         "screen_num": "3",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3319,7 +3710,8 @@
         "room": "7관",
         "screen_num": "4",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3330,7 +3722,8 @@
         "room": "8관",
         "screen_num": "1",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3338,7 +3731,8 @@
         "room": "8관",
         "screen_num": "2",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3346,7 +3740,8 @@
         "room": "8관",
         "screen_num": "3",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3354,7 +3749,8 @@
         "room": "8관",
         "screen_num": "4",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
       {
@@ -3363,7 +3759,8 @@
         "room": "9관",
         "screen_num": "1",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3371,7 +3768,8 @@
         "room": "9관",
         "screen_num": "2",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3379,7 +3777,8 @@
         "room": "9관",
         "screen_num": "3",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3387,7 +3786,8 @@
         "room": "9관",
         "screen_num": "4",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3397,7 +3797,8 @@
         "room": "10관",
         "screen_num": "1",
         "title_eng": "Lost in Paris",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3405,7 +3806,8 @@
         "room": "10관",
         "screen_num": "2",
         "title_eng": "Lost in Paris",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3413,7 +3815,8 @@
         "room": "10관",
         "screen_num": "3",
         "title_eng": "Lost in Paris",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3421,7 +3824,8 @@
         "room": "10관",
         "screen_num": "4",
         "title_eng": "Lost in Paris",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3432,7 +3836,8 @@
         "room": "11관",
         "screen_num": "1",
         "title_eng": "Phantom Detective",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3440,7 +3845,8 @@
         "room": "11관",
         "screen_num": "2",
         "title_eng": "Phantom Detective",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3448,7 +3854,8 @@
         "room": "11관",
         "screen_num": "3",
         "title_eng": "Phantom Detective",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3456,7 +3863,8 @@
         "room": "11관",
         "screen_num": "4",
         "title_eng": "Phantom Detective",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3466,7 +3874,8 @@
         "room": "12관",
         "screen_num": "1",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3474,7 +3883,8 @@
         "room": "12관",
         "screen_num": "2",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3482,7 +3892,8 @@
         "room": "12관",
         "screen_num": "3",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3490,7 +3901,8 @@
         "room": "12관",
         "screen_num": "4",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3500,7 +3912,8 @@
         "room": "13관",
         "screen_num": "1",
         "title_eng": "The 100th love with you",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3508,7 +3921,8 @@
         "room": "13관",
         "screen_num": "2",
         "title_eng": "The 100th love with you",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3516,7 +3930,8 @@
         "room": "13관",
         "screen_num": "3",
         "title_eng": "The 100th love with you",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3524,7 +3939,8 @@
         "room": "13관",
         "screen_num": "4",
         "title_eng": "The 100th love with you",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 	  {
@@ -3533,7 +3949,8 @@
         "room": "1관",
         "screen_num": "1",
         "title_eng": "GET OUT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3541,7 +3958,8 @@
         "room": "1관",
         "screen_num": "2",
         "title_eng": "GET OUT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3549,7 +3967,8 @@
         "room": "1관",
         "screen_num": "3",
         "title_eng": "GET OUT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3557,7 +3976,8 @@
         "room": "1관",
         "screen_num": "4",
         "title_eng": "GET OUT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3567,7 +3987,8 @@
         "room": "2관",
         "screen_num": "1",
         "title_eng": "The Merciless",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3575,7 +3996,8 @@
         "room": "2관",
         "screen_num": "2",
         "title_eng": "The Merciless",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3583,7 +4005,8 @@
         "room": "2관",
         "screen_num": "3",
         "title_eng": "The Merciless",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3591,7 +4014,8 @@
         "room": "2관",
         "screen_num": "4",
         "title_eng": "The Merciless",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3601,7 +4025,8 @@
         "room": "3관",
         "screen_num": "1",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3609,7 +4034,8 @@
         "room": "3관",
         "screen_num": "2",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3617,7 +4043,8 @@
         "room": "3관",
         "screen_num": "3",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3625,7 +4052,8 @@
         "room": "3관",
         "screen_num": "4",
         "title_eng": "King Arthur: Legend of the Sword",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3635,7 +4063,8 @@
         "room": "4관",
         "screen_num": "1",
         "title_eng": "The Boss Baby",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3643,7 +4072,8 @@
         "room": "4관",
         "screen_num": "2",
         "title_eng": "The Boss Baby",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3651,7 +4081,8 @@
         "room": "4관",
         "screen_num": "3",
         "title_eng": "The Boss Baby",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3659,7 +4090,8 @@
         "room": "4관",
         "screen_num": "4",
         "title_eng": "The Boss Baby",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3669,7 +4101,8 @@
         "room": "5관",
         "screen_num": "1",
         "title_eng": "Alien: Covenant",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3677,7 +4110,8 @@
         "room": "5관",
         "screen_num": "2",
         "title_eng": "Alien: Covenant",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3685,7 +4119,8 @@
         "room": "5관",
         "screen_num": "3",
         "title_eng": "Alien: Covenant",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3693,7 +4128,8 @@
         "room": "5관",
         "screen_num": "4",
         "title_eng": "Alien: Covenant",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3703,7 +4139,8 @@
         "room": "6관",
         "screen_num": "1",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3711,7 +4148,8 @@
         "room": "6관",
         "screen_num": "2",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3719,7 +4157,8 @@
         "room": "6관",
         "screen_num": "3",
         "title_eng": "The Sheriff In Town",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3727,7 +4166,8 @@
         "room": "6관",
         "screen_num": "4",
         "title_eng": "The Sheriff In Town",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3737,7 +4177,8 @@
         "room": "7관",
         "screen_num": "1",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3745,7 +4186,8 @@
         "room": "7관",
         "screen_num": "2",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3753,7 +4195,8 @@
         "room": "7관",
         "screen_num": "3",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3761,7 +4204,8 @@
         "room": "7관",
         "screen_num": "4",
         "title_eng": "Guardians of the Galaxy Vol. 2",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3772,7 +4216,8 @@
         "room": "8관",
         "screen_num": "1",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3780,7 +4225,8 @@
         "room": "8관",
         "screen_num": "2",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3788,7 +4234,8 @@
         "room": "8관",
         "screen_num": "3",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3796,7 +4243,8 @@
         "room": "8관",
         "screen_num": "4",
         "title_eng": "A Silent Voice : The Movie",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
       {
@@ -3805,7 +4253,8 @@
         "room": "9관",
         "screen_num": "1",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3813,7 +4262,8 @@
         "room": "9관",
         "screen_num": "2",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3821,7 +4271,8 @@
         "room": "9관",
         "screen_num": "3",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3829,7 +4280,8 @@
         "room": "9관",
         "screen_num": "4",
         "title_eng": "The Tooth and the Nail",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3839,7 +4291,8 @@
         "room": "10관",
         "screen_num": "1",
         "title_eng": "Lost in Paris",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3847,7 +4300,8 @@
         "room": "10관",
         "screen_num": "2",
         "title_eng": "Lost in Paris",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3855,7 +4309,8 @@
         "room": "10관",
         "screen_num": "3",
         "title_eng": "Lost in Paris",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3863,7 +4318,8 @@
         "room": "10관",
         "screen_num": "4",
         "title_eng": "Lost in Paris",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3874,7 +4330,8 @@
         "room": "11관",
         "screen_num": "1",
         "title_eng": "Phantom Detective",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3882,7 +4339,8 @@
         "room": "11관",
         "screen_num": "2",
         "title_eng": "Phantom Detective",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3890,7 +4348,8 @@
         "room": "11관",
         "screen_num": "3",
         "title_eng": "Phantom Detective",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3898,7 +4357,8 @@
         "room": "11관",
         "screen_num": "4",
         "title_eng": "Phantom Detective",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3908,7 +4368,8 @@
         "room": "12관",
         "screen_num": "1",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3916,7 +4377,8 @@
         "room": "12관",
         "screen_num": "2",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3924,7 +4386,8 @@
         "room": "12관",
         "screen_num": "3",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3932,7 +4395,8 @@
         "room": "12관",
         "screen_num": "4",
         "title_eng": "OUR PRESIDENT",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       },
 
 
@@ -3942,7 +4406,8 @@
         "room": "13관",
         "screen_num": "1",
         "title_eng": "The 100th love with you",
-        "start_time": "1000"
+        "start_time": "1000",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3950,7 +4415,8 @@
         "room": "13관",
         "screen_num": "2",
         "title_eng": "The 100th love with you",
-        "start_time": "1400"
+        "start_time": "1400",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3958,7 +4424,8 @@
         "room": "13관",
         "screen_num": "3",
         "title_eng": "The 100th love with you",
-        "start_time": "1800"
+        "start_time": "1800",
+"date":"2017년 6월 2일"
       },
       {
         "state": "경기",
@@ -3966,7 +4433,8 @@
         "room": "13관",
         "screen_num": "4",
         "title_eng": "The 100th love with you",
-        "start_time": "2200"
+        "start_time": "2200",
+"date":"2017년 6월 2일"
       }
 
     ]

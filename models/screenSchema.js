@@ -9,7 +9,8 @@ var screenSchema = mongoose.Schema({
   title_eng: String,
   start_time: String,
   end_time: String,
-  seat:[]
+  seat:[],
+  date: String
 });
 
 

@@ -201,14 +201,24 @@ router.get('/boxoffice', function(req, res, next) {
   orderContents.sort(function (a, b) {
     return b.likes.length - a.likes.length;
   });
+  if(req.query.noreserve==1){
+    res.render('boxoffice', {
+        rows: movieContents,
+        rows_order: orderContents,
+        email: req.session.email,
+        noreserve:true
+    });
+  }
+  else {
+    res.render('boxoffice', {
+        rows: movieContents,
+        rows_order: orderContents,
+        email: req.session.email,
+        noreserve:false
 
-  res.render('boxoffice', {
-      rows: movieContents,
-      rows_order: orderContents,
-      email: req.session.email
+    });
+  }
 
-      }
-    );
   });
 });//get
 
