@@ -229,6 +229,7 @@ router.get('/booking-two-temp/:title_eng/:theater', function(req, res, next) {
   });
 });
 router.get('/booking-one/:title_eng', function(req, res, next) {
+
   var title = req.params.title_eng
   console.log(title)
   MovieContents.find({title_eng:title}, function(err, movieContents){
@@ -237,11 +238,20 @@ router.get('/booking-one/:title_eng', function(req, res, next) {
       ScreenContents.find({title_eng:title, screen_num:'1'}, function(err, screenContents){
           if(err) return res.status(500).send({error: 'database failure'});
 
+          if(!req.session.email)
+          {
+          res.redirect('/login')
+        }
+        else
+        {
           res.render('booking-one', {
             screens: screenContents,
             rows: movieContents,
             email: req.session.email
           })
+        }
+
+
 
       });
   });
