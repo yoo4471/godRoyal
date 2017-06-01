@@ -105,7 +105,7 @@ router.post('/signup', function(req, res, next) {
   var passwd_check = req.body.passwd_check;
 
   UserContents.findOne({email:email}, function(err, userContents){
-
+    console.log(userContents)
     if(userContents == null) {
       var newUserContents = new UserContents;
       newUserContents.email = req.body.email;
