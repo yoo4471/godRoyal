@@ -15,6 +15,9 @@ router.get('/', function(req, res, next) {
 /* GET home page. */
 
 router.get('/init1', function(req, res, next) {
+  ScreenContents.remove({}, function(err) {
+     console.log('collection moviecontents removed')
+  });
 
   var request = require("request");
   var url = "http://localhost:3000/json/screen.json";
@@ -59,6 +62,7 @@ router.get('/init1', function(req, res, next) {
             newScreenContents.room = a[i].room
             newScreenContents.title_eng = a[i].title_eng
             newScreenContents.start_time = a[i].start_time
+            newScreenContents.date = a[i].date
             newScreenContents.seat.push(seat)
             newScreenContents.save(function (err)  {
               if (err) throw err;
@@ -182,16 +186,25 @@ router.get('/complete', function(req, res, next) {
   ReserveContents.find({"email":req.session.email}, function(err, reserveContents){
     if(err) return res.status(500).send({error: 'database failure'});
     console.log(reserveContents)
-    var teet = reserveContents[0].title_eng
+    // if (reserveContents.length == 0) {
+    //   res.redirect('/movies/boxoffice?noreserve=1')
+    // }
+
     MovieContents.find({ }, function(err, movieContents){
+    if(err) return res.status(500).send({error: 'database failure'});
 
-    res.render('complete_reserve', {
-        rows: reserveContents,
-        title: movieContents,
-        email: req.session.email
+    ScreenContents.find({}, function(err, screenContents){
+    if(err) return res.status(500).send({error: 'database failure'});
+      res.render('complete_reserve', {
+          rows: reserveContents,
+          title: movieContents,
+          screens: screenContents,
+          email: req.session.email
 
-        });
-     });
+      });
+    });
+
+    });
   });
 });//get
 

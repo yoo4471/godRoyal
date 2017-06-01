@@ -90,6 +90,16 @@
        <div id="contents" style="min-height: 927px;">
            <div id="boxoffice-contents">
                <div class="responsive-mask clearfix">
+                 <%
+                    if(noreserve)
+                    {
+                 %>
+                 <div id="searched_movies_title" class="container_12" style="font-size: 22px;font-weight: bold;color: #ff382e;padding-left: 35%;">
+                  평가한 영화 정보가 없어요. 영화를 평가해 주세요.
+                 </div>
+                 <%
+                    }
+                 %>
                    <div id="left-cards">
                        <div class="ranking card grid-1 hei-1">
                            <h4 class="head">영화 랭킹</h4>

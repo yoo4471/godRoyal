@@ -171,6 +171,41 @@ div.container {
           if(oneItem.title_eng == title[j].title_eng)
           {
             var pur = title[j].poster_img_url
+            var run_time = title[j].run_time
+            run_time = run_time.slice(0, -1);
+            run_time = parseInt(run_time)
+
+            var start_time = oneItem.start_time
+            var hour = start_time.slice(0,2)
+            hour = parseInt(hour)
+            var minute = start_time.slice(2,4)
+            minute = parseInt(minute)
+            minute = minute + run_time
+            var remainder = minute % 60
+            console.log(remainder)
+            var quota = parseInt(minute / 60)
+            console.log(quota)
+            hour = hour + quota
+            var str_remainder = ''
+            if(remainder < 10) {
+              str_remainder = '0' + remainder.toString()
+            }
+            else {
+              str_remainder = remainder.toString()
+            }
+          }
+        }
+        for( var k = 0; k < screens.length; k++)
+        {
+          if(oneItem.title_eng == screens[k].title_eng)
+          {
+            if(oneItem.theater == screens[k].theater)
+            {
+              if(oneItem.start_time == screens[k].start_time)
+              {
+                var date = screens[k].date
+              }
+            }
           }
         }
   %>
@@ -189,7 +224,7 @@ div.container {
               <div class="icon">
                 <i class="fa fa-table"></i>
               </div>
-              <p>Monday 15th 2016 <br/> <%=oneItem.start_time%></p>
+              <p><%=date%> <br/> <%=start_time.slice(0,2)%>:<%=start_time.slice(2,4)%> ~ <%=hour%>:<%=str_remainder%></p>
             </div>
             <div class="fix"></div>
             <div class="loc">
