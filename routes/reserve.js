@@ -182,15 +182,12 @@ router.get('/complete', function(req, res, next) {
   ReserveContents.find({"email":req.session.email}, function(err, reserveContents){
     if(err) return res.status(500).send({error: 'database failure'});
     console.log(reserveContents)
-    // res.json(screenContents);
-    // res.render('reserve', {
-    //     seat: seat,
-    //     title_eng: title_eng,
-    //     theater: theater,
-    //     start_time: start_time,
-    //     email: req.session.email
-    //
-    //     });
+
+    res.render('complete_reserve', {
+        rows: reserveContents,
+        email: req.session.email
+
+        });
   });
 });//get
 
