@@ -15,16 +15,29 @@ router.use(cookieSession({
 
 
 router.get('/', function(req, res, next) {
+  res.redirect('/dashboard/1')
+});
+router.get('/1', function(req, res, next) {
   res.render('dashboard');
+});
+
+router.get('/2', function(req, res, next) {
+  res.render('dashboard2');
 });
 
 router.get('/movielist', function(req, res, next) {
   res.render('data_table');
 });
 
+router.get('/screenlist', function(req, res, next) {
+  res.render('screen_data');
+});
+
 router.get('/write', function(req, res, next) {
   res.render('movie_write');
 });
+
+
 router.get('/screen_write', function(req, res, next) {
   res.render('screen_write');
 });
@@ -108,6 +121,41 @@ router.get('/movie',function(req, res, next) {
 
 });
 
+/* GET users listing. */
+router.get('/screen',function(req, res, next) {
+
+  ScreenContents.find(function(err, screenContents){
+      if(err) return res.status(500).send({error: 'database failure'});
+      console.log(screenContents)
+      var data = []
+      // { _id: 80230,
+      //     date: '2017년 6월 2일',
+      //     start_time: '2200',
+      //     title_eng: 'Guardians of the Galaxy Vol. 2',
+      //     room: '7관',
+      //     screen_num: '4',
+      //     state: '서울',
+      //     theater: '강남 GRL',
+      //     __v: 0,
+      //     seat: [ [Object] ] },
+      for (i = 0; i < screenContents.length; i++) {
+        screenlist = [screenContents[i]['title_eng'], screenContents[i]['state'], screenContents[i]['theater'],
+        screenContents[i]['room'], screenContents[i]['screen_num'], screenContents[i]['date'], screenContents[i]['_id']]
+        data.push(screenlist)
+
+
+      }
+
+
+      var a = {"data" : data}
+      res.json(a);
+  })
+
+
+
+});
+
+
 router.post('/movielist/enrollment',function(req,res,next){
 
   console.log(req.body);
@@ -137,9 +185,9 @@ router.post('/movielist/enrollment',function(req,res,next){
   newMovieContents.slide_img_url.push(req.body.slide_img_url4)
   newMovieContents.youtube = req.body.youtube
 
-  for (var i = 0; i < req.body.genre.length; i++) {
-    newMovieContents.genre.push(req.body.genre[i])
-  }
+  // for (var i = 0; i < req.body.genre.length; i++) {
+  //   newMovieContents.genre.push(req.body.genre[i])
+  // }
 
   newMovieContents.save(function (err)  {
     if (err) throw err;
@@ -151,7 +199,40 @@ router.post('/movielist/enrollment',function(req,res,next){
   // var User = mongoose.model('User', boardSchema);
 
 
-  res.json(req.body);
+  res.redirect('/dashboard/movielist')
+});
+
+router.post('/screenlist/enrollment',function(req,res,next){
+
+
+  // creates DB schema
+  var a = req.body.state_theater
+  var b = a.split(',')
+  var newScreenContents = new ScreenContents;
+
+
+  newScreenContents.title_eng = req.body.title_eng;
+  newScreenContents.state = b[0];
+  newScreenContents.theater = b[1];
+  newScreenContents.room = req.body.room;
+  newScreenContents.date = req.body.date;
+  newScreenContents.start_time = req.body.start_time;
+  newScreenContents.screen_num = req.body.screen_num;
+
+
+
+
+  newScreenContents.save(function (err)  {
+    if (err) throw err;
+    console.log('success join')
+  });
+  // creates DB schema
+
+  // compiels our schema into a model
+  // var User = mongoose.model('User', boardSchema);
+
+
+  res.redirect('/dashboard/screenlist')
 });
 
 
