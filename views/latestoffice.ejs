@@ -88,10 +88,23 @@
            </div>
        </div>
 
+
        <link rel="stylesheet" media="screen" href="/stylesheets/MovieCard.css">
        <div id="contents" style="min-height: 927px;">
+
            <div id="boxoffice-contents">
                <div class="responsive-mask clearfix">
+                 <%
+                    if(norate)
+                    {
+                 %>
+                 <div id="searched_movies_title" class="container_12" style="font-size: 22px;font-weight: bold;color: #ff382e;padding-left: 35%;">
+                  평가한 영화 정보가 없어요. 영화를 평가해 주세요.
+                 </div>
+                 <%
+                    }
+                 %>
+
                    <div id="left-cards">
                        <div class="ranking card grid-1 hei-1">
                            <h4 class="head">영화 랭킹</h4>
@@ -136,7 +149,7 @@
                            <div class="poster-area">
                                <div class="movie-card size-1x1 poster-type boxoffice_large_movie  user-action-m3xlkh fix-action-box card grid-1 hei-1">
                                    <div class="poster-wrapper">
-                                       <img class="poster" src="<%=oneItem.poster_img_url%>" width="100%">
+                                       <img class="poster" src="<%=oneItem.poster_img_url%>"width="100%">
                                    </div>
                                </div>
                            </div>
@@ -241,9 +254,9 @@
                                  <%
                                     }
                                  %>
-                                   <div class="trailer btn rating" title_eng="boss baby" data-youtube-id="5RWz1ostEt8">
-                                       <span class="icon"></span> 예고편
-                                   </div>
+                                 <a href="<%=oneItem.youtube%>" target="_blank"><div class="trailer btn rating" data-youtube-id="5RWz1ostEt8">
+                                     <span class="icon"></span> 예고편
+                                 </div></a>
                                </div>
                              </form>
                                <div class="detail-info">

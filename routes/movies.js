@@ -56,7 +56,7 @@ router.get('/boxoffice', function(req, res, next) {
 /* GET home page. */
 router.get('/latestoffice', function(req, res, next) {
   MovieContents.find({ current:1 }, function(err, movieContents){
-
+  
   if(err) return res.status(500).send({error: 'database failure'});
 
   orderContents = movieContents.slice();
@@ -72,12 +72,24 @@ router.get('/latestoffice', function(req, res, next) {
     movieContents_date.sort(function (a, b) {
       return b.release_date - a.release_date;
     });
-    res.render('latestoffice', {
-        rows: movieContents_date,
-        rows_order: orderContents,
-        email: req.session.email
+    if(req.query.norate==1){
+      res.render('latestoffice', {
+          rows: movieContents_date,
+          rows_order: orderContents,
+          email: req.session.email,
+          norate:true
+      });
+    }
+    else {
+      res.render('latestoffice', {
+          rows: movieContents_date,
+          rows_order: orderContents,
+          email: req.session.email,
+          norate:false
 
-    });
+      });
+    }
+
   });
 
 
@@ -98,7 +110,7 @@ router.get('/recommend', function(req, res, next) {
       .then( function(recommendations) {
 
         if(recommendations['recommendations'].length == 0) {
-          res.send('추천 기록 없음')
+          res.redirect('/movies/latestoffice?norate=1')
         }
         else {
           var recomm_list = []
@@ -123,9 +135,7 @@ router.get('/recommend', function(req, res, next) {
                 rows: response,
                 rows_recomm: recommendations['recommendations'],
                 email: req.session.email
-
-                }
-              );//res.render
+                });//res.render
           }))//end_recommed
         }
 
