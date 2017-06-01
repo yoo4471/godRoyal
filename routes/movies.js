@@ -198,18 +198,25 @@ router.get('/booking-two-temp/:title_eng/:theater', function(req, res, next) {
 
       ScreenContents.find({title_eng:title, theater: tt }, function(err, screenContents){
           if(err) return res.status(500).send({error: 'database failure'});
+
+          orderContents = screenContents.slice();
+          orderContents.sort(function (a, b) {
+            var num_a = a.screen_num
+            num_a = parseInt(num_a)
+            var num_b = b.screen_num
+            num_b = parseInt(num_b)
+            return num_a - num_b;
+          });
+
           console.log(screenContents)
           res.render('booking-two-temp', {
-            screens: screenContents,
+            screens: orderContents,
             rows: movieContents,
             email: req.session.email
           })
 
       });
   });
-    // console.log(boardContents[0].img_url);
-    // res.render('update', {title:"글 수정", error:"", row: boardContents});
-
 });
 router.get('/booking-one/:title_eng', function(req, res, next) {
   var title = req.params.title_eng
