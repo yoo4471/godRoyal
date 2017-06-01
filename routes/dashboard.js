@@ -1,6 +1,7 @@
 var express = require('express');
 var MovieContents = require('../models/movieSchema');
 var UserContents = require('../models/userSchema');
+var ScreenContents = require('../models/screenSchema');
 var cookieSession = require('cookie-session')
 var router = express.Router();
 
@@ -23,6 +24,20 @@ router.get('/movielist', function(req, res, next) {
 
 router.get('/write', function(req, res, next) {
   res.render('movie_write');
+});
+router.get('/screen_write', function(req, res, next) {
+  res.render('screen_write');
+});
+router.get('/screen_update:_id', function(req, res, next) {
+  var _id = req.params._id;
+  console.log(_id)
+  ScreenContents.findOne({}, function(err, screenContents){
+
+    if(err) return res.status(500).send({error: 'database failure'});
+    console.log(screenContents)
+    res.render('movie_update', {row: screenContents});
+
+  });
 });
 router.get('/form', function(req, res, next) {
   res.render('flatUI/form');
