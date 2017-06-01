@@ -189,6 +189,7 @@ router.get('/booking-one-temp/:title_eng', function(req, res, next) {
     // res.render('update', {title:"글 수정", error:"", row: boardContents});
 
 });
+
 router.get('/booking-two-temp/:title_eng/:theater', function(req, res, next) {
   var title = req.params.title_eng
   var tt = req.params.theater
@@ -208,7 +209,6 @@ router.get('/booking-two-temp/:title_eng/:theater', function(req, res, next) {
             return num_a - num_b;
           });
 
-          console.log(screenContents)
           res.render('booking-two-temp', {
             screens: orderContents,
             rows: movieContents,

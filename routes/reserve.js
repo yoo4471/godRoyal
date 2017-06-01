@@ -11,6 +11,7 @@ router.get('/', function(req, res, next) {
   res.redirect('/reserve/Lost in Paris/가산디지털/1')
 });//get
 
+
 /* GET home page. */
 router.get('/init1', function(req, res, next) {
 
