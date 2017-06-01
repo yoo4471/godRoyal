@@ -166,10 +166,17 @@ div.container {
       for (var i = 0; i < rows.length; i++)
       {
         var oneItem = rows[i]
+        for (var j = 0 ; j < title.length; j++)
+        {
+          if(oneItem.title_eng == title[j].title_eng)
+          {
+            var pur = title[j].poster_img_url
+          }
+        }
   %>
         <div class="item">
           <div class="item-right">
-            <img class="poster" src="/images/poster/get_out_poster.jpg" width="162px;" height="273px"style="margin-top:-71px; margin-left:-62px;">
+            <img class="poster" src="<%=pur%>" width="162px;" height="273px"style="margin-top:-71px; margin-left:-62px;">
             <span class="up-border"></span>
             <span class="down-border"></span>
           </div> <!-- end item-right -->
@@ -200,7 +207,7 @@ div.container {
               </p>
             </div>
             <div class="fix"></div>
-            <button class="booked"><a href="/movies/detail/<%=oneItem.title_eng%>">Booked</a></button>
+            <button class="booked"><a target="_parent"href="/movies/detail/<%=oneItem.title_eng%>">Booked</a></button>
           </div> <!-- end item-right -->
         </div> <!-- end item -->
   <%
