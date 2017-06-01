@@ -13,107 +13,70 @@ router.get('/', function(req, res, next) {
 
 
 /* GET home page. */
-router.get('/init1', function(req, res, next) {
-
-  var request = require("request");
-  var url = "http://localhost:3000/json/screen.json";
-
-  request({
-      url: url,
-      json: true
-  }, function (error, response, body) {
-
-      if (!error && response.statusCode === 200) {
-        ScreenContents.remove({}, function(err) {
-           console.log('collection moviecontents removed')
-        });
-          var a = body["data"]
-
-          for (var i=0; i<a.length; i++) {
-
-            seat = [
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-              [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-            var newScreenContents = new ScreenContents;
-            newScreenContents.theater = a[i].theater
-            newScreenContents.state = a[i].state
-            newScreenContents.screen_num = a[i].screen_num
-            newScreenContents.room = a[i].room
-            newScreenContents.title_eng = a[i].title_eng
-            newScreenContents.start_time = a[i].start_time
-            newScreenContents.seat.push(seat)
-            newScreenContents.save(function (err)  {
-              if (err) throw err;
-              // console.log(user + ' : ' + title + ' ' + action)
-            });
-          }
-
-      }
-
+router.get('/test', function(req, res, next) {
+  ScreenContents.remove({}, function(err) {
+     console.log('collection moviecontents removed')
+  });
+  seat = [
+    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  ]
+  var newScreenContents = new ScreenContents;
+  newScreenContents.theater = "가산디지털"
+  newScreenContents.screen_num = "1"
+  newScreenContents.screen_type = "2D"
+  newScreenContents.title_eng = "Lost in Paris"
+  newScreenContents.start_time = "1000"
+  newScreenContents.end_time = "1200"
+  newScreenContents.seat.push(seat)
+  newScreenContents.save(function (err)  {
+    if (err) throw err;
+    // console.log(user + ' : ' + title + ' ' + action)
   });
 
-
-
-
-
-
-
-
-  res.send('init완료')
+  res.send('good')
 
 });//get
-router.get('/show1', function(req, res, next) {
+router.get('/:title_eng/:theater/:start_time', function(req, res, next) {
+  var theater = req.params.theater
+  var title_eng = req.params.title_eng
+  var start_time = req.params.start_time
 
 
-  ScreenContents.find({}, function(err, screenContents){
+  ScreenContents.find({"title_eng":title_eng, "theater":theater, "start_time":start_time}, function(err, screenContents){
 
 
     if(err) return res.status(500).send({error: 'database failure'});
-    res.json(screenContents);
+    // res.json(screenContents);
+    var seat = screenContents[0].seat[0]
 
+    res.render('reserve', {
+        seat: seat,
+        title_eng: title_eng,
+        theater: theater,
+        start_time: start_time,
+        email: req.session.email
+
+        }
+      );
   });
 });//get
-// router.get('/:title_eng/:theater/:screen_num', function(req, res, next) {
-//   var theater = req.params.theater
-//   var title_eng = req.params.title_eng
-//   var screen_num = req.params.screen_num
-//
-//   console.log(theater, title_eng, screen_num)
-//   ScreenContents.find({"title_eng":title_eng, "theater":theater, "screen_num":screen_num}, function(err, screenContents){
-//
-//
-//     if(err) return res.status(500).send({error: 'database failure'});
-//     // res.json(screenContents);
-//     var seat = screenContents[0].seat[0]
-//
-//     res.render('reserve', {
-//         seat: seat,
-//         title_eng: title_eng,
-//         theater: theater,
-//         screen_num: screen_num,
-//         email: req.session.email
-//
-//         }
-//       );
-//   });
-// });//get
 
 router.post('/', function(req, res, next) {
   console.log(req.body)
@@ -137,9 +100,9 @@ router.post('/', function(req, res, next) {
   console.log(req.body.email)
   console.log(req.body.theater)
   console.log(req.body.title_eng)
-  console.log(req.body.screen_num)
+  console.log(req.body.start_time)
   /* 공동환 */
-  ScreenContents.find({"title_eng":req.body.title_eng, "theater":req.body.theater, "screen_num":req.body.screen_num}, function(err, screenContents){
+  ScreenContents.find({"title_eng":req.body.title_eng, "theater":req.body.theater, "start_time":req.body.start_time}, function(err, screenContents){
     if(err) return res.status(500).send({error: 'database failure'});
       // res.json(screenContents);
 
@@ -153,10 +116,10 @@ router.post('/', function(req, res, next) {
       }
 
       // console.log(seat)
-      ScreenContents.findOneAndUpdate({"title_eng":req.body.title_eng, "theater":req.body.theater, "screen_num":req.body.screen_num}, { "$pop": { "seat": -1 }} ).exec(function(err, screenContents){
+      ScreenContents.findOneAndUpdate({"title_eng":req.body.title_eng, "theater":req.body.theater, "start_time":req.body.start_time}, { "$pop": { "seat": -1 }} ).exec(function(err, screenContents){
          if(err) return res.status(500).send({error: 'database failure'});
 
-         ScreenContents.findOneAndUpdate({"title_eng":req.body.title_eng, "theater":req.body.theater, "screen_num":req.body.screen_num}, { "$push": { "seat": seat}} ).exec(function(err, screenContents){
+         ScreenContents.findOneAndUpdate({"title_eng":req.body.title_eng, "theater":req.body.theater, "start_time":req.body.start_time}, { "$push": { "seat": seat}} ).exec(function(err, screenContents){
             if(err) return res.status(500).send({error: 'database failure'});
 
             res.send('done')
@@ -171,6 +134,17 @@ router.post('/', function(req, res, next) {
 
 router.get('/complete/:email', function(req, res, next) {
   res.send(req.params.email + ' 이 유저에 대한 예약 내역 보여주는 페이지 만들면 된다.')
+});//get
+
+router.get('/show1', function(req, res, next) {
+  ScreenContents.find({}, function(err, screenContents){
+
+
+    if(err) return res.status(500).send({error: 'database failure'});
+    // res.json(screenContents);
+    res.json(screenContents)
+
+  });
 });//get
 
 

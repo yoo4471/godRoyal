@@ -32,7 +32,7 @@
         "title_eng": "GET OUT",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "서울",
         "theater": "강남 GRL",
@@ -65,7 +65,7 @@
         "title_eng": "The Merciless",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "서울",
         "theater": "강남 GRL",
@@ -98,7 +98,7 @@
         "title_eng": "King Arthur: Legend of the Sword",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "서울",
         "theater": "강남 GRL",
@@ -131,7 +131,7 @@
         "title_eng": "The Boss Baby",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "서울",
         "theater": "강남 GRL",
@@ -164,7 +164,7 @@
         "title_eng": "Alien: Covenant",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "서울",
         "theater": "강남 GRL",
@@ -197,7 +197,7 @@
         "title_eng": "The Sheriff In Town",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "서울",
         "theater": "강남 GRL",
@@ -230,7 +230,7 @@
         "title_eng": "Guardians of the Galaxy Vol. 2",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "서울",
         "theater": "강남 GRL",
@@ -263,7 +263,7 @@
         "title_eng": "A Silent Voice : The Movie",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "서울",
         "theater": "강남 GRL",
@@ -296,7 +296,7 @@
         "title_eng": "The Tooth and the Nail",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "서울",
         "theater": "강남 GRL",
@@ -874,7 +874,7 @@
         "title_eng": "The 100th love with you",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "서울",
         "theater": "신촌 GRL",
@@ -1316,7 +1316,7 @@
         "title_eng": "The 100th love with you",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "인천",
         "theater": "부평 GRL",
@@ -1758,7 +1758,7 @@
         "title_eng": "The 100th love with you",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "인천",
         "theater": "주안 GRL",
@@ -2200,7 +2200,7 @@
         "title_eng": "The 100th love with you",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "인천",
         "theater": "송도 GRL",
@@ -2642,7 +2642,7 @@
         "title_eng": "The 100th love with you",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "경기",
         "theater": "수원 GRL",
@@ -3084,7 +3084,7 @@
         "title_eng": "The 100th love with you",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "경기",
         "theater": "일산 GRL",
@@ -3526,7 +3526,7 @@
         "title_eng": "The 100th love with you",
         "start_time": "2200"
       },
-	  
+
 	  {
         "state": "경기",
         "theater": "안산 GRL",
@@ -3968,6 +3968,6 @@
         "title_eng": "The 100th love with you",
         "start_time": "2200"
       }
-      
+
     ]
 }
