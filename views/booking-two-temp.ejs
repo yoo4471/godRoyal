@@ -26,7 +26,8 @@
                  <div id="container" class="container">
 
                    <%
-                    var one=0, two=0, three=0, four =0, five=0, six=0, seven=0, eight=0, nine=0, ten=0, eleven=0, t12,=0, t13=0
+                    var one=0, two=0, three=0, four =0, five=0, six=0, seven=0
+                    var eight=0, nine=0, ten=0, eleven=0, t=0, tt=0
                     for(var i=0;i<screens.length; i++)
                     {
                       if(screens[i].room == '1관')
@@ -290,7 +291,84 @@
                             <%
                           }
                       }
-                      
+                      if(screens[i].room == '11관')
+                      {
+                          if(eleven == 0)
+                          {
+                            eleven = 1
+                            %>
+                            <div id="list-1" class="list">
+                              <div class="icon"></div>
+                              <div class="title">11관</div>
+                              <ul>
+                                <%
+                                for(var j=0;j<screens.length; j++)
+                                {
+                                  if(screens[j].room == '11관')
+                                  {
+                                    %>
+                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                    <%
+                                  }
+                                }
+                                %>
+                              </ul>
+                            </div>
+                            <%
+                          }
+                      }
+                      if(screens[i].room == '12관')
+                      {
+                          if(t == 0)
+                          {
+                            t = 1
+                            %>
+                            <div id="list-1" class="list">
+                              <div class="icon"></div>
+                              <div class="title">12관</div>
+                              <ul>
+                                <%
+                                for(var j=0;j<screens.length; j++)
+                                {
+                                  if(screens[j].room == '12관')
+                                  {
+                                    %>
+                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                    <%
+                                  }
+                                }
+                                %>
+                              </ul>
+                            </div>
+                            <%
+                          }
+                      }
+                      if(screens[i].room == '13관')
+                      {
+                          if(tt == 0)
+                          {
+                            tt = 1
+                            %>
+                            <div id="list-1" class="list">
+                              <div class="icon"></div>
+                              <div class="title">13관</div>
+                              <ul>
+                                <%
+                                for(var j=0;j<screens.length; j++)
+                                {
+                                  if(screens[j].room == '13관')
+                                  {
+                                    %>
+                                    <a target="_parent" href="/movies/booking-three/<%=rows[0].title_eng%>/<%=screens[j].theater%>/<%=screens[j].start_time%>"><li style="font-size:13px;"><%=screens[j].start_time[0]%><%=screens[j].start_time[1]%>시 <%=screens[j].start_time[2]%><%=screens[j].start_time[3]%>분</li></a>
+                                    <%
+                                  }
+                                }
+                                %>
+                              </ul>
+                            </div>
+                            <%
+                          }
+                      }
                     }
                    %>
 
