@@ -83,7 +83,7 @@ router.get('/movielist/:_id',function(req, res, next) {
   });
 });
 
-router.get('/update/:_id',function(req, res, next) {
+router.get('/update_movie/:_id',function(req, res, next) {
   var _id = req.params._id;
   MovieContents.findOne({_id:_id}, function(err, movieContents){
     if(err) return res.status(500).send({error: 'database failure'});
@@ -93,6 +93,14 @@ router.get('/update/:_id',function(req, res, next) {
   });
 });
 
+router.get('/update_screen/:_id',function(req, res, next) {
+  var _id = req.params._id;
+  ScreenContents.findOne({_id:_id}, function(err, screenContents){
+    if(err) return res.status(500).send({error: 'database failure'});
+    res.render('screen_update', {row: screenContents});
+
+  });
+});
 
 /* GET users listing. */
 router.get('/movie',function(req, res, next) {
